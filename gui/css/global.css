@@ -115,7 +115,11 @@
     .issue-item {
         background: #eaeaea;
         border-radius: 5px;
-        margin-bottom: 3px;
+        margin: 0 0 3px 57px;
+    }
+    .issue-item.set,
+    .issue-item.overdue {
+        margin-left: 0;
     }
     .issue-item:hover {
         background: #f0f0f0;
@@ -136,13 +140,17 @@
         line-height: 1.1;
         min-height: 5em;
         text-align: center;
+        width: 2%;
+    }
+    .issue-item.set .due-date,
+    .issue-item.overdue .due-date {
         width: 10%;
     }
-    .issue-item .due-date.set {
+    .issue-item.set .due-date {
         background: #00831f;
         padding: 26px 0;
     }
-    .issue-item .due-date.overdue {
+    .issue-item.overdue .due-date {
         background: #cf0202;
         padding: 10px 0;
     }
@@ -155,7 +163,7 @@
     --------------------------------------------------------*/
     .issue-details {
         padding: 0.2em 0.8em;
-        width: 70%;
+        width: 35em;
     }
     .issue-details .meta,
     .issue-details .creator {
