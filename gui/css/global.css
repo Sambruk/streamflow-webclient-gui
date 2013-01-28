@@ -1,0 +1,217 @@
+/* Global styling for Streamflow
+============================================================================*/
+
+/* Import resets */
+@import 'basic.css';
+
+@media screen, projection {
+    
+    /* LAYOUT FRAMEWORK
+    ============================================================================================= */
+    .body {
+        width: 100%;
+    }
+    .header {
+        background: #141414;
+    }
+    .footer {
+        background: #222;
+    }
+    .header-body,
+    .main-body {
+        margin: 0 auto;
+        width: 71.4286em; /* 1000px */
+    }
+    
+    
+    /* Layout-1 - one column
+    --------------------------------------------------------*/
+    .layout-1 .content-primary {
+        
+    }
+    
+    
+    /* HEADER
+    ============================================================================================= */
+    .header h1,
+    .header .main-search,
+    .header .user-logged {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .header,
+    .header h1 {
+        color: #fff;
+    }
+    .header h1 {
+        font-size: 1.1429em;
+        padding: 28px 0;
+    }
+    .header a,
+    .header a:visited {
+        color: #08c;
+        text-decoration: none;
+    }
+    .header a:hover,
+    .header a:focus {
+        text-decoration: underline;
+    }
+    
+    /* Main search
+    --------------------------------------------------------*/
+    .main-search {
+        margin: 0 15%;
+    }
+    .main-search input[type="text"] {
+        background: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 10px;
+    }
+    .main-search button[type="submit"] {
+        background-image: url("../i/icon-search.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 7px 28px;
+    }
+    .main-search button[type="submit"] span {
+        display: block;
+        text-indent: -9999px;
+    }
+    
+    /* Logged in user
+    --------------------------------------------------------*/
+    .user-logged {
+        background: url("../i/icon-user.png") no-repeat 0 50%;
+        padding: 6px 0 6px 20px;
+    }
+    
+    
+    /* ISSUE OVERVIEW
+    ============================================================================*/
+    .issues-overview {
+        margin: 4em auto 0;
+        width: 50em; /* 700px */
+    }
+    .issues-overview h2 {
+        font-size: 1.1429em;
+        font-weight: bold;
+        padding-left: 5.3em;
+    }
+    .due-date-heading {
+        background: url("../i/due-date-divider.png") repeat-x 0 49%;
+        color: #999;
+        font-size: 0.7857em;
+        margin: 0 0 0.2em;
+    }
+    .due-date-heading span {
+        background: #fff;
+        padding-right: 5px;
+    }
+    .issue-list {
+        list-style: none;
+        margin: 0 0 2em;
+    }
+    .issue-item {
+        background: #eaeaea;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+    .issue-item:hover {
+        background: #f0f0f0;
+    }
+    .issue-item .due-date,
+    .issue-item .issue-details,
+    .issue-item .issue-actions {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    /* Due date
+    --------------------------------------------------------*/
+    .issue-item .due-date {
+        background: #afafaf;
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        line-height: 1.1;
+        min-height: 5em;
+        text-align: center;
+        width: 10%;
+    }
+    .issue-item .due-date.set {
+        background: #00831f;
+        padding: 26px 0;
+    }
+    .issue-item .due-date.overdue {
+        background: #cf0202;
+        padding: 10px 0;
+    }
+    .issue-item .due-date span {
+        display: block;
+        font-size: 2.571em;
+    }
+    
+    /* Issue details
+    --------------------------------------------------------*/
+    .issue-details {
+        padding: 0.2em 0.8em;
+        width: 70%;
+    }
+    .issue-details .meta,
+    .issue-details .creator {
+        font-size: 0.9286em;
+    }
+    .issue-details h3 {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    /* Actions column
+    --------------------------------------------------------*/
+    .issue-actions {
+        border-left: 1px solid #ccc;
+        font-size: 0.8571em;
+    }
+    .issue-actions div {
+        border-left: 1px solid #fff;
+        padding: 0.5em;
+    }
+    .issue-actions span {
+        display: block;
+        padding: 2px 10px;
+    }
+    .issue-actions .updated {
+        background: #00831f;
+        color: #fff;
+    }
+    
+    
+    /* GLOBAL CLASSES
+    ============================================================================================= */
+    /* Block links (remove standard link decorations)
+    --------------------------------------------------------*/
+    a.block-link:link,
+    a.block-link:visited,
+    a.block-link:hover,
+    a.block-link:focus,
+    a.block-link:active {
+        color: inherit !important;
+        display: block;
+        text-decoration: none !important;
+    }
+    
+    
+    /* GLOBAL ELEMENTS
+    ============================================================================================= */
+    button {
+        background: #08c;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 4px 10px;
+    }
+    
+    
+/* END @media screen,projection */
+}
