@@ -93,10 +93,10 @@
     }
     
     
-    /* Font sizes
+    /* Fonts & sizes
     -------------------------------------------------------- */
     html {
-        font: 87.5%/1.5 Helvetica, Arial, sans-serif; /* Base font size of 14px */
+        font: 87.5%/1.5 "Roboto", Helvetica, Arial, sans-serif; /* Base font size of 14px */
     }
     
     code,
@@ -188,7 +188,7 @@
     button,
     textarea,
     select {
-        font: 100%/1.3846 Helvetica, Arial, sans-serif;
+        font: 100%/1.3846 "Roboto", Helvetica, Arial, sans-serif;
         font-size: 1em;
     }
 
