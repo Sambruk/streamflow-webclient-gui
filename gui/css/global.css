@@ -14,6 +14,9 @@
     .header {
         background: #141414;
     }
+    .main {
+        margin-top: 3em;
+    }
     .footer {
         background: #222;
     }
@@ -24,26 +27,28 @@
     }
     
     
-    /* Layout-1 - one column
+    /* Layout-2 - two columns (also controls the header columns)
     --------------------------------------------------------*/
-    .layout-1 .content-primary {
-        
+    .header-primary,
+    .layout-2 .content-primary {
+        float: left;
+        width: 45em;
+    }
+    .header-secondary,
+    .layout-2 .content-secondary {
+        float: right;
+        width: 23em;
     }
     
     
     /* HEADER
     ============================================================================================= */
-    .header h1,
-    .header .main-search,
-    .header .user-logged {
-        display: inline-block;
-        vertical-align: middle;
-    }
     .header,
     .header h1 {
         color: #fff;
     }
     .header h1 {
+        float: left;
         font-size: 1.1429em;
         padding: 28px 0;
     }
@@ -60,7 +65,8 @@
     /* Main search
     --------------------------------------------------------*/
     .main-search {
-        margin: 0 15%;
+        float: right;
+        margin-top: 18px;
     }
     .main-search input[type="text"] {
         background: #fff;
@@ -82,8 +88,10 @@
     /* Logged in user
     --------------------------------------------------------*/
     .user-logged {
-        background: url("../i/icon-user.png") no-repeat 0 50%;
+        background: url("../i/icon-logged.png") no-repeat 0 50%;
+        display: block;
         padding: 6px 0 6px 20px;
+        margin-top: 20px;
     }
     
     
@@ -195,8 +203,166 @@
     }
     
     
+    /* MODULES
+    ============================================================================================= */
+    /* Module: Allmänt
+    --------------------------------------------------------*/
+    .m-general {
+        
+    }
+    
+    /* Module: Konversationer
+    --------------------------------------------------------*/
+    .m-convos .date {
+        font-size: 0.8571em;
+    }
+    /* TODO: Maybe refactor these into a global icon system */
+    .m-convos li {
+        position: relative;
+    }
+    .convo-status {
+        position: absolute;
+        right: 0.75em;
+        top: 0.75em;
+    }
+    .convo-status .icon {
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+        color: #666;
+        padding: 0 0 0 30px;
+    }
+    .convo-status .icon.users {
+        background-image: url("../i/icon-user.png");
+    }
+    .convo-status .icon.msgs {
+        background-image: url("../i/icon-msgs.png");
+    }
+    
+    /* Module: Kontakter
+    --------------------------------------------------------*/
+    .m-contacts a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    /* Module: Ärendelogg
+    --------------------------------------------------------*/
+    .log-table tbody tr {
+        background: #eee;
+    }
+    .log-table tbody tr.even {
+        background: #fff;
+    }
+    
+    /* Module: Bifogade filer
+    --------------------------------------------------------*/
+    .m-attachments {
+        
+    }
+    
+    /* Module: Checklista
+    --------------------------------------------------------*/
+    .m-check-list .check-list li {
+        padding: 0.25em;
+        margin: 0;
+    }
+    .m-check-list .check-list li.even {
+        background: #fff;
+    }
+    
+    
     /* GLOBAL CLASSES
     ============================================================================================= */
+    /* Toolbar
+    --------------------------------------------------------*/
+    .toolbar {
+        margin: 0 0 1.5em;
+    }
+    
+    /* Module
+    --------------------------------------------------------*/
+    .m {
+        margin: 0 0 2em;
+    }
+    .m-h {
+        border-bottom: 1px solid #999;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    .m-c {
+        
+    }
+    .m .m-box,
+    .m li {
+        background: #e8e8e8;
+        padding: 0.75em;
+    }
+    .m-box li {
+        padding: 0;
+    }
+    .m ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .m li {
+        margin: 0 0 0.2855em;
+    }
+    .m h2 {
+        float: left;
+        font-size: 1.1429em;
+        font-weight: bold;
+        padding-left: 0.75em;
+    }
+    .m .add-item {
+        background: url("../i/icon-add-item.png") no-repeat 100% 50%;
+        display: block;
+        float: right;
+        padding-right: 20px;
+        margin-right: 0.75em;
+        text-decoration: none;
+    }
+    .m h3 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    /* Styled link buttons
+    --------------------------------------------------------*/
+    a.btn {
+        background-color: #08c;
+        border-radius: 5px;
+        color: #fff;
+        padding: 4px 14px;
+        text-decoration: none;
+    }
+    a.btn:hover,
+    a.btn:focus {
+        background-color: #0056ae;
+    }
+    /* Align right */
+    .btn.right {
+        float: right;
+        margin: 0;
+    }
+    /* Has dropdown */
+    .btn.dropdown {
+        background-image: url("../i/dropdown.png");
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        padding-right: 30px;
+    }
+    
+    /* Zebra lists
+    --------------------------------------------------------*/
+    .zebra-list li {
+        padding: 0.25em 0.75em;
+        margin: 0;
+    }
+    .zebra-list li.even {
+        background: #fff;
+    }
+    
     /* Block links (remove standard link decorations)
     --------------------------------------------------------*/
     a.block-link:link,
@@ -222,4 +388,17 @@
     
     
 /* END @media screen,projection */
+}
+
+@media screen and (max-width: 1000px) {
+    
+    /* LAYOUT FRAMEWORK
+    ============================================================================================= */
+    .header-body,
+    .main-body {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+/* END @media screen and (max-width: 1000px) */
 }
