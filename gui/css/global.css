@@ -133,7 +133,7 @@
         background: #f0f0f0;
     }
     .issue-item .due-date,
-    .issue-item .issue-details,
+    .issue-item .issue-description,
     .issue-item .issue-actions {
         display: inline-block;
         vertical-align: middle;
@@ -169,15 +169,15 @@
     
     /* Issue details
     --------------------------------------------------------*/
-    .issue-details {
+    .issue-item .issue-description {
         padding: 0.2em 0.8em;
         width: 35em;
     }
-    .issue-details .meta,
-    .issue-details .creator {
+    .issue-item .meta,
+    .issue-item .creator {
         font-size: 0.9286em;
     }
-    .issue-details h3 {
+    .issue-item h3 {
         font-size: 1em;
         font-weight: bold;
         margin: 0;
