@@ -32,12 +32,12 @@
     .header-primary,
     .layout-2 .content-primary {
         float: left;
-        width: 45em;
+        width: 43em;
     }
     .header-secondary,
     .layout-2 .content-secondary {
         float: right;
-        width: 23em;
+        width: 25em;
     }
     
     
