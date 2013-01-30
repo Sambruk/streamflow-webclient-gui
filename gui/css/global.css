@@ -322,6 +322,61 @@
         text-indent: -9999px;
     }
     
+    /* Module: Formulär
+    --------------------------------------------------------*/
+    .m-issue-forms {
+        
+    }
+    .m.m-issue-forms h2 {
+        float: none;
+    }
+    .form-tabs {
+        float: none;
+    }
+    .form-tabs li {
+        background: none;
+        float: left;
+    }
+    .form-tabs a {
+        background: #eaeaea;
+        border-radius: 5px 5px 0 0;
+        display: block;
+        font-weight: bold;
+        margin-right: 0.5em;
+        padding: 0.25em 1em;
+        text-decoration: none;
+    }
+    .form-tabs a:hover,
+    .form-tabs a:focus,
+    .form-tabs a:active {
+        background-color: #f2f2f2;
+    }
+    .form-tabs a.sel {
+        background: #08c;
+        color: #fff;
+        font-weight: normal;
+    }
+    /* Tab has versions */
+    .has-versions a {
+        border-radius: 5px 0 0 0;
+        float: left;
+        margin-right: 0;
+    }
+    .has-versions .versions-drop {
+        background: #ccc url("../i/icon-dropdown.png") no-repeat 50% 50%;
+        border-radius: 0 5px 0 0;
+        float: right;
+        margin-right: 0.5em;
+        padding: 0.25em 0;
+        text-indent: -9999px;
+        width: 1.75em;
+    }
+    .has-versions .versions-drop:hover,
+    .has-versions .versions-drop:focus,
+    .has-versions .versions-drop:active {
+        background-color: #d8d8d8;
+    }
+    
     
     /* MODULES
     ============================================================================================= */
@@ -413,7 +468,7 @@
         
     }
     .m .m-box,
-    .m li {
+    .m-c li {
         background: #e8e8e8;
         padding: 0.75em;
     }
@@ -425,7 +480,7 @@
         margin: 0;
         padding: 0;
     }
-    .m li {
+    .m-c li {
         margin: 0 0 0.2855em;
     }
     .m h2 {
