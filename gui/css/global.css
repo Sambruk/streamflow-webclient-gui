@@ -150,21 +150,23 @@
         text-align: center;
         width: 2%;
     }
+    .issue-item .due-date span {
+        display: block;
+        font-size: 2.571em;
+    }
     .issue-item.set .due-date,
     .issue-item.overdue .due-date {
         width: 10%;
     }
+    /* Date set */
     .issue-item.set .due-date {
         background: #00831f;
         padding: 26px 0;
-    }
+    
+    /* Date overdue */}
     .issue-item.overdue .due-date {
         background: #cf0202;
         padding: 10px 0;
-    }
-    .issue-item .due-date span {
-        display: block;
-        font-size: 2.571em;
     }
     
     /* Issue details
@@ -200,6 +202,124 @@
     .issue-actions .updated {
         background: #00831f;
         color: #fff;
+    }
+    
+    
+    /* SINGLE ISSUE VIEW
+    ============================================================================================= */
+    .single-issue {
+        margin: 0 0 2em;
+    }
+    
+    /* Issue header
+    --------------------------------------------------------*/
+    .issue-header {
+        border-bottom: 1px solid #333;
+        margin: 0 0 0.5em;
+    }
+    .issue-header .id,
+    .issue-header .choose-type,
+    .issue-header .wiki-link {
+        display: inline-block;
+    }
+    .issue-header .id {
+        font-size: 1.1429em;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    /* TODO: Refactor this into global forms */
+    .issue-header .choose-type {
+        background: #fff;
+        padding: 2px 8px;
+        margin-bottom: -2px;
+    }
+    .issue-header .choose-type input[type="text"] {
+        background: #eaeaea url("../i/icon-search-blue.png") no-repeat 5px 50%;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 4px 5px 28px;
+    }
+    .issue-header .wiki-link a {
+        background: url("../i/icon-info.png") no-repeat 0 50%;
+        display: block;
+        padding: 5px 0 5px 34px;
+        text-decoration: none;
+    }
+    
+    /* Issue body
+    --------------------------------------------------------*/
+    .issue-body {
+        background: #eaeaea;
+        border-radius: 0 5px 5px 0;
+        display: table;
+        margin: 0 0 0.5em;
+    }
+    .issue-body .due-date,
+    .issue-body .issue-description {
+        display: table-cell;
+    }
+    
+    /* Issue due date (TODO: Refactor due date color codes into global) */
+    .issue-body .due-date {
+        background: #afafaf;
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        line-height: 1.1;
+        min-height: 5em;
+        text-align: center;
+        vertical-align: middle;
+        width: 12%;
+    }
+    .issue-body .due-date span {
+        display: block;
+        font-size: 2.571em;
+    }
+    .issue-body .due-date.set {
+        background: #00831f;
+    }
+    .issue-body .due-date.overdue {
+        background: #cf0202;
+    }
+    
+    /* Issue description */
+    .issue-body .issue-description {
+        padding: 1em 0.75em;
+        vertical-align: top;
+        width: 80%;
+    }
+    .issue-body .issue-description h2 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    
+    /* Issue tags
+    --------------------------------------------------------*/
+    .issue-tags {
+        margin: 0 0 0 1em;
+    }
+    .issue-tags > span,
+    .issue-tags a {
+        background: #eaeaea;
+        border-radius: 5px;
+        display: block;
+        float: left;
+        font-weight: bold;
+        margin-right: 0.5em;
+        padding: 4px 12px;
+        text-decoration: none;
+    }
+    .issue-tags > span > span {
+        float: left;
+        padding-right: 20px;
+    }
+    .issue-tags .new-tag {
+        background: #08c url("../i/icon-add-white.png") no-repeat 50% 50%;
+        border-radius: 0 5px 5px 0;
+        float: right;
+        margin: -4px -12px;
+        padding: 4px 2px;
+        text-indent: -9999px;
     }
     
     
@@ -315,7 +435,7 @@
         padding-left: 0.75em;
     }
     .m .add-item {
-        background: url("../i/icon-add-item.png") no-repeat 100% 50%;
+        background: url("../i/icon-add-blue.png") no-repeat 100% 50%;
         display: block;
         float: right;
         padding-right: 20px;
@@ -376,7 +496,7 @@
     }
     
     
-    /* GLOBAL ELEMENTS
+    /* FORMS
     ============================================================================================= */
     button {
         background: #08c;
