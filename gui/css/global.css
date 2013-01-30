@@ -32,12 +32,12 @@
     .header-primary,
     .layout-2 .content-primary {
         float: left;
-        width: 43em;
+        width: 60%;
     }
     .header-secondary,
     .layout-2 .content-secondary {
         float: right;
-        width: 25em;
+        width: 35%;
     }
     
     
@@ -236,7 +236,6 @@
     .issue-header .choose-type input[type="text"] {
         background: #eaeaea url("../i/icon-search-blue.png") no-repeat 5px 50%;
         border: none;
-        border-radius: 3px;
         padding: 5px 4px 5px 28px;
     }
     .issue-header .wiki-link a {
@@ -296,16 +295,16 @@
     /* Issue tags
     --------------------------------------------------------*/
     .issue-tags {
-        margin: 0 0 0 1em;
+        margin: 0 0 0 0.5em;
     }
     .issue-tags > span,
     .issue-tags a {
         background: #eaeaea;
         border-radius: 5px;
-        display: block;
+        display: inline-block;
         float: left;
         font-weight: bold;
-        margin-right: 0.5em;
+        margin: 0 0.5em 0.5em 0;
         padding: 4px 12px;
         text-decoration: none;
     }
@@ -724,4 +723,63 @@
     }
     
 /* END @media screen and (max-width: 1000px) */
+}
+
+@media screen and (max-width: 882px) {
+    
+    /* Centered body and a little space on the sides
+    --------------------------------------------------------*/
+    .body {
+        margin: 0 auto;
+        width: 98%;
+    }
+    
+    /* Layout-2 - two columns (also controls the header columns)
+    --------------------------------------------------------*/
+    .header-primary,
+    .layout-2 .content-primary,
+    .header-secondary,
+    .layout-2 .content-secondary {
+        float: none;
+        width: 100%;
+    }
+    .header-primary,
+    .header-secondary {
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    
+    /* HEADER
+    ============================================================================================= */
+    .header {
+        padding: 0.25em 1em;
+    }
+    .header h1 {
+        float: none;
+        padding: 0;
+    }
+    .header a,
+    .header a:visited {
+        color: #08c;
+        text-decoration: none;
+    }
+    .header a:hover,
+    .header a:focus {
+        text-decoration: underline;
+    }
+    
+    /* Main search
+    --------------------------------------------------------*/
+    .main-search {
+        float: none;
+        margin-top: 1em;
+    }
+    
+    /* Logged in user
+    --------------------------------------------------------*/
+    .user-logged {
+        margin-top: 0.25em;
+    }
+    
 }
