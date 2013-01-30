@@ -329,6 +329,12 @@
     .m.m-issue-forms h2 {
         float: none;
     }
+    
+    .m-issue-forms form {
+        margin: 1em 0;
+    }
+    
+    /* Form tabs */
     .form-tabs {
         float: none;
     }
@@ -514,11 +520,25 @@
     a.btn:focus {
         background-color: #0056ae;
     }
+    
+    /* Inactive */
+    a.btn.inactive {
+        background-color: #a7a7a7;
+        color: #ccc;
+        cursor: default;
+    }
+    
+    /* Inline */
+    a.btn.inline {
+        display: inline-block;
+    }
+    
     /* Align right */
     .btn.right {
         float: right;
         margin: 0;
     }
+    
     /* Has dropdown */
     .btn.dropdown {
         background-image: url("../i/dropdown.png");
@@ -558,7 +578,6 @@
     form label {
         display: block;
         margin: 0 4px 0 0;
-        font-weight: bold;
     }
     label strong {
         display: block;
@@ -569,16 +588,18 @@
     }
     label span,
     label em {
-        margin: 0;
-        color: #666;
-        font-size: 0.94em;
+        margin: 0 0 0 0.5em;
+        color: #d65609;
         font-weight: normal;
         font-style: normal;
     }
-    input,
+    input[type="text"],
+    input[type="password"],
     textarea {
-        background: #eaeaea;
+        background-color: #eaeaea;
+        border: none;
         border-radius: 3px;
+        padding: 0.5em;
     }
     button {
         background: #08c;
