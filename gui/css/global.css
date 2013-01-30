@@ -553,12 +553,160 @@
     
     /* FORMS
     ============================================================================================= */
+    .form-general {
+        margin: 1em 0;
+    }
+    form label {
+        display: block;
+        margin: 0 4px 0 0;
+        font-weight: bold;
+    }
+    label strong {
+        display: block;
+        color: #900;
+    }
+    .disabled label {
+        color: #999;
+    }
+    label span,
+    label em {
+        margin: 0;
+        color: #666;
+        font-size: 0.94em;
+        font-weight: normal;
+        font-style: normal;
+    }
+    input,
+    textarea {
+        background: #eaeaea;
+        border-radius: 3px;
+    }
     button {
         background: #08c;
         border: none;
         border-radius: 5px;
         color: #fff;
         padding: 4px 10px;
+    }
+
+    /* Placeholder styling for gecko */
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+        color: #888;
+    }
+
+    /* Placeholder styling for webkit */
+    input::-webkit-input-placeholder,
+    textarea:-webkit-input-placeholder {
+        color: #888;
+    }
+
+    /* Placeholder styling for browser without native support */
+    input.placeholder,
+    textarea.placeholder {
+        color: #888;
+    }
+    .form-general input,
+    .form-general select,
+    .form-general textarea {
+        margin: 0;
+    }
+    .form-general .alt {
+        display: inline;
+        margin: 0 12px 0 0;
+    }
+    .text,
+    .radio,
+    .checkbox,
+    .select {
+        margin: 0 0 6px;
+    }
+    .select select {
+        max-width: 100%;
+    }
+    .text textarea {
+        height: 120px;
+    }
+    input[type="submit"] {
+        width: auto !important;
+    }
+    .form-general fieldset {
+        margin: 0;
+        padding: 5px 8px;
+        border: 1px solid #ddd;
+    }
+    
+    
+    /* Form columns
+    -------------------------------------------------------- */
+    form .row {
+        margin-bottom: 0.5em;
+    }
+    .row .text input,
+    .row textarea {
+        width: 100%;
+    }
+    .row {
+        margin-bottom: 20px;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding: 0 5px;
+    }
+    .col-1 {
+        padding-left: 0;
+    }
+    .row .small {
+        width: 25%;
+    }
+    .row .medium {
+        width: 50%;
+    }
+    .row .large {
+        width: 75%;
+    }
+    .row .hr,
+    .row .full {
+        padding: 0;
+        width: 100%;
+    }
+    .cols-2 .col-2,
+    .cols-3 .col-3,
+    .cols-4 .col-4,
+    .cols-5 .col-5,
+    .cols-6 .col-6 {
+        padding-right: 0;
+    }
+    .row .submit-area {
+        margin-top: 1.5385em;
+    }
+    .cols-1 .submit-area {
+        margin: 0;
+        width: 98%;
+    }
+    .checkbox,
+    .radio {
+        white-space: nowrap;
+    }
+    .checkbox input,
+    .radio input {
+        width: auto !important;
+        vertical-align: middle;
+    }
+    .checkbox label,
+    .radio label {
+        display: inline;
+        vertical-align: middle;
+        white-space: normal;
+    }
+    .alt label {
+        display: inline;
+        font-weight: normal;
+    }
+    .text.error label,
+    .error legend {
+        color: #900;
     }
     
     
