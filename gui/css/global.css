@@ -195,12 +195,14 @@
         width: 2em;
     }
     .sub-category a:hover,
-    .sub-category a:focus {
+    .sub-category a:focus,
+    .sub-category a.sel {
         background: #08c;
         color: inherit;
     }
     .sub-category a:hover span,
-    .sub-category a:focus span {
+    .sub-category a:focus span,
+    .sub-category a.sel span {
         background: #fff;
         color: #08c;
     }
