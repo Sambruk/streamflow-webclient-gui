@@ -125,6 +125,7 @@
     --------------------------------------------------------*/
     .add-new-issue {
         background-color: #222;
+        background-image: url("../i/icon-add-big.png");
         background-image: url("../i/icon-add-big.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
         background-image: url("../i/icon-add-big.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
         background-image: url("../i/icon-add-big.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
@@ -158,6 +159,7 @@
     }
     .functions-header .open-toolbar {
         background-color: #222;
+        background-image: url("../i/icon-functions-menu.png");
         background-image: url("../i/icon-functions-menu.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
         background-image: url("../i/icon-functions-menu.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
         background-image: url("../i/icon-functions-menu.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
