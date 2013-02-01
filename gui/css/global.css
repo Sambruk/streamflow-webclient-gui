@@ -1,6 +1,13 @@
 /* Global styling for Streamflow
 ============================================================================*/
 
+/* Key colors
+--------------------------------------------------------
+#08c    -   blue
+#cf0202 -   red
+#00831f -   green
+--------------------------------------------------------*/
+
 /* Import resets */
 @import 'basic.css';
 
@@ -95,11 +102,109 @@
     }
     
     
+    /* FLOATING SIDEBAR
+    ============================================================================*/
+    .sidebar {
+        position: fixed;
+    }
+    
+    /* Add new issue & Functions header
+    --------------------------------------------------------*/
+    .add-new-issue {
+        background-color: #222;
+        background-image: url("../i/icon-add-big.png");
+        background-image: url("../i/icon-add-big.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-add-big.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-add-big.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-add-big.png"),      -o-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-add-big.png"),         linear-gradient(top, #222 0%, #131313 100%);
+    }
+    .add-new-issue,
+    .functions-header .open-toolbar {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border-radius: 0 5px 5px 0;
+        display: block;
+        text-indent: -9999px;
+        height: 87px;
+        width: 73px;
+    }
+    .add-new-issue {
+        margin-bottom: 1em;
+    }
+    .functions-header {
+        clear: both;
+    }
+    .functions-header h2 {
+        background: #1a1a1a;
+        border-right: 1px solid #222;
+        color: #fff;
+        float: left;
+        font-size: 1.7143em;
+        padding: 28px 62px 29px 20px;
+        margin: 0;
+    }
+    .functions-header .open-toolbar {
+        background-color: #222;
+        background-image: url("../i/icon-functions-menu.png");
+        background-image: url("../i/icon-functions-menu.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-functions-menu.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-functions-menu.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-functions-menu.png"),      -o-linear-gradient(top, #222 0%, #131313 100%);
+        background-image: url("../i/icon-functions-menu.png"),         linear-gradient(top, #222 0%, #131313 100%);
+    }
+    .functions-header .open-toolbar {
+        float: right;
+    }
+    .sub-category {
+        background: #1a1a1a;
+        border-top: 1px solid #4c4c4c;
+        color: #fff;
+        padding: 1em 1em 1em 1.4286em;
+        width: 200px;
+    }
+    .sub-category h3 {
+        color: inherit;
+        font-size: 1.2857em;
+    }
+    .sub-category a {
+        color: #08c;
+        display: block;
+        text-decoration: none;
+    }
+    .sub-category a span {
+        background: #08c;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.7143em;
+        margin-right: 0.25em;
+        text-align: center;
+        width: 2em;
+    }
+    .sub-category a:hover,
+    .sub-category a:focus {
+        background: #08c;
+        color: inherit;
+    }
+    .sub-category a:hover span,
+    .sub-category a:focus span {
+        background: #fff;
+        color: #08c;
+    }
+    .sub-category ul {
+        list-style: none;
+        margin: 1.4286em 0 1em;
+    }
+    .sub-category li {
+        margin: 0 0 1em;
+    }
+    
+    
     /* ISSUE OVERVIEW
     ============================================================================*/
     .issues-overview {
         margin: 4em auto 0;
-        width: 50em; /* 700px */
+        width: 70%;
     }
     .issues-overview h2 {
         font-size: 1.1429em;
@@ -156,14 +261,16 @@
     }
     .issue-item.set .due-date,
     .issue-item.overdue .due-date {
-        width: 10%;
+        width: 5em;
     }
+    
     /* Date set */
     .issue-item.set .due-date {
         background: #00831f;
         padding: 26px 0;
+    }
     
-    /* Date overdue */}
+    /* Date overdue */
     .issue-item.overdue .due-date {
         background: #cf0202;
         padding: 10px 0;
