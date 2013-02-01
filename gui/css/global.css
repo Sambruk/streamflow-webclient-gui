@@ -516,10 +516,11 @@
     .m-convos .date {
         font-size: 0.8571em;
     }
-    /* TODO: Maybe refactor these into a global icon system */
     .m-convos li {
+        background: #e8e8e8;
         position: relative;
     }
+    /* TODO: Refactor these into a global icon system */
     .convo-status {
         position: absolute;
         right: 0.75em;
@@ -556,8 +557,8 @@
     
     /* Module: Bifogade filer
     --------------------------------------------------------*/
-    .m-attachments {
-        
+    .m-attachments .delete {
+        float: right;
     }
     
     /* Module: Checklista
@@ -592,9 +593,11 @@
     .m-c {
         
     }
+    .m .m-box {
+        background: #e8e8e8;
+    }
     .m .m-box,
     .m-c li {
-        background: #e8e8e8;
         padding: 0.75em;
     }
     .m-box li {
@@ -667,14 +670,24 @@
         padding-right: 30px;
     }
     
-    /* Zebra lists
+    /* Zebra lists (TODO: Rename?)
     --------------------------------------------------------*/
     .zebra-list li {
         padding: 0.25em 0.75em;
         margin: 0;
     }
-    .zebra-list li.even {
-        background: #fff;
+    .odd {
+        background: #e8e8e8;
+    }
+    
+    /* Delete button
+    --------------------------------------------------------*/
+    .delete {
+        background: url("../i/icon-delete.png") no-repeat 50% 50%;
+        display: inline-block;
+        text-indent: -9999px;
+        height: 20px;
+        width: 20px;
     }
     
     /* Block links (remove standard link decorations)
