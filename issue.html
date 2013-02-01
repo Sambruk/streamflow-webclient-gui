@@ -20,7 +20,7 @@
     <div class="body">
         
         <!-- Header -->
-        <div class="header">
+        <div class="header" role="banner">
             
             <!-- Header body -->
             <div class="header-body cf">
@@ -29,7 +29,7 @@
                 <div class="header-primary">
                     <h1>Malmö Kommun Kontaktcenter</h1>
                 
-                    <form action="#" method="get" class="main-search">
+                    <form action="#" method="get" class="main-search" role="search">
                         <div>
                             <label for="main-searchtext"></label>
                             <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
@@ -54,11 +54,48 @@
         <!-- Main -->
         <div class="main">
             
+            <!-- Floating sidebar -->
+            <div class="sidebar" role="navigation">
+                
+                <a href="#" class="add-new-issue">Lägg till nytt ärende</a>
+                
+                <div class="functions-menu">
+                    <div class="functions-header cf">
+                        <h2>Funktioner</h2>
+                        <a href="#" class="open-toolbar">Visa/dölj funktionsmeny</a>
+                    </div>
+                    <div class="sub-category">
+                        <h3>Kontaktcenter</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+                            </li>
+                            <li>
+                                <a href="#"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-category">
+                        <h3>TK Gata</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+                            </li>
+                            <li>
+                                <a href="#"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /Floating sidebar -->
+            
             <!-- Main body -->
             <div class="main-body cf">
                 
                 <!-- Content primary -->
-                <div class="content-primary">
+                <div class="content-primary" role="main">
                     
                     <!-- Single issue -->
                     <div class="single-issue">
@@ -217,7 +254,7 @@
                 <!-- /Content primary -->
                 
                 <!-- Content secondary -->
-                <div class="content-secondary">
+                <div class="content-secondary" role="complementary">
                     
                     <h2 class="struct">Verktyg och annan information</h2>
                     
@@ -358,7 +395,7 @@
         <!-- /Main -->
         
         <!-- Footer -->
-        <div class="footer">
+        <div class="footer" role="contentinfo">
             
             
             

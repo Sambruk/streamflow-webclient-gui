@@ -20,7 +20,7 @@
     <div class="body">
         
         <!-- Header -->
-        <div class="header">
+        <div class="header" role="banner">
             
             <!-- Header body -->
             <div class="header-body cf">
@@ -29,7 +29,7 @@
                 <div class="header-primary">
                     <h1>Malmö Kommun Kontaktcenter</h1>
                 
-                    <form action="#" method="get" class="main-search">
+                    <form action="#" method="get" class="main-search" role="search">
                         <div>
                             <label for="main-searchtext"></label>
                             <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
@@ -55,7 +55,7 @@
         <div class="main">
             
             <!-- Floating sidebar -->
-            <div class="sidebar">
+            <div class="sidebar" role="navigation">
                 
                 <a href="#" class="add-new-issue">Lägg till nytt ärende</a>
                 
@@ -94,277 +94,283 @@
             <!-- Main body -->
             <div class="main-body cf">
                 
-                <!-- Issues overview -->
-                <div class="issues-overview">
+                <!-- Primary content -->
+                <div class="content-primary" role="main">
                     
-                    <!-- Overdue issues -->
-                    <h2>Ärenden med förfallodatum passerat</h2>
-                    <h3 class="due-date-heading"><span>Förfallodatum</span></h3>
-                    <ul class="issue-list">
-                        <li class="issue-item overdue">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span>5</span> dagar
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - TK Gata</span>
-                                    <h3>Bristfällig gräsklippning i lilla parken</h3>
-                                    <span class="creator">Lars Back</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status updated">Ändrad 03/20</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item overdue">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span>7</span> dagar
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /Overdue issues -->
+                    <!-- Issues overview -->
+                    <div class="issues-overview">
                     
-                    <!-- My issues -->
-                    <h2>Mina ärenden</h2>
-                    <h3 class="due-date-heading"><span>Förfallodatum</span></h3>
-                    <ul class="issue-list">
-                        <li class="issue-item set">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    03/17
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - TK Gata</span>
-                                    <h3>Bristfällig gräsklippning i lilla parken</h3>
-                                    <span class="creator">Lars Back</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status updated">Ändrad 03/20</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                        <!-- Overdue issues -->
+                        <h2>Ärenden med förfallodatum passerat</h2>
+                        <h3 class="due-date-heading"><span>Förfallodatum</span></h3>
+                        <ul class="issue-list">
+                            <li class="issue-item overdue">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span>5</span> dagar
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item set">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    03/17
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - TK Gata</span>
+                                        <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                        <span class="creator">Lars Back</span>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status updated">Ändrad 03/20</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                                </a>
+                            </li>
+                            <li class="issue-item overdue">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span>7</span> dagar
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="issue-item">
-                            <a href="issue.html" class="block-link">
-                                <div class="due-date">
-                                    <span class="struct">Inget datum satt</span>
-                                </div>
-                                <div class="issue-description">
-                                    <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                    <h3>Ansökan om skolplats</h3>
-                                    <span class="creator">Henrik Reinhold</span>
-                                </div>
-                                <div class="issue-actions">
-                                    <div>
-                                        <span class="action-status">Väntar på svar</span>
-                                        <span class="created-on">Skapad 03/17</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /My issues -->
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /Overdue issues -->
                     
+                        <!-- My issues -->
+                        <h2>Mina ärenden</h2>
+                        <h3 class="due-date-heading"><span>Förfallodatum</span></h3>
+                        <ul class="issue-list">
+                            <li class="issue-item set">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        03/17
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - TK Gata</span>
+                                        <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                        <span class="creator">Lars Back</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status updated">Ändrad 03/20</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item set">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        03/17
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h3>Ansökan om skolplats</h3>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /My issues -->
+                    
+                    </div>
+                    <!-- /Issues overview -->
+                
                 </div>
-                <!-- /Issues overview -->
+                <!-- /Primary content -->
                 
             </div>
             <!-- /Main body -->
@@ -373,7 +379,7 @@
         <!-- /Main -->
         
         <!-- Footer -->
-        <div class="footer">
+        <div class="footer" role="contentinfo">
             
             
             
