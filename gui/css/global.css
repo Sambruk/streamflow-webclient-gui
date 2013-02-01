@@ -108,6 +108,12 @@
         position: fixed;
     }
     
+    /* Hide functions menu
+    --------------------------------------------------------*/
+    .functions-menu {
+        position: relative;
+    }
+    
     /* Add new issue & Functions header
     --------------------------------------------------------*/
     .add-new-issue {
