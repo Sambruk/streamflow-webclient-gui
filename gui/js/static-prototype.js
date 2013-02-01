@@ -16,4 +16,15 @@ $(function () {
         e.preventDefault();
     });
     
+    // Invoke conversations modal window
+    $(".modal-window").easyModal({
+        overlayOpacity: 0.7,
+        overlayColor: "#000",
+        top: 150
+    });
+    $(".m-convos .block-link").on("click", function(e) {
+        $('.modal-window').trigger('openModal');
+        e.preventDefault();
+    });
+    
 });

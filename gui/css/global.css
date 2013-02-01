@@ -576,6 +576,30 @@
     
     /* GLOBAL CLASSES
     ============================================================================================= */
+    /* Modal overlay
+    --------------------------------------------------------*/
+    .overlay {
+        background: rgba(0,0,0,0.7);
+        /*display: none;*/
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 8888;
+    }
+    
+    /* Modal window
+    --------------------------------------------------------*/
+    .modal-window {
+        background: #eee;
+        /*display: none;*/
+        margin: 1em;
+        padding: 1em;
+        position: fixed;
+        max-width: 900px;
+        width: 96%;
+        z-index: 9999;
+    }
+    
     /* Toolbar
     --------------------------------------------------------*/
     .toolbar {
