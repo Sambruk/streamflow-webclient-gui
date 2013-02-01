@@ -34,6 +34,13 @@
     }
     
     
+    /* Layout-1 - one full-width column
+    --------------------------------------------------------*/
+    .layout-1 .content-primary {
+        float: none;
+        width: 100%;
+    }
+    
     /* Layout-2 - two columns (also controls the header columns)
     --------------------------------------------------------*/
     .header-primary,
