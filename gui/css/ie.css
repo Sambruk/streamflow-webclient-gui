@@ -1,0 +1,21 @@
+/* INTERNET EXPLORER WORKAROUNDS
+ * Loaded in all IE versions below 9 that understand Conditional Comments.
+ * "* html" targets IE 6 and below.
+ * "*property" targets IE 6 and 7.
+ * "html > body" targets IE 7 and 8.
+ */
+
+/* Easy clearing of floats, the IE part
+-------------------------------------------------------- */
+.cf {
+    *zoom: 1;
+}
+
+/* Floating sidebar
+-------------------------------------------------------- */
+.add-new-issue {
+    background: #222 url("../i/icon-add-big.png") no-repeat 50% 50%;
+}
+.functions-header .open-toolbar {
+    background: #222 url("../i/icon-functions-menu.png") no-repeat 50% 50%;
+}
