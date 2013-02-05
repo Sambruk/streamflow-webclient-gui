@@ -606,6 +606,9 @@
     --------------------------------------------------------*/
     .convo-body {
         background: #ccc;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        max-height: 400px; /* TODO: Set with JS on modal window? */
     }
     .convo-messages {
         list-style: none;
