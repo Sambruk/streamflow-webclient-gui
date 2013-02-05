@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Skapa nytt ärende - Streamflow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="gui/css/global.css">
+    
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="gui/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="gui/js/jquery.easyModal.min.js"></script>
+    <script type="text/javascript" src="gui/js/static-prototype.js"></script>
+    
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
+</head>
+<body class="layout-2">
+    
+    <div class="body">
+        
+        <!-- Header -->
+        <div class="header" role="banner">
+            
+            <!-- Header body -->
+            <div class="header-body cf">
+                
+                <!-- Header primary -->
+                <div class="header-primary">
+                    <h1>Malmö Kommun Kontaktcenter</h1>
+                
+                    <form action="#" method="get" class="main-search" role="search">
+                        <div>
+                            <label for="main-searchtext"></label>
+                            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+                            <button type="submit"><span>Sök</span></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /Header primary -->
+                
+                <!-- Header secondary -->
+                <div class="header-secondary">
+                    <a href="#" class="user-logged">Solveig Grankvist</a>
+                </div>
+                <!-- /Header secondary -->
+                
+            </div>
+            <!-- /Header body -->
+            
+        </div>
+        <!-- /Header -->
+        
+        <!-- Main -->
+        <div class="main">
+            
+            <!-- Navigation -->
+            <div class="navigation" role="navigation">
+                
+                <a href="#" class="add-new-issue">Lägg till nytt ärende</a>
+                
+                <div class="functions-menu">
+                    <div class="functions-header cf">
+                        <h2>Funktioner</h2>
+                        <a href="#" class="open-toolbar">Visa/dölj funktionsmeny</a>
+                    </div>
+                    <div class="sub-category">
+                        <h3>Kontaktcenter</h3>
+                        <ul>
+                            <li>
+                                <a href="#" class="sel"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+                            </li>
+                            <li>
+                                <a href="#"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-category">
+                        <h3>TK Gata</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+                            </li>
+                            <li>
+                                <a href="#"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /Navigation -->
+            
+            <!-- Main body -->
+            <div class="main-body cf">
+                
+                <!-- Content primary -->
+                <div class="content-primary" role="main">
+                    
+                    <form action="#" method="get">
+                        
+                        <!-- Module: Ärendebeskrivning & taggar -->
+                        <div class="m">
+                            <div class="m-h">
+                                <h2>20121016-1</h2>
+                            </div>
+                            <div class="m-c">
+                                
+                                <div class="row cols-1 cf">
+                                    <div class="text col full col-1">
+                                        <label for="field-1">Beskriv ärende</label>
+                                        <input type="text" name="field-1" id="field-1">
+                                    </div>
+                                </div>
+                                
+                                <div class="row cols-1 cf">
+                                    <div class="text col full col-1">
+                                        <label for="issue-notes">Textarea</label>
+                                        <textarea name="issue-notes" id="issue-notes" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <h3>Etiketter</h3>
+                                <div class="issue-tags cf">
+                                    <span class="tag"><span>Etiketter</span> <a href="#" class="new-tag">Lägg till ny</a></span>
+                                    <a href="#" class="tag">Förfrågan</a>
+                                    <a href="#" class="tag">Förfrågan</a>
+                                    <a href="#" class="tag">Förfrågan</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Module: Ärendebeskrivning & taggar -->
+                        
+                        <!-- Module: Adressuppgifter -->
+                        <div class="m">
+                            <div class="m-h">
+                                <h2>Adressuppgifter</h2>
+                            </div>
+                            <div class="m-c">
+                                
+                                <div class="row cols-3 cf">
+                                    <div class="text col medium col-1">
+                                        <label for="field-2">Gata</label>
+                                        <input type="text" name="field-2" id="field-2" />
+                                    </div>
+                                    <div class="text col small col-2">
+                                        <label for="field-3">Gatunr</label>
+                                        <input type="text" name="field-3" id="field-3" />
+                                    </div>
+                                    <div class="text col small col-3">
+                                        <label for="field-4">Postnummer</label>
+                                        <input type="text" name="field-4" id="field-4" />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Module: Adressuppgifter -->
+                        
+                        <!-- Module: Kontaktuppgifter -->
+                        <div class="m">
+                            <div class="m-h">
+                                <h2>Kontaktuppgifter</h2>
+                            </div>
+                            <div class="m-c">
+                                
+                                <div class="row cols-2 cf">
+                                    <div class="text col medium col-1">
+                                        <label for="field-5">Förnamn</label>
+                                        <input type="text" name="field-5" id="field-5" />
+                                    </div>
+                                    <div class="text col medium col-2">
+                                        <label for="field-6">Efternamn</label>
+                                        <input type="text" name="field-6" id="field-6" />
+                                    </div>
+                                </div>
+                                
+                                <div class="row cols-2 cf">
+                                    <div class="text col medium col-1">
+                                        <label for="field-7">Email</label>
+                                        <input type="text" name="field-7" id="field-7" />
+                                    </div>
+                                    <div class="select col medium col-2">
+                                        <label for="select-1">Select</label>
+                                        <select id="select-1" name="select-1">
+                                            <option value="option-1">Email</option>
+                                            <option value="option-2">Telefon</option>
+                                            <option value="option-3">Röksignal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Module: Kontaktuppgifter -->
+                    
+                    </form>
+                    
+                </div>
+                <!-- /Content primary -->
+                
+                <!-- Content secondary -->
+                <div class="content-secondary" role="complementary">
+                    
+                    <h2>Liknande tidigare ärenden</h2>
+                    
+                    <!-- Module: Liknande ärenden -->
+                    <div class="m m-matched-issue">
+                        <div class="m-h">
+                            <h2>20121016-1</h2>
+                        </div>
+                        <div class="m-c">
+                            <div class="m-box">
+                                <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                <ul>
+                                    <li class="author">Maria Blomqvist</li>
+                                    <li class="status">Väntar på svar</li>
+                                    <li class="createdon">Skapad 03/17</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Module: Liknande ärenden -->
+                    
+                    <!-- Module: Liknande ärenden -->
+                    <div class="m m-matched-issue">
+                        <div class="m-h">
+                            <h2>20121016-1</h2>
+                        </div>
+                        <div class="m-c">
+                            <div class="m-box">
+                                <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                <ul>
+                                    <li class="author">Maria Blomqvist</li>
+                                    <li class="status">Väntar på svar</li>
+                                    <li class="createdon">Skapad 03/17</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Module: Liknande ärenden -->
+                    
+                    <!-- Module: Liknande ärenden -->
+                    <div class="m m-matched-issue">
+                        <div class="m-h">
+                            <h2>20121016-1</h2>
+                        </div>
+                        <div class="m-c">
+                            <div class="m-box">
+                                <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                <ul>
+                                    <li class="author">Maria Blomqvist</li>
+                                    <li class="status">Väntar på svar</li>
+                                    <li class="createdon">Skapad 03/17</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Module: Liknande ärenden -->
+                    
+                    <!-- Module: Liknande ärenden -->
+                    <div class="m m-matched-issue">
+                        <div class="m-h">
+                            <h2>20121016-1</h2>
+                        </div>
+                        <div class="m-c">
+                            <div class="m-box">
+                                <h3>Bristfällig gräsklippning i lilla parken</h3>
+                                <ul>
+                                    <li class="author">Maria Blomqvist</li>
+                                    <li class="status">Väntar på svar</li>
+                                    <li class="createdon">Skapad 03/17</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Module: Liknande ärenden -->
+                    
+                </div>
+                <!-- /Content secondary -->
+                
+            </div>
+            <!-- /Main body -->
+            
+        </div>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <div class="footer" role="contentinfo">
+            
+            
+            
+        </div>
+        <!-- /Footer -->
+        
+    </div>
+    
+</body>
+</html>

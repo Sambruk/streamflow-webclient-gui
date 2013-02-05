@@ -416,9 +416,6 @@
     
     /* Issue tags
     --------------------------------------------------------*/
-    .issue-tags {
-        margin: 0 0 0 0.5em;
-    }
     .issue-tags > span,
     .issue-tags a {
         background: #eaeaea;
@@ -712,6 +709,14 @@
         background: #fff;
     }
     
+    /* Module: Liknande ärenden
+    --------------------------------------------------------*/
+    .m-matched-issue .status,
+    .m-matched-issue .createdon {
+        font-size: 0.8571em;
+        margin-bottom: 0;
+    }
+    
     
     /* GLOBAL CLASSES
     ============================================================================================= */
@@ -872,6 +877,7 @@
     }
     form label {
         display: block;
+        font-weight: bold;
         margin: 0 4px 0 0;
     }
     label strong {
