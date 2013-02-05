@@ -889,6 +889,16 @@
 /* END @media screen,projection */
 }
 
+@media screen and (max-width: 1160px) {
+    
+    /* Make roow for navigation */
+    .content-primary {
+        padding-left: 75px;
+    }
+    
+/* END @media screen and (max-width: 1000px)*/
+}
+
 @media screen and (max-width: 1000px) {
     
     /* LAYOUT FRAMEWORK
@@ -904,14 +914,17 @@
 
 @media screen and (max-width: 882px) {
     
-    /* Centered body and a little space on the sides
-    --------------------------------------------------------*/
-    .body {
-        margin: 0 auto;
-        width: 98%;
+    /* Give content a little air */
+    .main {
+        padding: 0 1em;
     }
     
-    /* Layout-2 - two columns (also controls the header columns)
+    /* Reset navigation space */
+    .content-primary {
+        padding-left: 0;
+    }
+    
+    /* Layout-2 - switch to single column
     --------------------------------------------------------*/
     .header-primary,
     .layout-2 .content-primary,
@@ -959,4 +972,12 @@
         margin-top: 0.25em;
     }
     
+    
+    /* NAVIGATION MENU
+    ============================================================================*/
+    .navigation {
+        display: none; /* TODO: Hide for now, fix later */
+    }
+
+/* END @media screen and (max-width: 882px) */
 }
