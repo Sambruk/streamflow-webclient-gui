@@ -23,7 +23,6 @@ $(function () {
     modalWindow.easyModal({
         overlayOpacity: 0.7,
         overlayColor: "#000",
-        top: 150,
         closeButtonClass: "modal-close"
     });
     $(".m-convos .block-link").on("click", function(e) {

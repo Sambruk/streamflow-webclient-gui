@@ -102,7 +102,7 @@
     /* Logged in user
     --------------------------------------------------------*/
     .user-logged {
-        background: url("../i/icon-logged.png") no-repeat 0 50%;
+        background: url("../i/icon-user-blue.png") no-repeat 0 50%;
         display: block;
         padding: 6px 0 6px 20px;
         margin-top: 20px;
@@ -505,6 +505,142 @@
     }
     
     
+    /* CONVERSATION WINDOW
+    ============================================================================================= */
+    .convo-head,
+    .convo-input,
+    .convo-body {
+        padding: 0.5em 1em;
+    }
+    
+    /* Conversation head
+    -------------------------------------------------------- */
+    .convo-head h2 {
+        font-size: 1.1429em;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    
+    /* Participants */
+    .participants span,
+    .participants .add-participant {
+        border-radius: 3px;
+        color: #fff;
+        padding: 0.15em 0.5em;
+    }
+    .participants span {
+        background: #666;
+    }
+    .participants span a {
+        background: url("../i/icon-close-white.png") no-repeat 50% 50%;
+        color: inherit;
+        display: inline-block;
+        margin-left: 0.25em;
+        text-decoration: none;
+        text-indent: -9999px;
+        height: 10px;
+        width: 10px;
+    }
+    .participants .add-participant {
+        background: #08c url("../i/icon-add-participant.png") no-repeat 50% 50%;
+        display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
+        text-indent: -9999px;
+    }
+    
+    /* Conversation input
+    --------------------------------------------------------*/
+    .convo-input {
+        background: #bababa;
+        border-bottom: 1px solid #fff;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .convo-input .text,
+    .convo-input .upload,
+    .convo-input .submit-area {
+        float: left;
+    }
+    .convo-input .text textarea,
+    .convo-input .upload a,
+    .convo-input .submit-area button {
+        height: 4.286em;
+    }
+    
+    /* Textarea */
+    .convo-input .text {
+        margin: 0;
+        width: 80%;
+    }
+    .convo-input .text textarea {
+        background: #fff;
+        border-radius: 0;
+        resize: none;
+        width: 100%;
+    }
+    
+    /* Upload button */
+    .convo-input .upload {
+        width: 6%;
+    }
+    .convo-input .upload a {
+        background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
+        border-radius: 0 5px 5px 0;
+        display: block;
+        text-indent: -9999px;
+        width: 100%;
+    }
+    
+    /* Submit area */
+    .convo-input .submit-area {
+        margin-left: 0.25em;
+        width: 13%;
+    }
+    .convo-input .submit-area button {
+        width: 100%;
+    }
+    
+    
+    /* Conversation body
+    --------------------------------------------------------*/
+    .convo-body {
+        background: #ccc;
+    }
+    .convo-messages {
+        list-style: none;
+        margin: 0.5em 0 1em;
+    }
+    .convo-messages .msg-item {
+        margin: 0 0 1.25em;
+    }
+    .msg-author,
+    .msg-attachment {
+        min-height: 2.125em;
+    }
+    .msg-author {
+        background: url("../i/convo-arrow.png") no-repeat 50% 100%;
+        float: left;
+        font-weight: bold;
+    }
+    .msg-attachment {
+        float: right;
+    }
+    .msg-body {
+        background: #fff;
+        padding: 1em;
+    }
+    .msg-meta {
+        font-size: 0.8571em;
+    }
+    .msg-recipients {
+        float: left;
+    }
+    .msg-timestamp {
+        float: right;
+    }
+    
+    
     /* MODULES
     ============================================================================================= */
     /* Module: Allmänt
@@ -535,7 +671,7 @@
         padding: 0 0 0 30px;
     }
     .convo-status .icon.users {
-        background-image: url("../i/icon-user.png");
+        background-image: url("../i/icon-user-grey.png");
     }
     .convo-status .icon.msgs {
         background-image: url("../i/icon-msgs.png");
