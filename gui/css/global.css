@@ -120,6 +120,7 @@
     .functions-menu {
         position: relative;
         left: -200px;
+        transition: left .5s linear;
     }
 
     .functions-menu.open {
