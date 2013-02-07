@@ -107,20 +107,25 @@
         padding: 6px 0 6px 20px;
         margin-top: 20px;
     }
-    
-    
+
+
     /* NAVIGATION MENU
     ============================================================================*/
     .navigation {
         position: fixed;
     }
-    
+
     /* Hide functions menu
     --------------------------------------------------------*/
     .functions-menu {
         position: relative;
+        left: -200px;
     }
-    
+
+    .functions-menu.open {
+        left: 0;
+    }
+
     /* Add new issue & Functions header
     --------------------------------------------------------*/
     .add-new-issue {
