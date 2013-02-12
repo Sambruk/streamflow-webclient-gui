@@ -904,7 +904,8 @@
     }
     input[type="text"],
     input[type="password"],
-    textarea {
+    textarea,
+    .custom-select {
         background-color: #eaeaea;
         border: none;
         border-radius: 3px;
@@ -916,6 +917,16 @@
         border-radius: 5px;
         color: #fff;
         padding: 4px 10px;
+    }
+    
+    /* Custom select elements */
+    .custom-select {
+        background-image: url("../i/custom-select.png");
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        margin: 2px 0;
+        padding: 0.4356em 0.5em;
+        width: 100%;
     }
 
     /* Placeholder styling for gecko */

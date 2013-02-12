@@ -19,4 +19,6 @@ $(function () {
         e.preventDefault();
     });
     
+    // Custom select elements
+    $("select").customSelect({customClass:'custom-select'});
 });
