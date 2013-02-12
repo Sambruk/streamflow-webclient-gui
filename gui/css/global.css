@@ -120,10 +120,10 @@
     .functions-menu {
         position: relative;
         left: -200px;
-        -webkit-transition: left .5s linear;        
-           -moz-transition: left .5s linear;
-             -o-transition: left .5s linear;
-                transition: left .5s linear; 
+        -webkit-transition: left .2s ease-in-out;        
+           -moz-transition: left .2s ease-in-out;
+             -o-transition: left .2s ease-in-out;
+                transition: left .2s ease-in-out; 
     }
     .functions-menu.open {
         left: 0;
