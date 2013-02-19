@@ -10,12 +10,3 @@
 .cf {
     *zoom: 1;
 }
-
-/* Floating navigation
--------------------------------------------------------- */
-.add-new-issue {
-    background: #222 url("../i/icon-add-big.png") no-repeat 50% 50%;
-}
-.functions-header .open-toolbar {
-    background: #222 url("../i/icon-functions-menu.png") no-repeat 50% 50%;
-}

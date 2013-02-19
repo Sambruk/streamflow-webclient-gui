@@ -90,23 +90,26 @@
         padding: 6px 10px;
     }
     .main-search button[type="submit"] {
-        background-image: url("../i/icon-search.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        padding: 7px 28px;
+        padding: 7px 14px;
+    }
+    .main-search button[type="submit"] .glyph:before {
+        font-size: 1.2143em;
     }
     .main-search button[type="submit"] span {
-        display: block;
+        display: inline-block;
         text-indent: -9999px;
     }
     
     /* Logged in user
     --------------------------------------------------------*/
-    .user-logged {
-        background: url("../i/icon-user-blue.png") no-repeat 0 50%;
+    .logged-in {
         display: block;
-        padding: 6px 0 6px 20px;
+        padding: 6px 0;
         margin-top: 20px;
+    }
+    .logged-in:before {
+        font-size: 1.2857em;
+        padding-right: 0.25em;
     }
 
 
@@ -114,6 +117,9 @@
     ============================================================================*/
     .navigation {
         position: fixed;
+    }
+    .navigation a {
+        color: #08c;
     }
 
     /* Hide functions menu
@@ -134,25 +140,25 @@
     --------------------------------------------------------*/
     .add-new-issue {
         background-color: #222;
-        background-image: url("../i/icon-add-big.png");
-        background-image: url("../i/icon-add-big.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-add-big.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-add-big.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-add-big.png"),      -o-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-add-big.png"),         linear-gradient(top, #222 0%, #131313 100%);
+        background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:    -moz-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:     -ms-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:      -o-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:         linear-gradient(top, #222 0%, #131313 100%);
     }
     .add-new-issue,
     .functions-header .open-toolbar {
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
         border-radius: 0 5px 5px 0;
         display: block;
-        text-indent: -9999px;
+        font-size: 2.2857em;
         height: 87px;
+        padding-top: 0.5em;
+        text-align: center;
+        text-decoration: none;
         width: 73px;
     }
     .add-new-issue {
-        margin-bottom: 1em;
+        margin-bottom: 0.25em;
     }
     .functions-header {
         clear: both;
@@ -168,12 +174,11 @@
     }
     .functions-header .open-toolbar {
         background-color: #222;
-        background-image: url("../i/icon-functions-menu.png");
-        background-image: url("../i/icon-functions-menu.png"), -webkit-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-functions-menu.png"),    -moz-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-functions-menu.png"),     -ms-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-functions-menu.png"),      -o-linear-gradient(top, #222 0%, #131313 100%);
-        background-image: url("../i/icon-functions-menu.png"),         linear-gradient(top, #222 0%, #131313 100%);
+        background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:    -moz-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:     -ms-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:      -o-linear-gradient(top, #222 0%, #131313 100%);
+        background-image:         linear-gradient(top, #222 0%, #131313 100%);
     }
     .functions-header .open-toolbar {
         float: right;
@@ -182,7 +187,7 @@
         background: #1a1a1a;
         border-top: 1px solid #4c4c4c;
         color: #fff;
-        padding: 1em 1em 1em 1.4286em;
+        padding: 0.75em 1.4286em;
         width: 200px;
     }
     .sub-category h3 {
@@ -190,7 +195,7 @@
         font-size: 1.2857em;
     }
     .sub-category a {
-        color: #08c;
+        color: inherit;
         display: block;
         text-decoration: none;
     }
@@ -217,10 +222,10 @@
     }
     .sub-category ul {
         list-style: none;
-        margin: 1.4286em 0 1em;
+        margin: 0.5em 0 0;
     }
     .sub-category li {
-        margin: 0 0 1em;
+        margin: 0 0 0.35em;
     }
     
     
@@ -360,19 +365,33 @@
     }
     /* TODO: Refactor this into global forms */
     .issue-header .choose-type {
-        background: #fff;
-        padding: 2px 8px;
-        margin-bottom: -2px;
+        background: #eaeaea;
+        border-radius: 5px;
+        margin: 0 0.5em 0.45em;
+        padding: 0;
+    }
+    .issue-header .choose-type .glyph {
+        color: #08c;
+        font-size: 1.1429em;
+        margin: 0 0 0 0.5em;
     }
     .issue-header .choose-type input[type="text"] {
-        background: #eaeaea url("../i/icon-search-blue.png") no-repeat 5px 50%;
+        background: transparent;
         border: none;
-        padding: 5px 4px 5px 28px;
+        padding: 0.214em 0.286em;
     }
-    .issue-header .wiki-link a {
-        background: url("../i/icon-info.png") no-repeat 0 50%;
-        display: block;
-        padding: 5px 0 5px 34px;
+    .wiki-link .glyph {
+        background: #08c;
+        border-radius: 1.8571em;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.25em;
+        text-align: center;
+        height: 1.8571em;
+        width: 1.8571em;
+    }
+    .wiki-link a {
         text-decoration: none;
     }
     
@@ -441,12 +460,13 @@
         padding-right: 20px;
     }
     .issue-tags .new-tag {
-        background: #08c url("../i/icon-add-white.png") no-repeat 50% 50%;
+        /*background: #08c url("../i/icon-add-white.png") no-repeat 50% 50%;*/
+        background-color: #08c;
+        color: #fff;
         border-radius: 0 5px 5px 0;
         float: right;
         margin: -4px -12px;
-        padding: 4px 2px;
-        text-indent: -9999px;
+        padding: 4px 0.5em;
     }
     
     /* Module: Formulär
@@ -496,12 +516,13 @@
         margin-right: 0;
     }
     .has-versions .versions-drop {
-        background: #ccc url("../i/icon-dropdown.png") no-repeat 50% 50%;
+        background-color: #ccc;
         border-radius: 0 5px 0 0;
+        color: #fff;
         float: right;
         margin-right: 0.5em;
         padding: 0.25em 0;
-        text-indent: -9999px;
+        text-align: center;
         width: 1.75em;
     }
     .has-versions .versions-drop:hover,
@@ -538,14 +559,11 @@
         background: #666;
     }
     .participants span a {
-        background: url("../i/icon-close-white.png") no-repeat 50% 50%;
         color: inherit;
         display: inline-block;
+        font-size: 0.7143em;
         margin-left: 0.25em;
         text-decoration: none;
-        text-indent: -9999px;
-        height: 10px;
-        width: 10px;
     }
     .participants .add-participant {
         background: #08c url("../i/icon-add-participant.png") no-repeat 50% 50%;
@@ -591,10 +609,14 @@
         width: 6%;
     }
     .convo-input .upload a {
-        background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
+        background-color: #08c;
         border-radius: 0 5px 5px 0;
-        display: block;
-        text-indent: -9999px;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.7143em;
+        height: 2.4981em;
+        padding-top: 0.35em;
+        text-align: center;
         width: 100%;
     }
     
@@ -652,11 +674,6 @@
     
     /* MODULES
     ============================================================================================= */
-    /* Module: Allmänt
-    --------------------------------------------------------*/
-    .m-general {
-        
-    }
     
     /* Module: Konversationer
     --------------------------------------------------------*/
@@ -667,23 +684,18 @@
         background: #e8e8e8;
         position: relative;
     }
-    /* TODO: Refactor these into a global icon system */
     .convo-status {
         position: absolute;
         right: 0.75em;
         top: 0.75em;
     }
-    .convo-status .icon {
-        background-position: 0 50%;
-        background-repeat: no-repeat;
+    .convo-status .glyph {
         color: #666;
+        font-size: 1.1429em;
         padding: 0 0 0 30px;
     }
-    .convo-status .icon.users {
-        background-image: url("../i/icon-user-grey.png");
-    }
-    .convo-status .icon.msgs {
-        background-image: url("../i/icon-msgs.png");
+    .convo-status .glyph:before {
+        padding-right: 0.25em;
     }
     
     /* Module: Kontakter
@@ -696,15 +708,16 @@
     /* Module: Ärendelogg
     --------------------------------------------------------*/
     .log-table tbody tr {
-        background: #eee;
+        background-color: #eee;
     }
     .log-table tbody tr.even {
-        background: #fff;
+        background-color: #fff;
     }
     
     /* Module: Bifogade filer
     --------------------------------------------------------*/
     .m-attachments .delete {
+        color: #08c;
         float: right;
     }
     
@@ -715,7 +728,7 @@
         margin: 0;
     }
     .m-check-list .check-list li.even {
-        background: #fff;
+        background-color: #fff;
     }
     
     /* Module: Liknande ärenden
@@ -732,22 +745,33 @@
     /* Modal window
     --------------------------------------------------------*/
     .modal-window {
-        background: #eee;
+        background-color: #eee;
         margin: 1em;
         position: fixed;
         max-width: 900px;
         width: 96%;
         z-index: 9999;
     }
-    .modal-close {
-        background: url(../i/modal-close.png) no-repeat 50% 50%;
-        display: block;
+    a.modal-close {
+        background-color: #666;
+        border-radius: 3em;
+        color: #fff;
+        display: inline-block;
+        font-size: 0.7143em;
+        padding: 0.25em;
         position: absolute;
-        top: 10px;
-        right: 10px;
-        text-indent: -9999px;
-        height: 34px;
-        width: 34px;
+        top: 0.7143em;
+        right: 0.7143em;
+        height: 3em;
+        width: 3em;
+        line-height: 2.3;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+    a.modal-close:hover,
+    a.modal-close:focus {
+        background-color: #777;
     }
     
     /* Toolbar
@@ -794,12 +818,13 @@
         padding-left: 0.75em;
     }
     .m .add-item {
-        background: url("../i/icon-add-blue.png") no-repeat 100% 50%;
         display: block;
         float: right;
-        padding-right: 20px;
         margin-right: 0.75em;
         text-decoration: none;
+    }
+    .m .add-item .glyph {
+        color: #08c;
     }
     .m h3 {
         font-size: 1em;
@@ -817,7 +842,7 @@
     }
     a.btn:hover,
     a.btn:focus {
-        background-color: #0056ae;
+        background-color: #0af;
     }
     
     /* Inactive */
@@ -840,10 +865,7 @@
     
     /* Has dropdown */
     .btn.dropdown {
-        background-image: url("../i/dropdown.png");
-        background-repeat: no-repeat;
-        background-position: 100% 50%;
-        padding-right: 30px;
+        padding-right: 0.5em;
     }
     
     /* Zebra lists (TODO: Rename?)
@@ -856,16 +878,6 @@
         background: #e8e8e8;
     }
     
-    /* Delete button
-    --------------------------------------------------------*/
-    .delete {
-        background: url("../i/icon-delete.png") no-repeat 50% 50%;
-        display: inline-block;
-        text-indent: -9999px;
-        height: 20px;
-        width: 20px;
-    }
-    
     /* Block links (remove standard link decorations)
     --------------------------------------------------------*/
     a.block-link:link,
@@ -876,6 +888,55 @@
         color: inherit !important;
         display: block;
         text-decoration: none !important;
+    }
+    
+    /* Glyph icons
+    --------------------------------------------------------*/
+    .glyph {
+        text-decoration: none;
+    }
+    *[class*="icon-"]:before {
+        display: inline-block;
+        font-family: 'StreamflowGlyphs';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        speak: none;
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
+    }
+    .icon-user:before {
+        content: "\31";
+    }
+    .icon-search:before {
+        content: "\32";
+    }
+    .icon-plus:before {
+        content: "\33";
+    }
+    .icon-info:before {
+        content: "\34";
+    }
+    .icon-edit:before {
+        content: "\35";
+    }
+    .icon-close:before {
+        content: "\36";
+    }
+    .icon-check:before {
+        content: "\37";
+    }
+    .icon-chat:before {
+        content: "\38";
+    }
+    .icon-camera:before {
+        content: "\39";
+    }
+    .icon-arrow-down:before {
+        content: "\30";
+    }
+    .icon-menu:before {
+        content: "\71";
     }
     
     
@@ -1133,7 +1194,7 @@
     
     /* Logged in user
     --------------------------------------------------------*/
-    .user-logged {
+    .logged-in {
         margin-top: 0.25em;
     }
     
