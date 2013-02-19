@@ -8,8 +8,9 @@
 #00831f -   green
 --------------------------------------------------------*/
 
-/* Import resets */
+/* Imports */
 @import 'basic.css';
+@import 'fonts.css';
 
 @media screen, projection {
     
