@@ -1,0 +1,21 @@
+/*
+ * retina.css
+ * Stylesheet for high resolution images
+ *
+ * @author Fredrik Frodlund
+ */
+
+@media all and (-webkit-min-device-pixel-ratio: 2),
+       all and (min--moz-device-pixel-ratio: 2),
+       all and (-o-min-device-pixel-ratio: 2/1),
+       all and (min-device-pixel-ratio: 2),
+       all and (min-resolution: 192dpi),
+       all and (min-resolution: 2dppx) {
+    
+    /* Custom select elements */
+    .custom-select {
+       background-image: url("../i/custom-select@2x.png");
+       background-size: contain;
+    }
+    
+}

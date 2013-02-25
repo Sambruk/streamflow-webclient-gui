@@ -1,5 +1,9 @@
-/* Global styling for Streamflow
-============================================================================*/
+/*
+ * global.css
+ * Global stylesheet for Streamflow
+ *
+ * @author Fredrik Frodlund
+ */
 
 /* Key colors
 --------------------------------------------------------
@@ -12,6 +16,7 @@
 @import 'basic.css';
 @import 'print.css';
 @import 'fonts.css';
+@import 'retina.css';
 
 @media screen, projection {
     

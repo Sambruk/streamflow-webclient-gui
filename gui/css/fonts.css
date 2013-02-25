@@ -1,7 +1,11 @@
-/* Custom fonts for Streamflow
-============================================================================*/
+/*
+ * fonts.css
+ * Custom fonts for Streamflow
+ *
+ * @author Fredrik Frodlund
+ */
 
-/* Streamflow Glyphs
+/* Glyphs
 --------------------------------------------------------*/
 @font-face {
     font-family: "StreamflowGlyphs";
