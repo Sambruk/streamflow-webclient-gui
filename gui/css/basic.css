@@ -3,9 +3,8 @@
     /* RESET
      * Resets, basic typography and colors
     ============================================================================ */
-    blockquote,body,caption,div,dl,dt,dd,form,
-    fieldset,h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,
-    pre,textarea,table,td,th {
+    blockquote,body,caption,div,dl,dt,dd,form,fieldset,
+    h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
         margin: 0;
         padding: 0;
     }
