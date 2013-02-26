@@ -21,4 +21,8 @@ $(function () {
     
     // Custom select elements
     $("select").customSelect({customClass:'custom-select'});
+    
+    // Custom file upload elements
+    $("input:file").customFileInput();
+    
 });
