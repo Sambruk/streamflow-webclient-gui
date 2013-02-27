@@ -130,7 +130,7 @@
         -webkit-transition: left .2s ease-in-out;        
            -moz-transition: left .2s ease-in-out;
              -o-transition: left .2s ease-in-out;
-                transition: left .2s ease-in-out; 
+                transition: left .2s ease-in-out;
     }
     .functions-menu.open {
         left: 0;
@@ -977,6 +977,14 @@
         border-radius: 5px;
         color: #fff;
         padding: 4px 10px;
+    }
+    button:hover,
+    button:focus {
+        background: #0af;
+        cursor: pointer;
+    }
+    button[type="reset"] {
+        background: #a7a7a7;
     }
     
     /* Custom select element */
