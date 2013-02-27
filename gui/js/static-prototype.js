@@ -26,4 +26,7 @@ $(function () {
     // Custom file upload elements
     $("input:file").customFileInput();
     
+    // Placeholder support for legacy IE
+    $("input, textarea").placeholder();
+    
 });
