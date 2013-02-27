@@ -778,6 +778,25 @@
         margin: 0 0 1.5em;
     }
     
+    /* Expandable field
+    --------------------------------------------------------*/
+    .expandable-field.active {
+        border-bottom: 1px solid #9f9f9f;
+        padding-bottom: 1px;
+    }
+    .expandable-field .expand {
+        background: #08c;
+        color: #fff;
+        display: block;
+        font-size: 0.7857em;
+        text-align: center;
+        text-decoration: none;
+    }
+    .expand span {
+        display: inline-block;
+        width: 80%;
+    }
+    
     /* Module
     --------------------------------------------------------*/
     .m {
