@@ -1029,7 +1029,7 @@
         white-space: nowrap;
     }
     .customfile-button {
-        background: #08c url(../i/icon-camera.png) no-repeat 50% 50%;
+        background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
         color: #fff;
         float: right;
         padding: 0.4356em 1.6651em;
@@ -1171,7 +1171,7 @@
     
     /* Make roow for navigation */
     .content-primary {
-        padding-left: 75px;
+        padding-left: 80px;
     }
     
 /* END @media screen and (max-width: 1000px)*/
