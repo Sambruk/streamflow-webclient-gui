@@ -19,3 +19,10 @@
 .customfile-input {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
+
+/* Rotate icons on expanded fields
+-------------------------------------------------------- */
+.expanded i {
+    display: inline-block;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}

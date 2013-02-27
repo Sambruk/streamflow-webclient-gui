@@ -33,7 +33,7 @@ $(function () {
     $(".expandable-field").addClass("active").append("<a href=\"#\" class=\"expand\"><i class=\"glyph icon-arrow-down\"></i><span>Mer platsuppgifter</span><i class=\"glyph icon-arrow-down\"></i></a>").children(".expandable-content").hide();
     
     $(".expand").on("click", function(e) {
-        $(this).prevAll(".expandable-content").slideToggle("fast");
+        $(this).toggleClass("expanded").prevAll(".expandable-content").slideToggle("fast");
         e.preventDefault();
     });
     
