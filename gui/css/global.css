@@ -1023,7 +1023,10 @@
     }
     .customfile-feedback {
         display: block;
+        overflow: hidden;
         padding: 0.4356em 0.5em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .customfile-button {
         background: #08c url(../i/icon-camera.png) no-repeat 50% 50%;
