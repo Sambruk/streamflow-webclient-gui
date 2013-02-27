@@ -203,7 +203,6 @@
         background: #08c;
         color: #fff;
         display: inline-block;
-        font-size: 1.7143em;
         margin-right: 0.25em;
         text-align: center;
         width: 2em;
@@ -363,7 +362,6 @@
         font-weight: bold;
         padding: 0 10px;
     }
-    /* TODO: Refactor this into global forms */
     .issue-header .choose-type {
         background: #eaeaea;
         border-radius: 5px;
