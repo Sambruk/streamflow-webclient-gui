@@ -13,10 +13,15 @@ all and (min-device-pixel-ratio: 2),
 all and (min-resolution: 192dpi),
 all and (min-resolution: 2dppx) {
     
-    /* Custom select elements */
+    /* Custom select element */
     .custom-select {
        background-image: url("../i/custom-select@2x.png");
        background-size: contain;
     }
     
+    /* Custom file upload element */
+    .customfile-button {
+        background: #08c url(../i/icon-camera@2x.png) no-repeat 50% 50%;
+        background-size: 55%;
+    }
 }

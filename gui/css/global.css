@@ -130,7 +130,7 @@
         -webkit-transition: left .2s ease-in-out;        
            -moz-transition: left .2s ease-in-out;
              -o-transition: left .2s ease-in-out;
-                transition: left .2s ease-in-out; 
+                transition: left .2s ease-in-out;
     }
     .functions-menu.open {
         left: 0;
@@ -203,7 +203,6 @@
         background: #08c;
         color: #fff;
         display: inline-block;
-        font-size: 1.7143em;
         margin-right: 0.25em;
         text-align: center;
         width: 2em;
@@ -341,7 +340,7 @@
     }
     
     
-    /* SINGLE ISSUE VIEW
+    /* SINGLE ISSUE & CREATE ISSUE
     ============================================================================================= */
     .single-issue {
         margin: 0 0 2em;
@@ -349,33 +348,30 @@
     
     /* Issue header
     --------------------------------------------------------*/
-    .issue-header {
-        border-bottom: 1px solid #333;
-        margin: 0 0 0.5em;
-    }
-    .issue-header .id,
-    .issue-header .choose-type,
-    .issue-header .wiki-link {
+    .m-h .id,
+    .m-h .choose-type,
+    .m-h .wiki-link,
+    .m-h .set-due-date {
         display: inline-block;
     }
-    .issue-header .id {
+    .m-h .id {
         font-size: 1.1429em;
         font-weight: bold;
         padding: 0 10px;
     }
-    /* TODO: Refactor this into global forms */
-    .issue-header .choose-type {
+    .m-h .choose-type,
+    .m-h .set-due-date {
         background: #eaeaea;
         border-radius: 5px;
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .issue-header .choose-type .glyph {
+    .m-h .choose-type .glyph {
         color: #08c;
         font-size: 1.1429em;
         margin: 0 0 0 0.5em;
     }
-    .issue-header .choose-type input[type="text"] {
+    .m-h input[type="text"] {
         background: transparent;
         border: none;
         padding: 0.214em 0.286em;
@@ -780,6 +776,35 @@
         margin: 0 0 1.5em;
     }
     
+    /* Expandable field
+    --------------------------------------------------------*/
+    .expandable-field.active {
+        border-bottom: 1px solid #9f9f9f;
+        padding-bottom: 1px;
+    }
+    .expandable-field .expand {
+        background: #08c;
+        color: #fff;
+        display: block;
+        font-size: 0.7857em;
+        text-align: center;
+        text-decoration: none;
+    }
+    .expandable-field .expand:hover,
+    .expandable-field .expand:focus {
+        background: #0af;
+    }
+    .expand span {
+        display: inline-block;
+        width: 80%;
+    }
+    .expanded i:before {
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    
     /* Module
     --------------------------------------------------------*/
     .m {
@@ -980,8 +1005,16 @@
         color: #fff;
         padding: 4px 10px;
     }
+    button:hover,
+    button:focus {
+        background: #0af;
+        cursor: pointer;
+    }
+    button[type="reset"] {
+        background: #a7a7a7;
+    }
     
-    /* Custom select elements */
+    /* Custom select element */
     .custom-select {
         background-image: url("../i/custom-select.png");
         background-repeat: no-repeat;
@@ -989,6 +1022,52 @@
         margin: 2px 0;
         padding: 0.4356em 0.5em;
         width: 100%;
+    }
+    
+    /* Custom file upload element */
+    .customfile-input {
+        position: absolute;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+    }
+    .customfile {
+        background: #eaeaea;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 2px 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .customfile-disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    .customfile-feedback {
+        display: block;
+        overflow: hidden;
+        padding: 0.4356em 0.5em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .customfile-button {
+        background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
+        color: #fff;
+        float: right;
+        padding: 0.4356em 1.6651em;
+        text-align: center;
+        text-decoration: none;
+        text-indent: -9999px;
+        border-radius: 0 3px 3px 0;
+    }
+    .customfile-hover .customfile-button,
+    .customfile-focus .customfile-button {
+        background-color: #0af;
     }
 
     /* Placeholder styling for gecko */
@@ -1119,7 +1198,7 @@
     
     /* Make roow for navigation */
     .content-primary {
-        padding-left: 75px;
+        padding-left: 80px;
     }
     
 /* END @media screen and (max-width: 1000px)*/
