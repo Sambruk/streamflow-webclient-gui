@@ -2,6 +2,7 @@
  * --------------------------------------------------------------------
  * jQuery customfileinput plugin
  * Author: Scott Jehl, scott@filamentgroup.com
+ * Modified by: Fredrik Frodlund, fredrik.frodlund@jayway.com
  * Copyright (c) 2009 Filament Group 
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
@@ -71,10 +72,10 @@ $.fn.customFileInput = function(){
     //on mousemove, keep file input under the cursor to steal click
     upload
         .mousemove(function(e){
-            fileInput.css({
-                'left': e.pageX - upload.offset().left - fileInput.outerWidth() + 20, //position right side 20px right of cursor X)
-                'top': e.pageY - upload.offset().top - $(window).scrollTop() - 3
-            });    
+            fileInput.offset({
+                left: e.page,
+                top: e.pageY - 3
+            });
         })
         .insertAfter(fileInput); //insert after the input
     
