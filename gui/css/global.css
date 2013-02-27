@@ -803,6 +803,10 @@
            -moz-transform: rotate(180deg);
              -o-transform: rotate(180deg);
                 transform: rotate(180deg);
+        -webkit-transition: all .15s linear .1s;
+           -moz-transition: all .15s linear .1s;
+             -o-transition: all .15s linear .1s;
+                transition: all .15s linear .1s;
     }
     
     /* Module
