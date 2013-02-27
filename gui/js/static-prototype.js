@@ -1,6 +1,7 @@
 // Prototype specific startup scripts
 $(function () {
     
+    // Slide in navigation
     $(".open-toolbar").on("click", function(e) {
       $('.functions-menu').toggleClass('open');
         e.preventDefault();
@@ -19,7 +20,7 @@ $(function () {
         e.preventDefault();
     });
     
-    // Custom select elements
+    // Custom select elements (TODO: Find an accessible replacement)
     $("select").customSelect({customClass:'custom-select'});
     
     // Custom file upload elements
