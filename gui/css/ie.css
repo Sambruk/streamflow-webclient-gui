@@ -13,3 +13,9 @@
 .cf {
     *zoom: 1;
 }
+
+/* Set opacity for IE
+-------------------------------------------------------- */
+.customfile-input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}

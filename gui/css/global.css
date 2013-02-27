@@ -992,12 +992,14 @@
     /* Custom file upload element */
     .customfile-input {
         position: absolute;
-        height: 100px;
         cursor: pointer;
         background: transparent;
         border: 0;
         opacity: 0;
-        z-index: 999;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+        left: 0;
     }
     .customfile {
         background: #eaeaea;
@@ -1014,9 +1016,6 @@
     .customfile-feedback {
         display: block;
         padding: 0.4356em 0.5em;
-    }
-    .customfile-feedback-populated {
-        
     }
     .customfile-button {
         background: #08c url(../i/icon-camera.png) no-repeat 50% 50%;

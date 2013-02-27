@@ -20,7 +20,7 @@ $(function () {
         e.preventDefault();
     });
     
-    // Custom select elements (TODO: Find an accessible replacement)
+    // Custom select elements (TODO: Find a more accessible replacement)
     $("select").customSelect({customClass:'custom-select'});
     
     // Custom file upload elements
