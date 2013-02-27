@@ -340,7 +340,7 @@
     }
     
     
-    /* SINGLE ISSUE VIEW
+    /* SINGLE ISSUE & CREATE ISSUE
     ============================================================================================= */
     .single-issue {
         margin: 0 0 2em;
@@ -348,32 +348,30 @@
     
     /* Issue header
     --------------------------------------------------------*/
-    .issue-header {
-        border-bottom: 1px solid #333;
-        margin: 0 0 0.5em;
-    }
-    .issue-header .id,
-    .issue-header .choose-type,
-    .issue-header .wiki-link {
+    .m-h .id,
+    .m-h .choose-type,
+    .m-h .wiki-link,
+    .m-h .set-due-date {
         display: inline-block;
     }
-    .issue-header .id {
+    .m-h .id {
         font-size: 1.1429em;
         font-weight: bold;
         padding: 0 10px;
     }
-    .issue-header .choose-type {
+    .m-h .choose-type,
+    .m-h .set-due-date {
         background: #eaeaea;
         border-radius: 5px;
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .issue-header .choose-type .glyph {
+    .m-h .choose-type .glyph {
         color: #08c;
         font-size: 1.1429em;
         margin: 0 0 0 0.5em;
     }
-    .issue-header .choose-type input[type="text"] {
+    .m-h input[type="text"] {
         background: transparent;
         border: none;
         padding: 0.214em 0.286em;
