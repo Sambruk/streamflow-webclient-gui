@@ -351,7 +351,8 @@
     .m-h .id,
     .m-h .choose-type,
     .m-h .wiki-link,
-    .m-h .set-due-date {
+    .m-h .set-due-date,
+    .m-h .edit-issue {
         display: inline-block;
     }
     .m-h .id {
@@ -389,6 +390,12 @@
     }
     .wiki-link a {
         text-decoration: none;
+    }
+    .edit-issue {
+        text-align: right;
+    }
+    .edit-issue a {
+        display: block;
     }
     
     /* Issue body

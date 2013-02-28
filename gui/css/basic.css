@@ -155,11 +155,13 @@
     /* Links
     -------------------------------------------------------- */
     a,
-    a:visited,
+    a:visited {
+        color: #08c;
+    }
     a:hover,
     a:focus,
     a:active {
-        color: #333;
+        color: #0af;
     }
     
     
