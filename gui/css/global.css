@@ -489,12 +489,14 @@
     .form-tabs {
         float: none;
     }
-    .form-tabs li {
+    .m-c .form-tabs li {
         background: none;
         float: left;
+        margin: 0;
+        padding: 0;
     }
     .form-tabs a {
-        background: #eaeaea;
+        background: #ededed;
         border-radius: 5px 5px 0 0;
         display: block;
         font-weight: bold;
@@ -534,9 +536,30 @@
         background-color: #d8d8d8;
     }
     
+    /* Form sections */
+    .form-sections {
+        background: #ededed;
+        list-style: decimal inside;
+        margin: 0;
+        padding: 0;
+    }
+    .section-item {
+        float: left;
+        margin: 0 1em 0 0;
+        padding: 0.5em 0;
+    }
+    .section-item a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .section-item.sel,
+    .section-item.sel a {
+        color: #08c;
+    }
+    
     
     /* CONVERSATION WINDOW
-    ============================================================================================= */
+    ======================================================================== */
     .convo-head,
     .convo-input,
     .convo-body {
