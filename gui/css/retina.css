@@ -24,4 +24,14 @@ all and (min-resolution: 2dppx) {
         background: #08c url(../i/icon-camera@2x.png) no-repeat 50% 50%;
         background-size: 55%;
     }
+    
+    /* Notes listing */
+    .input-note input[type="text"] {
+        background-image: url("../i/arrow-blue-left@2x.png");
+        background-size: 2.5%;
+    }
+    .note-posted-by {
+        background-image: url("../i/arrow-grey-right@2x.png");
+        background-size: 5.5%;
+    }
 }

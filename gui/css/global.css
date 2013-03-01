@@ -470,7 +470,7 @@ TODO Look into image replacement for checkboxes
         width: 78%;
     }
     .input-note input[type="text"] {
-        background-image: url("../i/arrow-blue-left.png"); /* TODO Add corresponding properties in retina.css */
+        background-image: url("../i/arrow-blue-left.png");
         background-position: 100% 50%;
         background-repeat: no-repeat;
         border-radius: 3px 0 0 3px;
@@ -509,7 +509,7 @@ TODO Look into image replacement for checkboxes
         margin: 0;
     }
     .note-posted-by {
-        background: url("../i/arrow-grey-right.png") no-repeat 0 .5em; /* TODO Add corresponding properties in retina.css */
+        background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
         line-height: 1.2;
         padding: .25em .75em;
         width: 30%;
