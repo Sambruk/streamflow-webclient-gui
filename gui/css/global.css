@@ -354,20 +354,21 @@ TODO Look into image replacement for checkboxes
     .single-issue {
         margin: 0 0 2em;
     }
+    /* Custom size for edit icon in single issue */
+    .single-issue .edit-module {
+        font-size: 1.5714em;
+    }
     
     /* Issue header
     ---------------------------------------------------- */
     .m-h .id,
     .m-h .choose-type,
     .m-h .wiki-link,
-    .m-h .set-due-date,
-    .m-h .edit-issue {
+    .m-h .set-due-date {
         display: inline-block;
     }
     .m-h .id {
-        font-size: 1.1429em;
-        font-weight: bold;
-        padding: 0 10px;
+        padding: 6px 10px 0;
     }
     .m-h .choose-type,
     .m-h .set-due-date {
@@ -400,14 +401,7 @@ TODO Look into image replacement for checkboxes
     .wiki-link a {
         text-decoration: none;
     }
-    .edit-issue {
-        float: right;
-        margin-right: 1em;
-    }
-    .edit-issue a {
-        display: block;
-        font-size: 1.4286em;
-    }
+    
     
     /* Issue body
     ---------------------------------------------------- */
@@ -887,6 +881,15 @@ TODO Look into image replacement for checkboxes
     ---------------------------------------------------- */
     .toolbar {
         margin: 0 0 1.5em;
+    }
+    
+    /* Module edit button
+    ---------------------------------------------------- */
+    .edit-module {
+        font-size: 1.2857em;
+        float: right;
+        margin-right: .5em;
+        line-height: 1;
     }
     
     /* Expandable field
