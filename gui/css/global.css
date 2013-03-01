@@ -954,9 +954,10 @@ TODO Remove all instances of "glyph" class
         text-decoration: none !important;
     }
     
-    /* Glyph icons
-    --------------------------------------------------------*/
-    .glyph {
+    /* Font icons
+    ---------------------------------------------------- */
+    *[class*="icon-"] {
+        color: #08c;
         text-decoration: none;
     }
     *[class*="icon-"]:before {
