@@ -456,6 +456,78 @@ TODO Look into image replacement for checkboxes
     }
     
     
+    /* Issue notes
+    ---------------------------------------------------- */
+    .notes-content {
+        float: right;
+        width: 87%;
+    }
+    
+    /* Expandable field should have no border in notes */
+    .notes-content .expandable-field.active {
+        border: 0;
+    }
+    
+    /* Notes form */
+    .input-note .text,
+    .input-note .submit-area {
+        float: left;
+    }
+    .input-note .text {
+        width: 78%;
+    }
+    .input-note input[type="text"] {
+        background-image: url("../i/arrow-blue-left.png"); /* TODO Add corresponding properties in retina.css */
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        border-radius: 3px 0 0 3px;
+        width: 100%;
+    }
+    .input-note button[type="submit"] {
+        border-radius: 0 3px 3px 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+    .input-note .submit-area {
+        width: 22%;
+    }
+    
+    /* Notes listing */
+    .note-item {
+        font-size: 0.9286em;
+        margin-bottom: 2px;
+    }
+    .note-body,
+    .note-posted-by {
+        float: left;
+    }
+    .note-body,
+    .notes-content .expand {
+        width: 70%; /* .note-body and .expand should have same width */
+    }
+    .note-body {
+        background: #eaeaea;
+        min-height: 3em;
+        padding: .5em .75em;
+    }
+    .note-body p {
+        margin: 0;
+    }
+    .note-posted-by {
+        background: url("../i/arrow-grey-right.png") no-repeat 0 .5em; /* TODO Add corresponding properties in retina.css */
+        line-height: 1.2;
+        padding: .25em .75em;
+        width: 30%;
+    }
+    .note-posted-by .note-timestamp {
+        color: #666;
+        display: block;
+        font-size: 0.8462em;
+    }
+    
+    
     /* Issue tags
     ---------------------------------------------------- */
     .issue-tags > span,
@@ -839,7 +911,10 @@ TODO Look into image replacement for checkboxes
         display: inline-block;
         width: 80%;
     }
-    .expanded i:before {
+    .expand *[class*="icon-"] {
+        color: #fff;
+    }
+    .expanded *[class*="icon-"]:before {
         -webkit-transform: rotate(180deg);
            -moz-transform: rotate(180deg);
              -o-transform: rotate(180deg);
