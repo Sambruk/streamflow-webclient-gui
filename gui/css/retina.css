@@ -5,6 +5,11 @@
  * @author Fredrik Frodlund
  */
 
+/* TODOs
+--------------------------------------------------------
+
+-------------------------------------------------------- */
+
 @media
 all and (-webkit-min-device-pixel-ratio: 2),
 all and (min--moz-device-pixel-ratio: 2),
@@ -16,12 +21,29 @@ all and (min-resolution: 2dppx) {
     /* Custom select element */
     .custom-select {
        background-image: url("../i/custom-select@2x.png");
-       background-size: contain;
+       background-size: 50px 35px;
     }
     
     /* Custom file upload element */
     .customfile-button {
         background: #08c url(../i/icon-camera@2x.png) no-repeat 50% 50%;
-        background-size: 55%;
+        background-size: 24px;
     }
+    
+    /* Notes listing */
+    .input-note input[type="text"] {
+        background-image: url("../i/arrow-blue-left@2x.png");
+        background-size: 8px 12px;
+    }
+    .note-posted-by {
+        background-image: url("../i/arrow-grey-right@2x.png");
+        background-size: 8px 15px;
+    }
+    
+    /* Conversation window */
+    .msg-author {
+        background-image: url("../i/convo-arrow@2x.png");
+        background-size: 24px 8px;
+    }
+    
 }
