@@ -41,14 +41,14 @@ TODO Remove all instances of "glyph" class
     
     
     /* Layout-1 - one full-width column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .layout-1 .content-primary {
         float: none;
         width: 100%;
     }
     
-    /* Layout-2 - two columns (also controls the header columns)
-    --------------------------------------------------------*/
+    /* Layout-2 - two columns
+    ---------------------------------------------------- */
     .header-primary,
     .layout-2 .content-primary {
         float: left;
@@ -62,7 +62,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* HEADER
-    ============================================================================================= */
+    ======================================================================== */
     .header,
     .header h1 {
         color: #fff;
@@ -83,7 +83,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Main search
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .main-search {
         float: right;
         margin-top: 18px;
@@ -106,7 +106,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Logged in user
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .logged-in {
         display: block;
         padding: 6px 0;
@@ -119,7 +119,7 @@ TODO Remove all instances of "glyph" class
 
 
     /* NAVIGATION MENU
-    ============================================================================*/
+    ======================================================================== */
     .navigation {
         position: fixed;
     }
@@ -128,7 +128,7 @@ TODO Remove all instances of "glyph" class
     }
 
     /* Hide functions menu
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .functions-menu {
         position: relative;
         left: -200px;
@@ -142,7 +142,7 @@ TODO Remove all instances of "glyph" class
     }
 
     /* Add new issue & Functions header
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .add-new-issue {
         background-color: #222;
         background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
@@ -234,7 +234,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* ISSUE OVERVIEW
-    ============================================================================*/
+    ======================================================================== */
     .issues-overview {
         margin: 4em auto 0;
         width: 70%;
@@ -278,7 +278,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Due date
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-item .due-date {
         background: #afafaf;
         border-radius: 5px 0 0 5px;
@@ -310,7 +310,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Issue details
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-item .issue-description {
         padding: 0.2em 0.8em;
         width: 35em;
@@ -326,7 +326,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Actions column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-actions {
         border-left: 1px solid #ccc;
         font-size: 0.8571em;
@@ -346,13 +346,13 @@ TODO Remove all instances of "glyph" class
     
     
     /* SINGLE ISSUE & CREATE ISSUE
-    ============================================================================================= */
+    ======================================================================== */
     .single-issue {
         margin: 0 0 2em;
     }
     
     /* Issue header
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-h .id,
     .m-h .choose-type,
     .m-h .wiki-link,
@@ -401,10 +401,11 @@ TODO Remove all instances of "glyph" class
     }
     .edit-issue a {
         display: block;
+        font-size: 1.4286em;
     }
     
     /* Issue body
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-body {
         background: #eaeaea;
         border-radius: 0 5px 5px 0;
@@ -451,7 +452,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* Issue tags
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-tags > span,
     .issue-tags a {
         background: #eaeaea;
@@ -478,7 +479,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Module: Formulär
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-issue-forms {
         
     }
@@ -605,7 +606,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Conversation input
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .convo-input {
         background: #bababa;
         border-bottom: 1px solid #fff;
@@ -662,7 +663,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* Conversation body
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .convo-body {
         background: #ccc;
         overflow-y: scroll;
@@ -704,10 +705,10 @@ TODO Remove all instances of "glyph" class
     
     
     /* MODULES
-    ============================================================================================= */
+    ======================================================================== */
     
     /* Module: Konversationer
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-convos .date {
         font-size: 0.8571em;
     }
@@ -730,14 +731,14 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Module: Kontakter
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-contacts a {
         color: inherit;
         text-decoration: none;
     }
     
     /* Module: Ärendelogg
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .log-table tbody tr {
         background-color: #eee;
     }
@@ -746,14 +747,14 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Module: Bifogade filer
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-attachments .delete {
         color: #08c;
         float: right;
     }
     
     /* Module: Checklista
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-check-list .check-list li {
         padding: 0.25em;
         margin: 0;
@@ -763,7 +764,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Module: Liknande ärenden
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-matched-issue .status,
     .m-matched-issue .createdon {
         font-size: 0.8571em;
@@ -772,9 +773,9 @@ TODO Remove all instances of "glyph" class
     
     
     /* GLOBAL CLASSES
-    ============================================================================================= */
+    ======================================================================== */
     /* Modal window
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .modal-window {
         background-color: #eee;
         margin: 1em;
@@ -806,13 +807,13 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Toolbar
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .toolbar {
         margin: 0 0 1.5em;
     }
     
     /* Expandable field
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .expandable-field.active {
         border-bottom: 1px solid #9f9f9f;
         padding-bottom: 1px;
@@ -845,7 +846,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Module
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m {
         margin: 0 0 2em;
     }
@@ -896,7 +897,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Styled link buttons
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     a.btn {
         background-color: #08c;
         border-radius: 5px;
@@ -933,7 +934,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Zebra lists (TODO: Rename?)
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .zebra-list li {
         padding: 0.25em 0.75em;
         margin: 0;
@@ -943,7 +944,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Block links (remove standard link decorations)
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     a.block-link:link,
     a.block-link:visited,
     a.block-link:hover,
@@ -1006,7 +1007,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* FORMS
-    ============================================================================================= */
+    ======================================================================== */
     .form-general {
         margin: 1em 0;
     }
@@ -1247,7 +1248,7 @@ TODO Remove all instances of "glyph" class
 @media screen and (max-width: 1000px) {
     
     /* LAYOUT FRAMEWORK
-    ============================================================================================= */
+    ======================================================================== */
     .header-body,
     .main-body {
         margin: 0 auto;
@@ -1270,7 +1271,7 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Layout-2 - switch to single column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .header-primary,
     .layout-2 .content-primary,
     .header-secondary,
@@ -1286,7 +1287,7 @@ TODO Remove all instances of "glyph" class
     
     
     /* HEADER
-    ============================================================================================= */
+    ======================================================================== */
     .header {
         padding: 0.25em 1em;
     }
@@ -1305,21 +1306,21 @@ TODO Remove all instances of "glyph" class
     }
     
     /* Main search
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .main-search {
         float: none;
         margin-top: 1em;
     }
     
     /* Logged in user
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .logged-in {
         margin-top: 0.25em;
     }
     
     
     /* NAVIGATION MENU
-    ============================================================================*/
+    ======================================================================== */
     .navigation {
         display: none; /* TODO: Hide for now, fix later */
     }
