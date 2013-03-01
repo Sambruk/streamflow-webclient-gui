@@ -5,6 +5,11 @@
  * @author Fredrik Frodlund
  */
 
+ /* TODOs
+ --------------------------------------------------------
+ TODO Test percentage sizes
+ -------------------------------------------------------- */
+
 @media
 all and (-webkit-min-device-pixel-ratio: 2),
 all and (min--moz-device-pixel-ratio: 2),
@@ -34,4 +39,11 @@ all and (min-resolution: 2dppx) {
         background-image: url("../i/arrow-grey-right@2x.png");
         background-size: 5.5%;
     }
+    
+    /* Conversation window */
+    .msg-author {
+        background-image: url("../i/convo-arrow@2x.png");
+        background-size: 10%;
+    }
+    
 }
