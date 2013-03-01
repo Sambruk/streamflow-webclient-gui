@@ -29,8 +29,8 @@ $(function () {
     // Placeholder support for legacy IE
     $("input, textarea").placeholder();
     
-    // Expandable fields
-    $(".expandable-field").addClass("active").append("<a href=\"#\" class=\"expand\"><i class=\"glyph icon-arrow-down\"></i><span>Mer platsuppgifter</span><i class=\"glyph icon-arrow-down\"></i></a>").children(".expandable-content").hide();
+    // Expandable fields (TODO: Template this)
+    $(".expandable-field").addClass("active").append("<a href=\"#\" class=\"expand\"><i class=\"glyph icon-arrow-down\"></i><span>Visa mer</span><i class=\"glyph icon-arrow-down\"></i></a>").children(".expandable-content").hide();
     
     $(".expand").on("click", function(e) {
         $(this).toggleClass("expanded").prevAll(".expandable-content").slideToggle("fast");

@@ -42,7 +42,7 @@
     }
     
     /* Reset box sizing
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     * {
         -webkit-box-sizing: border-box;
            -moz-box-sizing: border-box;
@@ -155,11 +155,13 @@
     /* Links
     -------------------------------------------------------- */
     a,
-    a:visited,
+    a:visited {
+        color: inherit;
+    }
     a:hover,
     a:focus,
     a:active {
-        color: #333;
+        color: #666;
     }
     
     

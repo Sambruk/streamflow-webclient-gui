@@ -10,12 +10,19 @@
 #08c    -   blue
 #cf0202 -   red
 #00831f -   green
---------------------------------------------------------*/
+-------------------------------------------------------- */
+
+/* TODOs
+--------------------------------------------------------
+TODO Remove all instances of "glyph" class
+TODO Check for duplicate properties
+TODO Look into image replacement for checkboxes
+-------------------------------------------------------- */
 
 @media screen, projection {
     
     /* LAYOUT FRAMEWORK
-    ============================================================================================= */
+    ======================================================================== */
     .body {
         width: 100%;
     }
@@ -27,6 +34,7 @@
     }
     .footer {
         background: #222;
+        min-height: 4em;
     }
     .header-body,
     .main-body {
@@ -36,14 +44,14 @@
     
     
     /* Layout-1 - one full-width column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .layout-1 .content-primary {
         float: none;
         width: 100%;
     }
     
-    /* Layout-2 - two columns (also controls the header columns)
-    --------------------------------------------------------*/
+    /* Layout-2 - two columns
+    ---------------------------------------------------- */
     .header-primary,
     .layout-2 .content-primary {
         float: left;
@@ -57,7 +65,7 @@
     
     
     /* HEADER
-    ============================================================================================= */
+    ======================================================================== */
     .header,
     .header h1 {
         color: #fff;
@@ -78,7 +86,7 @@
     }
     
     /* Main search
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .main-search {
         float: right;
         margin-top: 18px;
@@ -92,7 +100,8 @@
     .main-search button[type="submit"] {
         padding: 6px 14px;
     }
-    .main-search button[type="submit"] .glyph:before {
+    .main-search button[type="submit"] .icon-search:before {
+        color: #fff;
         font-size: 1.2143em;
     }
     .main-search button[type="submit"] span {
@@ -101,7 +110,7 @@
     }
     
     /* Logged in user
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .logged-in {
         display: block;
         padding: 6px 0;
@@ -114,7 +123,7 @@
 
 
     /* NAVIGATION MENU
-    ============================================================================*/
+    ======================================================================== */
     .navigation {
         position: fixed;
     }
@@ -123,7 +132,7 @@
     }
 
     /* Hide functions menu
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .functions-menu {
         position: relative;
         left: -200px;
@@ -137,7 +146,7 @@
     }
 
     /* Add new issue & Functions header
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .add-new-issue {
         background-color: #222;
         background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
@@ -229,7 +238,7 @@
     
     
     /* ISSUE OVERVIEW
-    ============================================================================*/
+    ======================================================================== */
     .issues-overview {
         margin: 4em auto 0;
         width: 70%;
@@ -273,7 +282,7 @@
     }
     
     /* Due date
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-item .due-date {
         background: #afafaf;
         border-radius: 5px 0 0 5px;
@@ -305,7 +314,7 @@
     }
     
     /* Issue details
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-item .issue-description {
         padding: 0.2em 0.8em;
         width: 35em;
@@ -321,7 +330,7 @@
     }
     
     /* Actions column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-actions {
         border-left: 1px solid #ccc;
         font-size: 0.8571em;
@@ -341,17 +350,18 @@
     
     
     /* SINGLE ISSUE & CREATE ISSUE
-    ============================================================================================= */
+    ======================================================================== */
     .single-issue {
         margin: 0 0 2em;
     }
     
     /* Issue header
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-h .id,
     .m-h .choose-type,
     .m-h .wiki-link,
-    .m-h .set-due-date {
+    .m-h .set-due-date,
+    .m-h .edit-issue {
         display: inline-block;
     }
     .m-h .id {
@@ -390,9 +400,17 @@
     .wiki-link a {
         text-decoration: none;
     }
+    .edit-issue {
+        float: right;
+        margin-right: 1em;
+    }
+    .edit-issue a {
+        display: block;
+        font-size: 1.4286em;
+    }
     
     /* Issue body
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-body {
         background: #eaeaea;
         border-radius: 0 5px 5px 0;
@@ -438,8 +456,80 @@
     }
     
     
+    /* Issue notes
+    ---------------------------------------------------- */
+    .notes-content {
+        float: right;
+        width: 87%;
+    }
+    
+    /* Expandable field should have no border in notes */
+    .notes-content .expandable-field.active {
+        border: 0;
+    }
+    
+    /* Notes form */
+    .input-note .text,
+    .input-note .submit-area {
+        float: left;
+    }
+    .input-note .text {
+        width: 78%;
+    }
+    .input-note input[type="text"] {
+        background-image: url("../i/arrow-blue-left.png"); /* TODO Add corresponding properties in retina.css */
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        border-radius: 3px 0 0 3px;
+        width: 100%;
+    }
+    .input-note button[type="submit"] {
+        border-radius: 0 3px 3px 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+    .input-note .submit-area {
+        width: 22%;
+    }
+    
+    /* Notes listing */
+    .note-item {
+        font-size: 0.9286em;
+        margin-bottom: 2px;
+    }
+    .note-body,
+    .note-posted-by {
+        float: left;
+    }
+    .note-body,
+    .notes-content .expand {
+        width: 70%; /* .note-body and .expand should have same width */
+    }
+    .note-body {
+        background: #eaeaea;
+        min-height: 3em;
+        padding: .5em .75em;
+    }
+    .note-body p {
+        margin: 0;
+    }
+    .note-posted-by {
+        background: url("../i/arrow-grey-right.png") no-repeat 0 .5em; /* TODO Add corresponding properties in retina.css */
+        line-height: 1.2;
+        padding: .25em .75em;
+        width: 30%;
+    }
+    .note-posted-by .note-timestamp {
+        color: #666;
+        display: block;
+        font-size: 0.8462em;
+    }
+    
+    
     /* Issue tags
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .issue-tags > span,
     .issue-tags a {
         background: #eaeaea;
@@ -466,7 +556,7 @@
     }
     
     /* Module: Formulär
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-issue-forms {
         
     }
@@ -482,12 +572,14 @@
     .form-tabs {
         float: none;
     }
-    .form-tabs li {
+    .m-c .form-tabs li {
         background: none;
         float: left;
+        margin: 0;
+        padding: 0;
     }
     .form-tabs a {
-        background: #eaeaea;
+        background: #ededed;
         border-radius: 5px 5px 0 0;
         display: block;
         font-weight: bold;
@@ -527,9 +619,30 @@
         background-color: #d8d8d8;
     }
     
+    /* Form sections */
+    .form-sections {
+        background: #ededed;
+        list-style: decimal inside;
+        margin: 0;
+        padding: 0;
+    }
+    .section-item {
+        float: left;
+        margin: 0 1em 0 0;
+        padding: 0.5em 0;
+    }
+    .section-item a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .section-item.sel,
+    .section-item.sel a {
+        color: #08c;
+    }
+    
     
     /* CONVERSATION WINDOW
-    ============================================================================================= */
+    ======================================================================== */
     .convo-head,
     .convo-input,
     .convo-body {
@@ -570,7 +683,7 @@
     }
     
     /* Conversation input
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .convo-input {
         background: #bababa;
         border-bottom: 1px solid #fff;
@@ -627,7 +740,7 @@
     
     
     /* Conversation body
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .convo-body {
         background: #ccc;
         overflow-y: scroll;
@@ -669,10 +782,10 @@
     
     
     /* MODULES
-    ============================================================================================= */
+    ======================================================================== */
     
     /* Module: Konversationer
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-convos .date {
         font-size: 0.8571em;
     }
@@ -695,14 +808,14 @@
     }
     
     /* Module: Kontakter
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-contacts a {
         color: inherit;
         text-decoration: none;
     }
     
     /* Module: Ärendelogg
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .log-table tbody tr {
         background-color: #eee;
     }
@@ -711,14 +824,14 @@
     }
     
     /* Module: Bifogade filer
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-attachments .delete {
         color: #08c;
         float: right;
     }
     
     /* Module: Checklista
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-check-list .check-list li {
         padding: 0.25em;
         margin: 0;
@@ -728,7 +841,7 @@
     }
     
     /* Module: Liknande ärenden
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m-matched-issue .status,
     .m-matched-issue .createdon {
         font-size: 0.8571em;
@@ -737,9 +850,9 @@
     
     
     /* GLOBAL CLASSES
-    ============================================================================================= */
+    ======================================================================== */
     /* Modal window
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .modal-window {
         background-color: #eee;
         margin: 1em;
@@ -771,13 +884,13 @@
     }
     
     /* Toolbar
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .toolbar {
         margin: 0 0 1.5em;
     }
     
     /* Expandable field
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .expandable-field.active {
         border-bottom: 1px solid #9f9f9f;
         padding-bottom: 1px;
@@ -798,15 +911,22 @@
         display: inline-block;
         width: 80%;
     }
-    .expanded i:before {
+    .expand *[class*="icon-"] {
+        color: #fff;
+    }
+    .expanded *[class*="icon-"]:before {
         -webkit-transform: rotate(180deg);
            -moz-transform: rotate(180deg);
              -o-transform: rotate(180deg);
                 transform: rotate(180deg);
+        -webkit-transition: all .15s linear .1s;
+           -moz-transition: all .15s linear .1s;
+             -o-transition: all .15s linear .1s;
+                transition: all .15s linear .1s;
     }
     
     /* Module
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .m {
         margin: 0 0 2em;
     }
@@ -857,7 +977,7 @@
     }
     
     /* Styled link buttons
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     a.btn {
         background-color: #08c;
         border-radius: 5px;
@@ -894,7 +1014,7 @@
     }
     
     /* Zebra lists (TODO: Rename?)
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .zebra-list li {
         padding: 0.25em 0.75em;
         margin: 0;
@@ -904,7 +1024,7 @@
     }
     
     /* Block links (remove standard link decorations)
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     a.block-link:link,
     a.block-link:visited,
     a.block-link:hover,
@@ -915,9 +1035,10 @@
         text-decoration: none !important;
     }
     
-    /* Glyph icons
-    --------------------------------------------------------*/
-    .glyph {
+    /* Font icons
+    ---------------------------------------------------- */
+    *[class*="icon-"] {
+        color: #08c;
         text-decoration: none;
     }
     *[class*="icon-"]:before {
@@ -966,7 +1087,7 @@
     
     
     /* FORMS
-    ============================================================================================= */
+    ======================================================================== */
     .form-general {
         margin: 1em 0;
     }
@@ -1059,7 +1180,7 @@
         background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
         color: #fff;
         float: right;
-        padding: 0.4356em 1.6651em;
+        padding: 0.4356em 1.7951em;
         text-align: center;
         text-decoration: none;
         text-indent: -9999px;
@@ -1207,7 +1328,7 @@
 @media screen and (max-width: 1000px) {
     
     /* LAYOUT FRAMEWORK
-    ============================================================================================= */
+    ======================================================================== */
     .header-body,
     .main-body {
         margin: 0 auto;
@@ -1230,7 +1351,7 @@
     }
     
     /* Layout-2 - switch to single column
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .header-primary,
     .layout-2 .content-primary,
     .header-secondary,
@@ -1246,7 +1367,7 @@
     
     
     /* HEADER
-    ============================================================================================= */
+    ======================================================================== */
     .header {
         padding: 0.25em 1em;
     }
@@ -1265,21 +1386,21 @@
     }
     
     /* Main search
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .main-search {
         float: none;
         margin-top: 1em;
     }
     
     /* Logged in user
-    --------------------------------------------------------*/
+    ---------------------------------------------------- */
     .logged-in {
         margin-top: 0.25em;
     }
     
     
     /* NAVIGATION MENU
-    ============================================================================*/
+    ======================================================================== */
     .navigation {
         display: none; /* TODO: Hide for now, fix later */
     }
