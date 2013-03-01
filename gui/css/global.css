@@ -397,7 +397,8 @@ TODO Remove all instances of "glyph" class
         text-decoration: none;
     }
     .edit-issue {
-        text-align: right;
+        float: right;
+        margin-right: 1em;
     }
     .edit-issue a {
         display: block;
