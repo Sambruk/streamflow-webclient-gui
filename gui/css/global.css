@@ -98,7 +98,8 @@ TODO Check for duplicate properties
     .main-search button[type="submit"] {
         padding: 6px 14px;
     }
-    .main-search button[type="submit"] .glyph:before {
+    .main-search button[type="submit"] .icon-search:before {
+        color: #fff;
         font-size: 1.2143em;
     }
     .main-search button[type="submit"] span {
