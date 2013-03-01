@@ -991,6 +991,9 @@ TODO Look into image replacement for checkboxes
     a.btn:focus {
         background-color: #0af;
     }
+    a.btn *[class*="icon-"] {
+        color: inherit;
+    }
     
     /* Inactive */
     a.btn.inactive {
