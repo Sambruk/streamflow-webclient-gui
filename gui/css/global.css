@@ -668,11 +668,12 @@ TODO Look into image replacement for checkboxes
         text-decoration: none;
     }
     .participants .add-participant {
-        background: #08c url("../i/icon-add-participant.png") no-repeat 50% 50%;
+        background: #08c;
         display: inline-block;
-        padding-left: 0;
-        padding-right: 0;
-        text-indent: -9999px;
+    }
+    .participants .add-participant *[class*="icon-"] {
+        color: inherit;
+        padding: 0 0.25em;
     }
     
     /* Conversation input
