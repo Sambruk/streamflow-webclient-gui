@@ -240,7 +240,7 @@ TODO Look into image replacement for checkboxes
     ======================================================================== */
     .issues-overview {
         margin: 4em auto 0;
-        width: 70%;
+        max-width: 50em; /* 700px */
     }
     .issues-overview h2 {
         font-size: 1.1429em;
@@ -273,10 +273,13 @@ TODO Look into image replacement for checkboxes
     .issue-item:hover {
         background: #f0f0f0;
     }
+    .issues-overview .issue-item a.block-link {
+        display: table-row;
+    }
     .issue-item .due-date,
     .issue-item .issue-description,
     .issue-item .issue-actions {
-        display: inline-block;
+        display: table-cell;
         vertical-align: middle;
     }
     
@@ -309,7 +312,7 @@ TODO Look into image replacement for checkboxes
     /* Date overdue */
     .issue-item.overdue .due-date {
         background: #cf0202;
-        padding: 10px 0;
+        padding: 0.7143em;
     }
     
     /* Issue details
@@ -331,12 +334,23 @@ TODO Look into image replacement for checkboxes
     /* Actions column
     ---------------------------------------------------- */
     .issue-actions {
-        border-left: 1px solid #ccc;
         font-size: 0.8571em;
+        padding: 0.2em 0.2em 0.2em 0.8em;
+        width: 13em;
+    }
+    .issue-actions div:before {
+        content: " ";
+        border-left: 1px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
     .issue-actions div {
-        border-left: 1px solid #fff;
+        border-left: 1px solid #ccc;
         padding: 0.5em;
+        position: relative;
     }
     .issue-actions span {
         display: block;
@@ -376,7 +390,7 @@ TODO Look into image replacement for checkboxes
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .m-h .choose-type .glyph {
+    .m-h .choose-type *[class*="icon-"] {
         color: #08c;
         font-size: 1.1429em;
         margin: 0 0 0 0.5em;
@@ -386,7 +400,7 @@ TODO Look into image replacement for checkboxes
         border: none;
         padding: 0.214em 0.286em;
     }
-    .wiki-link .glyph {
+    .wiki-link *[class*="icon-"] {
         background: #08c;
         border-radius: 1.8571em;
         color: #fff;
@@ -396,9 +410,6 @@ TODO Look into image replacement for checkboxes
         text-align: center;
         height: 1.8571em;
         width: 1.8571em;
-    }
-    .wiki-link a {
-        text-decoration: none;
     }
     
     
@@ -792,12 +803,12 @@ TODO Look into image replacement for checkboxes
         right: 0.75em;
         top: 0.75em;
     }
-    .convo-status .glyph {
+    .convo-status *[class*="icon-"] {
         color: #666;
         font-size: 1.1429em;
         padding: 0 0 0 30px;
     }
-    .convo-status .glyph:before {
+    .convo-status *[class*="icon-"]:before {
         padding-right: 0.25em;
     }
     
@@ -971,9 +982,6 @@ TODO Look into image replacement for checkboxes
         margin-right: 0.75em;
         text-decoration: none;
     }
-    .m .add-item .glyph {
-        color: #08c;
-    }
     .m h3 {
         font-size: 1em;
         font-weight: bold;
@@ -1031,7 +1039,7 @@ TODO Look into image replacement for checkboxes
     
     /* Block links (remove standard link decorations)
     ---------------------------------------------------- */
-    a.block-link:link,
+    a.block-link,
     a.block-link:visited,
     a.block-link:hover,
     a.block-link:focus,
@@ -1047,9 +1055,14 @@ TODO Look into image replacement for checkboxes
         color: #08c;
         text-decoration: none;
     }
+    a[class*="icon-"]:hover,
+    a[class*="icon-"]:focus,
+    a[class*="icon-"]:active {
+        color: #0af;
+    }
     *[class*="icon-"]:before {
         display: inline-block;
-        font-family: 'StreamflowGlyphs';
+        font-family: 'StreamflowIcons';
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -1412,4 +1425,13 @@ TODO Look into image replacement for checkboxes
     }
 
 /* END @media screen and (max-width: 882px) */
+}
+
+@media screen and (max-width: 424px) {
+    
+    .issues-overview h2 {
+        padding-left: 0;
+    }
+
+/* END @media screen and (max-width: 424px) */
 }
