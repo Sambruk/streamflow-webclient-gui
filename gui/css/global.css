@@ -1363,6 +1363,7 @@ TODO Look into image replacement for checkboxes
     /* Give content a little air */
     .main {
         padding: 0 1em;
+        margin-top: 1em;
     }
     
     /* Reset navigation space */
@@ -1422,8 +1423,58 @@ TODO Look into image replacement for checkboxes
     /* NAVIGATION MENU
     ======================================================================== */
     .navigation {
-        display: none; /* TODO: Hide for now, fix later */
+        position: static;
     }
+    .navigation a {
+        color: #fff;
+    }
+
+    /* Reset functions menu
+    ---------------------------------------------------- */
+    .functions-menu {
+        margin: 1em 0;
+        position: static;
+    }
+    
+    /* Add new issue & Functions header
+    ---------------------------------------------------- */
+    .add-new-issue {
+        background-color: #08c;
+        background-image: none;
+        border-radius: 5px;
+        font-size: 1.1429em;
+        height: auto;
+        padding: 0.25em 0.5em;
+        text-align: left;
+        width: auto;
+    }
+    .add-new-issue,
+    .add-new-issue .icon-plus {
+        color: #fff;
+    }
+    .add-new-issue .struct {
+        padding-left: 0.5em;
+        position: static;
+    }
+    .add-new-issue {
+        margin-bottom: 0.25em;
+    }
+    .functions-header h2 {
+        background: transparent;
+        border-right: 0;
+        color: inherit;
+        float: none;
+        padding: 0;
+    }
+    .functions-header .open-toolbar {
+        display: none;
+    }
+    .sub-category {
+        color: #fff;
+        padding: 0.75em;
+        width: auto;
+    }
+    
 
 /* END @media screen and (max-width: 882px) */
 }
