@@ -521,7 +521,7 @@ TODO Look into image replacement for checkboxes
     .note-posted-by {
         background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
         line-height: 1.2;
-        padding: .25em .75em;
+        padding: .35em .75em .25em;
         width: 30%;
     }
     .note-posted-by .note-timestamp {
@@ -540,7 +540,7 @@ TODO Look into image replacement for checkboxes
         display: inline-block;
         float: left;
         font-weight: bold;
-        margin: 0 0.5em 0.5em 0;
+        margin: 0 .5em .5em 0;
         padding: 4px 12px;
         text-decoration: none;
     }
@@ -549,7 +549,6 @@ TODO Look into image replacement for checkboxes
         padding-right: 20px;
     }
     .issue-tags .new-tag {
-        /*background: #08c url("../i/icon-add-white.png") no-repeat 50% 50%;*/
         background-color: #08c;
         color: #fff;
         border-radius: 0 5px 5px 0;
@@ -560,9 +559,6 @@ TODO Look into image replacement for checkboxes
     
     /* Module: Formulär
     ---------------------------------------------------- */
-    .m-issue-forms {
-        
-    }
     .m.m-issue-forms h2 {
         float: none;
     }
@@ -676,6 +672,11 @@ TODO Look into image replacement for checkboxes
         font-size: 0.7143em;
         margin-left: 0.25em;
         text-decoration: none;
+    }
+    .participants span a:hover,
+    .participants span a:focus,
+    .participants span a:active {
+        color: inherit;
     }
     .participants .add-participant {
         background: #08c;
