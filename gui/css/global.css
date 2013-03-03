@@ -1068,7 +1068,7 @@ TODO Look into image replacement for checkboxes
     }
     *[class*="icon-"]:before {
         display: inline-block;
-        font-family: 'StreamflowGlyphs';
+        font-family: 'StreamflowIcons';
         font-style: normal;
         font-weight: normal;
         line-height: 1;

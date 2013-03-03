@@ -8,12 +8,12 @@
 /* Glyphs
 --------------------------------------------------------*/
 @font-face {
-    font-family: "StreamflowGlyphs";
-    src: url("../fonts/glyphs.eot");
-    src: url("../fonts/glyphs.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/glyphs.woff") format("woff"),
-         url("../fonts/glyphs.ttf") format("truetype"),
-         url("../fonts/glyphs.svg#glyphs") format("svg");
+    font-family: "StreamflowIcons";
+    src: url("../fonts/StreamflowIcons.eot");
+    src: url("../fonts/StreamflowIcons.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/StreamflowIcons.woff") format("woff"),
+         url("../fonts/StreamflowIcons.ttf") format("truetype"),
+         url("../fonts/StreamflowIcons.svg#StreamflowIcons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
