@@ -602,7 +602,7 @@ TODO Look into image replacement for checkboxes
         float: left;
         margin-right: 0;
     }
-    .has-versions .versions-drop {
+    .has-versions .icon-arrow-down.versions-drop {
         background-color: #ccc;
         border-radius: 0 5px 0 0;
         color: #fff;
@@ -1051,9 +1051,10 @@ TODO Look into image replacement for checkboxes
     
     /* Font icons
     ---------------------------------------------------- */
-    *[class*="icon-"] {
+    *[class*="icon-"],
+    a[class*="icon-"],
+    a[class*="icon-"]:visited {
         color: #08c;
-        text-decoration: none;
     }
     a[class*="icon-"]:hover,
     a[class*="icon-"]:focus,
