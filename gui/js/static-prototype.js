@@ -19,6 +19,10 @@ $(function () {
         modalWindow.trigger('openModal');
         e.preventDefault();
     });
+    $(".modal-close").on("click", function(e) {
+        $(this).trigger('closeModal');
+        e.preventDefault();
+    });
     
     // Custom select elements (TODO: Find a more accessible replacement)
     $("select").customSelect({customClass:'custom-select'});
@@ -31,7 +35,6 @@ $(function () {
     
     // Expandable fields (TODO: Template this)
     $(".expandable-field").addClass("active").append("<a href=\"#\" class=\"expand\"><i class=\"glyph icon-arrow-down\"></i><span>Visa mer</span><i class=\"glyph icon-arrow-down\"></i></a>").children(".expandable-content").hide();
-    
     $(".expand").on("click", function(e) {
         $(this).toggleClass("expanded").prevAll(".expandable-content").slideToggle("fast");
         e.preventDefault();
