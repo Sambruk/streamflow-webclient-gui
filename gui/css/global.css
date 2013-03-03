@@ -390,7 +390,7 @@ TODO Look into image replacement for checkboxes
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .m-h .choose-type .glyph {
+    .m-h .choose-type *[class*="icon-"] {
         color: #08c;
         font-size: 1.1429em;
         margin: 0 0 0 0.5em;
@@ -400,7 +400,7 @@ TODO Look into image replacement for checkboxes
         border: none;
         padding: 0.214em 0.286em;
     }
-    .wiki-link .glyph {
+    .wiki-link *[class*="icon-"] {
         background: #08c;
         border-radius: 1.8571em;
         color: #fff;
@@ -410,9 +410,6 @@ TODO Look into image replacement for checkboxes
         text-align: center;
         height: 1.8571em;
         width: 1.8571em;
-    }
-    .wiki-link a {
-        text-decoration: none;
     }
     
     
@@ -806,12 +803,12 @@ TODO Look into image replacement for checkboxes
         right: 0.75em;
         top: 0.75em;
     }
-    .convo-status .glyph {
+    .convo-status *[class*="icon-"] {
         color: #666;
         font-size: 1.1429em;
         padding: 0 0 0 30px;
     }
-    .convo-status .glyph:before {
+    .convo-status *[class*="icon-"]:before {
         padding-right: 0.25em;
     }
     
@@ -984,9 +981,6 @@ TODO Look into image replacement for checkboxes
         float: right;
         margin-right: 0.75em;
         text-decoration: none;
-    }
-    .m .add-item .glyph {
-        color: #08c;
     }
     .m h3 {
         font-size: 1em;
