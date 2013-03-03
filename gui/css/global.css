@@ -805,7 +805,7 @@ TODO Look into image replacement for checkboxes
     }
     .convo-status *[class*="icon-"] {
         color: #666;
-        font-size: 1.1429em;
+        font-size: 1em;
         padding: 0 0 0 30px;
     }
     .convo-status *[class*="icon-"]:before {
