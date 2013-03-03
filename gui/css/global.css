@@ -14,7 +14,7 @@
 
 /* TODOs
 --------------------------------------------------------
-TODO Check for duplicate properties
+TODO Check for duplicate properties & generalize
 TODO Look into image replacement for checkboxes
 -------------------------------------------------------- */
 
@@ -666,16 +666,16 @@ TODO Look into image replacement for checkboxes
     .participants span {
         background: #666;
     }
-    .participants span a {
-        color: inherit;
+    .participants .icon-close {
+        color: #fff;
         display: inline-block;
         font-size: 0.7143em;
         margin-left: 0.25em;
         text-decoration: none;
     }
-    .participants span a:hover,
-    .participants span a:focus,
-    .participants span a:active {
+    .participants .icon-close:hover,
+    .participants .icon-close:focus,
+    .participants .icon-close:active {
         color: inherit;
     }
     .participants .add-participant {
@@ -902,6 +902,15 @@ TODO Look into image replacement for checkboxes
         margin-right: .5em;
         line-height: 1;
     }
+    .edit-module,
+    .edit-module:visited {
+        color: #08c;
+    }
+    .edit-module:hover,
+    .edit-module:focus,
+    .edit-module:active {
+        color: #0af;
+    }
     
     /* Expandable field
     ---------------------------------------------------- */
@@ -982,6 +991,9 @@ TODO Look into image replacement for checkboxes
         margin-right: 0.75em;
         text-decoration: none;
     }
+    .m .add-item .icon-plus {
+        color: #08c;
+    }
     .m h3 {
         font-size: 1em;
         font-weight: bold;
@@ -1051,16 +1063,6 @@ TODO Look into image replacement for checkboxes
     
     /* Font icons
     ---------------------------------------------------- */
-    *[class*="icon-"],
-    a[class*="icon-"],
-    a[class*="icon-"]:visited {
-        color: #08c;
-    }
-    a[class*="icon-"]:hover,
-    a[class*="icon-"]:focus,
-    a[class*="icon-"]:active {
-        color: #0af;
-    }
     *[class*="icon-"]:before {
         display: inline-block;
         font-family: 'StreamflowIcons';
