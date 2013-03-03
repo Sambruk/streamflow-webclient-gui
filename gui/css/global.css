@@ -14,8 +14,7 @@
 
 /* TODOs
 --------------------------------------------------------
-TODO Remove all instances of "glyph" class
-TODO Check for duplicate properties
+TODO Check for duplicate properties & generalize
 TODO Look into image replacement for checkboxes
 -------------------------------------------------------- */
 
@@ -522,7 +521,7 @@ TODO Look into image replacement for checkboxes
     .note-posted-by {
         background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
         line-height: 1.2;
-        padding: .25em .75em;
+        padding: .35em .75em .25em;
         width: 30%;
     }
     .note-posted-by .note-timestamp {
@@ -541,7 +540,7 @@ TODO Look into image replacement for checkboxes
         display: inline-block;
         float: left;
         font-weight: bold;
-        margin: 0 0.5em 0.5em 0;
+        margin: 0 .5em .5em 0;
         padding: 4px 12px;
         text-decoration: none;
     }
@@ -550,7 +549,6 @@ TODO Look into image replacement for checkboxes
         padding-right: 20px;
     }
     .issue-tags .new-tag {
-        /*background: #08c url("../i/icon-add-white.png") no-repeat 50% 50%;*/
         background-color: #08c;
         color: #fff;
         border-radius: 0 5px 5px 0;
@@ -561,9 +559,6 @@ TODO Look into image replacement for checkboxes
     
     /* Module: Formulär
     ---------------------------------------------------- */
-    .m-issue-forms {
-        
-    }
     .m.m-issue-forms h2 {
         float: none;
     }
@@ -607,7 +602,7 @@ TODO Look into image replacement for checkboxes
         float: left;
         margin-right: 0;
     }
-    .has-versions .versions-drop {
+    .has-versions .icon-arrow-down.versions-drop {
         background-color: #ccc;
         border-radius: 0 5px 0 0;
         color: #fff;
@@ -671,12 +666,17 @@ TODO Look into image replacement for checkboxes
     .participants span {
         background: #666;
     }
-    .participants span a {
-        color: inherit;
+    .participants .icon-close {
+        color: #fff;
         display: inline-block;
         font-size: 0.7143em;
         margin-left: 0.25em;
         text-decoration: none;
+    }
+    .participants .icon-close:hover,
+    .participants .icon-close:focus,
+    .participants .icon-close:active {
+        color: inherit;
     }
     .participants .add-participant {
         background: #08c;
@@ -805,7 +805,7 @@ TODO Look into image replacement for checkboxes
     }
     .convo-status *[class*="icon-"] {
         color: #666;
-        font-size: 1.1429em;
+        font-size: 1em;
         padding: 0 0 0 30px;
     }
     .convo-status *[class*="icon-"]:before {
@@ -902,6 +902,15 @@ TODO Look into image replacement for checkboxes
         margin-right: .5em;
         line-height: 1;
     }
+    .edit-module,
+    .edit-module:visited {
+        color: #08c;
+    }
+    .edit-module:hover,
+    .edit-module:focus,
+    .edit-module:active {
+        color: #0af;
+    }
     
     /* Expandable field
     ---------------------------------------------------- */
@@ -982,6 +991,9 @@ TODO Look into image replacement for checkboxes
         margin-right: 0.75em;
         text-decoration: none;
     }
+    .m .add-item .icon-plus {
+        color: #08c;
+    }
     .m h3 {
         font-size: 1em;
         font-weight: bold;
@@ -1051,15 +1063,6 @@ TODO Look into image replacement for checkboxes
     
     /* Font icons
     ---------------------------------------------------- */
-    *[class*="icon-"] {
-        color: #08c;
-        text-decoration: none;
-    }
-    a[class*="icon-"]:hover,
-    a[class*="icon-"]:focus,
-    a[class*="icon-"]:active {
-        color: #0af;
-    }
     *[class*="icon-"]:before {
         display: inline-block;
         font-family: 'StreamflowIcons';
@@ -1362,6 +1365,7 @@ TODO Look into image replacement for checkboxes
     /* Give content a little air */
     .main {
         padding: 0 1em;
+        margin-top: 1em;
     }
     
     /* Reset navigation space */
@@ -1421,8 +1425,58 @@ TODO Look into image replacement for checkboxes
     /* NAVIGATION MENU
     ======================================================================== */
     .navigation {
-        display: none; /* TODO: Hide for now, fix later */
+        position: static;
     }
+    .navigation a {
+        color: #fff;
+    }
+
+    /* Reset functions menu
+    ---------------------------------------------------- */
+    .functions-menu {
+        margin: 1em 0;
+        position: static;
+    }
+    
+    /* Add new issue & Functions header
+    ---------------------------------------------------- */
+    .add-new-issue {
+        background-color: #08c;
+        background-image: none;
+        border-radius: 5px;
+        font-size: 1.1429em;
+        height: auto;
+        padding: 0.25em 0.5em;
+        text-align: left;
+        width: auto;
+    }
+    .add-new-issue,
+    .add-new-issue .icon-plus {
+        color: #fff;
+    }
+    .add-new-issue .struct {
+        padding-left: 0.5em;
+        position: static;
+    }
+    .add-new-issue {
+        margin-bottom: 0.25em;
+    }
+    .functions-header h2 {
+        background: transparent;
+        border-right: 0;
+        color: inherit;
+        float: none;
+        padding: 0;
+    }
+    .functions-header .open-toolbar {
+        display: none;
+    }
+    .sub-category {
+        color: #fff;
+        padding: 0.75em;
+        width: auto;
+    }
+    
 
 /* END @media screen and (max-width: 882px) */
 }
