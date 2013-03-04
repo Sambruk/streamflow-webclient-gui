@@ -1015,30 +1015,32 @@ TODO Look into image replacement for checkboxes
     
     /* Styled link buttons
     ---------------------------------------------------- */
-    a.btn {
+    .btn {
         background-color: #08c;
         border-radius: 5px;
         color: #fff;
         padding: 4px 14px;
         text-decoration: none;
     }
-    a.btn:hover,
-    a.btn:focus {
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+        color: #fff;
         background-color: #0af;
     }
-    a.btn *[class*="icon-"] {
+    .btn *[class*="icon-"] {
         color: inherit;
     }
     
     /* Inactive */
-    a.btn.inactive {
+    .btn.inactive {
         background-color: #a7a7a7;
         color: #ccc;
         cursor: default;
     }
     
     /* Inline */
-    a.btn.inline {
+    .btn.inline {
         display: inline-block;
     }
     
