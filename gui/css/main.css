@@ -1365,8 +1365,7 @@ TODO Look into image replacement for checkboxes
 
 @media screen and (max-width: 1000px) {
     
-    /* LAYOUT FRAMEWORK
-    ======================================================================== */
+    /* Switch to full width */
     .header-body,
     .main-body {
         margin: 0 auto;
@@ -1389,8 +1388,7 @@ TODO Look into image replacement for checkboxes
         padding-left: 0;
     }
     
-    /* Layout-2 - switch to single column
-    ---------------------------------------------------- */
+    /* Layout-2 - switch to single column */
     .header-primary,
     .layout-2 .content-primary,
     .header-secondary,
@@ -1405,8 +1403,7 @@ TODO Look into image replacement for checkboxes
     }
     
     
-    /* HEADER
-    ======================================================================== */
+    /* Remove float on header */
     .header {
         padding: 0.25em 1em;
     }
@@ -1414,32 +1411,20 @@ TODO Look into image replacement for checkboxes
         float: none;
         padding: 0;
     }
-    .header a,
-    .header a:visited {
-        color: #08c;
-        text-decoration: none;
-    }
-    .header a:hover,
-    .header a:focus {
-        text-decoration: underline;
-    }
     
-    /* Main search
-    ---------------------------------------------------- */
+    /* Remove float on main search */
     .main-search {
         float: none;
         margin-top: 1em;
     }
     
-    /* Logged in user
-    ---------------------------------------------------- */
+    /* Space above logged in user */
     .logged-in {
         margin-top: 0.25em;
     }
     
     
-    /* NAVIGATION MENU
-    ======================================================================== */
+    /* Small screen layout for navigation */
     .navigation {
         position: static;
     }
@@ -1447,15 +1432,13 @@ TODO Look into image replacement for checkboxes
         color: #fff;
     }
 
-    /* Reset functions menu
-    ---------------------------------------------------- */
+    /* Reset functions menu */
     .functions-menu {
         margin: 1em 0;
         position: static;
     }
     
-    /* Add new issue & Functions header
-    ---------------------------------------------------- */
+    /* Add new issue & Functions header */
     .add-new-issue {
         background-color: #08c;
         background-image: none;
@@ -1499,6 +1482,7 @@ TODO Look into image replacement for checkboxes
 
 @media screen and (max-width: 424px) {
     
+    /* Remove indentation on issues overview heading */
     .issues-overview h2 {
         padding-left: 0;
     }
