@@ -1,6 +1,17 @@
 // Prototype specific startup scripts
 $(function () {
     
+    // Event delegation for links
+    $('body').on("click", function(e) {
+        try {
+            // Display an alert dialog when inactive links are clicked.
+            if ($(e.target).closest('a').attr('href').match(/(^\/$|\/?xlink-)/)) {
+                e.preventDefault();
+                alert('Denna länk är inte aktiv i prototypen.');
+            }
+        } catch (e) {}
+    });
+    
     // Slide in navigation
     $(".open-toolbar").on("click", function(e) {
       $('.functions-menu').toggleClass('open');
@@ -11,6 +22,7 @@ $(function () {
     var modalWindow = $(".modal-window");
     
     modalWindow.easyModal({
+        top: 50,
         overlayOpacity: 0.7,
         overlayColor: "#000",
         closeButtonClass: "modal-close"
@@ -20,9 +32,15 @@ $(function () {
         e.preventDefault();
     });
     $(".modal-close").on("click", function(e) {
-        $(this).trigger('closeModal');
+       modalWindow.trigger('closeModal');
         e.preventDefault();
     });
+    
+    // Set height of convo-body
+    var modalHeight = $(".modal-window").height();
+    var convoBodyHeight = modalHeight / 2; // Set to half of modal-window height
+    
+    $(".convo-body").css("height", convoBodyHeight);
     
     // Custom select elements (TODO: Find a more accessible replacement)
     $("select").customSelect({customClass:'custom-select'});

@@ -765,7 +765,6 @@ TODO Look into image replacement for checkboxes
         background-color: #ccc;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        max-height: 400px; /* TODO: Set with JS on modal window? */
     }
     .convo-messages {
         list-style: none;
@@ -1079,6 +1078,9 @@ TODO Look into image replacement for checkboxes
     
     /* Font icons
     ---------------------------------------------------- */
+    *[class*="icon-"] {
+        text-decoration: none;
+    }
     *[class*="icon-"]:before {
         display: inline-block;
         font-family: 'StreamflowIcons';
@@ -1130,11 +1132,12 @@ TODO Look into image replacement for checkboxes
     ---------------------------------------------------- */
     a,
     button,
-    .issue-item {
-        -webkit-transition: color .15s, background-color .15s;
-           -moz-transition: color .15s, background-color .15s;
-             -o-transition: color .15s, background-color .15s;
-                transition: color .15s, background-color .15s;
+    .issue-item,
+    .sub-category a span {
+        -webkit-transition: color .2s, background-color .2s;
+           -moz-transition: color .2s, background-color .2s;
+             -o-transition: color .2s, background-color .2s;
+                transition: color .2s, background-color .2s;
     }
     
     /* FORMS

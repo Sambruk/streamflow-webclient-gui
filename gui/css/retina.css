@@ -26,7 +26,7 @@ all and (min-resolution: 2dppx) {
     
     /* Custom file upload element */
     .customfile-button {
-        background: #08c url(../i/icon-camera@2x.png) no-repeat 50% 50%;
+        background-image: url("../i/icon-camera@2x.png");
         background-size: 24px;
     }
     
