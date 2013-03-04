@@ -455,8 +455,10 @@ TODO Look into image replacement for checkboxes
         width: 80%;
     }
     .issue-body .issue-description h2 {
+        float: none;
         font-size: 1em;
         font-weight: bold;
+        padding: 0;
     }
     
     
