@@ -27,6 +27,7 @@ TODO Look into image replacement for checkboxes
     }
     .header {
         background: #141414;
+        min-height: 4em;
     }
     .main {
         margin-top: 3em;
