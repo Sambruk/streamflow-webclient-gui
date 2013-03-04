@@ -861,10 +861,9 @@ TODO Look into image replacement for checkboxes
     .modal-window {
         background-color: #eee;
         margin: 1em;
-        position: fixed;
-        max-width: 900px;
+        max-height: 96%;
+        max-width: 64.2857em;
         width: 96%;
-        z-index: 9999;
     }
     a.modal-close {
         background-color: #666;
