@@ -1048,7 +1048,7 @@ TODO Look into image replacement for checkboxes
         padding-right: 0.5em;
     }
     
-    /* Zebra lists (TODO: Rename?)
+    /* Zebra lists
     ---------------------------------------------------- */
     .zebra-list li {
         padding: 0.25em 0.75em;
