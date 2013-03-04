@@ -1124,6 +1124,19 @@ TODO Look into image replacement for checkboxes
     }
     
     
+    /* EYE CANDY
+    ======================================================================== */
+    /* Effects on anchors, buttons & other hovers
+    ---------------------------------------------------- */
+    a,
+    button,
+    .issue-item {
+        -webkit-transition: color .15s, background-color .15s;
+           -moz-transition: color .15s, background-color .15s;
+             -o-transition: color .15s, background-color .15s;
+                transition: color .15s, background-color .15s;
+    }
+    
     /* FORMS
     ======================================================================== */
     .form-general {
