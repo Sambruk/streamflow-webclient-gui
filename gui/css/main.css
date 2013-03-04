@@ -1131,10 +1131,10 @@ TODO Look into image replacement for checkboxes
     a,
     button,
     .issue-item {
-        -webkit-transition: color .15s, background-color .15s;
-           -moz-transition: color .15s, background-color .15s;
-             -o-transition: color .15s, background-color .15s;
-                transition: color .15s, background-color .15s;
+        -webkit-transition: color .2s, background-color .2s;
+           -moz-transition: color .2s, background-color .2s;
+             -o-transition: color .2s, background-color .2s;
+                transition: color .2s, background-color .2s;
     }
     
     /* FORMS
