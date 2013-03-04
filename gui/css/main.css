@@ -129,6 +129,11 @@ TODO Look into image replacement for checkboxes
     .navigation a {
         color: #08c;
     }
+    .navigation a:hover,
+    .navigation a:focus,
+    .navigation a:active {
+        color: #fff;
+    }
 
     /* Hide functions menu
     ---------------------------------------------------- */
