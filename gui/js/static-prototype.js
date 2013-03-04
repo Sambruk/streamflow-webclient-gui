@@ -32,7 +32,7 @@ $(function () {
         e.preventDefault();
     });
     $(".modal-close").on("click", function(e) {
-        $(this).trigger('closeModal');
+       modalWindow.trigger('closeModal');
         e.preventDefault();
     });
     

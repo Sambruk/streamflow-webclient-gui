@@ -1078,6 +1078,9 @@ TODO Look into image replacement for checkboxes
     
     /* Font icons
     ---------------------------------------------------- */
+    *[class*="icon-"] {
+        text-decoration: none;
+    }
     *[class*="icon-"]:before {
         display: inline-block;
         font-family: 'StreamflowIcons';
