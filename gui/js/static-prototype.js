@@ -1,6 +1,17 @@
 // Prototype specific startup scripts
 $(function () {
     
+    // Event delegation for links
+    $('body').on("click", function(e) {
+        try {
+            // Display an alert dialog when inactive links are clicked.
+            if ($(e.target).closest('a').attr('href').match(/(^\/$|\/?xlink-)/)) {
+                e.preventDefault();
+                alert('Denna länk är inte aktiv i prototypen.');
+            }
+        } catch (e) {}
+    });
+    
     // Slide in navigation
     $(".open-toolbar").on("click", function(e) {
       $('.functions-menu').toggleClass('open');
