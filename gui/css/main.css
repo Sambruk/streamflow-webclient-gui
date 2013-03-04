@@ -180,6 +180,10 @@ TODO Look into image replacement for checkboxes
         padding: 28px 62px 29px 20px;
         margin: 0;
     }
+    .functions-header h2 a {
+        color: inherit;
+        text-decoration: none;
+    }
     .functions-header .open-toolbar {
         background-color: #222;
         background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
@@ -239,8 +243,11 @@ TODO Look into image replacement for checkboxes
     /* ISSUE OVERVIEW
     ======================================================================== */
     .issues-overview {
-        margin: 4em auto 0;
+        margin: 0 auto;
         max-width: 50em; /* 700px */
+    }
+    .issues-overview h1 {
+        margin-bottom: 1em;
     }
     .issues-overview h2 {
         font-size: 1.1429em;
