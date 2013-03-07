@@ -1060,7 +1060,7 @@ TODO Look into image replacement for checkboxes
         padding: 0.25em 0.75em;
         margin: 0;
     }
-    .odd {
+    .odd, li:nth-child(odd) {
         background-color: #e8e8e8;
     }
     
