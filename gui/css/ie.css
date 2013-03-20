@@ -20,6 +20,12 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 
+/* Table zebra rows for IE8
+-------------------------------------------------------- */
+tr.odd {
+    background: #f0e9eb;
+}
+
 /* Rotate icons on expanded fields
 -------------------------------------------------------- */
 .expanded i {
