@@ -121,9 +121,12 @@
                         <div class="m-h cf">
                             <h2 class="id">20121061-1</h2>
                             <div class="choose-type">
-                                <i class="icon-search"></i>
-                                <label class="struct" for="issue-type">Ärendetyp</label>
-                                <input type="text" name="issue-type" id="issue-type" placeholder="Välj ärendetyp">
+                                <form action="#" method="post">
+                                    <i class="icon-search"></i>
+                                    <label for="issue-type" class="struct">Ärendetyp</label>
+                                    <input type="text" name="issue-type" id="issue-type" placeholder="Välj ärendetyp">
+                                    <button type="submit" name="save-type" class="struct">Spara ärendetyp</button>
+                                </form>
                             </div>
                             <a href="xlink-" class="wiki-link">
                                 <i class="icon-info"></i><span class="struct">Namn på ärendetyp</span>
@@ -344,11 +347,10 @@
                                         <input type="text" name="field-8" id="field-8">
                                     </div>
                                 </div>
+                                <div class="row submit-area struct">
+                                    <button type="submit" name="form-submit">Spara formulär</button>
+                                </div>
                             </form>
-                            
-                            <div class="submit-area struct">
-                                <button type="submit" name="form-submit">Spara formulär</button>
-                            </div>
                             
                             <a href="xlink-" class="btn inactive inline">Tillbaka</a> <a href="xlink-" class="btn inline">Nästa</a>
                             
@@ -470,7 +472,7 @@
                         </div>
                         <div class="m-c">
                             <table class="log-table">
-                                <caption class="struct">Historik för detta ärende</caption>
+                                <caption class="struct">Ärendehistorik</caption>
                                 <thead class="struct">
                                     <tr>
                                         <th>Datum</th>
