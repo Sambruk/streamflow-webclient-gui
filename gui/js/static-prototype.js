@@ -1,5 +1,5 @@
 // Prototype specific startup scripts
-$(function () {
+$(function() {
     
     // Event delegation for links
     $('body').on("click", function(e) {

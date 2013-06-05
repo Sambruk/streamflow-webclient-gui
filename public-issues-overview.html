@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Streamflow - Publika ärenden, översikt</title>
+    
+    <!-- Mobile & web app tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" sizes="57x57" href="gui/i/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="gui/i/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="gui/i/apple-touch-icon-114x114.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="gui/css/basic.css">
+    <link rel="stylesheet" href="gui/css/print.css">
+    <link rel="stylesheet" href="gui/css/fonts.css">
+    <link rel="stylesheet" href="gui/css/main.css">
+    <link rel="stylesheet" href="gui/css/retina.css">
+    
+    <!--[if lt IE 9]><link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="gui/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="gui/js/jquery.easyModal.min.js"></script>
+    <script type="text/javascript" src="gui/js/customSelect.jquery.min.js"></script>
+    <script type="text/javascript" src="gui/js/jQuery.fileinput.js"></script>
+    <script type="text/javascript" src="gui/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="gui/js/static-prototype.js"></script>
+    
+    <!-- Google Maps -->
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&amp;language=sv"></script>
+    <script type="text/javascript" src="gui/js/gmap3.js"></script>
+    <script type="text/javascript" src="gui/js/map-config.js"></script>
+    
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
+</head>
+<body class="layout-1">
+    
+    <div class="body">
+        
+        <!-- Header -->
+        <div class="header" role="banner">
+            
+            <!-- Header body -->
+            <div class="header-body cf">
+                
+                <!-- Header primary -->
+                <div class="header-primary">
+                    <h1>Malmö Kommun Kontaktcenter</h1>
+                
+                    <form action="#" method="get" class="main-search" role="search">
+                        <div>
+                            <label for="main-searchtext" class="struct">Sök</label>
+                            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+                            <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /Header primary -->
+                
+            </div>
+            <!-- /Header body -->
+            
+        </div>
+        <!-- /Header -->
+        
+        <!-- Main -->
+        <div class="main">
+            
+            <!-- Main body -->
+            <div class="main-body cf">
+                
+                <!-- Primary content -->
+                <div class="content-primary" role="main">
+                    
+                    <!-- Issues overview -->
+                    <div class="issues-overview">
+                        
+                        <h2>Synpunkter på karta</h2>
+                        <div id="issues-map" class="map">
+                            <img src="http://maps.googleapis.com/maps/api/staticmap?center=Malmo&zoom=11&size=700x500&sensor=false&scale=2" alt="">
+                        </div>
+                        
+                        <h2>Synpunkter för Malmö Stad</h2>
+                    
+                        <!-- My issues -->
+                        <h3>Mina ärenden</h3>
+                        <div class="due-date-divider"><span>Status</span></div>
+                        <ul class="issue-list">
+                            <li class="issue-item set">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        Öppet
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - TK Gata</span>
+                                        <h4>Bristfällig gräsklippning i lilla parken</h4>
+                                        <span class="creator">Lars Back</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status updated">Ändrad 03/20</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item set">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        Öppet
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item overdue">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        Stängt
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item overdue">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        Stängt
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="issue-item">
+                                <a href="public-issue.html" class="block-link">
+                                    <div class="due-date">
+                                        <span class="struct">Inget datum satt</span>
+                                    </div>
+                                    <div class="issue-description">
+                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
+                                        <h4>Ansökan om skolplats</h4>
+                                        <span class="creator">Henrik Reinhold</span>
+                                    </div>
+                                    <div class="issue-actions">
+                                        <div>
+                                            <span class="action-status">Väntar på svar</span>
+                                            <span class="created-on">Skapad 03/17</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /My issues -->
+                        
+                        <div class="paging cf">
+                            <p><strong>Gå till sida:</strong> <em>1</em><span>, </span><a href="xlink-2">2</a><span>, </span><a href="xlink-3">3</a><span>, </span><a href="xlink-4">4</a><span>, </span><a href="xlink-5">5</a><span>, </span><a href="xlink-6">6</a><span>, </span><a href="xlink-7">7</a><span>, </span><a href="xlink-8">8</a><span>, </span><a href="xlink-9">9</a><span>, </span><a href="xlink-10">10</a><span>, </span><a href="xlink-11">11</a><span>.</p>
+                        </div>
+                    
+                    </div>
+                    <!-- /Issues overview -->
+                
+                </div>
+                <!-- /Primary content -->
+                
+            </div>
+            <!-- /Main body -->
+            
+        </div>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <div class="footer" role="contentinfo">
+            
+            
+            
+        </div>
+        <!-- /Footer -->
+        
+    </div>
+    
+</body>
+</html>
