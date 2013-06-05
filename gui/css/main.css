@@ -251,21 +251,21 @@ TODO Look into image replacement for checkboxes
         margin: 0 auto;
         max-width: 50em; /* 700px */
     }
-    .issues-overview h1 {
+    .issues-overview h2 {
         margin-bottom: 1em;
     }
-    .issues-overview h2 {
+    .issues-overview h3 {
         font-size: 1.1429em;
         font-weight: bold;
         padding-left: 5.3em;
     }
-    .due-date-heading {
+    .due-date-divider {
         background: url("../i/due-date-divider.png") repeat-x 0 49%;
         color: #999;
         font-size: 0.7857em;
         margin: 0 0 0.2em;
     }
-    .due-date-heading span {
+    .due-date-divider span {
         background-color: #fff;
         padding-right: 5px;
     }
@@ -337,7 +337,7 @@ TODO Look into image replacement for checkboxes
     .issue-item .creator {
         font-size: 0.9286em;
     }
-    .issue-item h3 {
+    .issue-item h4 {
         font-size: 1em;
         font-weight: bold;
         margin: 0;
@@ -907,6 +907,24 @@ TODO Look into image replacement for checkboxes
         margin: 0 0 1.5em;
     }
     
+    /* Regular lists (inside modules)
+    ---------------------------------------------------- */
+    .m .reg-list {
+        margin: 0 0 1em 2.857em;
+    }
+    .m .reg-list .odd,
+    .m .reg-list li:nth-child(odd) {
+        background: transparent;
+    }
+    /* Ordered lists */
+    .m ol.reg-list {
+        list-style: outside decimal;
+    }
+    /* Unordered lists */
+    .m ul.reg-list {
+        list-style: outside disc;
+    }
+    
     /* Module edit button
     ---------------------------------------------------- */
     .edit-module {
@@ -1060,7 +1078,8 @@ TODO Look into image replacement for checkboxes
         padding: 0.25em 0.75em;
         margin: 0;
     }
-    .odd {
+    .zebra-list .odd,
+    .zebra-list li:nth-child(odd) {
         background-color: #e8e8e8;
     }
     

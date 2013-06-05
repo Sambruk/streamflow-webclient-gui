@@ -17,15 +17,15 @@
     }
     
     address,dl,fieldset,p,pre,ul,ol,table {
-        margin: 0 0 20px;
+        margin: 0 0 1.5em;
     }
     
     ul,ol,dd {
-        margin-left: 40px;
+        margin-left: 2.857em;
     }
     
     td ul,td ol {
-        margin-left: 15px;
+        margin-left: 1.071em;
     }
     
     ol ul,ul ol,ul ul,ol ol,td ul,td ol {
@@ -33,7 +33,7 @@
     }
     
     blockquote {
-        margin: 1em 40px;
+        margin: 1em 2.857em;
         font-style: italic;
     }
     
@@ -240,10 +240,9 @@
 
     /* Table zebra rows
     -------------------------------------------------------- */
-    tr.odd {
+    tr:nth-child(odd) {
         background: #f0e9eb;
     }
-
 
     /* Images
     -------------------------------------------------------- */
