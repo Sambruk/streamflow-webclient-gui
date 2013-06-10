@@ -32,12 +32,11 @@
     <!-- Google Maps -->
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&amp;language=sv"></script>
     <script type="text/javascript" src="gui/js/gmap3.js"></script>
-    <script type="text/javascript" src="gui/js/map-config.js"></script>
     
     <!-- Google Web Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
 </head>
-<body class="layout-1">
+<body class="layout-1 public">
     
     <div class="body">
         
@@ -79,15 +78,16 @@
                     <!-- Issues overview -->
                     <div class="issues-overview">
                         
-                        <h2>Synpunkter på karta</h2>
-                        <div id="issues-map" class="map">
-                            <img src="http://maps.googleapis.com/maps/api/staticmap?center=55.603466,12.99416&zoom=13&size=700x500&sensor=false&scale=2" alt="">
-                        </div>
-                        
                         <h2>Synpunkter för Malmö Stad</h2>
+                        
+                        <div class="map-container">
+                            <div id="issues-map" class="map">
+                                <img src="http://maps.googleapis.com/maps/api/staticmap?center=55.603466,12.99416&zoom=13&size=700x500&sensor=false&scale=2" alt="">
+                            </div>
+                        </div>
                     
                         <!-- My issues -->
-                        <h3>Mina ärenden</h3>
+                        <h3>Aktuella ärenden</h3>
                         <div class="due-date-divider"><span>Status</span></div>
                         <ul class="issue-list">
                             <li class="issue-item set">
