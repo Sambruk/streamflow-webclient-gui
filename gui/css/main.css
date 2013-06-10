@@ -531,6 +531,9 @@ TODO Look into image replacement for checkboxes
         padding: .5em .75em;
     }
     .note-body p {
+        margin: 0 0 0.5em;
+    }
+    .note-body p:last-child {
         margin: 0;
     }
     .note-posted-by {
