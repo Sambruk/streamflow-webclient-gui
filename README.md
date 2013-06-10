@@ -1,4 +1,3 @@
-streamflow-webclient-gui
-========================
+#Streamflow Webclient Prototype framework
 
-The new design of the Streamflow web client to replace the Swing client
+The new design of the Streamflow web client to replace the Swing client.
