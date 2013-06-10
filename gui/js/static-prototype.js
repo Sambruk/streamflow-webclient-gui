@@ -108,11 +108,13 @@ $(function() {
     
     // Google Maps toggle
     if ($("body").hasClass("public")) {
-        $(this).find(".issues-overview > h2").append("<a href=\"#\" class=\"toggle-map\">Visa ärenden på karta</a>");
+        var overviewHeading = $(".issues-overview > h2");
+        overviewHeading.append("<a href=\"#\" class=\"toggle-map\">Visa ärenden på karta</a>");
+        overviewHeading.after("<div id=\"issues-map\" class=\"map\"></div>");
     }
     
     var toggleMap = $(".toggle-map");
-    var googleMap = $(".map-container");
+    var googleMap = $("#issues-map");
     
     googleMap.hide();
     
