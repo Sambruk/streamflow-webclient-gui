@@ -10,6 +10,7 @@
 #08c    -   blue
 #cf0202 -   red
 #00831f -   green
+#ff7c00 -   orange
 -------------------------------------------------------- */
 
 /* TODOs
@@ -279,7 +280,9 @@ TODO Look into image replacement for checkboxes
         margin: 0 0 3px 57px;
     }
     .issue-item.set,
-    .issue-item.overdue {
+    .issue-item.overdue,
+    .issue-item.open,
+    .issue-item.closed {
         margin-left: 0;
     }
     .issue-item:hover {
@@ -311,7 +314,9 @@ TODO Look into image replacement for checkboxes
         font-size: 2.571em;
     }
     .issue-item.set .due-date,
-    .issue-item.overdue .due-date {
+    .issue-item.overdue .due-date,
+    .issue-item.open .due-date,
+    .issue-item.closed .due-date {
         width: 5em;
     }
     
@@ -325,6 +330,18 @@ TODO Look into image replacement for checkboxes
     .issue-item.overdue .due-date {
         background-color: #cf0202;
         padding: 0.7143em;
+    }
+    
+     /* Issue open */
+    .issue-item.open .due-date {
+        background-color: #ff7c00;
+        padding: 26px 0;
+    }
+    
+    /* Issue closed */
+    .issue-item.closed .due-date {
+        background-color: #00831f;
+        padding: 26px 0;
     }
     
     /* Issue details
@@ -438,7 +455,6 @@ TODO Look into image replacement for checkboxes
         display: table-cell;
     }
     
-    /* Issue due date (TODO: Refactor due date color codes into global) */
     .issue-body .due-date {
         background-color: #afafaf;
         border-radius: 5px 0 0 5px;
@@ -453,11 +469,15 @@ TODO Look into image replacement for checkboxes
         display: block;
         font-size: 2.571em;
     }
-    .issue-body .due-date.set {
+    .issue-body .due-date.set,
+    .issue-body .due-date.closed {
         background-color: #00831f;
     }
     .issue-body .due-date.overdue {
         background-color: #cf0202;
+    }
+    .issue-body .due-date.open {
+        background-color: #ff7c00;
     }
     
     /* Issue description */
@@ -546,6 +566,11 @@ TODO Look into image replacement for checkboxes
         color: #666;
         display: block;
         font-size: 0.8462em;
+    }
+    
+    /* Public notes */
+    .public .note-item {
+        font-size: 1em;
     }
     
     
@@ -1228,7 +1253,7 @@ TODO Look into image replacement for checkboxes
     label span,
     label em {
         margin: 0 0 0 0.5em;
-        color: #d65609;
+        color: #ff7c00;
         font-weight: normal;
         font-style: normal;
     }
