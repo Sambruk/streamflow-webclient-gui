@@ -449,6 +449,7 @@ TODO Look into image replacement for checkboxes
         border-radius: 0 5px 5px 0;
         display: table;
         margin: 0 0 0.5em;
+        width: 100%;
     }
     .issue-body .due-date,
     .issue-body .issue-description {
