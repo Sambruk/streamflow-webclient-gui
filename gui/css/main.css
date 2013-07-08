@@ -39,7 +39,7 @@ TODO Look into image replacement for checkboxes
     .header-body,
     .main-body {
         margin: 0 auto;
-        width: 71.4286em; /* 1000px */
+        width: 1000px;
     }
     
     
@@ -71,7 +71,6 @@ TODO Look into image replacement for checkboxes
         top: 0;
         text-align: center;
         width: 100%;
-        
     }
     .header,
     .header h1 {
@@ -1512,7 +1511,6 @@ TODO Look into image replacement for checkboxes
 @media screen and (max-width: 1000px) {
     
     /* Switch to full width */
-    .header-body,
     .main-body {
         margin: 0 auto;
         width: 100%;
@@ -1548,12 +1546,6 @@ TODO Look into image replacement for checkboxes
     .header h1 {
         float: none;
         padding: 0;
-    }
-    
-    /* Remove float on main search */
-    .main-search {
-        float: none;
-        margin-top: 1em;
     }
     
     /* Space above logged in user */
