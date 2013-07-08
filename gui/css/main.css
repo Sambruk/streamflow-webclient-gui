@@ -24,11 +24,12 @@ TODO Look into image replacement for checkboxes
     /* LAYOUT FRAMEWORK
     ======================================================================== */
     .body {
+        padding-top: 5em;
         width: 100%;
     }
     .header {
         background-color: #141414;
-        min-height: 4em;
+        z-index: 200;
     }
     .main {
         margin-top: 3em;
@@ -52,12 +53,10 @@ TODO Look into image replacement for checkboxes
     
     /* Layout-2 - two columns
     ---------------------------------------------------- */
-    .header-primary,
     .layout-2 .content-primary {
         float: left;
         width: 60%;
     }
-    .header-secondary,
     .layout-2 .content-secondary {
         float: right;
         width: 35%;
@@ -66,14 +65,18 @@ TODO Look into image replacement for checkboxes
     
     /* HEADER
     ======================================================================== */
+    .header {
+        padding: 1em 2em;
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        
+    }
     .header,
     .header h1 {
         color: #fff;
-    }
-    .header h1 {
-        float: left;
-        font-size: 1.1429em;
-        padding: 28px 0;
     }
     .header a,
     .header a:visited {
@@ -84,12 +87,23 @@ TODO Look into image replacement for checkboxes
     .header a:focus {
         text-decoration: underline;
     }
+    .header .client-name,
+    .header .main-search,
+    .header .user-area {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    /* Client name
+    ---------------------------------------------------- */
+    .client-name h1 {
+        font-size: 1.1429em;
+    }
     
     /* Main search
     ---------------------------------------------------- */
     .main-search {
-        float: right;
-        margin-top: 18px;
+        
     }
     .main-search input[type="text"] {
         background-color: #fff;
@@ -114,7 +128,6 @@ TODO Look into image replacement for checkboxes
     .logged-in {
         display: block;
         padding: 6px 0;
-        margin-top: 20px;
     }
     .logged-in:before {
         font-size: 1.2857em;
@@ -1523,19 +1536,11 @@ TODO Look into image replacement for checkboxes
     }
     
     /* Layout-2 - switch to single column */
-    .header-primary,
     .layout-2 .content-primary,
-    .header-secondary,
     .layout-2 .content-secondary {
         float: none;
         width: 100%;
     }
-    .header-primary,
-    .header-secondary {
-        overflow: hidden;
-        width: 100%;
-    }
-    
     
     /* Remove float on header */
     .header {
