@@ -241,7 +241,7 @@
 
     /* Table zebra rows
     -------------------------------------------------------- */
-    tr:nth-child(odd) {
+    tr.odd {
         background: #f0e9eb;
     }
 

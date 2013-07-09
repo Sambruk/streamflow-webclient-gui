@@ -1105,8 +1105,7 @@ TODO Look into image replacement for checkboxes
         padding: 0.25em 0.75em;
         margin: 0;
     }
-    .zebra-list .odd,
-    .zebra-list li:nth-child(odd) {
+    .zebra-list .odd {
         background-color: #e8e8e8;
     }
     
