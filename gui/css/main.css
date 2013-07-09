@@ -152,9 +152,7 @@ TODO Look into image replacement for checkboxes
     .functions-menu {
         position: relative;
         left: -200px;
-        -webkit-transition: left .2s ease-in-out;        
-           -moz-transition: left .2s ease-in-out;
-             -o-transition: left .2s ease-in-out;
+        -webkit-transition: left .2s ease-in-out;
                 transition: left .2s ease-in-out;
     }
     .functions-menu.open {
@@ -163,13 +161,11 @@ TODO Look into image replacement for checkboxes
 
     /* Add new issue & Functions header
     ---------------------------------------------------- */
-    .add-new-issue {
+    .add-new-issue,
+    .functions-header .open-toolbar {
         background-color: #222;
-        background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:    -moz-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:     -ms-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:      -o-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:         linear-gradient(top, #222 0%, #131313 100%);
+        background: -webkit-linear-gradient(top, #222 0%, #131313 100%);
+        background: linear-gradient(to bottom, #222 0%, #131313 100%);
     }
     .add-new-issue,
     .functions-header .open-toolbar {
@@ -200,14 +196,6 @@ TODO Look into image replacement for checkboxes
     .functions-header h2 a {
         color: inherit;
         text-decoration: none;
-    }
-    .functions-header .open-toolbar {
-        background-color: #222;
-        background-image: -webkit-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:    -moz-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:     -ms-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:      -o-linear-gradient(top, #222 0%, #131313 100%);
-        background-image:         linear-gradient(top, #222 0%, #131313 100%);
     }
     .functions-header .open-toolbar {
         float: right;
@@ -952,8 +940,7 @@ TODO Look into image replacement for checkboxes
     .m .reg-list {
         margin: 0 0 1em 2.857em;
     }
-    .m .reg-list .odd,
-    .m .reg-list li:nth-child(odd) {
+    .m .reg-list .odd {
         background: transparent;
     }
     /* Ordered lists */
