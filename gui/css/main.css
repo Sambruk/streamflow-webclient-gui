@@ -85,15 +85,13 @@ TODO Look into image replacement for checkboxes
     .header a:focus {
         text-decoration: underline;
     }
-    .header .client-name,
-    .header .main-search,
-    .header .user-area {
-        display: inline-block;
-        vertical-align: middle;
-    }
     
     /* Client name
     ---------------------------------------------------- */
+    .client-name {
+        float: left;
+        padding: 0.55em 0;
+    }
     .client-name h1 {
         font-size: 1.1429em;
     }
@@ -101,13 +99,14 @@ TODO Look into image replacement for checkboxes
     /* Main search
     ---------------------------------------------------- */
     .main-search {
-        
+        display: inline-block;
     }
     .main-search input[type="text"] {
         background-color: #fff;
         border: none;
         border-radius: 5px;
         padding: 6px 10px;
+        width: 20em;
     }
     .main-search button[type="submit"] {
         padding: 6px 14px;
@@ -121,8 +120,11 @@ TODO Look into image replacement for checkboxes
         text-indent: -9999px;
     }
     
-    /* Logged in user
+    /* User area
     ---------------------------------------------------- */
+    .user-area {
+        float: right;
+    }
     .logged-in {
         display: block;
         padding: 6px 0;
