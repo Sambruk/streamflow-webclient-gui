@@ -16,7 +16,6 @@ $(function() {
     // Slide in navigation
     $(".open-toolbar").on("click", function(e) {
         $(".functions-menu").toggleClass("open");
-        $(".navigation").toggleClass("static");
         e.preventDefault();
     });
     
