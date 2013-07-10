@@ -100,16 +100,18 @@ TODO Look into image replacement for checkboxes
     ---------------------------------------------------- */
     .main-search {
         display: inline-block;
+        width: 22em;
     }
     .main-search input[type="text"] {
         background-color: #fff;
         border: none;
         border-radius: 5px;
         padding: 6px 10px;
-        width: 20em;
+        width: 80%;
     }
     .main-search button[type="submit"] {
         padding: 6px 14px;
+        width: 17%;
     }
     .main-search button[type="submit"] .icon-search:before {
         color: #fff;
