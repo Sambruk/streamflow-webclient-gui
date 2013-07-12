@@ -1375,9 +1375,6 @@ TODO Look into image replacement for checkboxes
     .select select {
         max-width: 100%;
     }
-    .text textarea {
-        height: 120px;
-    }
     input[type="submit"] {
         width: auto !important;
     }
