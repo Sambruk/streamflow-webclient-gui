@@ -29,6 +29,13 @@
     <script type="text/javascript" src="gui/js/jquery.placeholder.min.js"></script>
     <script type="text/javascript" src="gui/js/static-prototype.js"></script>
     
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="gui/vendor/pickadate.js/themes/default.css">
+    <link rel="stylesheet" href="gui/vendor/pickadate.js/themes/default.date.css">
+    <script type="text/javascript" src="gui/vendor/pickadate.js/picker.js"></script>
+    <script type="text/javascript" src="gui/vendor/pickadate.js/picker.date.js"></script>
+    <script type="text/javascript" src="gui/vendor/pickadate.js/translations/sv_SE.js"></script>
+    
     <!-- Google Web Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
 </head>
@@ -198,6 +205,17 @@
                                     <div class="text col small col-3">
                                         <label for="field-4">Postnummer</label>
                                         <input type="text" name="field-4" id="field-4">
+                                    </div>
+                                </div>
+                                
+                                <div class="row cols-2 cf">
+                                    <div class="text col large col-1">
+                                        <label for="field-41">Extra långt fält för något</label>
+                                        <input type="text" name="field-41" id="field-41">
+                                    </div>
+                                    <div class="text col small col-1">
+                                        <label for="field-42">Datum</label>
+                                        <input type="text" name="field-42" id="field-42" class="datepicker" placeholder="ÅÅÅÅ-MM-DD">
                                     </div>
                                 </div>
                                 

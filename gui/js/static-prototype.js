@@ -65,6 +65,10 @@ $(function() {
         e.preventDefault();
     });
     
+    // Date picker
+    $('.datepicker').pickadate({
+        format: 'yyyy-mm-dd',
+    });
     
     // Google Maps config
     function initMaps() {
