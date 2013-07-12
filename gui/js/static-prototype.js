@@ -46,7 +46,7 @@ $(function() {
     $(".convo-body").css("height", convoBodyHeight);
     
     
-    // Custom select elements (TODO: Find a more accessible replacement)
+    // Custom select elements
     $("select").customSelect({customClass:'custom-select'});
     
     
