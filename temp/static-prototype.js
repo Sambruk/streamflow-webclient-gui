@@ -66,8 +66,23 @@ $(function() {
     });
     
     // Date picker
-    $('.datepicker').pickadate({
-        format: 'yyyy-mm-dd',
+    try {
+        $('.datepicker').pickadate({
+            format: 'yyyy-mm-dd',
+        });
+    } catch(e) {}
+    
+    // Fix toolbar on scroll
+    var sidebar     = $(".toolbar"), 
+        view        = $(window),
+        offset      = sidebar.offset();
+
+    view.scroll(function() {
+        if (view.scrollTop() > offset.top - 76) {
+            sidebar.addClass('fixed');
+        } else {
+            sidebar.removeClass('fixed');
+        }
     });
     
     // Google Maps config
@@ -107,8 +122,7 @@ $(function() {
                 }
             }
         });
-    }
-    
+    }    
     
     // Google Maps toggle
     if ($("body").hasClass("public")) {
