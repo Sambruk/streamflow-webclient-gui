@@ -1378,6 +1378,7 @@ TODO Look into image replacement for checkboxes
         width: auto !important;
     }
     .form-general fieldset {
+        border-radius: 3px;
         margin: 0;
         padding: 5px 8px;
         border: 1px solid #ddd;
