@@ -1470,6 +1470,9 @@ TODO Look into image replacement for checkboxes
     .error legend {
         color: #900;
     }
+    .text.error input {
+        box-shadow: 0 0 6px #900;
+    }
     
     
     /* GOOGLE MAPS
