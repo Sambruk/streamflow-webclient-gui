@@ -13,11 +13,6 @@
 #ff7c00 -   orange
 -------------------------------------------------------- */
 
-/* TODOs
---------------------------------------------------------
-TODO Look into image replacement for checkboxes
--------------------------------------------------------- */
-
 @media screen, projection {
     
     /* LAYOUT FRAMEWORK
@@ -31,7 +26,7 @@ TODO Look into image replacement for checkboxes
         z-index: 200;
     }
     .main {
-        margin-top: 3em;
+        margin: 3em 0;
     }
     .footer {
         background-color: #222;
@@ -686,8 +681,11 @@ TODO Look into image replacement for checkboxes
     }
     
     
-    /* CONVERSATION WINDOW
+    /* CONVERSATION VIEW
     ======================================================================== */
+    .conversation {
+        box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
     .convo-head,
     .convo-input,
     .convo-body {
@@ -711,6 +709,8 @@ TODO Look into image replacement for checkboxes
     }
     .participants span {
         background-color: #666;
+        display: inline-block;
+        margin: 0 .2em .2em 0;
     }
     .participants .icon-close {
         color: #fff;
@@ -736,8 +736,6 @@ TODO Look into image replacement for checkboxes
     /* Conversation input
     ---------------------------------------------------- */
     .convo-input {
-        background-color: #bababa;
-        border-bottom: 1px solid #fff;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
@@ -758,7 +756,6 @@ TODO Look into image replacement for checkboxes
         width: 80%;
     }
     .convo-input .text textarea {
-        background-color: #fff;
         border-radius: 0;
         resize: none;
         width: 100%;
@@ -792,11 +789,6 @@ TODO Look into image replacement for checkboxes
     
     /* Conversation body
     ---------------------------------------------------- */
-    .convo-body {
-        background-color: #ccc;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
     .convo-messages {
         list-style: none;
         margin: 0.5em 0 1em;
@@ -817,7 +809,7 @@ TODO Look into image replacement for checkboxes
         float: right;
     }
     .msg-body {
-        background-color: #fff;
+        background-color: #e8e8e8;
         padding: 1em;
     }
     .msg-meta {
