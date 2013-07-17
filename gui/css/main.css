@@ -1402,7 +1402,7 @@ TODO Look into image replacement for checkboxes
     /* Form columns
     -------------------------------------------------------- */
     form .row {
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
     .row .text input,
     .row textarea {
@@ -1471,7 +1471,7 @@ TODO Look into image replacement for checkboxes
         color: #900;
     }
     .text.error input {
-        box-shadow: 0 0 6px #900;
+        box-shadow: 0 0 9px #900;
     }
     
     
