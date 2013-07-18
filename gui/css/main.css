@@ -1470,7 +1470,7 @@ TODO Look into image replacement for checkboxes
     .error legend {
         color: #900;
     }
-    .text.error input {
+    .text input.ng-invalid {
         box-shadow: 0 0 9px #900;
     }
     
