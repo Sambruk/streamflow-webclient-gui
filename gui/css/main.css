@@ -683,9 +683,6 @@
     
     /* CONVERSATION VIEW
     ======================================================================== */
-    .conversation {
-        box-shadow: 0 0 12px rgba(0,0,0,0.3);
-    }
     .convo-head,
     .convo-input,
     .convo-body {
