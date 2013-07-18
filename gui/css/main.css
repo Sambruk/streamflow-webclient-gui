@@ -753,7 +753,7 @@
     /* Textarea */
     .convo-input .text {
         margin: 0;
-        width: 80%;
+        width: 76%;
     }
     .convo-input .text textarea {
         border-radius: 0;
@@ -763,7 +763,7 @@
     
     /* Upload button */
     .convo-input .upload {
-        width: 6%;
+        width: 10%;
     }
     .convo-input .upload a {
         background-color: #08c;
