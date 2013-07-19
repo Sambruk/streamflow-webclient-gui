@@ -725,6 +725,10 @@
         background-color: #08c;
         display: inline-block;
     }
+    .participants .add-participant:hover,
+    .participants .add-participant:focus {
+        background-color: #0af;
+    }
     .participants .add-participant *[class*="icon-"] {
         color: inherit;
         padding: 0 0.25em;
@@ -772,6 +776,10 @@
         padding-top: 0.35em;
         text-align: center;
         width: 100%;
+    }
+    .convo-input .upload a:hover,
+    .convo-input .upload a:focus {
+        background-color: #0af;
     }
     
     /* Submit area */
