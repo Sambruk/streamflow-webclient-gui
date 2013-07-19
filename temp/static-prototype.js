@@ -20,32 +20,6 @@ $(function() {
     });
     
     
-    // Invoke conversations modal window
-    var modalWindow = $(".modal-window");
-    
-    modalWindow.easyModal({
-        top: 50,
-        overlayOpacity: 0.7,
-        overlayColor: "#000",
-        closeButtonClass: "modal-close"
-    });
-    $(".m-convos .block-link").on("click", function(e) {
-        modalWindow.trigger('openModal');
-        e.preventDefault();
-    });
-    $(".modal-close").on("click", function(e) {
-       modalWindow.trigger('closeModal');
-        e.preventDefault();
-    });
-    
-    
-    // Set height of convo-body
-    var modalHeight = $(".modal-window").height();
-    var convoBodyHeight = modalHeight / 2; // Set to half of modal-window height
-    
-    $(".convo-body").css("height", convoBodyHeight);
-    
-    
     // Custom select elements
     $("select").customSelect({customClass:'custom-select'});
     
