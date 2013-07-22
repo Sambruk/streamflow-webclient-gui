@@ -683,21 +683,9 @@
     
     /* CONVERSATION VIEW
     ======================================================================== */
-    .convo-head,
-    .convo-input,
-    .convo-body {
-        padding: 0.5em 1em;
-    }
     
-    /* Conversation head
-    -------------------------------------------------------- */
-    .convo-head h2 {
-        font-size: 1.1429em;
-        font-weight: bold;
-        margin-bottom: 1em;
-    }
-    
-    /* Participants */
+    /* Participants
+    ---------------------------------------------------- */
     .participants span,
     .participants .add-participant {
         border-radius: 3px;
@@ -707,7 +695,7 @@
     .participants span {
         background-color: #666;
         display: inline-block;
-        margin: 0 .2em .2em 0;
+        margin: 0 .4em .4em 0;
     }
     .participants .icon-close {
         color: #fff;
