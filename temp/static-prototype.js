@@ -96,7 +96,10 @@ $(function() {
                 }
             }
         });
-    }    
+    }
+    
+    // Superfish dropdown menu
+    $(".buttons ul").superfish();
     
     // Google Maps toggle
     if ($("body").hasClass("public")) {

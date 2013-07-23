@@ -937,6 +937,45 @@
         margin-top: 3em;
     }
     
+    /* Toolbar buttons */
+    .buttons {
+        list-style: none;
+        margin: 0;
+    }
+    .buttons li {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .buttons ul {
+        display: none;
+        list-style: none;
+        margin: -3px 0 0;
+        position: absolute;
+        width: 10em;
+        z-index: 999;
+    }
+    .buttons a:hover + ul,
+    .buttons a:focus + ul:hover,
+    .buttons a:focus + ul,
+    .buttons ul:hover {
+        display: block;
+    }
+    .buttons li li {
+        display: block;
+        margin: 0;
+    }
+    .buttons li li a {
+        border-radius: 0;
+        display: block;
+    }
+    .buttons li li:first-child a {
+        border-radius: 0 5px 0 0;
+    }
+    .buttons li li:last-child a {
+        border-radius: 0 0 5px 5px;
+    }
+    
+    
     /* Regular lists (inside modules)
     ---------------------------------------------------- */
     .m .reg-list {
@@ -1061,16 +1100,17 @@
     
     /* Styled link buttons
     ---------------------------------------------------- */
-    .btn {
+    a.btn {
         background-color: #08c;
         border-radius: 5px;
         color: #fff;
-        padding: 4px 14px;
+        display: inline-block;
+        padding: 0.25em 1em;
         text-decoration: none;
     }
-    .btn:hover,
-    .btn:focus,
-    .btn:active {
+    a.btn:hover,
+    a.btn:focus,
+    a.btn:active {
         color: #fff;
         background-color: #0af;
     }
