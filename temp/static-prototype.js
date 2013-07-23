@@ -9,7 +9,7 @@ $(function() {
                 e.preventDefault();
                 alert('Denna länk är inte aktiv i prototypen.');
             }
-        } catch (e) {}
+        } catch(e) {}
     });
     
     
@@ -52,11 +52,14 @@ $(function() {
         offset      = sidebar.offset();
 
     view.scroll(function() {
-        if (view.scrollTop() > offset.top - 76) {
-            sidebar.addClass('fixed');
-        } else {
-            sidebar.removeClass('fixed');
-        }
+        var contentSecondaryWidth = $(".content-secondary").width();
+        try {
+            if (view.scrollTop() > offset.top - 76) {
+                sidebar.addClass('fixed').css("width", contentSecondaryWidth);
+            } else {
+                sidebar.removeClass('fixed').removeAttr("style");
+            }
+        } catch(e) {}
     });
     
     // Google Maps config
@@ -99,7 +102,18 @@ $(function() {
     }
     
     // Superfish dropdown menu
-    $(".buttons ul").superfish();
+    try {
+        $(".buttons ul").superfish();
+    } catch (e) {}
+    
+    // Toolbar toggle content
+    var toolbarContent = $(".toolbar-content");
+    toolbarContent.hide();
+    
+    $(".buttons a").on("click", function(e){
+        toolbarContent.slideToggle("fast");
+        e.preventDefault();
+    });
     
     // Google Maps toggle
     if ($("body").hasClass("public")) {
