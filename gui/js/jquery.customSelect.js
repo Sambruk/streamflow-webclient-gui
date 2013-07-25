@@ -32,9 +32,9 @@
                 customSelectSpanInner.html(html);
                 
                 if (currentSelected.attr('disabled')) {
-                	customSelectSpan.addClass(getClass('DisabledOption'));
+                    customSelectSpan.addClass(getClass('DisabledOption'));
                 } else {
-                	customSelectSpan.removeClass(getClass('DisabledOption'));
+                    customSelectSpan.removeClass(getClass('DisabledOption'));
                 }
                 
                 setTimeout(function () {
@@ -66,17 +66,17 @@
                 $select
                     .addClass('hasCustomSelect')
                     .on('update', function () {
-						changed($select,customSelectSpan);
-						
+                        changed($select,customSelectSpan);
+                        
                         var selectBoxWidth = parseInt($select.outerWidth(), 10) -
                                 (parseInt(customSelectSpan.outerWidth(), 10) -
                                     parseInt(customSelectSpan.width(), 10));
-						
-						// Set to inline-block before calculating outerHeight
-						customSelectSpan.css({
+                        
+                        // Set to inline-block before calculating outerHeight
+                        customSelectSpan.css({
                             display: 'inline-block'
                         });
-						
+                        
                         var selectBoxHeight = customSelectSpan.outerHeight();
 
                         if ($select.attr('disabled')) {
