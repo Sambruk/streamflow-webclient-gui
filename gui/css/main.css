@@ -1424,6 +1424,9 @@
     .select {
         margin: 0 0 6px;
     }
+    .select {
+        position: relative;
+    }
     .select select {
         max-width: 100%;
     }
