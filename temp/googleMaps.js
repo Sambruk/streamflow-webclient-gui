@@ -9,7 +9,7 @@ $(function() {
      * Google Maps config
      */
     function initMaps() {
-        $("#issues-map").gmap3({
+        $('#issues-map').gmap3({
             map: {
                 options: {
                     center: [55.603466,12.99416],
@@ -38,8 +38,8 @@ $(function() {
                 options:{
                     draggable: false,
                     icon: new google.maps.MarkerImage(
-                        "gui/i/map-marker-green.png",
-                        new google.maps.Size(32, 37, "px", "px")
+                        'gui/i/map-marker-green.png',
+                        new google.maps.Size(32, 37, 'px', 'px')
                     )
                 }
             }
@@ -50,18 +50,18 @@ $(function() {
     /**
      * Google Maps toggle
      */
-    if ($("body").hasClass("public")) {
-        var overviewHeading = $(".issues-overview > h2");
-        overviewHeading.append("<a href=\"#\" class=\"toggle-map\">Visa ärenden på karta</a>");
-        overviewHeading.after("<div id=\"issues-map\" class=\"map\"></div>");
+    if ($('body').hasClass('public')) {
+        var overviewHeading = $('.issues-overview > h2');
+        overviewHeading.append('<a href="#" class="toggle-map">Visa ärenden på karta</a>');
+        overviewHeading.after('<div id="issues-map" class="map"></div>');
     }
     
-    var toggleMap = $(".toggle-map");
-    var googleMap = $("#issues-map");
+    var toggleMap = $('.toggle-map');
+    var googleMap = $('#issues-map');
     
     googleMap.hide();
     
-    toggleMap.on("click", function(e){
+    toggleMap.on('click', function(e){
         googleMap.slideToggle();
         initMaps();
         e.preventDefault();
