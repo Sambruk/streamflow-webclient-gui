@@ -725,17 +725,16 @@
     /* Conversation input
     ---------------------------------------------------- */
     .convo-input {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        margin: 1em 0;
     }
     .convo-input .text,
     .convo-input .upload,
-    .convo-input .submit-area {
+    .convo-input .send {
         float: left;
     }
     .convo-input .text textarea,
     .convo-input .upload a,
-    .convo-input .submit-area button {
+    .convo-input .send button {
         height: 4.286em;
     }
     
@@ -771,20 +770,22 @@
     }
     
     /* Submit area */
-    .convo-input .submit-area {
+    .convo-input .send {
         margin-left: 0.25em;
         width: 13%;
     }
-    .convo-input .submit-area button {
+    .convo-input .send button {
         width: 100%;
     }
     
     
     /* Conversation body
     ---------------------------------------------------- */
+    .convo-body {
+        margin: 1em 0;
+    }
     .convo-messages {
         list-style: none;
-        margin: 0.5em 0 1em;
     }
     .convo-messages .msg-item {
         margin: 0 0 1.25em;
