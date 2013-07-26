@@ -1098,13 +1098,13 @@
         font-weight: bold;
         padding-left: 0.75em;
     }
-    .m .add-item {
+    .m .action-btn {
         display: block;
         float: right;
         margin-right: 0.75em;
         text-decoration: none;
     }
-    .m .add-item .icon-plus {
+    .m .action-btn *[class*="icon-"] {
         color: #08c;
     }
     .m h3 {
