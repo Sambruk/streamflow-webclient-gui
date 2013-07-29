@@ -409,7 +409,7 @@
     .m-h .id {
         padding: 6px 10px 0;
     }
-    .m-h .choose-type,
+    /*.m-h .choose-type,*/
     .m-h .set-due-date {
         background-color: #eaeaea;
         border-radius: 5px;
