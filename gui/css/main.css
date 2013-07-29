@@ -402,40 +402,26 @@
     ---------------------------------------------------- */
     .m-h .id,
     .m-h .choose-type,
-    .m-h .wiki-link,
     .m-h .set-due-date {
         display: inline-block;
+        vertical-align: middle;
     }
     .m-h .id {
         padding: 6px 10px 0;
     }
-    /*.m-h .choose-type,*/
+    .m-h .choose-type {
+        padding: 4px 10px 0;
+    }
     .m-h .set-due-date {
         background-color: #eaeaea;
         border-radius: 5px;
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .m-h .choose-type *[class*="icon-"] {
-        color: #08c;
-        font-size: 1.1429em;
-        margin: 0 0 0 0.5em;
-    }
     .m-h input[type="text"] {
         background-color: transparent;
         border: none;
         padding: 0.214em 0.286em;
-    }
-    .wiki-link *[class*="icon-"] {
-        background-color: #08c;
-        border-radius: 1.8571em;
-        color: #fff;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 0.25em;
-        text-align: center;
-        height: 1.8571em;
-        width: 1.8571em;
     }
     
     
