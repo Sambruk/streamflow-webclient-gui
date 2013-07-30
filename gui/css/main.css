@@ -1427,6 +1427,34 @@
         border: 1px solid #ddd;
     }
     
+    /* Input saved state */
+    .text.saved {
+        position: relative;
+    }
+    .row .text.saved input {
+        background: rgba(0,255,0,0.1);
+        box-shadow: 0 0 3px rgba(0,255,0,0.8);
+        padding-right: 2.75em;
+    }
+    .text.saved:after {
+        content: "\37";
+        color: #0f0;
+        display: block;
+        position: absolute;
+        right: -1em;
+        bottom: 0.75em;
+        height: 1em;
+        width: 3em;
+        
+        font-family: "StreamflowIcons";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        speak: none;
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
+    }
+    
     
     /* Form columns
     -------------------------------------------------------- */
