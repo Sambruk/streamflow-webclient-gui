@@ -1094,6 +1094,13 @@
     .m .action-btn *[class*="icon-"] {
         color: #08c;
     }
+    .m .action-btn .icon-arrow-down:before {
+        margin-top: -3px;
+        -webkit-transform: rotate(90deg);
+           -moz-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
     .m h3 {
         font-size: 1em;
         font-weight: bold;
