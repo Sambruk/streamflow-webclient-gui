@@ -27,7 +27,6 @@
     <script type="text/javascript" src="gui/js/jquery.customSelect.js"></script>
     <script type="text/javascript" src="gui/js/jquery.fileinput.js"></script>
     <script type="text/javascript" src="gui/js/jquery.placeholder.min.js"></script>
-    <script type="text/javascript" src="gui/js/jquery.superfish.js"></script>
     
     <!-- Google Web Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
@@ -149,247 +148,50 @@
                 
                 <div class="content-primary" role="main">
                     
-                    <!-- Module: Single issue -->
-                    <div class="m single-issue">
-                        
-                        <!-- Issue header -->
-                        <div class="m-h cf">
-                            <h2 class="id">20121061-1</h2>
-                            <div class="choose-type">
-                                <form action="#" method="post">
-                                    <label for="issue-type" class="struct">Ärendetyp</label>
-                                    <select name="issue-type" id="issue-type">
-                                        <option value="option1">Ärendetyp 1</option>
-                                        <option value="option2">Ärendetyp 2</option>
-                                        <option value="option3">Ärendetyp 3</option>
-                                        <option value="option4">Ärendetyp 4</option>
-                                    </select>
-                                    <button type="submit" name="save-type" class="struct">Spara ärendetyp</button>
-                                </form>
-                            </div>
-                            <a href="xlink-" class="edit-module icon-edit" title="Redigera ärende"><span class="struct">Redigera ärende</span></a>
-                        </div>
-                        <!-- /Issue header -->
-                        
-                        <div class="issue-body">
-                            <div class="due-date set">
-                                <!-- <span>5</span> dagar -->
-                                03/17
-                            </div>
-                            <div class="issue-description">
-                                <h2>Bristfällig gräsklippning i lilla parken</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <!-- /issue-body -->
-                        
-                        <div class="issue-notes cf">
-                            
-                            <div class="notes-content">
-                            
-                                <form action="#" method="get" class="input-note cf">
-                                    <div class="text">
-                                        <label for="note-text" class="struct">Notering</label>
-                                        <input type="text" name="note-text" id="note-text" placeholder="Notering">
-                                    </div>
-                                    <div class="submit-area">
-                                        <button type="submit" name="add-note">Lägg till</button>
-                                    </div>
-                                </form>
-                            
-                                <div class="posted-notes">
-                                    <div class="note-item cf">
-                                        <div class="note-body">
-                                            <p>Det här ser ut som ett intressant ärende! Jag tar det!</p>
-                                        </div>
-                                        <div class="note-posted-by">
-                                            <span class="struct">Postad av: </span>Solveig Grankvist
-                                            <span class="note-timestamp">2 dagar sedan</span>
-                                        </div>
-                                    </div>
-                                    <div class="note-item cf">
-                                        <div class="note-body">
-                                            <p>Vi borde byta färg på alla soptunnor till rosa, eller vad säger ni? Då kanske gräsklippningen inte blir så lidande. Låter långsökt, jag vet. Men det är värt ett försök!</p>
-                                        </div>
-                                        <div class="note-posted-by">
-                                            <span class="struct">Postad av: </span>Johannes Pettersson-Jansson-Petrén
-                                            <span class="note-timestamp">4 dagar sedan</span>
-                                        </div>
-                                    </div>
-                                    <div class="note-item cf">
-                                        <div class="note-body">
-                                            <p>Jag kollade upp detta och det finns inte ens något gräs i parken!</p>
-                                        </div>
-                                        <div class="note-posted-by">
-                                            <span class="struct">Postad av: </span>Ola Persson
-                                            <span class="note-timestamp">5 dagar sedan</span>
-                                        </div>
-                                    </div>
-                                    <div class="expandable-field">
-                                        <div class="expandable-content">
-                                            
-                                            <div class="note-item cf">
-                                                <div class="note-body">
-                                                    <p>Ok, fine!</p>
-                                                </div>
-                                                <div class="note-posted-by">
-                                                    <span class="struct">Postad av: </span>Sonja Eriksson
-                                                    <span class="note-timestamp">8 dagar sedan</span>
-                                                </div>
-                                            </div>
-                                            <div class="note-item cf">
-                                                <div class="note-body">
-                                                    <p>Du fixar väl det?</p>
-                                                </div>
-                                                <div class="note-posted-by">
-                                                    <span class="struct">Postad av: </span>Erik Johansson
-                                                    <span class="note-timestamp">8 dagar sedan</span>
-                                                </div>
-                                            </div>
-                                            <div class="note-item cf">
-                                                <div class="note-body">
-                                                    <p>Någon som vill ta detta?</p>
-                                                </div>
-                                                <div class="note-posted-by">
-                                                    <span class="struct">Postad av: </span>Sonja Eriksson
-                                                    <span class="note-timestamp">8 dagar sedan</span>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            
-                        </div>
-                        <!-- /issue-notes -->
-                        
-                    </div>
-                    <!-- /Module: Single issue -->
-                    
-                    <!-- Module: Check list -->
+                    <!-- Module: Full conversation -->
                     <div class="m m-check-list">
                         <div class="m-h">
-                            <h2>Checklista</h2>
-                            <a href="xlink-" class="action-btn">Lägg till <i class="icon-plus"></i></a>
+                            <h2>Skapa en ny konversation</h2>
+                            <a href="issue.html" class="action-btn"><i class="icon-arrow-down"></i> Tillbaka</a>
                         </div>
                         <div class="mc">
-                            <form action="#" method="get">
-                                <ul class="check-list zebra-list">
-                                    <li class="odd">
-                                        <div class="checkbox">
-                                            <input type="checkbox" name="check1-1" id="check1-1">
-                                            <label for="check1-1">Skolplats ansökningsformulär ifyllt</label>
+                            
+                            <div class="participants">
+                                <h3 class="struct">Deltagare i denna konversation</h3>
+                                <span>Streamsource Admin <a href="xlink-" class="icon-close" title="Ta bort från konversationen"><span class="struct">Ta bort från konversationen</span></a></span>
+                                <span>Solveig Grankvist <a href="xlink-" class="icon-close" title="Ta bort från konversationen"><span class="struct">Ta bort från konversationen</span></a></span>
+                                <a href="xlink-" class="add-participant" title="Lägg till deltagare"><i class="icon-user"></i><i class="icon-plus"></i><span class="struct">Lägg till deltagare</span></a>
+                            </div>
+                            <!-- /participants -->
+                            
+                            <div class="convo-input">
+                                <form action="#" method="get" class="cf">
+                                    <div class="row cf">
+                                        <div class="text col full">
+                                            <label for="field-1">Titel</label>
+                                            <input type="text" name="field-1" id="field-1">
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="checkbox">
-                                            <input type="checkbox" name="check1-2" id="check1-2">
-                                            <label for="check1-2">Skolplats ansökningsformulär ifyllt</label>
+                                    </div>
+                                    <div class="row cf">
+                                        <div class="text">
+                                            <label for="convo-text" class="struct">Meddelande</label>
+                                            <textarea name="convo-text" id="convo-text" cols="30" rows="2" placeholder="Skriv ditt meddelande här"></textarea>
                                         </div>
-                                    </li>
-                                    <li class="odd">
-                                        <div class="checkbox">
-                                            <input type="checkbox" name="check1-3" id="check1-3">
-                                            <label for="check1-3">Skolplats ansökningsformulär ifyllt</label>
+                                        <div class="upload">
+                                            <a href="xlink-dsa890d" class="icon-camera upload-file"><span class="struct">Ladda upp en fil</span></a>
                                         </div>
-                                    </li>
-                                </ul>
-                                <div class="submit-area struct">
-                                    <button type="submit" name="check-list-submit">Spara checklista</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /Module: Check list -->
-                    
-                    <div class="m m-issue-forms">
-                        <div class="m-h">
-                            <h2>Formulär</h2>
-                        </div>
-                        <div class="m-c">
-                            
-                            <ul class="form-tabs cf">
-                                <li class="has-versions">
-                                    <a href="xlink-ds79d0a" class="sel">Skolplats ansökning</a>
-                                    <a href="issue-form-version.html" class="icon-arrow-down versions-drop"><span class="struct">Visa tidigare versioner</span></a>
-                                </li>
-                                <li class="has-versions">
-                                    <a href="xlink-das7698d">Signatur</a>
-                                    <a href="issue-form-version.html" class="icon-arrow-down versions-drop"><span class="struct">Visa tidigare versioner</span></a>
-                                </li>
-                                <li>
-                                    <a href="xlink-da7s9d">Formulär 1</a>
-                                </li>
-                                <li>
-                                    <a href="xlink-g8df9g">Formulär 2</a>
-                                </li>
-                            </ul>
-                            
-                            <ol class="form-sections cf">
-                                <li class="section-item sel"><a href="xlink-">Sökandes kontaktdetaljer</a></li>
-                                <li class="section-item"><a href="xlink-">Skola och personlig information</a></li>
-                            </ol>
-                            
-                            <form action="#" method="get">
-                                
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-1">Namn ( Elev ) <em>Samtliga förnamn samt efternamn ska anges</em></label>
-                                        <input type="text" name="field-1" id="field-1">
+                                        <div class="send">
+                                            <button type="submit" name="convo-submit">Skicka</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-2">Personnummer <em>ååååmmdd-xxxx</em></label>
-                                        <input type="text" name="field-2" id="field-2">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-3">Namn <em>Vårdnadshavare</em></label>
-                                        <input type="text" name="field-3" id="field-3">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-4">Gatuadress</label>
-                                        <input type="text" name="field-4" id="field-4">
-                                    </div>
-                                </div>
-                                <div class="row cols-2 cf">
-                                    <div class="text col small col-1">
-                                        <label for="field-5">Postnummer</label>
-                                        <input type="text" name="field-5" id="field-5">
-                                    </div>
-                                    <div class="text col large col-2">
-                                        <label for="field-6">Postort</label>
-                                        <input type="text" name="field-6" id="field-6">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-7">Telefon</label>
-                                        <input type="text" name="field-7" id="field-7">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-8">E-post</label>
-                                        <input type="text" name="field-8" id="field-8">
-                                    </div>
-                                </div>
-                                <div class="row submit-area struct">
-                                    <button type="submit" name="form-submit">Spara formulär</button>
-                                </div>
-                            </form>
-                            
-                            <a href="xlink-" class="btn inactive inline">Tillbaka</a> <a href="xlink-" class="btn inline">Nästa</a>
+                                </form>
+                                <div class="attached-files">Bifogad fil: <a href="xlink-d6as78">uppladdad-fil.doc</a></div>
+                            </div>
+                            <!-- /convo-input -->
                             
                         </div>
                     </div>
-                    <!-- /m-issue-forms -->
+                    <!-- /Module: Full conversation -->
                     
                 </div>
                 <!-- /content-primary -->
@@ -399,38 +201,10 @@
                     <h2 class="struct">Verktyg och annan information</h2>
                     
                     <div class="toolbar">
-                        <ul class="buttons cf">
-                            <li><a href="#" class="btn">Byt ägare</a></li>
-                            <li><a href="#" class="btn">Tilldela</a></li>
-                            <li><a href="#" class="btn">Stäng</a></li>
-                            <li>
-                                <a href="#" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
-                                <ul>
-                                    <li><a href="#" class="btn">Radera</a></li>
-                                    <li><a href="#" class="btn">Byt namn</a></li>
-                                    <li><a href="#" class="btn">Köp sill</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="toolbar-content">
-                            <form action="#" method="get" class="form-general">
-                                <div class="row cf">
-                                    <div class="select">
-                                        <label for="issue-owner">Byt ägare</label>
-                                        <select id="issue-owner" name="issue-owner">
-                                            <option value="option-1">Peter Kleine</option>
-                                            <option value="option-2">Fredrik Frodlund</option>
-                                            <option value="option-3">Henrik Reinhold</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row cf">
-                                    <div class="submit-area">
-                                        <button type="submit" name="save-issue-owner" class="right">Spara</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        <a href="xlink-d6as81" class="btn">Byt ägare</a>
+                        <a href="xlink-d6as82" class="btn">Tilldela</a>
+                        <a href="xlink-d6as83" class="btn">Stäng</a>
+                        <a href="xlink-d6as84" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
                     </div>
                     <!-- /toolbar -->
                     
@@ -490,7 +264,6 @@
                     <div class="m m-contacts">
                         <div class="m-h">
                             <h2>Kontakter</h2>
-                            <a href="issue-create-contact.html" class="action-btn">Ny kontakt <i class="icon-plus"></i></a>
                         </div>
                         <div class="m-c">
                             <ul class="zebra-list">
