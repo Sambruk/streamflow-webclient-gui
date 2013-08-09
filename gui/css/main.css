@@ -874,38 +874,30 @@
     }
     
     
+    /* ACCORDION
+    ======================================================================== */
+    .accordion-item {
+        margin: 0 0 0.25em;
+    }
+    .accordion-content {
+        padding: 0 0.5em;
+    }
+    .accordion-item h3 a {
+        background: #08c;
+        border-radius: 3px;
+        color: #fff;
+        display: block;
+        padding: 0.45em;
+        text-decoration: none;
+    }
+    .accordion-item h3 a:hover,
+    .accordion-item h3 a:focus {
+        background: #0af;
+    }
+    
+    
     /* GLOBAL CLASSES
     ======================================================================== */
-    /* Modal window
-    ---------------------------------------------------- */
-    .modal-window {
-        background-color: #eee;
-        margin: 1em;
-        max-height: 96%;
-        max-width: 64.2857em;
-        width: 96%;
-    }
-    a.modal-close {
-        background-color: #666;
-        border-radius: 3em;
-        color: #fff;
-        display: inline-block;
-        font-size: 0.7143em;
-        padding: 0.25em;
-        position: absolute;
-        top: 0.7143em;
-        right: 0.7143em;
-        height: 3em;
-        width: 3em;
-        line-height: 2.6;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-    }
-    a.modal-close:hover,
-    a.modal-close:focus {
-        background-color: #777;
-    }
     
     /* Toolbar
     ---------------------------------------------------- */

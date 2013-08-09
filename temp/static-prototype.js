@@ -97,6 +97,17 @@ $(function() {
         $('.buttons ul').superfish();
     } catch (e) {}
     
+    /**
+     * Accordion
+     */
+    $('.accordion-content').hide();
+    
+    $('.accordion .open-acc').on('click', function(e){
+        $('.accordion-content').slideUp('fast');
+        $(this).parent().siblings().slideToggle('fast');
+        e.preventDefault();
+    });
+    
     
     /**
      * Toolbar toggle content
