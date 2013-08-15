@@ -164,8 +164,16 @@
     a:active {
         color: #666;
     }
-    
-    
+
+    /* Adjust for navigation height */
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -110px;
+        visibility: hidden;
+    }
+
+
     /* Emphasis
     -------------------------------------------------------- */
     b,
