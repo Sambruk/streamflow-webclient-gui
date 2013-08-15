@@ -930,6 +930,7 @@
         margin-top: -4.5em;
         position: fixed;
         z-index: 190;
+        width: 100%;
     }
     /* Nudge the following module on fixed */
     .toolbar.fixed + .m {
@@ -1577,7 +1578,7 @@
     ============================================================================ */
     /* Adjust for navigation height */
     a.anchor {
-        top: -65px;
+        top: -4.5em;
     }
 
 
