@@ -161,10 +161,14 @@
                         <div class="m">
                             <div class="m-h">
                                 <h2>20121016-1</h2>
-                                <div class="choose-type">
-                                    <i class="icon-search"></i>
-                                    <label class="struct" for="issue-type">Ärendetyp</label>
-                                    <input type="text" name="issue-type" id="issue-type" placeholder="Välj ärendetyp">
+                                <div class="choose-type new-create-issue">
+                                    <label for="issue-type" class="struct">Ärendetyp</label>
+                                    <select name="issue-type" id="issue-type">
+                                        <option value="option1">Ärendetyp 1</option>
+                                        <option value="option2">Ärendetyp 2</option>
+                                        <option value="option3">Ärendetyp 3</option>
+                                        <option value="option4">Ärendetyp 4</option>
+                                    </select>
                                 </div>
                                 <div class="set-due-date">
                                     <label class="struct" for="set-due-date">Förfallodatum</label>
@@ -174,7 +178,7 @@
                             <div class="m-c">
                                 
                                 <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
+                                    <div class="text col full col-1 saved">
                                         <label for="field-1">Beskriv ärende</label>
                                         <input type="text" name="field-1" id="field-1">
                                     </div>
@@ -455,7 +459,7 @@
                                     </div>
                                     <div class="select col medium col-2">
                                         <label for="select-1">Kontaktpreferens</label>
-                                        <select id="select-1" name="select-1">
+                                        <select id="select-1" name="select-1" class="cust-sel">
                                             <option value="option-1">Email</option>
                                             <option value="option-2">Telefon</option>
                                             <option value="option-3">Röksignal</option>

@@ -402,40 +402,29 @@
     ---------------------------------------------------- */
     .m-h .id,
     .m-h .choose-type,
-    .m-h .wiki-link,
     .m-h .set-due-date {
         display: inline-block;
+        vertical-align: middle;
     }
     .m-h .id {
         padding: 6px 10px 0;
     }
-    /*.m-h .choose-type,*/
+    .m-h .choose-type {
+        padding: 4px 10px 0;
+    }
+    .m-h .choose-type.new-create-issue {
+        padding: 0 10px 9px;
+    }
     .m-h .set-due-date {
         background-color: #eaeaea;
         border-radius: 5px;
         margin: 0 0.5em 0.45em;
         padding: 0;
     }
-    .m-h .choose-type *[class*="icon-"] {
-        color: #08c;
-        font-size: 1.1429em;
-        margin: 0 0 0 0.5em;
-    }
     .m-h input[type="text"] {
         background-color: transparent;
         border: none;
         padding: 0.214em 0.286em;
-    }
-    .wiki-link *[class*="icon-"] {
-        background-color: #08c;
-        border-radius: 1.8571em;
-        color: #fff;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 0.25em;
-        text-align: center;
-        height: 1.8571em;
-        width: 1.8571em;
     }
     
     
@@ -1108,6 +1097,13 @@
     .m .action-btn *[class*="icon-"] {
         color: #08c;
     }
+    .m .action-btn .icon-arrow-down:before {
+        margin-top: -3px;
+        -webkit-transform: rotate(90deg);
+           -moz-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
     .m h3 {
         font-size: 1em;
         font-weight: bold;
@@ -1441,6 +1437,45 @@
         border: 1px solid #ddd;
     }
     
+    /* Input saved & error states */
+    .text.saved,
+    .text.error {
+        position: relative;
+    }
+    .row .text.saved input,
+    .row .text.error input {
+        padding-right: 2.75em;
+    }
+    .text.saved:after,
+    .text.error:after {
+        border-radius: 1em;
+        color: #fff;
+        display: block;
+        padding: 5px;
+        position: absolute;
+        right: 0.75em;
+        bottom: 0.45em;
+        height: 1em;
+        width: 1em;
+        
+        font-family: "StreamflowIcons";
+        font-size: 0.8571em;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        speak: none;
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
+    }
+    .text.saved:after {
+        background: #0c0;
+        content: "\37";
+    }
+    .text.error:after {
+        background: #900;
+        content: "\36";
+    }
+    
     
     /* Form columns
     -------------------------------------------------------- */
@@ -1512,9 +1547,6 @@
     .text.error label,
     .error legend {
         color: #900;
-    }
-    .text.error input {
-        box-shadow: 0 0 9px #900;
     }
     
     

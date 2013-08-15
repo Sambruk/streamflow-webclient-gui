@@ -31,7 +31,7 @@ $(function() {
     /**
      * Custom select elements
      */
-    $('.form-general select').customSelect({customClass:'custom-select'});
+    $('.cust-sel').customSelect({customClass:'custom-select'});
     
     
     /**
