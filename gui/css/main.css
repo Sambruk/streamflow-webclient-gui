@@ -847,6 +847,12 @@
     .log-table tbody tr.even {
         background-color: #fff;
     }
+    .caselog-filter-options{
+        margin:35px 0 35px 0;
+    }
+    .caselog-count-sidebar{
+        float:right;
+    }
     
     /* Module: Bifogade filer
     ---------------------------------------------------- */
