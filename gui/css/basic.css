@@ -1,4 +1,4 @@
-/*
+/**
  * reset.css
  * Basic resets
  *
@@ -6,291 +6,291 @@
  */
 
 @media all {
+  
+  /* RESET
+  * Resets, basic typography and colors
+  ============================================================================ */
+  blockquote,body,caption,div,dl,dt,dd,form,fieldset,
+  h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
+    margin: 0;
+    padding: 0;
+  }
+  
+  address,dl,fieldset,p,pre,ul,ol,table {
+    margin: 0 0 1.5em;
+  }
+  
+  ul,ol,dd {
+    margin-left: 2.857em;
+  }
+  
+  td ul,td ol {
+    margin-left: 1.071em;
+  }
+  
+  ol ul,ul ol,ul ul,ol ol,td ul,td ol {
+    margin-bottom: 0;
+  }
+  
+  blockquote {
+    margin: 1em 2.857em;
+    font-style: italic;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  /* Reset box sizing
+  ---------------------------------------------------- */
+  * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  /* Tables
+  -------------------------------------------------------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  table,
+  th,
+  td {
+    border: 0;
+  }
     
-    /* RESET
-     * Resets, basic typography and colors
-    ============================================================================ */
-    blockquote,body,caption,div,dl,dt,dd,form,fieldset,
-    h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
-        margin: 0;
-        padding: 0;
-    }
+  th,
+  td {
+    vertical-align: top;
+    padding: 2px 3px;
+  }
+  
+  caption,
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  tbody th {
+    color: #fff;
+    background: #333;
+  }
+  
+  
+  /* Images
+  -------------------------------------------------------- */
+  img {
+    border: none;
+  }
+  
+  
+  /* Body styling
+  -------------------------------------------------------- */
+  html,
+  body {
+    color: #333;
+    background: #fff;
+  }
+  
+  
+  /* Fonts & sizes
+  -------------------------------------------------------- */
+  html {
+    font: 87.5%/1.5 "Roboto", Helvetica, Arial, sans-serif; /* Base font size of 14px */
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+  }
+  
+  code,
+  kbd,
+  pre {
+    font-family: Monaco, Courier, "Courier New", Tahoma;
+  }
+  
+  
+  /* Headings
+  -------------------------------------------------------- */
+  h1,h2,h3,h4,h5,h6 {
+    margin: 1em 0 0.2em;
+    color: #111;
+    font-weight: normal;
+  }
+  
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child {
+    margin-top: 0;
+  }
+  
+  h1 {
+    font-size: 2.3077em;
+    line-height: 1.1667em;
+  }
+  
+  h2 {
+    font-size: 1.6923em;
+    line-height: 1.25em;
+  }
+  
+  h3 {
+    font-size: 1.4615em;
+    line-height: 1.3158em;
+  }
+  
+  h4 {
+    font-size: 1.2308em;
+  }
+  
+  h5,
+  h6 {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  
+  /* Links
+  -------------------------------------------------------- */
+  a,
+  a:visited {
+    color: #333;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: #666;
+  }
+  
+  /* Adjust for navigation height */
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+  }
+  
+  
+  /* Emphasis
+  -------------------------------------------------------- */
+  b,
+  strong {
+    font-weight: bold;
+  }
     
-    address,dl,fieldset,p,pre,ul,ol,table {
-        margin: 0 0 1.5em;
-    }
-    
-    ul,ol,dd {
-        margin-left: 2.857em;
-    }
-    
-    td ul,td ol {
-        margin-left: 1.071em;
-    }
-    
-    ol ul,ul ol,ul ul,ol ol,td ul,td ol {
-        margin-bottom: 0;
-    }
-    
-    blockquote {
-        margin: 1em 2.857em;
-        font-style: italic;
-    }
-    
-    dt {
-        font-weight: bold;
-    }
-    
-    /* Reset box sizing
-    ---------------------------------------------------- */
-    * {
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-             -o-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-    
-    /* Tables
-    -------------------------------------------------------- */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    
-    table,
-    th,
-    td {
-        border: 0;
-    }
-    
-    th,
-    td {
-        vertical-align: top;
-        padding: 2px 3px;
-    }
-    
-    caption,
-    th {
-        font-weight: bold;
-        text-align: left;
-    }
-    
-    tbody th {
-        color: #fff;
-        background: #333;
-    }
-    
-    
-    /* Images
-    -------------------------------------------------------- */
-    img {
-        border: none;
-    }
-    
-    
-    /* Body styling
-    -------------------------------------------------------- */
-    html,
-    body {
-        color: #333;
-        background: #fff;
-    }
-    
-    
-    /* Fonts & sizes
-    -------------------------------------------------------- */
-    html {
-        font: 87.5%/1.5 "Roboto", Helvetica, Arial, sans-serif; /* Base font size of 14px */
-        -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
-    }
-    
-    code,
-    kbd,
-    pre {
-        font-family: Monaco, Courier, "Courier New", Tahoma;
-    }
-    
-    
-    /* Headings
-    -------------------------------------------------------- */
-    h1,h2,h3,h4,h5,h6 {
-        margin: 1em 0 0.2em;
-        color: #111;
-        font-weight: normal;
-    }
-    
-    h1:first-child,
-    h2:first-child,
-    h3:first-child,
-    h4:first-child {
-        margin-top: 0;
-    }
-    
-    h1 {
-        font-size: 2.3077em;
-        line-height: 1.1667em;
-    }
-    
-    h2 {
-        font-size: 1.6923em;
-        line-height: 1.25em;
-    }
-    
-    h3 {
-        font-size: 1.4615em;
-        line-height: 1.3158em;
-    }
-    
-    h4 {
-        font-size: 1.2308em;
-    }
-    
-    h5,
-    h6 {
-        font-weight: bold;
-        font-size: 1em;
-    }
-    
-    
-    /* Links
-    -------------------------------------------------------- */
-    a,
-    a:visited {
-        color: #333;
-    }
-    a:hover,
-    a:focus,
-    a:active {
-        color: #666;
-    }
-
-    /* Adjust for navigation height */
-    a.anchor {
-        display: block;
-        position: relative;
-        top: -110px;
-        visibility: hidden;
-    }
-
-
-    /* Emphasis
-    -------------------------------------------------------- */
-    b,
-    strong {
-        font-weight: bold;
-    }
-    
-    i,
-    em {
-        font-style: italic;
-    }
-    
-    
-    /* Forms
-    -------------------------------------------------------- */
-    legend {
-        color: #333;
-        white-space: normal;
-    }
-    
-    input,
-    button,
-    textarea,
-    select {
-        font: 100%/1.3846 "Roboto", Helvetica, Arial, sans-serif;
-        font-size: 1em;
-    }
-
-    /* Reset search input in webkit to make it possible to style it as a normal text input */
-    input[type=search] {
-        -webkit-appearance: textfield;
-        -webkit-box-sizing: content-box;
-    }
-    input::-webkit-search-decoration,
-    input::-webkit-search-cancel-button {
-        display: none;
-    }
-
-
-    /* GLOBAL CLASSES
-    ============================================================================ */
-    /* Easy clearing of floats
-    -------------------------------------------------------- */
-    .cf:after {
-        display: block;
-        clear: both;
-        height: 0;
-        visibility: hidden;
-        content: " ";
-        font-size: 0;
-    }
-
-
-    /* Structural elements
-     * Visible for screen readers but invisible when CSS is enabled
-    -------------------------------------------------------- */
-    .struct,
-    .struct * {
-        position: absolute;
-        left: -9999px;
-    }
-
-
-    /* Hidden elements
-     * Hide from screen readers as well
-    -------------------------------------------------------- */
-    .hidden {
-        display: none;
-        speak: none;
-        visibility: hidden;
-    }
-
-
-    /* Table zebra rows
-    -------------------------------------------------------- */
-    tr.odd {
-        background: #f0e9eb;
-    }
-
-    /* Images
-    -------------------------------------------------------- */
-    .left,
-    .right {
-        float: left;
-        width: auto;
-        margin: 3px 18px 10px 0;
-    }
-    
-    .right {
-        float: right;
-        margin: 3px 0 10px 18px;
-    }
-    
-    img.fullwidth,
-    span.fullwidth img {
-        display: block;
-        margin: 3px 0 10px;
-    }
-    
-    .caption,
-    .caption em {
-        display: block;
-    }
-    
-    .caption em {
-        font-style: normal;
-        font-size: 0.916em;
-    }
-    
-    .caption p,
-    .caption em {
-        margin-bottom: 0;
-    }
-    
-    .caption sup {
-        bottom: 3px;
-    }
-    
-/* END @media all */
+  i,
+  em {
+    font-style: italic;
+  }
+  
+  
+  /* Forms
+  -------------------------------------------------------- */
+  legend {
+    color: #333;
+    white-space: normal;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: 100%/1.3846 "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+  }
+  
+  /* Reset search input in webkit to make it possible to style it as a normal text input */
+  input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+  }
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button {
+    display: none;
+  }
+  
+  
+  /* GLOBAL CLASSES
+  ============================================================================ */
+  /* Easy clearing of floats
+  -------------------------------------------------------- */
+  .cf:after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: " ";
+    font-size: 0;
+  }
+  
+  
+  /* Structural elements
+  * Visible for screen readers but invisible when CSS is enabled
+  -------------------------------------------------------- */
+  .struct,
+  .struct * {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  
+  /* Hidden elements
+  * Hide from screen readers as well
+  -------------------------------------------------------- */
+  .hidden {
+    display: none;
+    speak: none;
+    visibility: hidden;
+  }
+  
+  
+  /* Table zebra rows
+  -------------------------------------------------------- */
+  tr.odd {
+    background: #f0e9eb;
+  }
+  
+  /* Images
+  -------------------------------------------------------- */
+  .left,
+  .right {
+    float: left;
+    width: auto;
+    margin: 3px 18px 10px 0;
+  }
+  
+  .right {
+    float: right;
+    margin: 3px 0 10px 18px;
+  }
+  
+  img.fullwidth,
+  span.fullwidth img {
+    display: block;
+    margin: 3px 0 10px;
+  }
+  
+  .caption,
+  .caption em {
+    display: block;
+  }
+  
+  .caption em {
+    font-style: normal;
+    font-size: 0.916em;
+  }
+  
+  .caption p,
+  .caption em {
+    margin-bottom: 0;
+  }
+  
+  .caption sup {
+    bottom: 3px;
+  }
+  
+  /* END @media all */
 }
