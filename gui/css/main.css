@@ -1311,10 +1311,6 @@
     font-weight: normal;
     font-style: normal;
   }
-  input,
-  select {
-    outline-color: #08c;
-  }
   input[type="text"],
   input[type="password"],
   textarea,
