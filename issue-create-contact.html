@@ -1,402 +1,402 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="utf-8">
-    <title>Ärende 20121061-1 - Streamflow</title>
-    
-    <!-- Mobile & web app tags -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="apple-touch-icon" sizes="57x57" href="gui/i/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="gui/i/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="gui/i/apple-touch-icon-114x114.png">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="gui/css/basic.css">
-    <link rel="stylesheet" href="gui/css/print.css">
-    <link rel="stylesheet" href="gui/css/fonts.css">
-    <link rel="stylesheet" href="gui/css/main.css">
-    <link rel="stylesheet" href="gui/css/retina.css">
-    
-    <!--[if lt IE 9]><link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen"><![endif]-->
-    
-    <!-- JavaScript -->
-    <script src="gui/js/jquery-1.10.1.js"></script>
-    <script src="gui/js/jquery.easyModal.min.js"></script>
-    <script src="gui/js/jquery.customSelect.js"></script>
-    <script src="gui/js/jquery.fileinput.js"></script>
-    <script src="gui/js/jquery.placeholder.min.js"></script>
-    
-    <!-- Google Web Fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
-    
-    <!-- Prototype specific scripts, remove in app -->
-    <script src="temp/static-prototype.js"></script>
+  <meta charset="utf-8">
+  <title>Ärende 20121061-1 - Streamflow</title>
+  
+  <!-- Mobile & web app tags -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" sizes="57x57" href="gui/i/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="gui/i/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="gui/i/apple-touch-icon-114x114.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="gui/css/basic.css">
+  <link rel="stylesheet" href="gui/css/print.css">
+  <link rel="stylesheet" href="gui/css/fonts.css">
+  <link rel="stylesheet" href="gui/css/main.css">
+  <link rel="stylesheet" href="gui/css/retina.css">
+  
+  <!--[if lt IE 9]><link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen"><![endif]-->
+  
+  <!-- JavaScript -->
+  <script src="gui/js/jquery-1.10.1.js"></script>
+  <script src="gui/js/jquery.easyModal.min.js"></script>
+  <script src="gui/js/jquery.customSelect.js"></script>
+  <script src="gui/js/jquery.fileinput.js"></script>
+  <script src="gui/js/jquery.placeholder.min.js"></script>
+  
+  <!-- Google Web Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
+  
+  <!-- Prototype specific scripts, remove in app -->
+  <script src="temp/static-prototype.js"></script>
 </head>
 <body class="layout-2">
+  
+  <div class="body">
     
-    <div class="body">
-        
-        <div class="header cf" role="banner">
-            
-            <div class="client-name">
-                <h1>Malmö Kommun Kontaktcenter</h1>
-            </div>
-            <!-- /client-name -->
-            
-            <form action="#" method="get" class="main-search" role="search">
-                <div>
-                    <label for="main-searchtext" class="struct">Sök</label>
-                    <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-                    <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
-                </div>
-            </form>
-            <!-- /main-search -->
-            
-            <div class="user-area">
-                <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
-            </div>
-            <!-- /user-area -->
-            
+    <div class="header cf" role="banner">
+      
+      <div class="client-name">
+        <h1>Malmö Kommun Kontaktcenter</h1>
+      </div>
+      <!-- /client-name -->
+      
+      <form action="#" method="get" class="main-search" role="search">
+        <div>
+          <label for="main-searchtext" class="struct">Sök</label>
+          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
         </div>
-        <!-- /header -->
-        
-        <div class="main">
-            
-            <div class="navigation" role="navigation">
-                
-                <a href="new-issue.html" class="add-new-issue"><i class="icon-plus"></i><span class="struct">Lägg till nytt ärende</span></a>
-                
-                <div class="functions-menu">
-                    <div class="functions-header cf">
-                        <h2><a href="overview.html">Funktioner</a></h2>
-                        <a href="#" class="icon-menu open-toolbar"><span class="struct">Visa/dölj funktionsmeny</span></a>
-                    </div>
-                    <div class="sub-category">
-                        <h3>Kontaktcenter</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-" class="sel"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-category">
-                        <h3>Parkadministration</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-category">
-                        <h3>Gatukontoret</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-category">
-                        <h3>VA</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-category">
-                        <h3>Elektricitet</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-category">
-                        <h3>Värme</h3>
-                        <ul>
-                            <li>
-                                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
-                            </li>
-                            <li>
-                                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- /navigation -->
-            
-            <div class="main-body cf">
-                
-                <div class="content-primary" role="main">
-                    
-                    <!-- Module: Create contact -->
-                    <div class="m m-check-list">
-                        <div class="m-h">
-                            <h2>Skapa ny kontakt</h2>
-                            <a href="issue.html" class="action-btn"><i class="icon-arrow-down"></i> Tillbaka</a>
-                        </div>
-                        <div class="mc">
-                            
-                            <form action="#" method="get" class="form-general">
-                                
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-1">Namn ( Elev ) <em>Samtliga förnamn samt efternamn ska anges</em></label>
-                                        <input type="text" name="field-1" id="field-1">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-2">Personnummer <em>ååååmmdd-xxxx</em></label>
-                                        <input type="text" name="field-2" id="field-2">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-3">Namn <em>Vårdnadshavare</em></label>
-                                        <input type="text" name="field-3" id="field-3">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-4">Gatuadress</label>
-                                        <input type="text" name="field-4" id="field-4">
-                                    </div>
-                                </div>
-                                <div class="row cols-2 cf">
-                                    <div class="text col small col-1">
-                                        <label for="field-5">Postnummer</label>
-                                        <input type="text" name="field-5" id="field-5">
-                                    </div>
-                                    <div class="text col large col-2">
-                                        <label for="field-6">Postort</label>
-                                        <input type="text" name="field-6" id="field-6">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-7">Telefon</label>
-                                        <input type="text" name="field-7" id="field-7">
-                                    </div>
-                                </div>
-                                <div class="row cols-1 cf">
-                                    <div class="text col full col-1">
-                                        <label for="field-8">E-post</label>
-                                        <input type="text" name="field-8" id="field-8">
-                                    </div>
-                                </div>
-                                <div class="row submit-area">
-                                    <button type="submit" name="form-submit">Skapa kontakt</button>
-                                </div>
-                            </form>
-                            
-                        </div>
-                    </div>
-                    <!-- /Module: Create contact -->
-                    
-                </div>
-                <!-- /content-primary -->
-                
-                <div class="content-secondary" role="complementary">
-                    
-                    <h2 class="struct">Verktyg och annan information</h2>
-                    
-                    <div class="toolbar">
-                        <a href="xlink-d6as81" class="btn">Byt ägare</a>
-                        <a href="xlink-d6as82" class="btn">Tilldela</a>
-                        <a href="xlink-d6as83" class="btn">Stäng</a>
-                        <a href="xlink-d6as84" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
-                    </div>
-                    <!-- /toolbar -->
-                    
-                    <!-- Module: Allmänt -->
-                    <div class="m m-general">
-                        <div class="m-h">
-                            <h2>Allmänt</h2>
-                            <a href="xlink-" class="edit-module icon-edit" title="Redigera"><span class="struct">Redigera</span></a>
-                        </div>
-                        <div class="m-c">
-                            <div class="m-box">
-                                <ul>
-                                    <li><strong>Ägare:</strong> Kontaktcenter</li>
-                                    <li><strong>Handläggare:</strong> Solveig Grankvist</li>
-                                    <li><strong>Kund:</strong> Henrik Reinhold 19760901-4046</li>
-                                    <li><strong>Förfallodatum:</strong> 2013-03-10</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Module: Allmänt -->
-                    
-                    <!-- Module: Konversationer -->
-                    <div class="m m-convos">
-                        <div class="m-h">
-                            <h2>Konversationer</h2>
-                            <a href="issue-create-convo.html" class="action-btn">Ny konversation <i class="icon-plus"></i></a>
-                        </div>
-                        <div class="m-c">
-                            <ul>
-                                <li>
-                                    <a href="issue-conversation.html" class="block-link">
-                                        <h3>Detaljer om ansökan</h3>
-                                        <span class="date">2013-01-21, 13:45</span>
-                                        <ul class="convo-status">
-                                            <li class="icon-user" title="2 användare i konversationen">2 <span class="struct">användare i konversationen</span></li>
-                                            <li class="icon-chat" title="3 meddelanden i konversationen">3 <span class="struct">meddelanden i konversationen</span></li>
-                                        </ul>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="issue-conversation.html" class="block-link">
-                                        <h3>Detaljer om ansökan</h3>
-                                        <span class="date">2013-01-21, 13:45</span>
-                                        <ul class="convo-status">
-                                            <li class="icon-user" title="2 användare i konversationen">2 <span class="struct">användare i konversationen</span></li>
-                                            <li class="icon-chat" title="3 meddelanden i konversationen">3 <span class="struct">meddelanden i konversationen</span></li>
-                                        </ul>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /Module: Konversationer -->
-                    
-                    <!-- Module: Kontakter -->
-                    <div class="m m-contacts">
-                        <div class="m-h">
-                            <h2>Kontakter</h2>
-                        </div>
-                        <div class="m-c">
-                            <ul class="zebra-list">
-                                <li class="odd"><a href="xlink-">Solveig Grankvist (Handläggare)</a></li>
-                                <li><a href="xlink-">Henrik Reinhold</a></li>
-                                <li class="odd"><a href="xlink-">Karolina Reinhold</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /Module: Kontakter -->
-                    
-                    <!-- Module: Bifogade filer -->
-                    <div class="m m-attachments">
-                        <div class="m-h">
-                            <h2>Bifogade filer</h2>
-                        </div>
-                        <div class="m-c">
-                            <ul class="zebra-list">
-                                <li class="odd">
-                                    <a href="xlink-">Karta</a>
-                                    <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
-                                </li>
-                                <li>
-                                    <a href="xlink-">Foto på gräsmattan</a>
-                                    <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
-                                </li>
-                                <li class="odd">
-                                    <a href="xlink-">Ett foto till på gräsmattan</a>
-                                    <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /Module: Bifogade filer -->
-                    
-                    <!-- Module: Ärendelogg -->
-                    <div class="m m-issuelog">
-                        <div class="m-h">
-                            <h2>Ärendelogg</h2>
-                        </div>
-                        <div class="m-c">
-                            <table class="log-table">
-                                <caption class="struct">Ärendehistorik</caption>
-                                <thead class="struct">
-                                    <tr>
-                                        <th>Datum</th>
-                                        <th>Titel</th>
-                                        <th>Användare</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1 juli</td>
-                                        <td>Öppna ärende</td>
-                                        <td>Henrik Reinhold</td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>15 juni</td>
-                                        <td>Tilldela ärende</td>
-                                        <td>Solveig Grankvist</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13 juni</td>
-                                        <td>Tilldela ärende</td>
-                                        <td>Henrik Reinhold</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- /Module: Ärendelogg -->
-                    
-                    <!-- Module: Generic information -->
-                    <div class="m m-generic-info">
-                        <div class="m-h">
-                            <h2>Handläggarstöd</h2>
-                        </div>
-                        <div class="mc">
-                            <p>Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Praesent commodo cursus magna.</p>
-                            <div class="expandable-field">
-                                <div class="expandable-content">
-                                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                                    <ul class="reg-list">
-                                        <li>faucibus dolor auctor</li>
-                                        <li>Vestibulum id ligula porta felis euismod semper</li>
-                                        <li>Nullam quis risus eget urna mollis ornare vel eu leo</li>
-                                        <li>Aenean lacinia bibendum nulla sed consectetur</li>
-                                    </ul>
-                                    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <ol class="reg-list">
-                                        <li>faucibus dolor auctor</li>
-                                        <li>Vestibulum id ligula porta felis euismod semper</li>
-                                        <li>Nullam quis risus eget urna mollis ornare vel eu leo</li>
-                                        <li>Aenean lacinia bibendum nulla sed consectetur</li>
-                                    </ol>
-                                    <p><strong>Nullam id dolor id nibh ultricies vehicula ut id elit.</strong> Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Module: Generic information -->
-                    
-                </div>
-                <!-- /content-secondary -->
-                
-            </div>
-            <!-- /main-body -->
-            
-        </div>
-        <!-- /main -->
-        
+      </form>
+      <!-- /main-search -->
+      
+      <div class="user-area">
+        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+      </div>
+      <!-- /user-area -->
+      
     </div>
-    <!-- /body -->
+    <!-- /header -->
     
+    <div class="main">
+      
+      <div class="navigation" role="navigation">
+        
+        <a href="new-issue.html" class="add-new-issue"><i class="icon-plus"></i><span class="struct">Lägg till nytt ärende</span></a>
+        
+        <div class="functions-menu">
+          <div class="functions-header cf">
+            <h2><a href="overview.html">Funktioner</a></h2>
+            <a href="#" class="icon-menu open-toolbar"><span class="struct">Visa/dölj funktionsmeny</span></a>
+          </div>
+          <div class="sub-category">
+            <h3>Kontaktcenter</h3>
+            <ul>
+              <li>
+                <a href="xlink-" class="sel"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-category">
+            <h3>Parkadministration</h3>
+            <ul>
+              <li>
+                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-category">
+            <h3>Gatukontoret</h3>
+            <ul>
+              <li>
+                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-category">
+            <h3>VA</h3>
+            <ul>
+              <li>
+                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-category">
+            <h3>Elektricitet</h3>
+            <ul>
+              <li>
+                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-category">
+            <h3>Värme</h3>
+            <ul>
+              <li>
+                <a href="xlink-"><span>12</span><span class="struct">meddelanden i din</span> Inkorg</a>
+              </li>
+              <li>
+                <a href="xlink-"><span>5</span><span class="struct">ärenden i</span> Mina ärenden</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <!-- /navigation -->
+      
+      <div class="main-body cf">
+        
+        <div class="content-primary" role="main">
+          
+          <!-- Module: Create contact -->
+          <div class="m m-check-list">
+            <div class="m-h">
+              <h2>Skapa ny kontakt</h2>
+              <a href="issue.html" class="action-btn"><i class="icon-arrow-down"></i> Tillbaka</a>
+            </div>
+            <div class="mc">
+              
+              <form action="#" method="get" class="form-general">
+                
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-1">Namn ( Elev ) <em>Samtliga förnamn samt efternamn ska anges</em></label>
+                    <input type="text" name="field-1" id="field-1">
+                  </div>
+                </div>
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-2">Personnummer <em>ååååmmdd-xxxx</em></label>
+                    <input type="text" name="field-2" id="field-2">
+                  </div>
+                </div>
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-3">Namn <em>Vårdnadshavare</em></label>
+                    <input type="text" name="field-3" id="field-3">
+                  </div>
+                </div>
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-4">Gatuadress</label>
+                    <input type="text" name="field-4" id="field-4">
+                  </div>
+                </div>
+                <div class="row cols-2 cf">
+                  <div class="text col small col-1">
+                    <label for="field-5">Postnummer</label>
+                    <input type="text" name="field-5" id="field-5">
+                  </div>
+                  <div class="text col large col-2">
+                    <label for="field-6">Postort</label>
+                    <input type="text" name="field-6" id="field-6">
+                  </div>
+                </div>
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-7">Telefon</label>
+                    <input type="text" name="field-7" id="field-7">
+                  </div>
+                </div>
+                <div class="row cols-1 cf">
+                  <div class="text col full col-1">
+                    <label for="field-8">E-post</label>
+                    <input type="text" name="field-8" id="field-8">
+                  </div>
+                </div>
+                <div class="row submit-area">
+                  <button type="submit" name="form-submit">Skapa kontakt</button>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+          <!-- /Module: Create contact -->
+          
+        </div>
+        <!-- /content-primary -->
+        
+        <div class="content-secondary" role="complementary">
+          
+          <h2 class="struct">Verktyg och annan information</h2>
+          
+          <div class="toolbar">
+            <a href="xlink-d6as81" class="btn">Byt ägare</a>
+            <a href="xlink-d6as82" class="btn">Tilldela</a>
+            <a href="xlink-d6as83" class="btn">Stäng</a>
+            <a href="xlink-d6as84" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
+          </div>
+          <!-- /toolbar -->
+          
+          <!-- Module: Allmänt -->
+          <div class="m m-general">
+            <div class="m-h">
+              <h2>Allmänt</h2>
+              <a href="xlink-" class="edit-module icon-edit" title="Redigera"><span class="struct">Redigera</span></a>
+            </div>
+            <div class="m-c">
+              <div class="m-box">
+                <ul>
+                  <li><strong>Ägare:</strong> Kontaktcenter</li>
+                  <li><strong>Handläggare:</strong> Solveig Grankvist</li>
+                  <li><strong>Kund:</strong> Henrik Reinhold 19760901-4046</li>
+                  <li><strong>Förfallodatum:</strong> 2013-03-10</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /Module: Allmänt -->
+          
+          <!-- Module: Konversationer -->
+          <div class="m m-convos">
+            <div class="m-h">
+              <h2>Konversationer</h2>
+              <a href="issue-create-convo.html" class="action-btn">Ny konversation <i class="icon-plus"></i></a>
+            </div>
+            <div class="m-c">
+              <ul>
+                <li>
+                  <a href="issue-conversation.html" class="block-link">
+                    <h3>Detaljer om ansökan</h3>
+                    <span class="date">2013-01-21, 13:45</span>
+                    <ul class="convo-status">
+                      <li class="icon-user" title="2 användare i konversationen">2 <span class="struct">användare i konversationen</span></li>
+                      <li class="icon-chat" title="3 meddelanden i konversationen">3 <span class="struct">meddelanden i konversationen</span></li>
+                    </ul>
+                  </a>
+                </li>
+                <li>
+                  <a href="issue-conversation.html" class="block-link">
+                    <h3>Detaljer om ansökan</h3>
+                    <span class="date">2013-01-21, 13:45</span>
+                    <ul class="convo-status">
+                      <li class="icon-user" title="2 användare i konversationen">2 <span class="struct">användare i konversationen</span></li>
+                      <li class="icon-chat" title="3 meddelanden i konversationen">3 <span class="struct">meddelanden i konversationen</span></li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /Module: Konversationer -->
+          
+          <!-- Module: Kontakter -->
+          <div class="m m-contacts">
+            <div class="m-h">
+              <h2>Kontakter</h2>
+            </div>
+            <div class="m-c">
+              <ul class="zebra-list">
+                <li class="odd"><a href="xlink-">Solveig Grankvist (Handläggare)</a></li>
+                <li><a href="xlink-">Henrik Reinhold</a></li>
+                <li class="odd"><a href="xlink-">Karolina Reinhold</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /Module: Kontakter -->
+          
+          <!-- Module: Bifogade filer -->
+          <div class="m m-attachments">
+            <div class="m-h">
+              <h2>Bifogade filer</h2>
+            </div>
+            <div class="m-c">
+              <ul class="zebra-list">
+                <li class="odd">
+                  <a href="xlink-">Karta</a>
+                  <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
+                </li>
+                <li>
+                  <a href="xlink-">Foto på gräsmattan</a>
+                  <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
+                </li>
+                <li class="odd">
+                  <a href="xlink-">Ett foto till på gräsmattan</a>
+                  <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /Module: Bifogade filer -->
+          
+          <!-- Module: Ärendelogg -->
+          <div class="m m-issuelog">
+            <div class="m-h">
+              <h2>Ärendelogg</h2>
+            </div>
+            <div class="m-c">
+              <table class="log-table">
+                <caption class="struct">Ärendehistorik</caption>
+                <thead class="struct">
+                  <tr>
+                    <th>Datum</th>
+                    <th>Titel</th>
+                    <th>Användare</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 juli</td>
+                    <td>Öppna ärende</td>
+                    <td>Henrik Reinhold</td>
+                  </tr>
+                  <tr class="even">
+                    <td>15 juni</td>
+                    <td>Tilldela ärende</td>
+                    <td>Solveig Grankvist</td>
+                  </tr>
+                  <tr>
+                    <td>13 juni</td>
+                    <td>Tilldela ärende</td>
+                    <td>Henrik Reinhold</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- /Module: Ärendelogg -->
+          
+          <!-- Module: Generic information -->
+          <div class="m m-generic-info">
+            <div class="m-h">
+              <h2>Handläggarstöd</h2>
+            </div>
+            <div class="mc">
+              <p>Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Praesent commodo cursus magna.</p>
+              <div class="expandable-field">
+                <div class="expandable-content">
+                  <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <ul class="reg-list">
+                    <li>faucibus dolor auctor</li>
+                    <li>Vestibulum id ligula porta felis euismod semper</li>
+                    <li>Nullam quis risus eget urna mollis ornare vel eu leo</li>
+                    <li>Aenean lacinia bibendum nulla sed consectetur</li>
+                  </ul>
+                  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <ol class="reg-list">
+                    <li>faucibus dolor auctor</li>
+                    <li>Vestibulum id ligula porta felis euismod semper</li>
+                    <li>Nullam quis risus eget urna mollis ornare vel eu leo</li>
+                    <li>Aenean lacinia bibendum nulla sed consectetur</li>
+                  </ol>
+                  <p><strong>Nullam id dolor id nibh ultricies vehicula ut id elit.</strong> Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Module: Generic information -->
+          
+        </div>
+        <!-- /content-secondary -->
+        
+      </div>
+      <!-- /main-body -->
+      
+    </div>
+    <!-- /main -->
+    
+  </div>
+  <!-- /body -->
+  
 </body>
 </html>

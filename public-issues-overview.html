@@ -1,323 +1,323 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="utf-8">
-    <title>Streamflow - Publika ärenden, översikt</title>
-    
-    <!-- Mobile & web app tags -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="apple-touch-icon" sizes="57x57" href="gui/i/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="gui/i/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="gui/i/apple-touch-icon-114x114.png">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="gui/css/basic.css">
-    <link rel="stylesheet" href="gui/css/print.css">
-    <link rel="stylesheet" href="gui/css/fonts.css">
-    <link rel="stylesheet" href="gui/css/main.css">
-    <link rel="stylesheet" href="gui/css/retina.css">
-    
-    <!--[if lt IE 9]><link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen"><![endif]-->
-    
-    <!-- JavaScript -->
-    <script src="gui/js/jquery-1.10.1.js"></script>
-    <script src="gui/js/jquery.easyModal.min.js"></script>
-    <script src="gui/js/jquery.customSelect.js"></script>
-    <script src="gui/js/jquery.fileinput.js"></script>
-    <script src="gui/js/jquery.placeholder.min.js"></script>
-    
-    <!-- Google Maps -->
-    <script src="//maps.google.com/maps/api/js?sensor=false&amp;language=sv"></script>
-    <script src="gui/js/jquery.gmap3.js"></script>
-    
-    <!-- Google Web Fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
-    
-    <!-- Prototype specific scripts, remove in app -->
-    <script src="temp/static-prototype.js"></script>
-    <script src="temp/googleMaps.js"></script>
+  <meta charset="utf-8">
+  <title>Streamflow - Publika ärenden, översikt</title>
+  
+  <!-- Mobile & web app tags -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" sizes="57x57" href="gui/i/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="gui/i/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="gui/i/apple-touch-icon-114x114.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="gui/css/basic.css">
+  <link rel="stylesheet" href="gui/css/print.css">
+  <link rel="stylesheet" href="gui/css/fonts.css">
+  <link rel="stylesheet" href="gui/css/main.css">
+  <link rel="stylesheet" href="gui/css/retina.css">
+  
+  <!--[if lt IE 9]><link rel="stylesheet" href="gui/css/ie.css" type="text/css" media="screen"><![endif]-->
+  
+  <!-- JavaScript -->
+  <script src="gui/js/jquery-1.10.1.js"></script>
+  <script src="gui/js/jquery.easyModal.min.js"></script>
+  <script src="gui/js/jquery.customSelect.js"></script>
+  <script src="gui/js/jquery.fileinput.js"></script>
+  <script src="gui/js/jquery.placeholder.min.js"></script>
+  
+  <!-- Google Maps -->
+  <script src="//maps.google.com/maps/api/js?sensor=false&amp;language=sv"></script>
+  <script src="gui/js/jquery.gmap3.js"></script>
+  
+  <!-- Google Web Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
+  
+  <!-- Prototype specific scripts, remove in app -->
+  <script src="temp/static-prototype.js"></script>
+  <script src="temp/googleMaps.js"></script>
 </head>
 <body class="layout-1 public">
+  
+  <div class="body">
     
-    <div class="body">
-        
-        <div class="header cf" role="banner">
-            
-            <div class="client-name">
-                <h1>Malmö Kommun Kontaktcenter</h1>
-            </div>
-            <!-- /client-name -->
-            
-            <form action="#" method="get" class="main-search" role="search">
-                <div>
-                    <label for="main-searchtext" class="struct">Sök</label>
-                    <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-                    <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
-                </div>
-            </form>
-            <!-- /main-search -->
-            
-            <div class="user-area">
-                <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
-            </div>
-            <!-- /user-area -->
-            
+    <div class="header cf" role="banner">
+      
+      <div class="client-name">
+        <h1>Malmö Kommun Kontaktcenter</h1>
+      </div>
+      <!-- /client-name -->
+      
+      <form action="#" method="get" class="main-search" role="search">
+        <div>
+          <label for="main-searchtext" class="struct">Sök</label>
+          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
         </div>
-        <!-- /header -->
-        
-        <div class="main">
-            
-            <div class="main-body cf">
-                
-                <div class="content-primary" role="main">
-                    
-                    <div class="issues-overview">
-                        
-                        <h2>Synpunkter för Malmö Stad</h2>
-                    
-                        <!-- Public issues -->
-                        <h3>Aktuella ärenden</h3>
-                        <div class="due-date-divider"><span>Status</span></div>
-                        <ul class="issue-list">
-                            <li class="issue-item open">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Öppet
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - TK Gata</span>
-                                        <h4>Bristfällig gräsklippning i lilla parken</h4>
-                                        <span class="creator">Lars Back</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Ändrad 03/20</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item open">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Öppet
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Ändrad 06/11</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="issue-item closed">
-                                <a href="public-issue.html" class="block-link">
-                                    <div class="due-date">
-                                        Stängt
-                                    </div>
-                                    <div class="issue-description">
-                                        <span class="meta">20130902-2 - Tussilagoskolan</span>
-                                        <h4>Ansökan om skolplats</h4>
-                                        <span class="creator">Henrik Reinhold</span>
-                                    </div>
-                                    <div class="issue-actions">
-                                        <div>
-                                            <span class="action-status updated">Stängd 03/18</span>
-                                            <span class="created-on">Skapad 03/17</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- /Public issues -->
-                        
-                        <div class="paging cf">
-                            <p><strong>Gå till sida:</strong> <em>1</em><span>, </span><a href="xlink-2">2</a><span>, </span><a href="xlink-3">3</a><span>, </span><a href="xlink-4">4</a><span>, </span><a href="xlink-5">5</a><span>, </span><a href="xlink-6">6</a><span>, </span><a href="xlink-7">7</a><span>, </span><a href="xlink-8">8</a><span>, </span><a href="xlink-9">9</a><span>, </span><a href="xlink-10">10</a><span>, </span><a href="xlink-11">11</a><span>.</p>
-                        </div>
-                    
-                    </div>
-                    <!-- /issues-overview -->
-                
-                </div>
-                <!-- /content-primary -->
-                
-            </div>
-            <!-- /main-body -->
-            
-        </div>
-        <!-- /main -->
-        
+      </form>
+      <!-- /main-search -->
+      
+      <div class="user-area">
+        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+      </div>
+      <!-- /user-area -->
+      
     </div>
-    <!-- /body -->
+    <!-- /header -->
     
+    <div class="main">
+      
+      <div class="main-body cf">
+        
+        <div class="content-primary" role="main">
+          
+          <div class="issues-overview">
+            
+            <h2>Synpunkter för Malmö Stad</h2>
+          
+            <!-- Public issues -->
+            <h3>Aktuella ärenden</h3>
+            <div class="due-date-divider"><span>Status</span></div>
+            <ul class="issue-list">
+              <li class="issue-item open">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Öppet
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - TK Gata</span>
+                    <h4>Bristfällig gräsklippning i lilla parken</h4>
+                    <span class="creator">Lars Back</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Ändrad 03/20</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item open">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Öppet
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Ändrad 06/11</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="issue-item closed">
+                <a href="public-issue.html" class="block-link">
+                  <div class="due-date">
+                    Stängt
+                  </div>
+                  <div class="issue-description">
+                    <span class="meta">20130902-2 - Tussilagoskolan</span>
+                    <h4>Ansökan om skolplats</h4>
+                    <span class="creator">Henrik Reinhold</span>
+                  </div>
+                  <div class="issue-actions">
+                    <div>
+                      <span class="action-status updated">Stängd 03/18</span>
+                      <span class="created-on">Skapad 03/17</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- /Public issues -->
+            
+            <div class="paging cf">
+              <p><strong>Gå till sida:</strong> <em>1</em><span>, </span><a href="xlink-2">2</a><span>, </span><a href="xlink-3">3</a><span>, </span><a href="xlink-4">4</a><span>, </span><a href="xlink-5">5</a><span>, </span><a href="xlink-6">6</a><span>, </span><a href="xlink-7">7</a><span>, </span><a href="xlink-8">8</a><span>, </span><a href="xlink-9">9</a><span>, </span><a href="xlink-10">10</a><span>, </span><a href="xlink-11">11</a><span>.</p>
+            </div>
+          
+          </div>
+          <!-- /issues-overview -->
+        
+        </div>
+        <!-- /content-primary -->
+        
+      </div>
+      <!-- /main-body -->
+      
+    </div>
+    <!-- /main -->
+    
+  </div>
+  <!-- /body -->
+  
 </body>
 </html>
