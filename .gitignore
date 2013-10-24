@@ -1,4 +1,2 @@
-# Idea project files #
-######################
-.idea/workspace.xml
-.idea/tasks.xml
+# Keep editor specific stuff outside the repo
+.idea
