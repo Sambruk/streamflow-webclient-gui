@@ -8,6 +8,7 @@
 /* Key colors
 --------------------------------------------------------
 #08c    -   blue
+#0af    -   blue highlight
 #cf0202 -   red
 #00831f -   green
 #ff7c00 -   orange
@@ -18,22 +19,18 @@
   /* LAYOUT FRAMEWORK
   ======================================================================== */
   .body {
-    padding-top: 5em;
+    background-color: #e8e8e8;
     width: 100%;
   }
   .header {
-    background-color: #141414;
     z-index: 200;
-  }
-  .main {
-    margin: 3em 0;
   }
   .footer {
     background-color: #222;
   }
   .header-body,
   .main-body {
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     width: 1000px;
   }
   
@@ -60,11 +57,8 @@
   /* HEADER
   ======================================================================== */
   .header {
-    padding: 1em 2em;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
+    border-top: 3px solid #00831f;
+    padding: 0 2em 1em 2em;
     width: 100%;
   }
   .header,
@@ -80,33 +74,44 @@
   .header a:focus {
     text-decoration: underline;
   }
+  .header .inner {
+    width: 1000px;
+    margin: 0 auto;
+  }
   
   /* Client name
   ---------------------------------------------------- */
   .client-name {
+    background-color: #141414;
     float: left;
-    padding: 0.55em 0;
+    padding: 1em 1em 1.55em;
+    width: 35%;
   }
   .client-name h1 {
-    font-size: 1.1429em;
+    font-size: 1.2857em;
+    margin: 0;
   }
   
   /* Main search
   ---------------------------------------------------- */
   .main-search {
     display: inline-block;
-    width: 22em;
+    margin-top: 2em;
+    float: right;
+    width: 60%;
   }
   .main-search input[type="text"] {
     background-color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    float: left;
     padding: 6px 10px;
-    width: 80%;
+    width: 40%;
   }
   .main-search button[type="submit"] {
+    border-radius: 0 5px 5px 0;
     padding: 6px 14px;
-    width: 17%;
+    width: 8.5%;
   }
   .main-search button[type="submit"] .icon-search:before {
     color: #fff;
@@ -119,9 +124,6 @@
   
   /* User area
   ---------------------------------------------------- */
-  .user-area {
-    float: right;
-  }
   .logged-in {
     display: block;
     padding: 6px 0;
@@ -309,6 +311,23 @@
   .issue-item .issue-actions {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  /* "Blue banner" TODO: Rename!
+  ---------------------------------------------------- */
+  .blue-banner {
+    background-color: #0af;
+    color: #fff;
+    padding: 0.55em 0;
+  }
+  .blue-banner .inner {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .blue-banner p {
+    margin: 0;
+    font-size: 1.0714em;
+    padding-left: 10px;
   }
   
   /* Due date
@@ -924,7 +943,10 @@
   /* Toolbar
   ---------------------------------------------------- */
   .toolbar {
-    margin: 0 0 1.5em;
+    float: right;
+    position: absolute;
+    top: 2.5em;
+    right: 2em;
   }
   .toolbar.fixed {
     background: #fff;
