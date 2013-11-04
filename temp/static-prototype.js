@@ -74,20 +74,20 @@ $(function() {
   /**
   * Fix toolbar on scroll
   */
-  var sidebar     = $('.toolbar'), 
-  view        = $(window),
-  offset      = sidebar.offset();
+  // var sidebar     = $('.toolbar'), 
+  // view        = $(window),
+  // offset      = sidebar.offset();
   
-  view.scroll(function() {
-    var contentSecondaryWidth = $('.content-secondary').width();
-    try {
-      if (view.scrollTop() > offset.top - 76) {
-        sidebar.addClass('fixed').css('width', contentSecondaryWidth);
-      } else {
-        sidebar.removeClass('fixed').removeAttr('style');
-      }
-    } catch(e) {}
-  });
+  // view.scroll(function() {
+  //   var contentSecondaryWidth = $('.content-secondary').width();
+  //   try {
+  //     if (view.scrollTop() > offset.top - 76) {
+  //       sidebar.addClass('fixed').css('width', contentSecondaryWidth);
+  //     } else {
+  //       sidebar.removeClass('fixed').removeAttr('style');
+  //     }
+  //   } catch(e) {}
+  // });
   
   
   /**
