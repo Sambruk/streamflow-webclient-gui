@@ -314,18 +314,19 @@
     vertical-align: middle;
   }
 
-  /* "Blue banner" TODO: Rename!
+  /* Issue banner
   ---------------------------------------------------- */
-  .blue-banner {
+  .issue-banner {
     background-color: #0af;
     color: #fff;
+    margin-bottom: 1em;
     padding: 0.55em 0;
   }
-  .blue-banner .inner {
+  .issue-banner .inner {
     width: 1000px;
     margin: 0 auto;
   }
-  .blue-banner p {
+  .issue-banner p {
     margin: 0;
     font-size: 1.0714em;
     padding-left: 10px;
