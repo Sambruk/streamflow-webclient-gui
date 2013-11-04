@@ -19,7 +19,6 @@
   /* LAYOUT FRAMEWORK
   ======================================================================== */
   .body {
-    background-color: #e8e8e8;
     width: 100%;
   }
   .header {
@@ -30,7 +29,7 @@
   }
   .header-body,
   .main-body {
-    margin: 1em auto 0 auto;
+    margin: 0 auto;
     width: 1000px;
   }
   
