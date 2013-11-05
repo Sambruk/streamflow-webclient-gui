@@ -865,6 +865,9 @@
     font-size: 1em;
     padding: 0 0 0 30px;
   }
+  .convo-status *[class*="icon-"]:hover {
+    color: #0af;
+  }
   .convo-status *[class*="icon-"]:before {
     padding-right: 0.25em;
   }
@@ -872,7 +875,6 @@
   /* Module: Kontakter
   ---------------------------------------------------- */
   .m-contacts a {
-    color: inherit;
     text-decoration: none;
   }
   
@@ -903,9 +905,15 @@
   
   /* Module: Bifogade filer
   ---------------------------------------------------- */
+  .m-attachments a {
+    text-decoration: none;
+  }
   .m-attachments .delete {
     color: #08c;
     float: right;
+  }
+  .m-attachments .delete:hover {
+    color: #0af;
   }
   
   /* Module: Checklista
@@ -1127,6 +1135,9 @@
   .m .action-btn *[class*="icon-"] {
     color: #08c;
   }
+  .m .action-btn:hover *[class*="icon-"] {
+    color: #0af;
+  }
   .m .action-btn .icon-arrow-down:before {
     margin-top: -3px;
     -webkit-transform: rotate(90deg);
@@ -1263,7 +1274,8 @@
   a,
   button,
   .issue-item,
-  .sub-category a span {
+  .sub-category a span,
+  *[class*="icon-"] {
     -webkit-transition: color .2s, background-color .2s;
        -moz-transition: color .2s, background-color .2s;
          -o-transition: color .2s, background-color .2s;
