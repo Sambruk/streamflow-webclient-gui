@@ -19,6 +19,7 @@
   /* LAYOUT FRAMEWORK
   ======================================================================== */
   .body {
+    background-color: #e8e8e8;
     width: 100%;
   }
   .header {
@@ -29,8 +30,7 @@
   }
   .header-body,
   .main-body {
-    margin: 0 auto;
-    width: 1000px;
+    padding: 0 6em 1em 6em;
   }
   
   
@@ -44,12 +44,12 @@
   /* Layout-2 - two columns
   ---------------------------------------------------- */
   .layout-2 .content-primary {
-    float: left;
+    float: right;
     width: 60%;
   }
   .layout-2 .content-secondary {
-    float: right;
-    width: 35%;
+    float: left;
+    width: 340px;
   }
   
   
@@ -57,7 +57,7 @@
   ======================================================================== */
   .header {
     border-top: 3px solid #00831f;
-    padding: 0 2em 1em 2em;
+    text-align: center;
     width: 100%;
   }
   .header,
@@ -73,10 +73,6 @@
   .header a:focus {
     text-decoration: underline;
   }
-  .header .inner {
-    width: 1000px;
-    margin: 0 auto;
-  }
   
   /* Client name
   ---------------------------------------------------- */
@@ -84,7 +80,8 @@
     background-color: #141414;
     float: left;
     padding: 1em 1em 1.55em;
-    width: 35%;
+    text-align: left;
+    width: 340px;
   }
   .client-name h1 {
     font-size: 1.2857em;
@@ -96,21 +93,19 @@
   .main-search {
     display: inline-block;
     margin-top: 2em;
-    float: right;
-    width: 60%;
+    width: 22em;
   }
   .main-search input[type="text"] {
     background-color: #fff;
     border: none;
     border-radius: 5px 0 0 5px;
-    float: left;
     padding: 6px 10px;
-    width: 40%;
+    width: 80%;
   }
   .main-search button[type="submit"] {
     border-radius: 0 5px 5px 0;
     padding: 6px 14px;
-    width: 8.5%;
+    width: 45px;
   }
   .main-search button[type="submit"] .icon-search:before {
     color: #fff;
@@ -316,16 +311,12 @@
   /* Issue banner
   ---------------------------------------------------- */
   .issue-banner {
-    background-color: #0af;
+    background-color: #08c;
+    margin-bottom: 2em;
+    padding: 0.55em 6em;
+  }
+  .issue-banner h2 {
     color: #fff;
-    margin-bottom: 1em;
-    padding: 0.55em 0;
-  }
-  .issue-banner .inner {
-    width: 1000px;
-    margin: 0 auto;
-  }
-  .issue-banner p {
     margin: 0;
     font-size: 1.0714em;
     padding-left: 10px;
@@ -538,6 +529,7 @@
     width: 78%;
   }
   .input-note input[type="text"] {
+    background-color: #fff;
     background-image: url("../i/arrow-blue-left.png");
     background-position: 100% 50%;
     background-repeat: no-repeat;
@@ -945,9 +937,7 @@
   ---------------------------------------------------- */
   .toolbar {
     float: right;
-    position: absolute;
-    top: 2.5em;
-    right: 2em;
+    margin-top: 2em;
   }
   .toolbar.fixed {
     background: #fff;
@@ -1626,7 +1616,7 @@
   
   /* Make roow for navigation */
   .content-primary {
-    padding-left: 80px;
+    width: 60%;
   }
   
   /* END @media screen and (max-width: 1000px)*/
@@ -1635,6 +1625,7 @@
 @media screen and (max-width: 1000px) {
   
   /* Switch to full width */
+  .header-body,
   .main-body {
     margin: 0 auto;
     width: 100%;
