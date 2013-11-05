@@ -48,7 +48,9 @@
     width: 60%;
   }
   .layout-2 .content-secondary {
+    background-color: #d7d7d7;
     float: left;
+    padding: 12px 8px;
     width: 340px;
   }
   
@@ -311,9 +313,10 @@
   /* Issue banner
   ---------------------------------------------------- */
   .issue-banner {
-    background-color: #08c;
+    background-color: #0af;
     margin-bottom: 2em;
     padding: 0.55em 6em;
+    text-align: left;
   }
   .issue-banner h2 {
     color: #fff;
@@ -837,13 +840,19 @@
   /* MODULES
   ======================================================================== */
   
+  /* Module: Allmänt
+  ---------------------------------------------------- */
+  .m-general .m-box {
+    background-color: #fff;
+  }
+
   /* Module: Konversationer
   ---------------------------------------------------- */
   .m-convos .date {
     font-size: 0.8571em;
   }
   .m-convos li {
-    background-color: #e8e8e8;
+    background-color: #fff;
     position: relative;
   }
   .convo-status {
@@ -869,17 +878,27 @@
   
   /* Module: Ärendelogg
   ---------------------------------------------------- */
-  .log-table tbody tr {
-    background-color: #eee;
+  .log-table {
+    border-collapse: separate;
+    border-spacing: 0 2px;
   }
-  .log-table tbody tr.even {
+  .log-table tbody td {
+    padding: 0.25em 0.75em;
+  }
+  .log-table tbody tr td:last-child {
+    text-align: right;
+  }
+  .log-table tbody tr {
     background-color: #fff;
   }
+  .log-table tbody tr.even {
+    background-color: #eee;
+  }
   .caselog-filter-options{
-    margin:35px 0 35px 0;
+    margin: 35px 0 35px 0;
   }
   .caselog-count-sidebar{
-    float:right;
+    float: right;
   }
   
   /* Module: Bifogade filer
@@ -1075,12 +1094,8 @@
     margin: 0 0 2em;
   }
   .m-h {
-    border-bottom: 1px solid #999;
     margin-bottom: 5px;
     overflow: hidden;
-  }
-  .m .m-box {
-    background-color: #e8e8e8;
   }
   .m .m-box,
   .m-c li {
@@ -1101,7 +1116,7 @@
     float: left;
     font-size: 1.1429em;
     font-weight: bold;
-    padding-left: 0.75em;
+    padding-left: 0.25em;
   }
   .m .action-btn {
     display: block;
@@ -1172,7 +1187,8 @@
   ---------------------------------------------------- */
   .zebra-list li {
     padding: 0.25em 0.75em;
-    margin: 0;
+    margin: 2px 0;
+    background-color: #fff;
   }
   .zebra-list .odd {
     background-color: #e8e8e8;
