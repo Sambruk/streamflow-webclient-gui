@@ -28,9 +28,11 @@
   .footer {
     background-color: #222;
   }
-  .header-body,
-  .main-body {
+  .header-body {
     padding: 0 6em 1em 6em;
+  }
+  .main-body {
+    padding: 0 6em;
   }
   
   
@@ -72,7 +74,6 @@
   }
   .header a,
   .header a:visited {
-    color: #08c;
     text-decoration: none;
   }
   .header a:hover,
@@ -133,22 +134,9 @@
     padding-right: 0.25em;
   }
   
-    .user-area a.btn{
-        color: #fff;
-    }
-
-    .user-area a.btn:active {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .user-area .buttons ul {
-        width: 13em;
-    }
-
-    .user-area .buttons li li {
-        text-align: left;
-    }
+  .user-area a {
+    color: #08c;
+  }
   
   /* NAVIGATION MENU
   ======================================================================== */
@@ -433,20 +421,12 @@
   
   /* Issue header
   ---------------------------------------------------- */
-  .m-h .id,
-  .m-h .choose-type,
   .m-h .set-due-date {
     display: inline-block;
     vertical-align: middle;
   }
   .m-h .id {
     padding: 6px 10px 0;
-  }
-  .m-h .choose-type {
-    padding: 4px 10px 0;
-  }
-  .m-h .choose-type.new-create-issue {
-    padding: 0 10px 9px;
   }
   .m-h .set-due-date {
     background-color: #eaeaea;
@@ -459,7 +439,21 @@
     border: none;
     padding: 0.214em 0.286em;
   }
-  
+
+  /* Issue type picker
+  ---------------------------------------------------- */
+  .choose-type.buttons {
+    margin-bottom: 5px;
+  }
+  .choose-type.new-create-issue {
+    padding: 0 10px 9px;
+  }
+  .choose-type .dropdown {
+    width: 100%;
+  }
+  .choose-type .icon-arrow-down {
+    float: right;
+  }
   
   /* Issue body
   ---------------------------------------------------- */
@@ -976,34 +970,6 @@
     display: inline-block;
     vertical-align: top;
   }
-  .buttons ul {
-    display: none;
-    list-style: none;
-    margin: -3px 0 0;
-    position: absolute;
-    width: 10em;
-    z-index: 999;
-  }
-  .buttons a:hover + ul,
-  .buttons a:focus + ul:hover,
-  .buttons a:focus + ul,
-  .buttons ul:hover {
-    display: block;
-  }
-  .buttons li li {
-    display: block;
-    margin: 0;
-  }
-  .buttons li li a {
-    border-radius: 0;
-    display: block;
-  }
-  .buttons li li:first-child a {
-    border-radius: 0 5px 0 0;
-  }
-  .buttons li li:last-child a {
-    border-radius: 0 0 5px 5px;
-  }
     
   /* Toolbar content */
   .toolbar-content {
@@ -1179,8 +1145,36 @@
   .btn.dropdown {
     padding-right: 0.5em;
   }
-  .btn.dropdown ~ ul {
+  .btn.dropdown + ul {
     text-align: left;
+  }
+  .btn.dropdown + ul {
+    display: none;
+    list-style: none;
+    margin: -3px 0 0;
+    position: absolute;
+    width: 10em;
+    z-index: 999;
+  }
+  .btn.dropdown:hover + ul,
+  .btn.dropdown:focus + ul:hover,
+  .btn.dropdown:focus + ul,
+  .btn.dropdown + ul:hover {
+    display: block;
+  }
+  .btn.dropdown + ul li {
+    display: block;
+    margin: 0;
+  }
+  .btn.dropdown + ul li a {
+    border-radius: 0;
+    display: block;
+  }
+  .btn.dropdown + ul li:first-child a {
+    border-radius: 0 5px 0 0;
+  }
+  .btn.dropdown + ul li:last-child a {
+    border-radius: 0 0 5px 5px;
   }
     
   /* Zebra lists
@@ -1345,7 +1339,7 @@
   input[type="password"],
   textarea,
   .custom-select {
-    background-color: #eaeaea;
+    background-color: #fff;
     border: none;
     border-radius: 3px;
     padding: 0.5em;
