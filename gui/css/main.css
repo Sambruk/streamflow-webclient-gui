@@ -469,6 +469,7 @@
   }
   .issue-body .due-date,
   .issue-body .issue-description {
+    background-color: #fff;
     display: table-cell;
   }
   
@@ -513,10 +514,6 @@
   
   /* Issue notes
   ---------------------------------------------------- */
-  .notes-content {
-    float: right;
-    width: 87%;
-  }
   
   /* Expandable field should have no border in notes */
   .notes-content .expandable-field.active {
@@ -553,7 +550,7 @@
   /* Notes listing */
   .note-item {
     font-size: 0.9286em;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
   }
   .note-body,
   .note-posted-by {
@@ -561,10 +558,10 @@
   }
   .note-body,
   .notes-content .expand {
-    width: 70%; /* .note-body and .expand should have same width */
+    width: 100%; /* .note-body and .expand should have same width */
   }
   .note-body {
-    background-color: #eaeaea;
+    background-color: #fff;
     min-height: 3em;
     padding: .5em .75em;
   }
@@ -578,11 +575,11 @@
     background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
     line-height: 1.2;
     padding: .35em .75em .25em;
-    width: 30%;
+    width: 100%;
   }
   .note-posted-by .note-timestamp {
     color: #666;
-    display: block;
+    float: right;
     font-size: 0.8462em;
   }
   
