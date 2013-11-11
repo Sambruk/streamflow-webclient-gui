@@ -38,27 +38,68 @@
   
   <div class="body">
     
-    <div class="header cf" role="banner">
-      
-      <div class="client-name">
-        <h1>Malmö Kommun Kontaktcenter</h1>
-      </div>
-      <!-- /client-name -->
-      
-      <form action="#" method="get" class="main-search" role="search">
-        <div>
-          <label for="main-searchtext" class="struct">Sök</label>
-          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+    <div class="header" role="banner">
+
+      <div class="header-body cf">
+        <div class="client-name">
+          <div class="user-area">
+            <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+          </div>
+          <!-- /user-area -->
+          <h1>Malmö Kommun Kontaktcenter</h1>
         </div>
-      </form>
-      <!-- /main-search -->
-      
-      <div class="user-area">
-        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+        <!-- /client-name -->
+        
+        <form action="#" method="get" class="main-search" role="search">
+          <div>
+            <label for="main-searchtext" class="struct">Sök</label>
+            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+            <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+          </div>
+        </form>
+        <!-- /main-search -->
+
+        <div class="toolbar">
+          <ul class="buttons cf">
+            <li><a href="#" class="btn">Byt ägare</a></li>
+            <li><a href="#" class="btn">Tilldela</a></li>
+            <li><a href="#" class="btn">Stäng</a></li>
+            <li>
+              <a href="#" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
+              <ul>
+                <li><a href="#" class="btn">Radera</a></li>
+                <li><a href="#" class="btn">Byt namn</a></li>
+                <li><a href="#" class="btn">Köp sill</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="toolbar-content">
+            <form action="#" method="get" class="form-general">
+              <div class="row cf">
+                <div class="select">
+                  <label for="issue-owner">Byt ägare</label>
+                  <select id="issue-owner" name="issue-owner">
+                    <option value="option-1">Peter Kleine</option>
+                    <option value="option-2">Fredrik Frodlund</option>
+                    <option value="option-3">Henrik Reinhold</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row cf">
+                <div class="submit-area">
+                  <button type="submit" name="save-issue-owner" class="right">Spara</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /toolbar -->
       </div>
-      <!-- /user-area -->
-      
+
+      <div class="issue-banner">
+          <h2>Kontaktcenter <span>&rarr;</span> Inkorg <span>&rarr;</span> 20121061-1 (Konversation)</h2>
+      </div>
+      <!-- /issue-banner -->
     </div>
     <!-- /header -->
     
@@ -97,14 +138,14 @@
               
                 <div class="posted-notes">
                   <div class="note-item cf">
+                    <div class="note-posted-by">
+                      <span class="struct">Postad av: </span>Solveig Grankvist
+                      <span class="note-timestamp">2 dagar sedan</span>
+                    </div>
                     <div class="note-body">
                       <p>Hej Henrik,</p>
                       <p>Din fråga kommer att tas upp på tekniska nämndens nästa möte. Hoppas att detta svar är till din belåtenhet.</p>
                       <p>Mvh Solveig</p>
-                    </div>
-                    <div class="note-posted-by">
-                      <span class="struct">Postad av: </span>Solveig Grankvist
-                      <span class="note-timestamp">2 dagar sedan</span>
                     </div>
                   </div>
                 </div>
@@ -148,13 +189,13 @@
             </div>
             <div class="m-c">
               <ul class="zebra-list">
-                <li class="odd">
+                <li>
                   <a href="xlink-">Karta</a>
                 </li>
                 <li>
                   <a href="xlink-">Foto på gräsmattan</a>
                 </li>
-                <li class="odd">
+                <li>
                   <a href="xlink-">Ett foto till på gräsmattan</a>
                 </li>
               </ul>

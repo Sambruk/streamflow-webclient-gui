@@ -28,11 +28,9 @@
   .footer {
     background-color: #222;
   }
-  .header-body {
-    padding: 0 6em 1em 6em;
-  }
+  .header-body,
   .main-body {
-    padding: 0 6em;
+    padding: 0 6em 1em 6em;
   }
   
   
@@ -271,7 +269,7 @@
     margin: 0 0 0.2em;
   }
   .due-date-divider span {
-    background-color: #fff;
+    background-color: #eaeaea;
     padding-right: 5px;
   }
   .issue-list {
@@ -298,6 +296,7 @@
   .issue-item .due-date,
   .issue-item .issue-description,
   .issue-item .issue-actions {
+    background-color: #fff;
     display: table-cell;
     vertical-align: middle;
   }
@@ -435,7 +434,7 @@
     padding: 0;
   }
   .m-h input[type="text"] {
-    background-color: transparent;
+    background-color: #fff;
     border: none;
     padding: 0.214em 0.286em;
   }
@@ -547,7 +546,7 @@
   /* Notes listing */
   .note-item {
     font-size: 0.9286em;
-    margin-bottom: 6px;
+    margin: 0 6em 0.5em 0;
   }
   .note-body,
   .note-posted-by {
@@ -590,7 +589,7 @@
   ---------------------------------------------------- */
   .issue-tags > span,
   .issue-tags a {
-    background-color: #eaeaea;
+    background-color: #fff;
     border-radius: 5px;
     display: inline-block;
     float: left;
@@ -633,7 +632,7 @@
     padding: 0;
   }
   .form-tabs a {
-    background-color: #ededed;
+    background-color: #fff;
     border-radius: 5px 5px 0 0;
     display: block;
     font-weight: bold;
@@ -755,7 +754,7 @@
   /* Textarea */
   .convo-input .text {
     margin: 0;
-    width: 76%;
+    width: 100%;
   }
   .convo-input .text textarea {
     border-radius: 0;
@@ -769,7 +768,7 @@
   }
   .convo-input .upload a {
     background-color: #08c;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px;
     color: #fff;
     display: inline-block;
     font-size: 1.7143em;
@@ -802,7 +801,7 @@
     list-style: none;
   }
   .convo-messages .msg-item {
-    margin: 0 0 1.25em;
+    margin: 0 6em 1.25em 0;
   }
   .msg-author,
   .msg-attachment {
@@ -817,7 +816,7 @@
     float: right;
   }
   .msg-body {
-    background-color: #e8e8e8;
+    background-color: #fff;
     padding: 1em;
   }
   .msg-meta {
@@ -926,6 +925,9 @@
   .m-matched-issue .createdon {
     font-size: 0.8571em;
     margin-bottom: 0;
+  }
+  .m-matched-issue .m-box {
+    background-color: #fff;
   }
   
   
@@ -1389,7 +1391,7 @@
     left: 0;
   }
   .customfile {
-    background-color: #eaeaea;
+    background-color: #fff;
     border-radius: 3px;
     cursor: pointer;
     margin: 2px 0;
