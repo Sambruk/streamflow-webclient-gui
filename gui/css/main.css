@@ -47,6 +47,10 @@
     float: right;
     width: 60%;
   }
+  /* Center column */
+  .layout-2 .content-primary > div {
+    max-width: 600px;
+  }
   .layout-2 .content-secondary {
     background-color: #d7d7d7;
     float: left;
@@ -314,7 +318,7 @@
   ---------------------------------------------------- */
   .issue-banner {
     background-color: #0af;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 0.55em 6em;
     text-align: left;
   }
@@ -322,7 +326,6 @@
     color: #fff;
     margin: 0;
     font-size: 1.0714em;
-    padding-left: 10px;
   }
   
   /* Due date
@@ -961,21 +964,7 @@
   ---------------------------------------------------- */
   .toolbar {
     float: right;
-    margin-top: 2em;
-  }
-  .toolbar.fixed {
-    background: #fff;
-    background: -webkit-linear-gradient(top, #fff 0%, #fff 70%, rgba(255,255,255,0) 100%);
-    background: linear-gradient(to bottom, #fff 0%, #fff 70%, rgba(255,255,255,0) 100%);
-    padding: 2em 0;
-    margin-top: -4.5em;
-    position: fixed;
-    z-index: 190;
-    width: 100%;
-  }
-  /* Nudge the following module on fixed */
-  .toolbar.fixed + .m {
-    margin-top: 3em;
+    margin-top: 2.25em;
   }
     
   /* Toolbar buttons */
@@ -1189,6 +1178,9 @@
   /* Has dropdown */
   .btn.dropdown {
     padding-right: 0.5em;
+  }
+  .btn.dropdown ~ ul {
+    text-align: left;
   }
     
   /* Zebra lists
@@ -1677,15 +1669,6 @@
   .layout-2 .content-secondary {
     float: none;
     width: 100%;
-  }
-  
-  /* Remove float on header */
-  .header {
-    padding: 0.25em 1em;
-  }
-  .header h1 {
-    float: none;
-    padding: 0;
   }
   
   /* Space above logged in user */
