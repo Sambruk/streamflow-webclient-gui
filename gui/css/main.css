@@ -109,7 +109,7 @@
   }
   .main-search button[type="submit"] {
     border-radius: 0 5px 5px 0;
-    padding: 6px 14px;
+    padding: 6px 13px;
     width: 45px;
   }
   .main-search button[type="submit"] .icon-search:before {
@@ -1106,7 +1106,7 @@
     font-size: 1em;
     font-weight: bold;
   }
-    
+
   /* Styled link buttons
   ---------------------------------------------------- */
   a.btn {
