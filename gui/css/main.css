@@ -104,11 +104,13 @@
     background-color: #fff;
     border: none;
     border-radius: 5px 0 0 5px;
-    padding: 6px 10px;
+    float: left;
+    padding: 7px 10px;
     width: 80%;
   }
   .main-search button[type="submit"] {
     border-radius: 0 5px 5px 0;
+    float: left;
     padding: 6px 13px;
     width: 45px;
   }
@@ -441,17 +443,8 @@
 
   /* Issue type picker
   ---------------------------------------------------- */
-  .choose-type.buttons {
+  .choose-type {
     margin-bottom: 5px;
-  }
-  .choose-type.new-create-issue {
-    padding: 0 10px 9px;
-  }
-  .choose-type .dropdown {
-    width: 100%;
-  }
-  .choose-type .icon-arrow-down {
-    float: right;
   }
   
   /* Issue body
@@ -613,6 +606,10 @@
     margin: -4px -12px;
     padding: 4px 0.5em;
   }
+  .issue-tags .new-tag:focus,
+  .issue-tags .new-tag:hover {
+    background-color: #0af;
+  }
   
   /* Module: Formulär
   ---------------------------------------------------- */
@@ -743,15 +740,13 @@
   .convo-input {
     margin: 1em 0;
   }
-  .convo-input .text,
   .convo-input .upload,
   .convo-input .send {
-    float: left;
+    float: right;
   }
-  .convo-input .text textarea,
   .convo-input .upload a,
   .convo-input .send button {
-    height: 4.286em;
+    height: 40px;
   }
   
   /* Textarea */
@@ -775,8 +770,7 @@
     color: #fff;
     display: inline-block;
     font-size: 1.7143em;
-    height: 2.4981em;
-    padding-top: 0.35em;
+    height: 40px;
     text-align: center;
     width: 100%;
   }
@@ -792,6 +786,9 @@
   }
   .convo-input .send button {
     width: 100%;
+  }
+  .convo-input .attached-files {
+    text-align: right;
   }
   
   
@@ -1263,7 +1260,8 @@
   button,
   .issue-item,
   .sub-category a span,
-  *[class*="icon-"] {
+  *[class*="icon-"],
+  .customfile-button {
     -webkit-transition: color .2s, background-color .2s;
        -moz-transition: color .2s, background-color .2s;
          -o-transition: color .2s, background-color .2s;
