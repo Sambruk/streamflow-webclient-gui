@@ -976,9 +976,16 @@
   /* Toolbar content */
   .toolbar-content {
     background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     color: #333;
     width: 440px;
-    padding: 0.75em 1em;
+    padding: 1em;
+  }
+  .toolbar-content .close {
+    float: left;
+  }
+  .toolbar-content .form-general {
+    margin: 2em 0;
   }
     
     
