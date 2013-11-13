@@ -975,7 +975,10 @@
     
   /* Toolbar content */
   .toolbar-content {
-    padding: 0.75em 0 1em;
+    background-color: #fff;
+    color: #333;
+    width: 440px;
+    padding: 0.75em 1em;
   }
     
     

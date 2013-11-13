@@ -97,12 +97,14 @@ $(function() {
   /**
   * Toolbar toggle content
   */
-  var toolbarContent = $('.toolbar-content');
-  toolbarContent.hide();
-  
-  $('.buttons a').on('click', function(e){
-    toolbarContent.slideToggle('fast');
-    e.preventDefault();
-  });
+  try {
+    var $toolbarContent = $('.toolbar-content');
+    $toolbarContent.easyModal();
+
+    $('.toolbar .buttons a').on('click', function (event) {
+      event.preventDefault();
+      $toolbarContent.trigger('openModal');
+    });
+  } catch (e) {}
   
 });
