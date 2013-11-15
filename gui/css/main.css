@@ -958,8 +958,7 @@
   /* Toolbar
   ---------------------------------------------------- */
   .toolbar {
-    float: right;
-    margin-top: 2.25em;
+    margin: 0 0 1.5em;
   }
     
   /* Toolbar buttons */
@@ -979,6 +978,7 @@
     color: #333;
     width: 440px;
     padding: 1em;
+    text-align: center;
   }
   .toolbar-content .close {
     float: left;
