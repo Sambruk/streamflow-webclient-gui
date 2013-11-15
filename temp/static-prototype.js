@@ -3,16 +3,16 @@
  *
  * @author Fredrik Frodlund
  */
-$(function() {
+$(function () {
   
   /**
   * Event delegation for links
   */
-  $('body').on('click', function(e) {
+  $('body').on('click', function (event) {
     try {
       // Display an alert dialog when inactive links are clicked.
-      if ($(e.target).closest('a').attr('href').match(/(^\/$|\/?xlink-)/)) {
-        e.preventDefault();
+      if ($(event.target).closest('a').attr('href').match(/(^\/$|\/?xlink-)/)) {
+        event.preventDefault();
         alert('Denna länk är inte aktiv i prototypen.');
       }
     } catch(e) {}
@@ -22,9 +22,9 @@ $(function() {
   /**
   * Slide in navigation
   */
-  $('.open-toolbar').on('click', function(e) {
+  $('.open-toolbar').on('click', function (event) {
     $('.functions-menu').toggleClass('open');
-    e.preventDefault();
+    event.preventDefault();
   });
   
   
@@ -55,13 +55,13 @@ $(function() {
   * TODO: Find a templating system
   */
   $('.expandable-field')
-  .addClass('active')
-  .append('<a href="#" class="expand"><i class="glyph icon-arrow-down"></i><span>Visa mer</span><i class="glyph icon-arrow-down"></i></a>')
-  .children('.expandable-content')
-  .hide();
-  $('.expand').on('click', function(e) {
+    .addClass('active')
+    .append('<a href="#" class="expand"><i class="glyph icon-arrow-down"></i><span>Visa mer</span><i class="glyph icon-arrow-down"></i></a>')
+    .children('.expandable-content')
+    .hide();
+  $('.expand').on('click', function (event) {
     $(this).toggleClass('expanded').prevAll('.expandable-content').slideToggle('fast');
-    e.preventDefault();
+    event.preventDefault();
   });
   
   
@@ -87,10 +87,10 @@ $(function() {
   */
   $('.accordion-content').hide();
   
-  $('.accordion .open-acc').on('click', function(e){
+  $('.accordion .open-acc').on('click', function (event) {
     $('.accordion-content').slideUp('fast');
     $(this).parent().siblings().slideToggle('fast');
-    e.preventDefault();
+    event.preventDefault();
   });
   
   
