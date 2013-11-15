@@ -937,16 +937,23 @@
     padding: 0 0.5em;
   }
   .accordion-item h3 a {
-    background: #08c;
-    border-radius: 3px;
-    color: #fff;
+    background: #fff;
     display: block;
+    font-weight: normal;
     padding: 0.45em;
     text-decoration: none;
   }
-  .accordion-item h3 a:hover,
-  .accordion-item h3 a:focus {
-    background: #0af;
+  .accordion-item h3 a:link .icon-arrow-down,
+  .accordion-item h3 a:active .icon-arrow-down,
+  .accordion-item h3 a:visited .icon-arrow-down {
+    color: #08c;
+  }
+  .accordion-item h3 a:hover .icon-arrow-down,
+  .accordion-item h3 a:focus .icon-arrow-down {
+    color: #0af;
+  }
+  .accordion-item .icon-arrow-down {
+    float: right;
   }
   
   
