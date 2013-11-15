@@ -22,7 +22,7 @@ $(function () {
   /**
   * Slide in navigation
   */
-  $('.open-toolbar').on('click', function (event) {
+  $('.open-toolbar').on('click focus', function (event) {
     $('.functions-menu').toggleClass('open');
     event.preventDefault();
   });
