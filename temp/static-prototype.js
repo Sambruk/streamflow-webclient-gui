@@ -37,7 +37,6 @@ $(function () {
   // element. Not sure of another fix at the moment.
   $('.choose-type .hasCustomSelect').css({ top: 'inherit' });
   
-  
   /**
   * Custom file upload elements
   */

@@ -63,7 +63,7 @@
   ======================================================================== */
   .header {
     border-top: 3px solid #00831f;
-    text-align: center;
+    text-align: right;
     width: 100%;
   }
   .header,
@@ -103,14 +103,12 @@
   .main-search input[type="text"] {
     background-color: #fff;
     border: none;
-    border-radius: 5px 0 0 5px;
-    float: left;
+    border-radius: 5px;
     padding: 7px 10px;
     width: 80%;
   }
   .main-search button[type="submit"] {
-    border-radius: 0 5px 5px 0;
-    float: left;
+    border-radius: 5px;
     padding: 6px 13px;
     width: 45px;
   }
@@ -305,7 +303,7 @@
   /* Issue banner
   ---------------------------------------------------- */
   .issue-banner {
-    background-color: #0af;
+    background-color: #00831f;
     margin-bottom: 1em;
     padding: 0.55em 6em;
     text-align: left;
@@ -719,7 +717,7 @@
   .participants .icon-close:hover,
   .participants .icon-close:focus,
   .participants .icon-close:active {
-    color: inherit;
+    color: #ff7c00;
   }
   .participants .add-participant {
     background-color: #08c;
@@ -1637,11 +1635,6 @@
 
 @media screen and (max-width: 1160px) {
   
-  /* Make roow for navigation */
-  .content-primary {
-    width: 60%;
-  }
-  
   /* END @media screen and (max-width: 1000px)*/
 }
 
@@ -1659,6 +1652,10 @@
 
 @media screen and (max-width: 882px) {
   
+  .header-body {
+    padding: 0 1em 1em;
+  }
+
   /* Give content a little air */
   .main {
     padding: 0 1em;
