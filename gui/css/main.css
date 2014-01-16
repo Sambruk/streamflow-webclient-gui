@@ -38,7 +38,7 @@
   ---------------------------------------------------- */
   .layout-1 .content-primary {
     float: none;
-    width: 100%;
+    width: 100%;  
   }
   
   /* Layout-2 - two columns
@@ -46,6 +46,7 @@
   .layout-2 .content-primary {
     float: right;
     width: 60%;
+    padding-left: 2em;
   }
   /* Center column */
   .layout-2 .content-primary > div {
@@ -1645,13 +1646,24 @@
   /* END @media screen and (max-width: 1000px)*/
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   
   /* Switch to full width */
   .header-body,
   .main-body {
     margin: 0 auto;
     width: 100%;
+  }
+  .layout-2 .content-primary{
+    float: none;
+    width: 600px;
+    margin: 0 auto;
+    padding-left: 0em;
+  }
+  .layout-2 .content-secondary {
+    float: none;
+    width: 600px;
+    margin: 0 auto;
   }
   
   /* END @media screen and (max-width: 1000px) */
