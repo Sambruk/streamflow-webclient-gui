@@ -132,11 +132,22 @@
     font-size: 1.2857em;
     padding-right: 0.25em;
   }
-  
   .user-area a {
     color: #08c;
   }
   
+   /* Profile edit
+---------------------------------------------------- */
+  #profile-content {
+      margin: auto;
+      float: none !important;
+  }
+
+  #profile-holder {
+      margin: auto;
+      max-width: 600px;
+  }
+
   /* NAVIGATION MENU
   ======================================================================== */
   .navigation {
@@ -1550,9 +1561,23 @@
     float: left;
     width: 50%;
     padding: 0 5px;
+    position: relative;
   }
   .col-1 {
     padding-left: 0;
+  }
+  .col-left {
+    width: 25%;
+    margin-left: -50%;
+    right: 25%;
+  }
+  .col-right {
+    width: 25%;
+    margin-right: -25%;
+  }
+  .col-center {
+    width: 50%;
+    margin-left: 25%;
   }
   .row .small {
     width: 25%;
@@ -1707,7 +1732,10 @@
     min-width: 200px;
     margin: 0 auto;
   }
-  
+  #profile-holder{  
+    min-width: 380px;
+    padding: 0px 65px 0px 65px; 
+  }
   /* Space above logged in user */
   .logged-in {
     margin-top: 0.25em;
@@ -1793,6 +1821,35 @@
   /* Remove indentation on issues overview heading */
   .issues-overview h2 {
     padding-left: 0;
+  }
+  .col-left{
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .col-right {
+    float: left;
+    width: 50%;
+    margin-left: -25%;
+  }
+  .col-center {
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 14px;
+    width: 100%;
+    clear: both;
+  }
+  #label-profile-read {
+    width: 200px;
+  }
+  #profile-holder{  
+    padding: 0px;
+    max-width: 280px;
+    min-width: 200px;
+  }
+  #profile-holder > h2 {
+    margin: 0px 0px 34px 0px;
+    margin-left: 45px;
   }
   
 /* END @media screen and (max-width: 424px) */
