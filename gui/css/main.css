@@ -1810,6 +1810,12 @@
   .issue-banner{
     text-align: center;
   }
+  .issues-overview h2 {
+    margin-left: 64px;
+  }
+  .due-date-divider {
+    margin-left:64px;
+  }
 
   
 /* END @media screen and (max-width: 882px) */
