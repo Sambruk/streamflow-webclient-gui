@@ -795,6 +795,9 @@
   .convo-input .attached-files {
     text-align: right;
   }
+  .convo-li {
+      min-height: 60px;
+  }
   
   
   /* Conversation body
