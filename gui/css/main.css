@@ -861,13 +861,16 @@
   .convo-status *[class*="icon-"] {
     color: #666;
     font-size: 1em;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 15px;
   }
   .convo-status *[class*="icon-"]:hover {
     color: #0af;
   }
   .convo-status *[class*="icon-"]:before {
     padding-right: 0.25em;
+  }
+  .convCaseSidebar {
+      max-width: 260px;
   }
   #conversation-topic {
       width: 100%;
@@ -1695,6 +1698,9 @@
   .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
+  }
+  .convCaseSidebar {
+      max-width: 520px;
   }
   
   /* END @media screen and (max-width: 1000px) */
