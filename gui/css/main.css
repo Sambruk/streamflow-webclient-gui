@@ -1584,6 +1584,9 @@
   .row .large {
     width: 75%;
   }
+  .medium-small {
+      width: 25%;
+  }
   .row .hr,
   .row .full {
     padding: 0;
@@ -1685,6 +1688,10 @@
     float: none;
     width: 600px;
     margin: 0 auto;
+  }
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
   }
   
   /* END @media screen and (max-width: 1000px) */
