@@ -138,10 +138,6 @@
   
    /* Profile edit
 ---------------------------------------------------- */
-  #profile-content {
-      margin: auto;
-      float: none !important;
-  }
 
   #profile-holder {
       margin: auto;
@@ -1731,10 +1727,7 @@
     min-width: 200px;
     margin: 0 auto;
   }
-  #profile-holder{  
-    min-width: 380px;
-    padding: 0px 65px 0px 65px; 
-  }
+
   /* Space above logged in user */
   .logged-in {
     margin-top: 0.25em;
