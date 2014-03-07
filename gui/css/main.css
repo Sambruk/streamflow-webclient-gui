@@ -1352,6 +1352,9 @@
     font-weight: bold;
     margin: 0 4px 0 0;
   }
+  form > div:last-of-type{
+      margin-bottom: 0px;
+  }
   label strong {
     display: block;
     color: #900;
