@@ -994,7 +994,7 @@
   }
     
   /* Toolbar content */
-  .toolbar-content {
+  .toolbar-content-style{
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     color: #333;
@@ -1008,8 +1008,49 @@
   .toolbar-content .form-general {
     margin: 2em 0;
   }
-    
-    
+  .ng-modal-overlay {
+    /* A dark translucent div that covers the whole screen */
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    min-height: 100%;
+    background-color:#000000;
+    opacity: 0.8;
+  }
+  .ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index:10000;
+    position: absolute;
+
+    /* Center the dialog */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+
+    padding: 3em 3em 1em 3em;
+    min-height: 175px;
+    min-width: 420px;;
+    text-align: center;
+  }
+  .ng-modal-close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'arial', 'sans-serif';
+  }
+
   /* Regular lists (inside modules)
   ---------------------------------------------------- */
   .m .reg-list {
