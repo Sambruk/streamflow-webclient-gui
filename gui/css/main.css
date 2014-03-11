@@ -331,6 +331,7 @@
     margin-bottom: 1em;
     padding: 0.55em 6em;
     text-align: left;
+    min-height: 35px;
   }
   .issue-banner h2 {
     color: #fff;
