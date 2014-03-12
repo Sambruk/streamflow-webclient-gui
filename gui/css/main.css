@@ -926,6 +926,9 @@
   .caselog-count-sidebar{
     float: right;
   }
+  .caselog-body {
+      min-height: 600px;
+  }
   
   /* Module: Bifogade filer
   ---------------------------------------------------- */
