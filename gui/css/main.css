@@ -217,7 +217,7 @@
     color: #fff;
     float: left;
     font-size: 1.7143em;
-    padding: 28px 62px 29px 20px;
+    padding: 28px 69px 29px 20px;
     margin: 0;
   }
   .functions-header h2 a {
@@ -757,6 +757,9 @@
     color: inherit;
     padding: 0 0.25em;
   }
+/* .remove-participant {
+      display: none;
+  }*/
   
   /* Conversation input
   ---------------------------------------------------- */
