@@ -1602,7 +1602,7 @@
 
     .text.saved-select:after,
     .text.error-select:after {
-    right: 23%;
+    right: 34%;
     bottom: 0.5em;
     }
   .text.saved:after {
