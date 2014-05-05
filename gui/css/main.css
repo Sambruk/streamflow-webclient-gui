@@ -586,11 +586,13 @@
   .note-body p:last-child {
     margin: 0;
   }
-  .note-posted-by {
+   .note-posted-by {
     background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
     line-height: 1.2;
-    padding: .35em .75em .25em;
+    padding: 1em 1em .75em 0em;
     width: 100%;
+    float: left;
+    font-weight: bold;width: 100%;
   }
   .note-posted-by .note-timestamp {
     color: #666;
