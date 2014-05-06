@@ -898,6 +898,12 @@
   .convCaseSidebar {
       max-width: 260px;
   }
+  .caseInSidebar{
+      width: 300px;
+  }
+  /*#formheader-in-sidebar{
+    margin-top: 5px;
+  }*/
   #conversation-topic {
       width: 100%;
   }
@@ -1347,6 +1353,9 @@
   }
   .icon-menu:before {
     content: "\71";
+  }
+  .icon-case-history:before {
+      margin-bottom: 10px;
   }
     
     
