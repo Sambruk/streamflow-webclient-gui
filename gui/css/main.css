@@ -645,6 +645,9 @@
   .m-issue-forms form {
     margin: 1em 0;
   }
+  .form-content{
+    margin-bottom: 20px;
+  }
   
   /* Form tabs */
   .form-tabs {
@@ -1614,11 +1617,25 @@
     -webkit-font-smoothing: antialiased;
   }
 
-    .text.saved-select:after,
-    .text.error-select:after {
+  .text.saved:after {
+    -webkit-animation-name: hideit;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes hideit {
+    0% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  .text.saved-select:after,
+  .text.error-select:after {
     right: 34%;
     bottom: 0.5em;
-    }
+  }
   .text.saved:after {
     background: #0c0;
     content: "\37";
