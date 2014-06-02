@@ -1113,7 +1113,7 @@
     width:100%;
     min-height: 100%;
     background-color:#000000;
-    opacity: 0.8;
+    opacity: 0.5;
   }
   .ng-modal-dialog {
     /* A centered div above the overlay with a box shadow. */
