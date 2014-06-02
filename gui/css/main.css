@@ -155,9 +155,18 @@
    /* Profile edit
 ---------------------------------------------------- */
 
+  #profile-content {
+    margin: auto;
+    float: none !important;
+  }
+
   #profile-holder {
-      margin: auto;
-      max-width: 600px;
+    margin: auto;
+    max-width: 600px;
+  }
+  .content-holder {
+    margin: auto;
+    padding: 0 65px 0 65px;
   }
 
   /* NAVIGATION MENU
