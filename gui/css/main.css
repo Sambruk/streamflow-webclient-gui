@@ -333,6 +333,9 @@
     display: table-cell;
     vertical-align: middle;
   }
+  #issue-owner {
+    min-width: 200px;
+  }
 
   /* Issue banner
   ---------------------------------------------------- */
