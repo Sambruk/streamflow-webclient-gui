@@ -1299,6 +1299,10 @@
     color: #ccc;
     cursor: default;
   }
+  .btn.inactive:hover {
+    color: #ccc;
+    background-color: #a7a7a7;
+  }
     
   /* Inline */
   .btn.inline {
