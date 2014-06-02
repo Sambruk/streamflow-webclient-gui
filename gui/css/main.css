@@ -992,6 +992,13 @@
   .caselog-filter-options{
     margin: 35px 0 35px 0;
   }
+  .caselog-filter {
+    margin: 6px 6px 6px 0;
+    min-width: 110px;
+  }
+  .caselog-filter-checkbox {
+    margin-right: 4px !important;
+  }
   .caselog-count-sidebar{
     float: right;
   }
