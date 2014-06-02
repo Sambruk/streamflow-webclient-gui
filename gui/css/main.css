@@ -573,7 +573,7 @@
   
   /* Notes listing */
   .posted-notes {
-    margin-right: 6em;
+    /*margin-right: 6em;*/
   }
   .note-item {
     font-size: 0.9286em;
