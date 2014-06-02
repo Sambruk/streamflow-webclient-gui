@@ -1494,6 +1494,20 @@
   .form-general {
     margin: 1em 0;
   }
+  .form-history {
+    margin-top:15px;
+  }
+  .form-history-field {
+    padding: 5px 0.5em 0.5em 0.5em;
+    margin-right: -15px;
+    background-color: #fff;
+  }
+  .form-field {
+    padding-bottom: 0.15em;
+  }
+  .form-history-submitted {
+      float: left;
+  }
   form label {
     display: block;
     font-weight: bold;
