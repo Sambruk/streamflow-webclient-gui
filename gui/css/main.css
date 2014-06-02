@@ -1683,8 +1683,8 @@
     position: absolute;
     right: 0.75em;
     bottom: 0.45em;
-    height: 1em;
-    width: 1em;
+    height: 2em;
+    width: 2em;
     /* TODO Fix below */
     font-family: "StreamflowIcons";
     font-size: 0.8571em;
@@ -1708,6 +1708,11 @@
   @-webkit-keyframes hideit {
     0% { opacity: 0; }
     100% { opacity: 0; }
+  }
+  .text.saved option,
+  .text.error option {
+    padding-right: 2.75em;
+    height: 5em;
   }
 
   .text.saved-select:after,
