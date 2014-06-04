@@ -2029,7 +2029,13 @@
   .due-date-divider {
     margin-left:64px;
   }
-
+  .medium-small {
+    width: 50%;
+    padding:0px;
+  }
+  .medium {
+      width: 50%;
+  }
   
 /* END @media screen and (max-width: 882px) */
 }
