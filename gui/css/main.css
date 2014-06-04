@@ -844,7 +844,7 @@
     resize: none;
     width: 100%;
   }
-  
+
   /* Upload button */
   .convo-input .upload {
     width: 10%;
@@ -864,6 +864,13 @@
     background-color: #0af;
   }
   
+  /* Attach button */
+  .convo-input .attach {
+    background: url("../i/icon-attachfile.png") no-repeat 50% 50%;
+    float: right;
+    padding: 0.5em 0,5em;
+  }
+
   /* Submit area */
   .convo-input .send {
     margin-left: 0.25em;
