@@ -1284,7 +1284,8 @@
 
   /* Styled link buttons
   ---------------------------------------------------- */
-  a.btn {
+  a.btn,
+  input.btn {
     background-color: #08c;
     border-radius: 5px;
     color: #fff;
@@ -1294,7 +1295,10 @@
   }
   a.btn:hover,
   a.btn:focus,
-  a.btn:active {
+  a.btn:active,
+  input.btn:hover,
+  input.btn:focus,
+  input.btn:active {
     color: #fff;
     background-color: #0af;
     text-decoration: none;
@@ -1304,10 +1308,12 @@
   }
     
   /* Inactive */
-  .btn.inactive {
+  .btn.inactive,
+  input.btn.inactive {
     background-color: #a7a7a7;
     color: #ccc;
     cursor: default;
+    opacity: 100;
   }
   .btn.inactive:hover {
     color: #ccc;
