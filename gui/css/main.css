@@ -714,6 +714,9 @@
   .form.radio {
       padding-left: 0px;
   }
+  .form-label {
+    margin-left: -20px;
+  }
   .form-comboBox {
       padding: 0px !important;
   }
