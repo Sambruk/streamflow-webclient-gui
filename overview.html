@@ -38,27 +38,33 @@
   
   <div class="body">
     
-    <div class="header cf" role="banner">
-      
-      <div class="client-name">
-        <h1>Malmö Kommun Kontaktcenter</h1>
-      </div>
-      <!-- /client-name -->
-      
-      <form action="#" method="get" class="main-search" role="search">
-        <div>
-          <label for="main-searchtext" class="struct">Sök</label>
-          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+    <div class="header" role="banner">
+
+      <div class="header-body cf">
+        <div class="client-name">
+          <div class="user-area">
+            <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+          </div>
+          <!-- /user-area -->
+          <h1>Malmö Kommun Kontaktcenter</h1>
         </div>
-      </form>
-      <!-- /main-search -->
-      
-      <div class="user-area">
-        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+        <!-- /client-name -->
+        
+        <form action="#" method="get" class="main-search" role="search">
+          <div>
+            <label for="main-searchtext" class="struct">Sök</label>
+            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+            <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+          </div>
+        </form>
+        <!-- /main-search -->
       </div>
-      <!-- /user-area -->
-      
+      <!-- /header-body -->
+
+      <div class="issue-banner">
+          <h2>Kontaktcenter <span>&rarr;</span> Inkorg <span>&rarr;</span> 20121061-1 (Konversation)</h2>
+      </div>
+      <!-- /issue-banner -->
     </div>
     <!-- /header -->
     
@@ -150,7 +156,7 @@
           
           <div class="issues-overview">
             
-            <h2>Överblick – alla mina funktioner</h2>
+            <h2 class="struct">Överblick – alla mina funktioner</h2>
           
             <!-- Overdue issues -->
             <h3>Ärenden med förfallodatum passerat</h3>

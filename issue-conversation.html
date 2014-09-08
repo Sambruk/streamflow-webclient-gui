@@ -38,27 +38,33 @@
   
   <div class="body">
     
-    <div class="header cf" role="banner">
-      
-      <div class="client-name">
-        <h1>Malmö Kommun Kontaktcenter</h1>
-      </div>
-      <!-- /client-name -->
-      
-      <form action="#" method="get" class="main-search" role="search">
-        <div>
-          <label for="main-searchtext" class="struct">Sök</label>
-          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+    <div class="header" role="banner">
+
+      <div class="header-body cf">
+        <div class="client-name">
+          <div class="user-area">
+            <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+          </div>
+          <!-- /user-area -->
+          <h1>Malmö Kommun Kontaktcenter</h1>
         </div>
-      </form>
-      <!-- /main-search -->
-      
-      <div class="user-area">
-        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+        <!-- /client-name -->
+        
+        <form action="#" method="get" class="main-search" role="search">
+          <div>
+            <label for="main-searchtext" class="struct">Sök</label>
+            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+            <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+          </div>
+        </form>
+        <!-- /main-search -->
       </div>
-      <!-- /user-area -->
-      
+      <!-- /header-body -->
+
+      <div class="issue-banner">
+          <h2>Kontaktcenter <span>&rarr;</span> Inkorg <span>&rarr;</span> 20121061-1 (Konversation)</h2>
+      </div>
+      <!-- /issue-banner -->
     </div>
     <!-- /header -->
     
@@ -171,13 +177,13 @@
                 <form action="#" method="get" class="cf">
                   <div class="text">
                     <label for="convo-text" class="struct">Meddelande</label>
-                    <textarea name="convo-text" id="convo-text" cols="30" rows="2" placeholder="Skriv ditt meddelande här"></textarea>
-                  </div>
-                  <div class="upload">
-                    <a href="xlink-dsa890d" class="icon-camera upload-file"><span class="struct">Ladda upp en fil</span></a>
+                    <textarea name="convo-text" id="convo-text" cols="30" rows="5" placeholder="Skriv ditt meddelande här"></textarea>
                   </div>
                   <div class="send">
                     <button type="submit" name="convo-submit">Skicka</button>
+                  </div>
+                  <div class="upload">
+                    <a href="xlink-dsa890d" class="icon-camera upload-file"><span class="struct">Ladda upp en fil</span></a>
                   </div>
                 </form>
                 <div class="attached-files">Bifogad fil: <a href="xlink-d6as78">uppladdad-fil.doc</a></div>
@@ -286,15 +292,43 @@
         <div class="content-secondary" role="complementary">
           
           <h2 class="struct">Verktyg och annan information</h2>
-          
           <div class="toolbar">
-            <a href="xlink-d6as81" class="btn">Byt ägare</a>
-            <a href="xlink-d6as82" class="btn">Tilldela</a>
-            <a href="xlink-d6as83" class="btn">Stäng</a>
-            <a href="xlink-d6as84" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
+            <ul class="buttons cf">
+              <li><a href="#" class="btn">Byt ägare</a></li>
+              <li><a href="#" class="btn">Tilldela</a></li>
+              <li><a href="#" class="btn">Stäng</a></li>
+              <li>
+                <a href="#" class="btn dropdown">Mer <i class="icon-arrow-down"></i></a>
+                <ul>
+                  <li><a href="#" class="btn">Radera</a></li>
+                  <li><a href="#" class="btn">Byt namn</a></li>
+                  <li><a href="#" class="btn">Köp sill</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="toolbar-content">
+              <a href="#" title="Stäng fönster" class="icon-close close"><span class="struct">Stäng fönster</span></a>
+              <form action="#" method="get" class="form-general">
+                <div class="row cf">
+                  <div class="select">
+                    <label for="issue-owner">Byt ägare</label>
+                    <select id="issue-owner" name="issue-owner">
+                      <option value="option-1">Peter Kleine</option>
+                      <option value="option-2">Fredrik Frodlund</option>
+                      <option value="option-3">Henrik Reinhold</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="submit-area cf">
+                    <button type="submit" name="save-issue-owner">Spara</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
           <!-- /toolbar -->
-          
+
           <!-- Module: Allmänt -->
           <div class="m m-general">
             <div class="m-h">
@@ -354,9 +388,9 @@
             </div>
             <div class="m-c">
               <ul class="zebra-list">
-                <li class="odd"><a href="xlink-">Solveig Grankvist (Handläggare)</a></li>
+                <li><a href="xlink-">Solveig Grankvist (Handläggare)</a></li>
                 <li><a href="xlink-">Henrik Reinhold</a></li>
-                <li class="odd"><a href="xlink-">Karolina Reinhold</a></li>
+                <li><a href="xlink-">Karolina Reinhold</a></li>
               </ul>
             </div>
           </div>
@@ -369,7 +403,7 @@
             </div>
             <div class="m-c">
               <ul class="zebra-list">
-                <li class="odd">
+                <li>
                   <a href="xlink-">Karta</a>
                   <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
                 </li>
@@ -377,7 +411,7 @@
                   <a href="xlink-">Foto på gräsmattan</a>
                   <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
                 </li>
-                <li class="odd">
+                <li>
                   <a href="xlink-">Ett foto till på gräsmattan</a>
                   <a href="xlink-" class="icon-close delete" title="Radera fil"><span class="struct">Radera fil</span></a>
                 </li>
@@ -407,7 +441,7 @@
                     <td>Öppna ärende</td>
                     <td>Henrik Reinhold</td>
                   </tr>
-                  <tr class="even">
+                  <tr>
                     <td>15 juni</td>
                     <td>Tilldela ärende</td>
                     <td>Solveig Grankvist</td>

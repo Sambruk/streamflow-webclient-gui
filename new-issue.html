@@ -45,27 +45,33 @@
   
   <div class="body">
     
-    <div class="header cf" role="banner">
-      
-      <div class="client-name">
-        <h1>Malmö Kommun Kontaktcenter</h1>
-      </div>
-      <!-- /client-name -->
-      
-      <form action="#" method="get" class="main-search" role="search">
-        <div>
-          <label for="main-searchtext" class="struct">Sök</label>
-          <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
-          <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+    <div class="header" role="banner">
+
+      <div class="header-body cf">
+        <div class="client-name">
+          <div class="user-area">
+            <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+          </div>
+          <!-- /user-area -->
+          <h1>Malmö Kommun Kontaktcenter</h1>
         </div>
-      </form>
-      <!-- /main-search -->
-      
-      <div class="user-area">
-        <a href="xlink-" class="icon-user logged-in">Solveig Grankvist</a>
+        <!-- /client-name -->
+        
+        <form action="#" method="get" class="main-search" role="search">
+          <div>
+            <label for="main-searchtext" class="struct">Sök</label>
+            <input type="text" name="main-searchtext" id="main-searchtext" placeholder="Sök">
+            <button type="submit"><i class="icon-search"><span>Sök</span></i></button>
+          </div>
+        </form>
+        <!-- /main-search -->
       </div>
-      <!-- /user-area -->
-      
+      <!-- /header-body -->
+
+      <div class="issue-banner">
+          <h2>Kontaktcenter <span>&rarr;</span> Inkorg <span>&rarr;</span> 20121061-1 (Konversation)</h2>
+      </div>
+      <!-- /issue-banner -->
     </div>
     <!-- /header -->
     
@@ -161,21 +167,22 @@
             <div class="m">
               <div class="m-h">
                 <h2>20121016-1</h2>
-                <div class="choose-type new-create-issue">
-                  <label for="issue-type" class="struct">Ärendetyp</label>
-                  <select name="issue-type" id="issue-type">
-                    <option value="option1">Ärendetyp 1</option>
-                    <option value="option2">Ärendetyp 2</option>
-                    <option value="option3">Ärendetyp 3</option>
-                    <option value="option4">Ärendetyp 4</option>
-                  </select>
-                </div>
                 <div class="set-due-date">
                   <label class="struct" for="set-due-date">Förfallodatum</label>
                   <input type="text" name="set-due-date" id="set-due-date" placeholder="Förfallodatum">
                 </div>
               </div>
               <div class="m-c">
+
+                <div class="choose-type new-create-issue">
+                  <label for="issue-type" class="struct">Ärendetyp</label>
+                  <select class="cust-sel" name="issue-type" id="issue-type">
+                    <option value="option1">Ärendetyp 1</option>
+                    <option value="option2">Ärendetyp 2</option>
+                    <option value="option3">Ärendetyp 3</option>
+                    <option value="option4">Ärendetyp 4</option>
+                  </select>
+                </div>
                 
                 <div class="row cols-1 cf">
                   <div class="text col full col-1 saved">
@@ -536,7 +543,7 @@
         <div class="content-secondary" role="complementary">
           
           <h2>Liknande tidigare ärenden</h2>
-          
+
           <!-- Module: Liknande ärenden -->
           <div class="m m-matched-issue">
             <div class="m-h">
