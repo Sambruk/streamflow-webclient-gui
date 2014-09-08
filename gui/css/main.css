@@ -780,9 +780,7 @@
   /* SPINNER
   ======================================================================== */
   .spinner {
-    background: url("../i/spinner.gif");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../i/spinner.gif") no-repeat 50% 50%;
     background-size: 30px;
     height: 30px;
     margin: 5px;
