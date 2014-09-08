@@ -1704,15 +1704,13 @@
   }
   .text.saved:after,
   .text.error:after {
-    border-radius: 1em;
+    border-radius: 100%;
     color: #fff;
     display: block;
     padding: 5px;
     position: absolute;
     right: 0.75em;
     bottom: 0.45em;
-    height: 2em;
-    width: 2em;
     /* TODO Fix below */
     font-family: "StreamflowIcons";
     font-size: 0.8571em;
