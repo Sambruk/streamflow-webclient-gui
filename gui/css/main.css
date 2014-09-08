@@ -1723,15 +1723,15 @@
   }
   
   .text.saved:after {
-    -webkit-animation: hideit 1s ease-in-out 3s 1 forwards;
-            animation: hideit 1s ease-in-out 3s 1 forwards;
+    -webkit-animation: fadeOut 1s ease-in-out 3s 1 forwards;
+            animation: fadeOut 1s ease-in-out 3s 1 forwards;
   }
   
-  @-webkit-keyframes hideit {
+  @-webkit-keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
   }
-  @keyframes hideit {
+  @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
   }
