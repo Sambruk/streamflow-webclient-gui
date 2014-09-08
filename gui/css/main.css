@@ -1723,20 +1723,21 @@
     vertical-align: middle;
     -webkit-font-smoothing: antialiased;
   }
-
+  
   .text.saved:after {
-    -webkit-animation-name: hideit;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 3s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: hideit 1s ease-in-out 3s 1 forwards;
+            animation: hideit 1s ease-in-out 3s 1 forwards;
   }
-
+  
   @-webkit-keyframes hideit {
-    0% { opacity: 0; }
+    0% { opacity: 1; }
     100% { opacity: 0; }
   }
+  @keyframes hideit {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
   .text.saved option,
   .text.error option {
     padding-right: 2.75em;
