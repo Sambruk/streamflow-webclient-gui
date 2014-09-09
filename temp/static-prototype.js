@@ -1,7 +1,6 @@
 /**
  * Prototype specific startup scripts
  *
- * @author Fredrik Frodlund
  */
 $(function () {
   
