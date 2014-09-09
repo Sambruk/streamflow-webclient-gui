@@ -2,7 +2,6 @@
  * main.css
  * Global stylesheet for Streamflow
  *
- * @author Fredrik Frodlund
  */
 
 /* Key colors
@@ -21,19 +20,19 @@
   html {
     height: 100%;
     min-height: 100%;
-    position:relative;
+    position: relative;
   }
   body {
     height: 100%;
     min-height: 100%;
-    position:relative; /* needed for the overlay to extend when you scroll */
+    position: relative; /* needed for the overlay to extend when you scroll */
   }
   .body {
     background-color: #e8e8e8;
     width: 100%;
     height: 100%;
     min-height: 100%;
-    position:relative; ; /* needed for the overlay to extend when you scroll */
+    position: relative; ; /* needed for the overlay to extend when you scroll */
   }
   .header {
     z-index: 200;
@@ -192,7 +191,7 @@
   .functions-menu {
     margin-left: -200px;
     -webkit-transition: margin-left .2s ease-in-out;
-    transition: margin-left .2s ease-in-out;
+            transition: margin-left .2s ease-in-out;
   }
   .functions-menu.open {
     margin-left: 0;
@@ -226,7 +225,7 @@
     color: #fff;
     float: left;
     font-size: 1.7143em;
-    padding: 28px 68px 29px 20px;
+    padding: 28px 63px 29px 20px;
     margin: 0;
   }
   .functions-header h2 a {
@@ -242,7 +241,6 @@
     color: #fff;
     padding: 0.75em 1.4286em;
     width: 200px;
-    display: none;
   }
   .sub-category h3 {
     color: inherit;
@@ -593,7 +591,7 @@
     padding: .5em .75em;
   }
   .note-body p {
-    margin: 0 0 0.5em;
+    margin: 0 0 .5em;
   }
   .note-body p:last-child {
     margin: 0;
@@ -601,10 +599,11 @@
    .note-posted-by {
     background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
     line-height: 1.2;
-    padding: 1em 1em .75em 0em;
+    padding: 1em 1em .75em 0;
     width: 100%;
     float: left;
-    font-weight: bold;width: 100%;
+    font-weight: bold;
+    width: 100%;
   }
   .note-posted-by .note-timestamp {
     color: #666;
@@ -743,7 +742,7 @@
     margin-bottom: 20px;
   }
   .m-c .form-status li {
-    padding: 0 0 0 0.75em;
+    padding: 0 0 0 .75em;
   }
 
   /* Form sections */
@@ -756,7 +755,7 @@
   .section-item {
     float: left;
     margin: 0 1em 0 0;
-    padding: 0.5em 0;
+    padding: .5em 0;
   }
   .section-item a {
     font-weight: bold;
@@ -773,7 +772,7 @@
     padding: 5px 5px 5px 7px;
   }
   .form-history-sections {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
     padding-left: 5px;
   }
 
@@ -824,7 +823,7 @@
   }
   .participants .add-participant *[class*="icon-"] {
     color: inherit;
-    padding: 0 0.25em;
+    padding: 0 .25em;
   }
 /* .remove-participant {
       display: none;
@@ -846,7 +845,6 @@
   
   /* Textarea */
   .convo-input .text {
-    /*margin: 0;*/
     width: 100%;
   }
   .convo-input .text textarea {
@@ -878,12 +876,12 @@
   .convo-input .attach {
     background: url("../i/icon-attachfile.png") no-repeat 50% 50%;
     float: right;
-    padding: 0.5em 0,5em;
+    padding: .5em .5em;
   }
 
   /* Submit area */
   .convo-input .send {
-    margin-left: 0.25em;
+    margin-left: .25em;
     width: 13%;
   }
   .convo-input .send button {
@@ -925,7 +923,7 @@
     padding: 1em;
   }
   .msg-meta {
-    font-size: 0.8571em;
+    font-size: .8571em;
   }
   .msg-recipients {
     float: left;
@@ -947,7 +945,7 @@
   /* Module: Konversationer
   ---------------------------------------------------- */
   .m-convos .date {
-    font-size: 0.8571em;
+    font-size: .8571em;
   }
   .m-convos li {
     background-color: #fff;
@@ -955,8 +953,8 @@
   }
   .convo-status {
     position: absolute;
-    right: 0.75em;
-    top: 0.75em;
+    right: .75em;
+    top: .75em;
   }
   .convo-status *[class*="icon-"] {
     color: #666;
@@ -967,7 +965,7 @@
     color: #0af;
   }
   .convo-status *[class*="icon-"]:before {
-    padding-right: 0.25em;
+    padding-right: .25em;
   }
   .convCaseSidebar {
       max-width: 260px;
@@ -1000,7 +998,7 @@
     border-spacing: 0 2px;
   }
   .log-table tbody td {
-    padding: 0.25em 0.75em;
+    padding: .25em .75em;
   }
   .log-table tbody tr td:last-child {
     text-align: right;
@@ -1044,7 +1042,7 @@
   /* Module: Checklista
   ---------------------------------------------------- */
   .m-check-list .check-list li {
-    padding: 0.25em;
+    padding: .25em;
     margin: 0;
   }
   .m-check-list .check-list li.even {
@@ -1055,7 +1053,7 @@
   ---------------------------------------------------- */
   .m-matched-issue .status,
   .m-matched-issue .createdon {
-    font-size: 0.8571em;
+    font-size: .8571em;
     margin-bottom: 0;
   }
   .m-matched-issue .m-box {
@@ -1066,16 +1064,16 @@
   /* ACCORDION
   ======================================================================== */
   .accordion-item {
-    margin: 0 0 0.25em;
+    margin: 0 0 .25em;
   }
   .accordion-content {
-    padding: 0 0.5em;
+    padding: 0 .5em;
   }
   .accordion-item h3 a {
     background: #fff;
     display: block;
     font-weight: normal;
-    padding: 0.45em;
+    padding: .45em;
     text-decoration: none;
   }
   .accordion-item h3 a:link .icon-arrow-down,
@@ -1128,27 +1126,25 @@
   }
   .ng-modal-overlay {
     /* A dark translucent div that covers the whole screen */
-    position:fixed;
-    z-index:9999;
-    top:0;
-    left:0;
-    width:100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
     min-height: 100%;
-    background-color:#000000;
-    opacity: 0.5;
+    background-color: #000;
+    opacity: .5;
   }
   .ng-modal-dialog {
     /* A centered div above the overlay with a box shadow. */
-    z-index:10000;
+    z-index: 10000;
     position: absolute;
 
     /* Center the dialog */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-
+            transform: translate(-50%, -50%);
     background-color: #fff;
     box-shadow: 4px 4px 80px #000;
 
@@ -1166,7 +1162,7 @@
     font-size: 120%;
     display: inline-block;
     font-weight: bold;
-    font-family: 'arial', 'sans-serif';
+    font-family: 'arial', 'sans-serif'; /* TODO Remove - font-family is alredy specified in basic.css */
   }
 
   /* Regular lists (inside modules)
@@ -1231,13 +1227,9 @@
   }
   .expanded *[class*="icon-"]:before {
     -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
     -webkit-transition: all .15s linear .1s;
-    -moz-transition: all .15s linear .1s;
-    -o-transition: all .15s linear .1s;
-    transition: all .15s linear .1s;
+            transition: all .15s linear .1s;
   }
     
   /* Module
@@ -1285,9 +1277,7 @@
   .m .action-btn .icon-arrow-down:before {
     margin-top: -3px;
     -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .m h3 {
     font-size: 1em;
@@ -1382,7 +1372,7 @@
   /* Zebra lists
   ---------------------------------------------------- */
   .zebra-list li {
-    padding: 0.25em 0.75em;
+    padding: .25em .75em;
     margin: 2px 0;
     background-color: #fff;
   }
@@ -1466,8 +1456,6 @@
   *[class*="icon-"],
   .customfile-button {
     -webkit-transition: color .2s, background-color .2s;
-       -moz-transition: color .2s, background-color .2s;
-         -o-transition: color .2s, background-color .2s;
             transition: color .2s, background-color .2s;
   }
     
@@ -1523,10 +1511,10 @@
     margin: 1em 0;
   }
   .form-history {
-    margin-top:15px;
+    margin-top: 15px;
   }
   .form-history-field {
-    padding: 5px 0.5em 0.5em 0.5em;
+    padding: 5px .5em .5em .5em;
     margin-right: -15px;
     background-color: #fff;
   }
@@ -1553,7 +1541,7 @@
   }
   label span,
   label em {
-    margin: 0 0 0 0.5em;
+    margin: 0 0 0 .5em;
     color: #ff7c00;
     font-weight: normal;
     font-style: normal;
@@ -1565,7 +1553,7 @@
     background-color: #fff;
     border: none;
     border-radius: 3px;
-    padding: 0.5em;
+    padding: .5em;
   }
   button {
     background-color: #08c;
@@ -1589,7 +1577,7 @@
     background-repeat: no-repeat;
     background-position: 100% 50%;
     margin: 2px 0;
-    padding: 0.4356em 0.5em;
+    padding: .4356em .5em;
     width: 100%;
   }
 
@@ -1620,13 +1608,13 @@
     position: relative;
   }
   .customfile-disabled {
-    opacity: 0.5;
+    opacity: .5;
     cursor: default;
   }
   .customfile-feedback {
     display: block;
     overflow: hidden;
-    padding: 0.4356em 0.5em;
+    padding: .4356em .5em;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1634,7 +1622,7 @@
     background: #08c url("../i/icon-camera.png") no-repeat 50% 50%;
     color: #fff;
     float: right;
-    padding: 0.4356em 1.7951em;
+    padding: .4356em 1.7951em;
     text-align: center;
     text-decoration: none;
     text-indent: -9999px;
@@ -1704,15 +1692,13 @@
   }
   .text.saved:after,
   .text.error:after {
-    border-radius: 1em;
+    border-radius: 100%;
     color: #fff;
     display: block;
     padding: 5px;
     position: absolute;
     right: 0.75em;
     bottom: 0.45em;
-    height: 2em;
-    width: 2em;
     /* TODO Fix below */
     font-family: "StreamflowIcons";
     font-size: 0.8571em;
@@ -1723,20 +1709,21 @@
     vertical-align: middle;
     -webkit-font-smoothing: antialiased;
   }
-
+  
   .text.saved:after {
-    -webkit-animation-name: hideit;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 3s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1s ease-in-out 3s 1 forwards;
+            animation: fadeOut 1s ease-in-out 3s 1 forwards;
   }
-
-  @-webkit-keyframes hideit {
-    0% { opacity: 0; }
+  
+  @-webkit-keyframes fadeOut {
+    0% { opacity: 1; }
     100% { opacity: 0; }
   }
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
   .text.saved option,
   .text.error option {
     padding-right: 2.75em;
@@ -1907,8 +1894,8 @@
       width: 570px;
   }
   .row {
-     margin-right: 0px !important;
-     margin-left: 0px !important;
+     margin-right: 0 !important;
+     margin-left: 0 !important;
   }
   /* END @media screen and (max-width: 1160px)*/
 }

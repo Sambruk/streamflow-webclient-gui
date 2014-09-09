@@ -1,7 +1,6 @@
 /**
  * Prototype specific Google Maps scripts
  *
- * @author Fredrik Frodlund
  */
 $(function() {
   

@@ -1,13 +1,12 @@
 /**
  * Prototype specific startup scripts
  *
- * @author Fredrik Frodlund
  */
 $(function () {
   
   /**
-  * Event delegation for links
-  */
+   * Event delegation for links
+   */
   $('body').on('click', function (event) {
     try {
       // Display an alert dialog when inactive links are clicked.
@@ -20,8 +19,8 @@ $(function () {
   
   
   /**
-  * Slide in navigation
-  */
+   * Slide in navigation
+   */
   $('.open-toolbar').on('click focus', function (event) {
     $('.functions-menu').toggleClass('open');
     event.preventDefault();
@@ -29,8 +28,8 @@ $(function () {
   
   
   /**
-  * Custom select elements
-  */
+   * Custom select elements
+   */
   $('.cust-sel').customSelect({customClass:'custom-select'});
 
   // FIXME: The customSelect plugin adds an arbitrary top value of 310px to the following
@@ -38,21 +37,21 @@ $(function () {
   $('.choose-type .hasCustomSelect').css({ top: 'inherit' });
   
   /**
-  * Custom file upload elements
-  */
+   * Custom file upload elements
+   */
   $('input:file').customFileInput();
   
   
   /**
-  * Placeholder support for legacy IE
-  */
+   * Placeholder support for legacy IE
+   */
   $('input, textarea').placeholder();
   
   
   /**
-  * Expandable fields
-  * TODO: Find a templating system
-  */
+   * Expandable fields
+   * TODO: Find a templating system
+   */
   $('.expandable-field')
     .addClass('active')
     .append('<a href="#" class="expand"><i class="glyph icon-arrow-down"></i><span>Visa mer</span><i class="glyph icon-arrow-down"></i></a>')
@@ -65,8 +64,8 @@ $(function () {
   
   
   /**
-  * Date picker
-  */
+   * Date picker
+   */
   try {
     $('.datepicker').pickadate({
       format: 'yyyy-mm-dd',
@@ -75,15 +74,15 @@ $(function () {
   
   
   /**
-  * Superfish dropdown menu
-  */
+   * Superfish dropdown menu
+   */
   try {
     $('.buttons ul').superfish();
   } catch (e) {}
   
   /**
-  * Accordion
-  */
+   * Accordion
+   */
   $('.accordion-content').hide();
   
   $('.accordion .open-acc').on('click', function (event) {
@@ -94,12 +93,12 @@ $(function () {
   
   
   /**
-  * Toolbar toggle content
-  */
+   * Toolbar toggle content
+   */
   try {
     var $toolbarContent = $('.toolbar-content');
     $toolbarContent.easyModal();
-
+    
     $('.toolbar .buttons a').on('click', function (event) {
       event.preventDefault();
       $toolbarContent.trigger('openModal');
