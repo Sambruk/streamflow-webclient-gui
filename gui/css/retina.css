@@ -5,12 +5,11 @@
  */
 
 @media
-all and (-webkit-min-device-pixel-ratio: 2),
-all and (min--moz-device-pixel-ratio: 2),
-all and (-o-min-device-pixel-ratio: 2/1),
-all and (min-device-pixel-ratio: 2),
-all and (min-resolution: 192dpi),
-all and (min-resolution: 2dppx) {
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
   
   /* Custom select element */
   .custom-select {
