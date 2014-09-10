@@ -29,6 +29,13 @@
   <script src="gui/js/jquery.placeholder.min.js"></script>
   <script src="gui/js/jquery.superfish.js"></script>
   
+  <!-- Datepicker -->
+  <link rel="stylesheet" href="gui/vendor/pickadate/themes/default.css">
+  <link rel="stylesheet" href="gui/vendor/pickadate/themes/default.date.css">
+  <script src="gui/vendor/pickadate/picker.js"></script>
+  <script src="gui/vendor/pickadate/picker.date.js"></script>
+  <script src="gui/vendor/pickadate/translations/sv_SE.js"></script>
+  
   <!-- Google Web Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
   
@@ -166,6 +173,7 @@
 
             <div class="choose-type">
               <form action="#" method="get">
+                <label for="type-select" class="struct">Ärendetyp</label>
                 <select class="cust-sel" name="type-select" id="type-select">
                   <option value="option-1">Ärendetyp 1</option>
                   <option value="option-2">Ärendetyp 2</option>
@@ -346,7 +354,35 @@
             </div>
           </div>
           <!-- /toolbar -->
-
+          
+          <!-- Module: Status -->
+          <div class="m m-status">
+            <div class="m-h">
+              <h2>Status</h2>
+            </div>
+            <div class="m-c">
+              <form action="#" method="get">
+                <div class="row">
+                  <div class="text">
+                    <label for="issue-due-date">Förfaller om</label>
+                    <input type="text" name="issue-due-date" id="issue-due-date" class="datepicker-due" value="4 dagar">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="select">
+                    <label for="priority-select">Prioritet</label>
+                    <select class="cust-sel" name="priority-select" id="priority-select">
+                      <option value="option-1">Normal</option>
+                      <option value="option-2">Akut</option>
+                      <option value="option-3">Skitbråttom</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /Module: Allmänt -->
+          
           <!-- Module: Allmänt -->
           <div class="m m-general">
             <div class="m-h">

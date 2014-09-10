@@ -973,9 +973,6 @@
   .caseInSidebar{
     width: 300px;       
     min-height: 10px;
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical; 
     overflow: hidden;
   }
   /*#formheader-in-sidebar{
