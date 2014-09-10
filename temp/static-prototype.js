@@ -74,6 +74,17 @@ $(function () {
   
   
   /**
+   * Date picker due date
+   * TODO Set up a time-until-date format (somehow…)
+   */
+  try {
+    $('.datepicker-due').pickadate({
+      format: 'ddd',
+    });
+  } catch(e) {}
+  
+  
+  /**
    * Superfish dropdown menu
    */
   try {
