@@ -1156,7 +1156,6 @@
     font-size: 120%;
     display: inline-block;
     font-weight: bold;
-    font-family: 'arial', 'sans-serif'; /* TODO Remove - font-family is alredy specified in basic.css */
   }
 
   /* Regular lists (inside modules)
