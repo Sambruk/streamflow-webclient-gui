@@ -967,17 +967,14 @@
   .convo-status *[class*="icon-"]:before {
     padding-right: .25em;
   }
-  .convCaseSidebar {
-      max-width: 260px;
+  .conv-case-sidebar {
+    max-width: 260px;
   }
-  .caseInSidebar{
-    width: 300px;       
+  .case-in-sidebar {
+    width: 300px;
     min-height: 10px;
     overflow: hidden;
   }
-  /*#formheader-in-sidebar{
-    margin-top: 5px;
-  }*/
   #conversation-topic {
       width: 100%;
   }
