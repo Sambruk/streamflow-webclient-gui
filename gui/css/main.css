@@ -967,17 +967,14 @@
   .convo-status *[class*="icon-"]:before {
     padding-right: .25em;
   }
-  .convCaseSidebar {
-      max-width: 260px;
+  .conv-case-sidebar {
+    max-width: 260px;
   }
-  .caseInSidebar{
-    width: 300px;       
+  .case-in-sidebar {
+    width: 300px;
     min-height: 10px;
     overflow: hidden;
   }
-  /*#formheader-in-sidebar{
-    margin-top: 5px;
-  }*/
   #conversation-topic {
       width: 100%;
   }
@@ -1159,7 +1156,6 @@
     font-size: 120%;
     display: inline-block;
     font-weight: bold;
-    font-family: 'arial', 'sans-serif'; /* TODO Remove - font-family is alredy specified in basic.css */
   }
 
   /* Regular lists (inside modules)
@@ -1577,11 +1573,11 @@
     padding: .4356em .5em;
     width: 100%;
   }
-
-  .custom-select.custom-selectFocus {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #08c;
+  .cust-sel {
+    width: 100% !important; /* Override inline styling applied by customSelect */
+  }
+  .custom-selectFocus {
+    /* TODO Add better styling for focus */
   }
     
   /* Custom file upload element */
