@@ -1573,11 +1573,8 @@
     padding: .4356em .5em;
     width: 100%;
   }
-
-  .custom-select.custom-selectFocus {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #08c;
+  .custom-selectFocus {
+    /* TODO Add better styling for focus */
   }
     
   /* Custom file upload element */
