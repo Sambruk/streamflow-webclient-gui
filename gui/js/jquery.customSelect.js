@@ -1,7 +1,7 @@
 /*!
- * jquery.customSelect() - v0.4.2
+ * jquery.customSelect() - v0.5.1
  * http://adam.co/lab/jquery/customselect/
- * 2013-05-22
+ * 2014-03-19
  *
  * Copyright 2013 Adam Coulombe
  * @license http://www.opensource.org/licenses/mit-license.html MIT License
@@ -39,7 +39,7 @@
                 
                 setTimeout(function () {
                     customSelectSpan.removeClass(getClass('Open'));
-                    $(document).off('mouseup.'+getClass('Open'));                  
+                    $(document).off('mouseup.customSelect');                  
                 }, 60);
             },
             getClass = function(suffix){
@@ -49,8 +49,7 @@
             return this.each(function () {
                 var $select = $(this),
                     customSelectInnerSpan = $('<span />').addClass(getClass('Inner')),
-                    customSelectSpan = $('<span />'),
-                    position = $select.position();
+                    customSelectSpan = $('<span />');
 
                 $select.after(customSelectSpan.append(customSelectInnerSpan));
                 
@@ -65,9 +64,9 @@
 
                 $select
                     .addClass('hasCustomSelect')
-                    .on('update', function () {
+                    .on('render.customSelect', function () {
                         changed($select,customSelectSpan);
-                        
+                        $select.css('width','');			
                         var selectBoxWidth = parseInt($select.outerWidth(), 10) -
                                 (parseInt(customSelectSpan.outerWidth(), 10) -
                                     parseInt(customSelectSpan.width(), 10));
@@ -96,40 +95,38 @@
                             position:             'absolute',
                             opacity:              0,
                             height:               selectBoxHeight,
-                            fontSize:             customSelectSpan.css('font-size'),
-                            left:                 position.left,
-                            top:                  position.top
+                            fontSize:             customSelectSpan.css('font-size')
                         });
                     })
-                    .on('change', function () {
+                    .on('change.customSelect', function () {
                         customSelectSpan.addClass(getClass('Changed'));
                         changed($select,customSelectSpan);
                     })
-                    .on('keyup', function (e) {
+                    .on('keyup.customSelect', function (e) {
                         if(!customSelectSpan.hasClass(getClass('Open'))){
-                            $select.blur();
-                            $select.focus();
+                            $select.trigger('blur.customSelect');
+                            $select.trigger('focus.customSelect');
                         }else{
-                            if(e.which==13||e.which==27||e.which==9){
+                            if(e.which==13||e.which==27){
                                 changed($select,customSelectSpan);
                             }
                         }
                     })
-                    .on('mousedown', function (e) {
+                    .on('mousedown.customSelect', function () {
                         customSelectSpan.removeClass(getClass('Changed'));
                     })
-                    .on('mouseup', function (e) {
+                    .on('mouseup.customSelect', function (e) {
                         
                         if( !customSelectSpan.hasClass(getClass('Open'))){
                             // if FF and there are other selects open, just apply focus
                             if($('.'+getClass('Open')).not(customSelectSpan).length>0 && typeof InstallTrigger !== 'undefined'){
-                                $select.focus();
+                                $select.trigger('focus.customSelect');
                             }else{
                                 customSelectSpan.addClass(getClass('Open'));
                                 e.stopPropagation();
-                                $(document).one('mouseup.'+getClass('Open'), function (e) {
+                                $(document).one('mouseup.customSelect', function (e) {
                                     if( e.target != $select.get(0) && $.inArray(e.target,$select.find('*').get()) < 0 ){
-                                        $select.blur();
+                                        $select.trigger('blur.customSelect');
                                     }else{
                                         changed($select,customSelectSpan);
                                     }
@@ -137,18 +134,19 @@
                             }
                         }
                     })
-                    .focus(function () {
+                    .on('focus.customSelect', function () {
                         customSelectSpan.removeClass(getClass('Changed')).addClass(getClass('Focus'));
                     })
-                    .blur(function () {
+                    .on('blur.customSelect', function () {
                         customSelectSpan.removeClass(getClass('Focus')+' '+getClass('Open'));
                     })
-                    .hover(function () {
+                    .on('mouseenter.customSelect', function () {
                         customSelectSpan.addClass(getClass('Hover'));
-                    }, function () {
+                    })
+                    .on('mouseleave.customSelect', function () {
                         customSelectSpan.removeClass(getClass('Hover'));
                     })
-                    .trigger('update');
+                    .trigger('render.customSelect');
             });
         }
     });
