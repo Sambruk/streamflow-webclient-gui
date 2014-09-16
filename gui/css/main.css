@@ -1956,21 +1956,22 @@
   
   
   /* Small screen layout for navigation */
-/*  .navigation {
+  .navigation {
+    float: none;
     position: static;
   }
   .navigation a {
     color: #fff;
-  }*/
+  }
   
   /* Reset functions menu */
-/*  .functions-menu {
+  .functions-menu {
     margin: 1em 0;
     position: static;
-  }*/
+  }
   
   /* Add new issue & Functions header */
-/*  .add-new-issue {
+  .add-new-issue {
     background-color: #08c;
     background-image: none;
     border-radius: 5px;
@@ -2005,7 +2006,7 @@
     color: #fff;
     padding: 0.75em;
     width: auto;
-  }*/
+  }
   
   /* Adjust for navigation height */
   a.anchor {
