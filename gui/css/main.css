@@ -2028,11 +2028,11 @@
     margin-left: 64px;
   }
   .due-date-divider {
-    margin-left:64px;
+    margin-left: 64px;
   }
   .medium-small {
     width: 50%;
-    padding:0px;
+    padding: 0;
   }
   .medium {
       width: 50%;
@@ -2059,7 +2059,7 @@
   }
   .col-center {
     margin: auto;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 14px;
     width: 100%;
     clear: both;
@@ -2068,13 +2068,12 @@
     width: 200px;
   }
   #profile-holder{  
-    padding: 0px;
+    padding: 0;
     max-width: 280px;
     min-width: 200px;
   }
   #profile-holder > h2 {
-    margin: 0px 0px 34px 0px;
-    margin-left: 45px;
+    margin: 0 0 34px 45px;
   }
   
 /* END @media screen and (max-width: 424px) */
