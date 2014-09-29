@@ -53,7 +53,7 @@
   ---------------------------------------------------- */
   .layout-1 .content-primary {
     float: none;
-    width: 100%;  
+    width: 100%;
   }
   
   /* Layout-2 - two columns
@@ -152,8 +152,9 @@
   }
   
    /* Profile edit
----------------------------------------------------- */
-
+      TODO replace IDs with classes
+      TODO create representation in prototype
+   ---------------------------------------------------- */
   #profile-content {
     margin: auto;
     float: none !important;
@@ -2065,10 +2066,11 @@
     width: 100%;
     clear: both;
   }
+  /* TODO Find and replace */
   #label-profile-read {
     width: 200px;
   }
-  #profile-holder{  
+  #profile-holder {
     padding: 0;
     max-width: 280px;
     min-width: 200px;
