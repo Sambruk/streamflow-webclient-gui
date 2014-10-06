@@ -1,11 +1,14 @@
 /**
  * fonts.css
- * Custom fonts for Streamflow
  *
+ * Custom fonts for Streamflow
+ * Note: always place @font-face queries outside of other @media queries
  */
 
-/* Glyphs
---------------------------------------------------------*/
+/**
+ * Glyphs
+ * --------------------------------------------------------
+ */
 @font-face {
   font-family: "StreamflowIcons";
   src: url("../fonts/StreamflowIcons.eot");
