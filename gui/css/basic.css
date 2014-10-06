@@ -1,14 +1,16 @@
 /**
- * reset.css
- * Basic resets
+ * basic.css
  *
+ * Set basic styling for resets, typography and colors
  */
 
 @media all {
   
-  /* RESET
-  * Resets, basic typography and colors
-  ============================================================================ */
+  /**
+   * RESET
+   * Resets, basic typography and colors
+   * ==========================================================================
+   */
   blockquote,body,caption,div,dl,dt,dd,form,fieldset,
   h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
     margin: 0;
@@ -40,16 +42,20 @@
     font-weight: bold;
   }
   
-  /* Reset box sizing
-  ---------------------------------------------------- */
+  /**
+   * Reset box sizing
+   * ------------------------------------------------------
+   */
   * {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
   
-  /* Tables
-  -------------------------------------------------------- */
+  /**
+   * Tables
+   * ------------------------------------------------------
+   */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -80,15 +86,19 @@
   }
   
   
-  /* Images
-  -------------------------------------------------------- */
+  /**
+   * Images
+   * ------------------------------------------------------
+   */
   img {
     border: none;
   }
   
   
-  /* Body styling
-  -------------------------------------------------------- */
+  /**
+   * Body styling
+   * ------------------------------------------------------
+   */
   html,
   body {
     color: #333;
@@ -96,8 +106,10 @@
   }
   
   
-  /* Fonts & sizes
-  -------------------------------------------------------- */
+  /**
+   * Fonts & sizes
+   * ------------------------------------------------------
+   */
   html {
     font: 87.5%/1.5 "Roboto", Helvetica, Arial, sans-serif; /* Base font size of 14px */
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
@@ -110,8 +122,10 @@
   }
   
   
-  /* Headings
-  -------------------------------------------------------- */
+  /**
+   * Headings
+   * ------------------------------------------------------
+   */
   h1,h2,h3,h4,h5,h6 {
     margin: 1em 0 0.2em;
     color: #111;
@@ -151,8 +165,10 @@
   }
   
   
-  /* Links
-  -------------------------------------------------------- */
+  /**
+   * Links
+   * ------------------------------------------------------
+   */
   a,
   a:visited {
     color: #333;
@@ -172,8 +188,10 @@
   }
   
   
-  /* Emphasis
-  -------------------------------------------------------- */
+  /**
+   * Emphasis
+   * ------------------------------------------------------
+   */
   b,
   strong {
     font-weight: bold;
@@ -185,8 +203,10 @@
   }
   
   
-  /* Forms
-  -------------------------------------------------------- */
+  /**
+   * Forms
+   * ------------------------------------------------------
+   */
   legend {
     color: #333;
     white-space: normal;
@@ -211,10 +231,15 @@
   }
   
   
-  /* GLOBAL CLASSES
-  ============================================================================ */
-  /* Easy clearing of floats
-  -------------------------------------------------------- */
+  /**
+   * GLOBAL CLASSES
+   * ==========================================================================
+   */
+  
+  /**
+   * Easy clearing of floats
+   * ------------------------------------------------------
+   */
   .cf:after {
     display: block;
     clear: both;
@@ -225,9 +250,12 @@
   }
   
   
-  /* Structural elements
-  * Visible for screen readers but invisible when CSS is enabled
-  -------------------------------------------------------- */
+  /**
+   * Structural elements
+   * Visible for screen readers but invisible when CSS is
+   * enabled
+   * ------------------------------------------------------
+   */
   .struct,
   .struct * {
     position: absolute;
@@ -235,9 +263,11 @@
   }
   
   
-  /* Hidden elements
-  * Hide from screen readers as well
-  -------------------------------------------------------- */
+  /**
+   * Hidden elements
+   * Hide from screen readers as well
+   * ------------------------------------------------------
+   */
   .hidden {
     display: none;
     speak: none;
@@ -245,14 +275,18 @@
   }
   
   
-  /* Table zebra rows
-  -------------------------------------------------------- */
+  /**
+   * Table zebra rows
+   * ------------------------------------------------------
+   */
   tr.odd {
     background: #f0e9eb;
   }
   
-  /* Images
-  -------------------------------------------------------- */
+  /**
+   * Images
+   * ------------------------------------------------------
+   */
   .left,
   .right {
     float: left;
@@ -290,5 +324,5 @@
     bottom: 3px;
   }
   
-  /* END @media all */
+/* END @media all */
 }
