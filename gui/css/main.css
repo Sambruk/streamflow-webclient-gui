@@ -1778,6 +1778,9 @@
   .select select {
     max-width: 100%;
   }
+  .select select[multiple] {
+    width: 100%;
+  }
   input[type="submit"] {
     width: auto !important;
   }
@@ -1851,6 +1854,51 @@
     content: "\36";
   }
   
+  
+  /**
+   * Chosen customization hack (so very ugly!)
+   * ------------------------------------------------------
+   */
+  .select .chosen-container {
+    font-size: inherit;
+  }
+  .select .chosen-container-multi .chosen-choices {
+    background: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: .25em .5em;
+  }
+  .select .chosen-container-active .chosen-choices {
+    box-shadow: none;
+  }
+  .select .chosen-container .chosen-drop,
+  .select .chosen-container .chosen-results li.highlighted:last-child {
+    border: 0;
+    border-radius: 0 0 3px 3px;
+  }
+  .select .chosen-container .chosen-results li.highlighted {
+    background: #08c;
+  }
+  .select .chosen-container-multi .chosen-choices li.search-choice {
+    border: 0;
+    color: #fff;
+    background: #666;
+    box-shadow: none;
+    padding: .15em .5em .15em .5em;
+    line-height: inherit;
+    font-size: inherit;
+  }
+  .select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+  .select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    background: none;
+    position: static;
+    margin-left: 0.25em;
+    display: inline-block;
+    width: auto;
+    height: auto; 
+    color: #fff;
+    font-size: 0.7143em;
+  }
   
   /**
    * Form columns

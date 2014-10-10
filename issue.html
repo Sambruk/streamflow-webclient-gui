@@ -36,6 +36,10 @@
   <script src="gui/vendor/pickadate/picker.date.js"></script>
   <script src="gui/vendor/pickadate/translations/sv_SE.js"></script>
   
+  <!-- Chosen -->
+  <link rel="stylesheet" href="gui/vendor/chosen/chosen.css">
+  <script src="gui/vendor/chosen/chosen.jquery.js"></script>
+  
   <!-- Google Web Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
   
@@ -363,6 +367,17 @@
             <div class="m-c">
               <form action="#" method="get">
                 <div class="row">
+                  <div class="select">
+                    <label for="issue-type-select">Ärendetyp</label>
+                    <select multiple class="chosen" name="issue-type-select" id="issue-type-select">
+                      <option value="option-1">E-tjänst</option>
+                      <option value="option-2">Information</option>
+                      <option value="option-3">Felanmälan</option>
+                      <option value="option-4">Feedback</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
                   <div class="text">
                     <label for="issue-due-date">Förfaller om</label>
                     <input type="text" name="issue-due-date" id="issue-due-date" class="datepicker-due" value="4 dagar">
@@ -381,7 +396,7 @@
               </form>
             </div>
           </div>
-          <!-- /Module: Allmänt -->
+          <!-- /Module: Status -->
           
           <!-- Module: Allmänt -->
           <div class="m m-general">

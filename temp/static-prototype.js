@@ -41,6 +41,14 @@ $(function () {
    */
   $('input:file').customFileInput();
   
+  /**
+   * Chosen
+   */
+  $('.chosen').chosen({
+    placeholder_text_multiple: " "
+  });
+  $('.search-choice-close').addClass('icon-close');
+  
   
   /**
    * Placeholder support for legacy IE
