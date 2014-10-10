@@ -175,7 +175,7 @@
             </div>
             <!-- /issue-header -->
 
-            <div class="choose-type">
+            <!--div class="choose-type">
               <form action="#" method="get">
                 <label for="type-select" class="struct">Ärendetyp</label>
                 <select class="cust-sel" name="type-select" id="type-select">
@@ -185,7 +185,7 @@
                   <option value="option-4">Ärendetyp 4</option>
                 </select>
               </form>
-            </div>
+            </div-->
             <!-- /choose-type -->
 
             <div class="issue-body">
@@ -368,8 +368,19 @@
               <form action="#" method="get">
                 <div class="row">
                   <div class="select">
-                    <label for="issue-type-select">Ärendetyp</label>
-                    <select multiple class="chosen" name="issue-type-select" id="issue-type-select">
+                    <label for="type-select">Ärendetyp</label>
+                    <select class="cust-sel" name="type-select" id="type-select">
+                      <option value="option-1">Ärendetyp 1</option>
+                      <option value="option-2">Ärendetyp 2</option>
+                      <option value="option-3">Ärendetyp 3</option>
+                      <option value="option-4">Ärendetyp 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="select">
+                    <label for="issue-label-select">Etiketter</label>
+                    <select multiple class="chosen" name="issue-label-select" id="issue-label-select">
                       <option value="option-1">E-tjänst</option>
                       <option value="option-2">Information</option>
                       <option value="option-3">Felanmälan</option>
