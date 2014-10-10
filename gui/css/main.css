@@ -1494,38 +1494,47 @@
     vertical-align: middle;
     -webkit-font-smoothing: antialiased;
   }
-  .icon-user:before {
-    content: "\31";
+  .icon-arrow-down:before {
+    content: "\e600";
   }
-  .icon-search:before {
-    content: "\32";
-  }
-  .icon-plus:before {
-    content: "\33";
-  }
-  .icon-info:before {
-    content: "\34";
-  }
-  .icon-edit:before {
-    content: "\35";
-  }
-  .icon-close:before {
-    content: "\36";
-  }
-  .icon-check:before {
-    content: "\37";
-  }
-  .icon-chat:before {
-    content: "\38";
+  .icon-attach:before {
+    content: "\e601";
   }
   .icon-camera:before {
-    content: "\39";
+    content: "\e602";
   }
-  .icon-arrow-down:before {
-    content: "\30";
+  .icon-chat:before {
+    content: "\e603";
+  }
+  .icon-check:before {
+    content: "\e604";
+  }
+  .icon-close:before {
+    content: "\e605";
+  }
+  .icon-edit:before {
+    content: "\e606";
+  }
+  .icon-history-doc:before {
+    content: "\e607";
+  }
+  .icon-history-file:before {
+    content: "\e608";
+  }
+  .icon-info:before {
+    content: "\e609";
   }
   .icon-menu:before {
-    content: "\71";
+    content: "\e60a";
+  }
+  .icon-plus:before {
+    content: "\e60b";
+  }
+  .icon-search:before {
+    content: "\e60c";
+  }
+  .icon-user:before {
+    content: "\e60d";
   }
   .icon-case-history:before {
       margin-bottom: 10px;
