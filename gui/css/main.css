@@ -1860,8 +1860,11 @@
    * Chosen customization hack (so very ugly!)
    * ------------------------------------------------------
    */
+   #type-select, #type_select_chosen, .chosen-container, .chosen {
+    visibility: hidden;
+   }
    #case-type-selected {
-    width: 260px;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
