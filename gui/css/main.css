@@ -1684,6 +1684,7 @@
     margin: 2px 0;
     padding: .4356em .5em;
     width: 100%;
+
   }
   .cust-sel {
     width: 100% !important; /* Override inline styling applied by customSelect */
@@ -1693,7 +1694,7 @@
     TODO Add better styling for focus
     */
   }
-    
+
   /* Custom file upload element */
   .customfile-input {
     position: absolute;
@@ -1847,11 +1848,11 @@
   }
   .text.saved:after {
     background: #0c0;
-    content: "\37";
+    content: "\e604";
   }
   .text.error:after {
     background: #900;
-    content: "\36";
+    content: "\e605";
   }
   
   
@@ -1859,6 +1860,12 @@
    * Chosen customization hack (so very ugly!)
    * ------------------------------------------------------
    */
+   #case-type-selected {
+    width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
   .select .chosen-container {
     font-size: inherit;
   }
@@ -1898,6 +1905,27 @@
     height: auto; 
     color: #fff;
     font-size: 0.7143em;
+  }
+  .select .chosen-container.chosen-container-single,
+  .sidebar-chosen-drop-down
+   {
+    font-size: inherit;
+    background-image: url("../i/custom-select.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    margin: 2px 0;
+    padding: .4356em .5em;
+    width: 200px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .sidebar-chosen-drop-down {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
   }
   
   /**
@@ -2034,36 +2062,36 @@
   /* Switch to full width */
   .header-body,
   .main-body {
-      margin: 0 auto;
-      width: 100%;
+    margin: 0 auto;
+    width: 100%;
   }
   .layout-2 .content-primary{
-      float: none;
-      width: 600px;
-      margin: 0 auto;
-      padding-left: 0em;
+    float: none;
+    width: 600px;
+    margin: 0 auto;
+    padding-left: 0em;
   }
   .layout-2 .content-secondary {
-      float: none;
-      width: 600px;
-      margin: 0 auto;
+    float: none;
+    width: 600px;
+    margin: 0 auto;
   }
   .msg-item {
-      width: 600px;
+    width: 600px;
   }
   .caseInSidebar  {
-      width: 570px;
+    width: 570px;
   }
   .row {
-     margin-right: 0 !important;
-     margin-left: 0 !important;
+   margin-right: 0 !important;
+   margin-left: 0 !important;
   }
   /* END @media screen and (max-width: 1160px)*/
 }
 
 @media screen and (max-width: 1020px) {
   .conv-case-sidebar {
-      max-width: 520px;
+    max-width: 520px;
   }
   
   
@@ -2203,7 +2231,7 @@
     padding: 0;
   }
   .medium {
-      width: 50%;
+    width: 50%;
   }
   
 /* END @media screen and (max-width: 882px) */
