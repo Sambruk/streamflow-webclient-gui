@@ -962,9 +962,9 @@
   .convo-messages {
     list-style: none;
   }
-  .convo-messages .msg-item {
+/*  .convo-messages .msg-item {
     margin: 0 6em 1.25em 0;
-  }
+  }*/
   .msg-author,
   .msg-attachment {
     min-height: 2.125em;
@@ -980,6 +980,12 @@
   .msg-body {
     background-color: #fff;
     padding: 1em;
+    max-height: 500px;
+  }
+  .msg-container {
+    max-height: 475px;
+    position: relative;
+    overflow-y: auto;
   }
   .msg-meta {
     font-size: .8571em;
