@@ -538,6 +538,10 @@
     background-color: #fff;
     display: table-cell;
   }
+
+  .issue-body .issue-description {
+    opacity: 0.9;
+  }
   
   .issue-body .due-date {
     background-color: #afafaf;
