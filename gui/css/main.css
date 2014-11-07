@@ -954,6 +954,9 @@
   .convo-li {
       min-height: 60px;
   }
+  #conversation-topic{
+    width: 100%;
+  }
   
   
   /**
