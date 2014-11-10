@@ -972,6 +972,9 @@
 /*  .convo-messages .msg-item {
     margin: 0 6em 1.25em 0;
   }*/
+  .msg-item {
+    margin-top: 2em;
+  }
   .msg-author,
   .msg-attachment {
     min-height: 2.125em;
@@ -982,7 +985,7 @@
     font-weight: bold;
   }
   .msg-attachment {
-    float: right;
+    float: left;
   }
   .msg-body {
     background-color: #fff;
