@@ -1241,6 +1241,10 @@
     min-width: 420px;;
     text-align: center;
   }
+  .ng-modal-dialog .generalCaseInfoBox,
+  .ng-modal-dialog .permissionBox{
+    text-align: left;
+  }
   .ng-modal-close {
     position: absolute;
     top: 3px;
