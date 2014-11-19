@@ -52,7 +52,6 @@
       background-color: #e8e8e8;
   }
 
-  
   /**
    * Layout-1 - one full-width column
    * ------------------------------------------------------
@@ -1115,6 +1114,13 @@
   }
   .m-attachments .delete:hover {
     color: #0af;
+  }
+  .file-input {
+    position: fixed;
+    visibility:hidden;
+  }
+  .file-input-label{
+    cursor: pointer;
   }
   
   /**
