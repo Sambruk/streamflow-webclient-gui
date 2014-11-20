@@ -899,10 +899,12 @@
     float: right;
   }
   .convo-input .upload a,
-  .convo-input .send button {
+  .convo-input .send button,
+  .convo-input .upload div,
+  .convo-input .upload .file-input {
     height: 40px;
   }
-  
+
   /* Textarea */
   .convo-input .text {
     width: 100%;
@@ -917,7 +919,11 @@
   .convo-input .upload {
     width: 10%;
   }
-  .convo-input .upload a {
+  .convo-input .upload .file-input{
+    width: 60px;
+  }
+  .convo-input .upload a,
+  .convo-input .upload div {
     background-color: #08c;
     border-radius: 5px 5px;
     color: #fff;
@@ -928,7 +934,9 @@
     width: 100%;
   }
   .convo-input .upload a:hover,
-  .convo-input .upload a:focus {
+  .convo-input .upload a:focus,
+  .convo-input .upload div:hover,
+  .convo-input .upload div:focus {
     background-color: #0af;
   }
   
@@ -983,7 +991,8 @@
     float: left;
     font-weight: bold;
   }
-  .msg-attachment {
+  .msg-attachment,
+  .msg-draft-attachments  {
     float: left;
   }
   .msg-body {
@@ -1114,6 +1123,9 @@
   }
   .m-attachments .delete:hover {
     color: #0af;
+  }
+  .m-draft-attachments {
+    width: 50%;
   }
   .file-input {
     position: fixed;
