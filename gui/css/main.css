@@ -1293,13 +1293,13 @@
     list-style: outside disc;
   }
 
-  /* Unordered lists, centered*/
+  /* Unordered lists, centered */
   ul.center-list {
     list-style: none; 
     padding:0; 
     margin:0; 
     text-align: left; 
-    display: inline-block;"
+    display: inline-block;
   }
     
   /**
