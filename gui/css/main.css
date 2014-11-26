@@ -1509,6 +1509,7 @@
     padding: .25em .75em;
     margin: 2px 0;
     background-color: #fff;
+    cursor: pointer;
   }
   .zebra-list .odd {
     background-color: #e8e8e8;
