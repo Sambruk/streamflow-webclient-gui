@@ -1072,6 +1072,10 @@
   .m-contacts a {
     text-decoration: none;
   }
+  .contact-no-name {
+    font-style: italic;
+    opacity: 0.95;
+  }
   
   /**
    * Module: Ärendelogg
