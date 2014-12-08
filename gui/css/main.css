@@ -1263,10 +1263,6 @@
     min-width: 420px;;
     text-align: center;
   }
-  .ng-modal-dialog .generalCaseInfoBox,
-  .ng-modal-dialog .permissionBox{
-    text-align: left;
-  }
   .ng-modal-close {
     position: absolute;
     top: 3px;
@@ -1277,7 +1273,35 @@
     display: inline-block;
     font-weight: bold;
   }
-
+  .dialog-outer-content{
+    display: inline-block;
+  }
+  .dialog-inner-content{
+    text-align: left;
+  }
+  .dialog-header{
+    text-align: center;
+    font-size: 1.17em;
+    margin-bottom: 0.5em;
+  }
+  .dialog-submit{
+    text-align: center;
+  }
+  ul.dialog-list li{
+    padding: 0 0.75em 0 0.75em;
+    display: block;
+  }
+  ul.dialog-list label{
+    font-weight: normal;
+    vertical-align: baseline;
+    margin-left: 5px;
+  }
+  ul.dialog-list input[type="checkbox"]{
+    float: left;
+  }
+  .dialog-submit button{
+    margin-top: 1em;
+  }
   /**
    * Regular lists (inside modules)
    * ------------------------------------------------------
@@ -1298,12 +1322,9 @@
   }
 
   /* Unordered lists, centered */
-  ul.center-list {
+  ul.dialog-list {
     list-style: none; 
-    padding:0; 
-    margin:0; 
     text-align: left; 
-    display: inline-block;
   }
     
   /**
@@ -1906,8 +1927,7 @@
     background: #900;
     content: "\e605";
   }
-  
-  
+
   /**
    * Chosen customization hack (so very ugly!)
    * ------------------------------------------------------
