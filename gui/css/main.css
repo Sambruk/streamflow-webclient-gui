@@ -532,8 +532,7 @@
     margin: 0 0 0.5em;
     width: 100%;
   }
-  .issue-body .due-date,
-  .issue-body .issue-description {
+  .issue-body .due-date {
     background-color: #fff;
     display: table-cell;
   }
@@ -571,7 +570,7 @@
   .issue-body .issue-description {
     padding: 1em 0.75em;
     vertical-align: top;
-    width: 80%;
+    background-color: #fff;
   }
   .issue-body .issue-description h2 {
     float: none;
@@ -1893,7 +1892,6 @@
     vertical-align: middle;
     -webkit-font-smoothing: antialiased;
   }
-  
   .text.saved:after {
     -webkit-animation: fadeOut 1s ease-in-out 3s 1 forwards;
             animation: fadeOut 1s ease-in-out 3s 1 forwards;
@@ -1907,13 +1905,11 @@
     0% { opacity: 1; }
     100% { opacity: 0; }
   }
-  
   .text.saved option,
   .text.error option {
     padding-right: 2.75em;
     height: 5em;
   }
-
   .text.saved-select:after,
   .text.error-select:after {
     right: 34%;
