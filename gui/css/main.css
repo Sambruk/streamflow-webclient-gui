@@ -1096,8 +1096,17 @@
   .log-table tbody tr.even {
     background-color: #eee;
   }
-  .caselog-filter-options{
-    margin: 35px 0 35px 0;
+  .caselog-filter-options {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0 0.75em 0 0.75em;
+  }
+  .caselog-filter-length {
+    display: table-row;
+  }
+  .caselog-filter-label {
+    display: table-cell;
   }
   .caselog-filter {
     margin: 6px 6px 6px 0;
@@ -1111,6 +1120,9 @@
   }
   .caselog-body {
       min-height: 600px;
+  }
+  .caselog-input .send button{
+    float: right;
   }
   
   /**
