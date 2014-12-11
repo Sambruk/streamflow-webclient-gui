@@ -2314,7 +2314,7 @@
   }
   .sub-category {
     color: #fff;
-    display: block;
+    display: block!important;
     padding: 0.75em;
     width: auto;
   }
