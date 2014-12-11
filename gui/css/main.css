@@ -337,7 +337,6 @@
     margin: 0 0 2em;
   }
   .issue-item {
-    background-color: #eaeaea;
     border-radius: 5px;
     margin: 0 0 3px 57px;
   }
@@ -528,7 +527,6 @@
    * ------------------------------------------------------
    */
   .issue-body {
-    background-color: #eaeaea;
     border-radius: 0 5px 5px 0;
     display: table;
     margin: 0 0 0.5em;
@@ -2028,10 +2026,14 @@
     background-position: 100% 50%;
     margin: 2px 0;
     padding: .4356em .5em;
-    width: 200px;
+    width: 100%!important;
     background-color: #fff;
     border: none;
     border-radius: 3px;
+  }
+
+  .select .chosen-container.chosen-container-single span {
+    width: 85%;
   }
 
   .sidebar-chosen-drop-down {
