@@ -1872,6 +1872,10 @@
   .select .chosen-container {
     font-size: inherit;
   }
+  .select .chosen-container-multi {
+    width: 100%!important;
+  }
+
   .select .chosen-container-multi .chosen-choices {
     background: #fff;
     border: 0;
