@@ -1027,6 +1027,12 @@
   .m-general .m-box {
     background-color: #fff;
   }
+/*  .case-sidebar-info {
+    min-height: 3em;
+  }*/
+  .no-caseinfo {
+    color:#999;
+  }
 
   /**
    * Module: Konversationer
@@ -1147,6 +1153,7 @@
     visibility:hidden;
   }
   .file-input-label{
+    font-weight: normal;
     cursor: pointer;
   }
   
@@ -1935,6 +1942,27 @@
     background: #900;
     content: "\e605";
   }
+  .file-input-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: #08c;
+  }
+  .icon-white {
+    color: #fff;
+    line-height: 14px;
+    vertical-align: text-top;
+  }
+  .button-text {
+    color: #fff;
+  }
+  .file-input-button input {
+    position: absolute;
+    transform: translate(-300px, 0) scale(4);
+    cursor: pointer;
+  }
 
   /**
    * Chosen customization hack (so very ugly!)
@@ -2015,14 +2043,16 @@
    * Form columns
    * ------------------------------------------------------
    */
-  form .row {
+  form .row,
+  .sidebar-row {
     margin-bottom: 1em;
   }
   .row .text input,
   .row textarea {
     width: 100%;
   }
-  .row {
+  .row,
+  .sidebar-row {
     margin-bottom: 20px;
   }
   .col {
