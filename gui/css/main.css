@@ -1581,6 +1581,19 @@
     display: block;
     text-decoration: none !important;
   }
+
+  /**
+   * Disabled sidebar fields
+   * ------------------------------------------------------
+   */
+  .disabled {
+    opacity: 0.5 !important;
+    cursor: default !important;
+  }
+  .cursor-default {
+    cursor: default;
+    width: 100% !important;
+  }
     
   /**
    * Font icons
