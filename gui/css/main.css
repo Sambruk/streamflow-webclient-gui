@@ -16,7 +16,7 @@
  */
 
 @media screen, projection {
-  
+
   /**
    * LAYOUT FRAMEWORK
    * ==========================================================================
@@ -61,7 +61,7 @@
     float: none;
     width: 100%;
   }
-  
+
   /**
    * Layout-2 - two columns
    * ------------------------------------------------------
@@ -81,8 +81,8 @@
     padding: 12px 8px;
     width: 340px;
   }
-  
-  
+
+
   /**
    * HEADER
    * ==========================================================================
@@ -104,7 +104,7 @@
   .header a:focus {
     text-decoration: underline;
   }
-  
+
   /**
    * Client name
    * ------------------------------------------------------
@@ -120,7 +120,7 @@
     font-size: 1.2857em;
     margin: 0;
   }
-  
+
   /**
    * Main search
    * ------------------------------------------------------
@@ -136,6 +136,7 @@
     border-radius: 5px;
     padding: 7px 10px;
     width: 80%;
+    color: #000;
   }
   .main-search button[type="submit"] {
     border-radius: 5px;
@@ -150,7 +151,7 @@
     display: inline-block;
     text-indent: -9999px;
   }
-  
+
   /**
    * User area
    * ------------------------------------------------------
@@ -166,7 +167,7 @@
   .user-area a {
     color: #08c;
   }
-  
+
    /**
     * Profile edit
     * TODO replace IDs with classes
@@ -186,8 +187,8 @@
     margin: auto;
     padding: 0 65px 0 65px;
   }
-  
-  
+
+
   /**
    * NAVIGATION MENU
    * ==========================================================================
@@ -207,7 +208,7 @@
   .navigation a:active {
     color: #fff;
   }
-  
+
   /**
    * Hide functions menu
    * ------------------------------------------------------
@@ -220,7 +221,7 @@
   .functions-menu.open {
     margin-left: 0;
   }
-  
+
   /**
    * Add new issue & Functions header
    * ------------------------------------------------------
@@ -305,8 +306,8 @@
   .sub-category li {
     margin: 0 0 0.35em;
   }
-  
-  
+
+
   /**
    * ISSUE OVERVIEW
    * ==========================================================================
@@ -379,7 +380,7 @@
     margin: 0;
     font-size: 1.0714em;
   }
-  
+
   /**
    * Due date
    * ------------------------------------------------------
@@ -403,31 +404,31 @@
   .issue-item.closed .due-date {
     width: 5em;
   }
-  
+
   /* Date set */
   .issue-item.set .due-date {
     background-color: #00831f;
     padding: 26px 0;
   }
-  
+
   /* Date overdue */
   .issue-item.overdue .due-date {
     background-color: #cf0202;
     padding: 0.7143em;
   }
-  
+
   /* Issue open */
   .issue-item.open .due-date {
     background-color: #ff7c00;
     padding: 26px 0;
   }
-  
+
   /* Issue closed */
   .issue-item.closed .due-date {
     background-color: #00831f;
     padding: 26px 0;
   }
-  
+
   /**
    * Issue details
    * ------------------------------------------------------
@@ -445,7 +446,7 @@
     font-weight: bold;
     margin: 0;
   }
-  
+
   /**
    * Actions column
    * ------------------------------------------------------
@@ -477,8 +478,8 @@
     background-color: #00831f;
     color: #fff;
   }
-  
-  
+
+
   /**
    * SINGLE ISSUE & CREATE ISSUE
    * ==========================================================================
@@ -490,7 +491,7 @@
   .single-issue .edit-module {
     font-size: 1.5714em;
   }
-  
+
   /**
    * Issue header
    * ------------------------------------------------------
@@ -521,7 +522,7 @@
   .choose-type {
     margin-bottom: 5px;
   }
-  
+
   /**
    * Issue body
    * ------------------------------------------------------
@@ -540,7 +541,7 @@
   .issue-body .issue-description {
     opacity: 0.95;
   }
-  
+
   .issue-body .due-date {
     background-color: #afafaf;
     border-radius: 5px 0 0 5px;
@@ -565,7 +566,7 @@
   .issue-body .due-date.open {
     background-color: #ff7c00;
   }
-  
+
   /* Issue description */
   .issue-body .issue-description {
     padding: 1em 0.75em;
@@ -578,18 +579,18 @@
     font-weight: bold;
     padding: 0;
   }
-  
-  
+
+
   /**
    * Issue notes
    * ------------------------------------------------------
    */
-  
+
   /* Expandable field should have no border in notes */
   .notes-content .expandable-field.active {
     border: 0;
   }
-  
+
   /* Notes form */
   .input-note .text,
   .input-note .submit-area {
@@ -616,7 +617,7 @@
   .input-note .submit-area {
     width: 22%;
   }
-  
+
   /* Notes listing */
   .posted-notes {
     /*margin-right: 6em;*/
@@ -658,13 +659,13 @@
     float: right;
     font-size: 0.8462em;
   }
-  
+
   /* Public notes */
   .public .note-item {
     font-size: 1em;
   }
-  
-  
+
+
   /**
    * Issue tags
    * ------------------------------------------------------
@@ -696,7 +697,7 @@
   .issue-tags .new-tag:hover {
     background-color: #0af;
   }
-  
+
   /**
    * Module: Formulär
    * ------------------------------------------------------
@@ -704,14 +705,14 @@
   .m.m-issue-forms h2 {
     float: none;
   }
-  
+
   .m-issue-forms form {
     margin: 1em 0;
   }
   .form-content{
     margin-bottom: 20px;
   }
-  
+
   /* Form tabs */
   .form-tabs {
     float: none;
@@ -826,8 +827,8 @@
     margin-bottom: 0 !important;
     padding-left: 5px;
   }
-  
-  
+
+
   /**
    * SPINNER
    * ==========================================================================
@@ -838,13 +839,13 @@
     height: 30px;
     margin: 5px;
   }
-  
-  
+
+
   /**
    * CONVERSATION VIEW
    * ==========================================================================
    */
-  
+
   /**
    * Participants
    * ------------------------------------------------------
@@ -884,8 +885,8 @@
     color: inherit;
     padding: 0 .25em;
   }
-  
-  
+
+
   /**
    * Conversation input
    * ------------------------------------------------------
@@ -913,7 +914,7 @@
     resize: none;
     width: 100%;
   }
-  
+
   /* Upload button */
   .convo-input .upload {
     width: 10%;
@@ -938,14 +939,14 @@
   .convo-input .upload div:focus {
     background-color: #0af;
   }
-  
+
   /* Attach button */
   .convo-input .attach {
     background: url("../i/icon-attachfile.png") no-repeat 50% 50%;
     float: right;
     padding: .5em .5em;
   }
-  
+
   /* Submit area */
   .convo-input .send {
     margin-left: .25em;
@@ -963,8 +964,8 @@
   #conversation-topic{
     width: 100%;
   }
-  
-  
+
+
   /**
    * Conversation body
    * ------------------------------------------------------
@@ -1013,13 +1014,13 @@
   .msg-timestamp {
     float: right;
   }
-  
-  
+
+
   /**
    * MODULES
    * ==========================================================================
    */
-  
+
   /**
    * Module: Allmänt
    * ------------------------------------------------------
@@ -1083,7 +1084,7 @@
     min-height: 10px;
     overflow: hidden;
   }
-  
+
   /**
    * Module: Kontakter
    * ------------------------------------------------------
@@ -1095,7 +1096,7 @@
     font-style: italic;
     opacity: 0.95;
   }
-  
+
   /**
    * Module: Ärendelogg
    * ------------------------------------------------------
@@ -1144,7 +1145,7 @@
   .caselog-input .send button{
     float: right;
   }
-  
+
   /**
    * Module: Bifogade filer
    * ------------------------------------------------------
@@ -1170,7 +1171,7 @@
     font-weight: normal;
     cursor: pointer;
   }
-  
+
   /**
    * Module: Checklista
    * ------------------------------------------------------
@@ -1182,7 +1183,7 @@
   .m-check-list .check-list li.even {
     background-color: #fff;
   }
-  
+
   /**
    * Module: Liknande ärenden
    * ------------------------------------------------------
@@ -1195,8 +1196,8 @@
   .m-matched-issue .m-box {
     background-color: #fff;
   }
-  
-  
+
+
   /**
    * ACCORDION
    * ==========================================================================
@@ -1226,13 +1227,13 @@
   .accordion-item .icon-arrow-down {
     float: right;
   }
-  
-  
+
+
   /**
    * GLOBAL CLASSES
    * ==========================================================================
    */
-  
+
   /**
    * Toolbar
    * ------------------------------------------------------
@@ -1240,7 +1241,7 @@
   .toolbar {
     margin: 0 0 1.5em;
   }
-    
+
   /* Toolbar buttons */
   .buttons {
     list-style: none;
@@ -1250,7 +1251,7 @@
     display: inline-block;
     vertical-align: top;
   }
-    
+
   /* Toolbar content */
   .toolbar-content-style {
     background-color: #fff;
@@ -1355,10 +1356,10 @@
 
   /* Unordered lists, centered */
   ul.dialog-list {
-    list-style: none; 
-    text-align: left; 
+    list-style: none;
+    text-align: left;
   }
-    
+
   /**
    * Module edit button
    * ------------------------------------------------------
@@ -1378,7 +1379,7 @@
   .edit-module:active {
     color: #0af;
   }
-    
+
   /**
    * Expandable field
    * ------------------------------------------------------
@@ -1412,7 +1413,7 @@
     -webkit-transition: all .15s linear .1s;
             transition: all .15s linear .1s;
   }
-    
+
   /**
    * Module
    * ------------------------------------------------------
@@ -1493,7 +1494,7 @@
   .btn *[class*="icon-"] {
     color: inherit;
   }
-    
+
   /* Inactive */
   .btn.inactive,
   input.btn.inactive {
@@ -1506,18 +1507,18 @@
     color: #ccc;
     background-color: #a7a7a7;
   }
-    
+
   /* Inline */
   .btn.inline {
     display: inline-block;
   }
-    
+
   /* Align right */
   .btn.right {
     float: right;
     margin: 0;
   }
-    
+
   /* Has dropdown */
   .btn.dropdown {
     padding-right: 0.5em;
@@ -1553,7 +1554,7 @@
   .btn.dropdown + ul li:last-child a {
     border-radius: 0 0 5px 5px;
   }
-    
+
   /**
    * Zebra lists
    * ------------------------------------------------------
@@ -1567,7 +1568,7 @@
   .zebra-list .odd {
     background-color: #e8e8e8;
   }
-    
+
   /**
    * Block links (remove standard link decorations)
    * ------------------------------------------------------
@@ -1594,7 +1595,7 @@
     cursor: default;
     width: 100% !important;
   }
-    
+
   /**
    * Font icons
    * ------------------------------------------------------
@@ -1657,13 +1658,13 @@
   .icon-case-history:before {
       margin-bottom: 10px;
   }
-    
-    
+
+
   /**
    * EYE CANDY
    * ==========================================================================
    */
-  
+
   /**
    * Effects on anchors, buttons & other hovers
    * ------------------------------------------------------
@@ -1677,8 +1678,8 @@
     -webkit-transition: color .2s, background-color .2s;
             transition: color .2s, background-color .2s;
   }
-  
-  
+
+
   /**
    * PAGING
    * ==========================================================================
@@ -1724,8 +1725,8 @@
     position: absolute;
     left: -9999px;
   }
-  
-  
+
+
   /**
    * FORMS
    * ==========================================================================
@@ -1793,7 +1794,7 @@
   button[type="reset"] {
     background-color: #a7a7a7;
   }
-    
+
   /* Custom select element */
   .custom-select {
     background-image: url("../i/custom-select.png");
@@ -1858,19 +1859,19 @@
   .customfile-focus .customfile-button {
     background-color: #0af;
   }
-  
+
   /* Placeholder styling for gecko */
   input:-moz-placeholder,
   textarea:-moz-placeholder {
     color: #888;
   }
-  
+
   /* Placeholder styling for webkit */
   input::-webkit-input-placeholder,
   textarea:-webkit-input-placeholder {
     color: #888;
   }
-  
+
   /* Placeholder styling for browser without native support */
   input.placeholder,
   textarea.placeholder {
@@ -1909,7 +1910,7 @@
     padding: 5px 8px;
     border: 1px solid #ddd;
   }
-  
+
   /* Input saved & error states */
   .text.saved,
   .text.error {
@@ -1942,7 +1943,7 @@
     -webkit-animation: fadeOut 1s ease-in-out 3s 1 forwards;
             animation: fadeOut 1s ease-in-out 3s 1 forwards;
   }
-  
+
   @-webkit-keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
@@ -2044,7 +2045,7 @@
     margin-left: 0.25em;
     display: inline-block;
     width: auto;
-    height: auto; 
+    height: auto;
     color: #fff;
     font-size: 0.7143em;
   }
@@ -2073,7 +2074,7 @@
     text-indent: 1px;
     text-overflow: '';
   }
-  
+
   /**
    * Form columns
    * ------------------------------------------------------
@@ -2167,8 +2168,8 @@
   .error legend {
     color: #900;
   }
-  
-  
+
+
   /**
    * GOOGLE MAPS
    * ==========================================================================
@@ -2193,7 +2194,7 @@
   .map img {
     width: 100%;
   }
-  
+
   /**
    * ANCHOR
    * ==========================================================================
@@ -2202,8 +2203,8 @@
   a.anchor {
     top: -4.5em;
   }
-  
-  
+
+
 /* END @media screen,projection */
 }
 
@@ -2242,8 +2243,8 @@
   .conv-case-sidebar {
     max-width: 520px;
   }
-  
-  
+
+
   /* END @media screen and (max-width: 1020px) */
 }
 
@@ -2264,12 +2265,12 @@
     padding: 0 1em;
     margin-top: 1em;
   }
-  
+
   /* Reset navigation space */
   .content-primary {
     padding-left: 0;
   }
-  
+
   /* Layout-2 - switch to single column */
   .layout-2 .content-primary{
     max-width: 600px;
@@ -2298,7 +2299,7 @@
     max-width: 570px;
     min-width: 200px;
   }
-  
+
   /* Small screen layout for navigation */
   .navigation {
     float: none;
@@ -2307,13 +2308,13 @@
   .navigation a {
     color: #fff;
   }
-  
+
   /* Reset functions menu */
   .functions-menu {
     margin: 1em 0;
     position: static;
   }
-  
+
   /* Add new issue & Functions header */
   .add-new-issue {
     background-color: #08c;
@@ -2352,7 +2353,7 @@
     padding: 0.75em;
     width: auto;
   }
-  
+
   /* Adjust for navigation height */
   a.anchor {
     top: -90px;
@@ -2383,12 +2384,12 @@
   .medium {
     width: 50%;
   }
-  
+
 /* END @media screen and (max-width: 882px) */
 }
 
 @media screen and (max-width: 424px) {
-  
+
   /* Remove indentation on issues overview heading */
   .issues-overview h2 {
     padding-left: 0;
@@ -2424,6 +2425,6 @@
   #profile-holder > h2 {
     margin: 0 0 34px 45px;
   }
-  
+
 /* END @media screen and (max-width: 424px) */
 }
