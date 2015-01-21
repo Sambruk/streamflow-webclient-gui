@@ -71,10 +71,6 @@
     width: 60%;
     padding-left: 2em;
   }
-  /* Center column */
-  .layout-2 .content-primary > div {
-    max-width: 600px;
-  }
   .layout-2 .content-secondary {
     background-color: #d7d7d7;
     float: left;
@@ -1043,9 +1039,9 @@
     position: relative;
     z-index: 2;
     margin-top: 0.45em;
-    width: 25px;
-    height: 25px;
-    float:right;
+    width: 22px;
+    height: 22px;
+    float: right;
     margin-right: 60px;
   }
 
@@ -2273,16 +2269,10 @@
 
   /* Layout-2 - switch to single column */
   .layout-2 .content-primary{
-    max-width: 600px;
-    min-width: 200px;
-    margin: 0 auto;
     width: 100%;
   }
   .layout-2 .content-secondary {
     width: 100%;
-    max-width: 600px;
-    min-width: 200px;
-    margin: 0 auto;
   }
   .contact {
     max-width: 630px;
@@ -2361,7 +2351,9 @@
 
   /* Adjust main header to fit small screens */
   .main-search {
-    display: none;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
   }
   .client-name{
     margin: 0 auto;
