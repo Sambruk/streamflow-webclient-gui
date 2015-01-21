@@ -1681,22 +1681,17 @@
    * ==========================================================================
    */
   .paging {
-    float: right;
-    margin: 0 0 2em;
+    margin: 1.5em 0 1em;
+    list-style-type: none;
+    text-align: center;
   }
-  .paging h2,
-  .paging h3 {
-    margin: 0 0 0.5em;
-  }
-  .paging strong {
-    float: left;
-    padding: 4px 1em 4px 0;
+  .paging li {
+    display: inline-block;
   }
   .paging a:link,
-  .paging a:visited,
-  .paging em {
-    background: #e8e8e8;
-    float: left;
+  .paging a:visited {
+    display: inline-block;
+    border: 1px solid #ccc;
     width: 2em;
     margin: 0 4px 5px 0;
     padding: 0.3em 0;
@@ -1706,22 +1701,24 @@
     text-align: center;
   }
   .paging a:hover,
-  .paging a:focus,
-  .paging a:active,
-  .paging em {
+  .paging a:focus {
+    border: 1px solid #aaa;
+  }
+  .paging .active {
+    font-weight: bold;
     background: #f0f0f0;
   }
-  .paging em {
-    background: #08c;
-    color: #fff;
-    font-weight: bold;
-    font-style: normal;
-  }
-  .paging span {
-    position: absolute;
-    left: -9999px;
-  }
 
+  /**
+   * FILTER
+   * ==========================================================================
+   */
+  .filter input {
+    width: 100%;
+  }
+  .filter select {
+    float: right;
+  }
 
   /**
    * FORMS
