@@ -161,7 +161,7 @@
     right: 0;
     top: calc(100% + .5em);
     z-index: 1;
-    margin: 0 1em;
+    margin: 0 auto;
     padding: .75em 1em;
     max-width: 300px;
     border: 1px solid #aaa;
