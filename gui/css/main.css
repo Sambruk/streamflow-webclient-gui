@@ -88,7 +88,6 @@
     text-align: right;
     width: 100%;
   }
-  .header,
   .header h1 {
     color: #fff;
   }
@@ -122,30 +121,90 @@
    * ------------------------------------------------------
    */
   .main-search {
+    position: relative;
     display: inline-block;
     margin-top: 2em;
     width: 22em;
   }
+  .main-search fieldset {
+    border: none;
+    margin: 0;
+  }
+  .main-search input[type="text"],
+  .main-search button[type="submit"] {
+    padding: 0.5em 0.4em;
+  }
   .main-search input[type="text"] {
-    background-color: #fff;
+    background: #fff;
     border: none;
     border-radius: 5px;
-    padding: 7px 10px;
-    width: 80%;
-    color: #000;
+    padding-right: 5em;
+    width: 100%;
   }
   .main-search button[type="submit"] {
-    border-radius: 5px;
-    padding: 6px 13px;
-    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+    width: 4em;
   }
   .main-search button[type="submit"] .icon-search:before {
     color: #fff;
-    font-size: 1.2143em;
   }
   .main-search button[type="submit"] span {
     display: inline-block;
     text-indent: -9999px;
+  }
+  .main-search .search-terms {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + .5em);
+    margin: 0 1em;
+    padding: .75em 1em;
+    max-width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    text-align: left;
+  }
+  .main-search .search-terms:before,
+  .main-search .search-terms:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+  }
+  .main-search .search-terms:before {
+    top: -18px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #aaa;
+  }
+  .main-search .search-terms:after {
+    top: -17px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid #f0f0f0;
+  }
+  .main-search .search-terms button {
+    font-size: .8em;
+    padding: 2px 6px;
+    margin: 0 4px 0 0;
+  }
+  .main-search .due-date-divider span {
+    background: #f0f0f0;
+  }
+  .main-search h4 {
+    color: #999;
+    font-size: .75em;
+    border-bottom: 1px solid #999;
+    margin-bottom: .5em;
   }
 
   /**
@@ -159,6 +218,13 @@
   .logged-in:before {
     font-size: 1.2857em;
     padding-right: 0.25em;
+  }
+  .user-area {
+    float: left;
+    width: 100%;
+  }
+  .user-area a:first-child {
+    float: right;
   }
   .user-area a {
     color: #08c;
@@ -250,6 +316,7 @@
     font-size: 1.7143em;
     padding: 28px 65px 29px 20px;
     margin: 0;
+    width: 200px;
   }
   .functions-header h2 a {
     color: inherit;
@@ -274,6 +341,10 @@
     color: inherit;
     display: block;
     text-decoration: none;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .sub-category a span {
     background-color: #08c;
@@ -366,13 +437,13 @@
    */
   .issue-banner {
     background-color: #00831f;
+    color: #fff;
     margin-bottom: 1em;
     padding: 0.55em 6em;
     text-align: left;
     min-height: 35px;
   }
   .issue-banner h2 {
-    color: #fff;
     margin: 0;
     font-size: 1.0714em;
   }
@@ -1713,11 +1784,17 @@
    * FILTER
    * ==========================================================================
    */
+  .filter {
+    max-width: 400px;
+    margin: 0 auto;
+  }
   .filter input {
     width: 100%;
+    margin-bottom: .25em;
   }
   .filter select {
     float: right;
+    margin-left: .25em;
   }
 
   /**
@@ -2361,9 +2438,6 @@
     text-align: center;
   }
   .issues-overview h2 {
-    margin-left: 64px;
-  }
-  .due-date-divider {
     margin-left: 64px;
   }
   .medium-small {
