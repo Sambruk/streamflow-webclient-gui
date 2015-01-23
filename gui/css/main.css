@@ -169,6 +169,15 @@
     background: #f0f0f0;
     box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
     text-align: left;
+    opacity: 1;
+  }
+  .main-search .search-terms.ng-hide {
+    opacity: 0;
+  }
+  .main-search .search-terms.ng-hide-remove,
+  .main-search .search-terms.ng-hide-add {
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
   }
   .main-search .search-terms:before,
   .main-search .search-terms:after {
