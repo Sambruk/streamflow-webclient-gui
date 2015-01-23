@@ -130,11 +130,11 @@
     border: none;
     margin: 0;
   }
-  .main-search input[type="text"],
+  .main-search input[type="search"],
   .main-search button[type="submit"] {
     padding: 0.5em 0.4em;
   }
-  .main-search input[type="text"] {
+  .main-search input[type="search"] {
     background: #fff;
     border: none;
     border-radius: 5px;
@@ -196,7 +196,7 @@
   .main-search .search-terms button {
     font-size: .8em;
     padding: 2px 6px;
-    margin: 0 4px 0 0;
+    margin: 0 4px 2px 0;
   }
   .main-search .due-date-divider span {
     background: #f0f0f0;
@@ -460,6 +460,7 @@
     line-height: 1.1;
     min-height: 5em;
     text-align: center;
+    min-width: 12px;
     width: 2%;
   }
   .issue-item .due-date span {
@@ -1018,7 +1019,6 @@
   /* Submit area */
   .convo-input .send {
     margin-left: .25em;
-    width: 13%;
   }
   .convo-input .send button {
     width: 100%;
@@ -2436,7 +2436,7 @@
     float: none;
   }
   .issue-banner{
-    text-align: center;
+    padding: .55em 1em;
   }
   .issues-overview h2 {
     margin-left: 64px;
