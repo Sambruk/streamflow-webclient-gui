@@ -1866,6 +1866,9 @@
     color: #fff;
     padding: 4px 10px;
   }
+  .picker button {
+    color: #000;
+  }
   button:hover,
   button:focus {
     background-color: #0af;
