@@ -10,19 +10,19 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  
+
   /* Custom select element */
   .custom-select {
     background-image: url("../i/custom-select@2x.png");
     background-size: 50px 35px;
   }
-  
+
   /* Custom file upload element */
   .customfile-button {
     background-image: url("../i/icon-camera@2x.png");
     background-size: 24px;
   }
-  
+
   /* Notes listing */
   .input-note input[type="text"] {
     background-image: url("../i/arrow-blue-left@2x.png");
@@ -32,11 +32,18 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../i/arrow-grey-right@2x.png");
     background-size: 8px 15px;
   }
-  
+
   /* Conversation window */
   .msg-author {
     background-image: url("../i/convo-arrow@2x.png");
     background-size: 24px 8px;
   }
-  
+
+  /* Chosen overrides */
+  .select .chosen-container.chosen-container-single,
+  .sidebar-chosen-drop-down {
+    background-image: url("../i/custom-select@2x.png");
+    background-size: 50px 35px;
+  }
+
 }
