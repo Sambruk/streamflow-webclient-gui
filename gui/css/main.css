@@ -475,7 +475,6 @@
    */
   .issue-banner {
     background-color: #00831f;
-    color: #fff;
     margin-bottom: 1em;
     padding: 0.55em 6em;
     text-align: left;
@@ -484,6 +483,7 @@
   .issue-banner h2 {
     margin: 0;
     font-size: 1.0714em;
+    color: #fff;
   }
 
   /**
