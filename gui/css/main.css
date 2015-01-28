@@ -388,8 +388,29 @@
    * CASELIST VIEW
    * ==========================================================================
   */
+  .droplistSorting {
+    min-height: 20px;
+    float:right;
+    margin-top: 0.4em;
+  }
+  .droplistSorting.leftList {
+    margin-right: 1em;
+  }
+  .droplistLabel {
+    display: block;
+    font-weight: 700;
+  }
+  .droplistSelect {
+    width: 100%;
+  }
+  #groupingHeader {
+    margin-top: 0.8em;
+  }
   #groupingHeader:first-letter {
     text-transform: uppercase;
+  }
+  .caselistItem {
+    margin-bottom: 0.3em;
   }
 
   /**
