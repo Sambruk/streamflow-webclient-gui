@@ -384,6 +384,13 @@
     margin: 0 0 0.35em;
   }
 
+  /**
+   * CASELIST VIEW
+   * ==========================================================================
+  */
+  #groupingHeader:first-letter {
+    text-transform: uppercase;
+  }
 
   /**
    * ISSUE OVERVIEW
