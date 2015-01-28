@@ -1826,13 +1826,21 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  .filter input {
+  .filter input[type="text"] {
     width: 100%;
     margin-bottom: .25em;
   }
   .filter select {
     float: right;
-    margin-left: .25em;
+  }
+  .filter .options label {
+    display: block;
+    color: #999;
+    font-size: .7857em;
+  }
+  .filter .options > div {
+    float: right;
+    margin-left: .5em;
   }
 
   /**
