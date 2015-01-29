@@ -286,12 +286,13 @@
    * ------------------------------------------------------
    */
   .functions-menu {
-    margin-left: -200px;
-    -webkit-transition: margin-left .2s ease-in-out;
-            transition: margin-left .2s ease-in-out;
+    transform: translateX(-200px);
+
+    -webkit-transition: transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
   }
   .functions-menu.open {
-    margin-left: 0;
+    transform: translateX(0);
   }
 
   /**
@@ -300,9 +301,7 @@
    */
   .add-new-issue,
   .functions-header .open-toolbar {
-    background-color: #222;
-    background: -webkit-linear-gradient(top, #222 0%, #131313 100%);
-    background: linear-gradient(to bottom, #222 0%, #131313 100%);
+    background-color: #141414;
     border-radius: 0 5px 5px 0;
     display: block;
     font-size: 1.7143em;
@@ -319,8 +318,7 @@
     clear: both;
   }
   .functions-header h2 {
-    background-color: #1a1a1a;
-    border-right: 1px solid #222;
+    background-color: #141414;
     color: #fff;
     float: left;
     font-size: 1.7143em;
@@ -336,7 +334,7 @@
     float: right;
   }
   .sub-category {
-    background-color: #1a1a1a;
+    background-color: #141414;
     border-top: 1px solid #4c4c4c;
     color: #fff;
     padding: 0.75em 1.4286em;
