@@ -520,7 +520,7 @@
   .issue-item.overdue .due-date,
   .issue-item.open .due-date,
   .issue-item.closed .due-date {
-    width: 5em;
+    min-width: 5em;
   }
 
   /* Date set */
