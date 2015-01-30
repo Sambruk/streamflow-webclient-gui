@@ -509,7 +509,7 @@
     line-height: 1.1;
     min-height: 5em;
     text-align: center;
-    min-width: 68px;
+    min-width: 12px;
     width: 2%;
   }
   .issue-item .due-date span {
@@ -532,7 +532,7 @@
   /* Date overdue */
   .issue-item.overdue .due-date {
     background-color: #cf0202;
-    padding: 0;
+    padding: 0.7143em;
   }
 
   /* Issue open */
