@@ -427,6 +427,11 @@
     font-size: 1.1429em;
     font-weight: bold;
   }
+  .issues-overview h3 span {
+    font-weight: normal;
+    font-size: 0.7857em;
+    color: #999;
+  }
   .issues-overview .show-more {
     text-align: center;
     margin-bottom: 2em;
