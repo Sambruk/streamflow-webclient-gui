@@ -427,10 +427,22 @@
     font-size: 1.1429em;
     font-weight: bold;
   }
-  .issues-overview h3 span {
+  .issues-overview h3 .results {
+    float: right;
     font-weight: normal;
     font-size: 0.7857em;
     color: #999;
+    line-height: 2;
+    transform: translateX(0);
+  }
+  .issues-overview h3 .results.ng-hide {
+    opacity: 0;
+    transform: translateX(2em);
+  }
+  .issues-overview h3 .results.ng-hide-remove,
+  .issues-overview h3 .results.ng-hide-add {
+    transition: opacity ease .5s,
+                transform ease .5s;
   }
   .issues-overview .show-more {
     text-align: center;
