@@ -776,7 +776,7 @@
   .note-body p:last-child {
     margin: 0;
   }
-   .note-posted-by {
+  .note-posted-by {
     background: url("../i/arrow-grey-right.png") no-repeat 0 .5em;
     line-height: 1.2;
     padding: 1em 1em .75em 0;
@@ -789,6 +789,21 @@
     color: #666;
     float: right;
     font-size: 0.8462em;
+  }
+  .note-meta .m-attachments {
+    float: left;
+  }
+  .note-meta .m-attachments li:first-child {
+    margin-top: 3px;
+  }
+  .note-meta .m-attachments li {
+    display: inline-block;
+    background: none;
+    margin: 4px 8px 4px 0;
+    padding: 0;
+  }
+  .note-meta .m-attachments .icon-attach {
+    color: #08c;
   }
 
   /* Public notes */
@@ -910,6 +925,9 @@
     position: absolute;
     right: 0.75em;
     top: 0.75em;
+  }
+  .form-status a {
+    text-decoration: none;
   }
   .form-status *[class*="icon-"] {
     color: #666;
@@ -1048,9 +1066,10 @@
 
   /* Upload button */
   .convo-input .upload {
+    min-width: 60px;
     width: 10%;
   }
-  .convo-input .upload .file-input{
+  .convo-input .upload .file-input {
     width: 60px;
   }
   .convo-input .upload a,
@@ -1096,55 +1115,6 @@
   }
 
 
-  /**
-   * Conversation body
-   * ------------------------------------------------------
-   */
-  .convo-body {
-    margin: 1em 0;
-  }
-  .convo-messages {
-    list-style: none;
-  }
-/*  .convo-messages .msg-item {
-    margin: 0 6em 1.25em 0;
-  }*/
-  .msg-item {
-    margin-top: 2em;
-  }
-  .msg-author,
-  .msg-attachment {
-    min-height: 2.125em;
-  }
-  .msg-author {
-    background: url("../i/convo-arrow.png") no-repeat 50% 100%;
-    float: left;
-    font-weight: bold;
-  }
-  .msg-attachment,
-  .msg-draft-attachments  {
-    float: left;
-  }
-  .msg-body {
-    background-color: #fff;
-    padding: 1em;
-    max-height: 500px;
-  }
-  .msg-container {
-    max-height: 475px;
-    position: relative;
-    overflow-y: auto;
-  }
-  .msg-meta {
-    font-size: .8571em;
-  }
-  .msg-recipients {
-    float: left;
-  }
-  .msg-timestamp {
-    float: right;
-  }
-
 
   /**
    * MODULES
@@ -1158,25 +1128,20 @@
   .m-general .m-box {
     background-color: #fff;
   }
-/*  .case-sidebar-info {
-    min-height: 3em;
-  }*/
-  .no-caseinfo {
-    color:#999;
-  }
-  .sidebar-priority {
-    min-height: 55px;
-  }
-  .priority-color {
-    border-radius: 100%;
-    display: inline;
-    position: relative;
-    z-index: 2;
-    margin-top: 0.45em;
-    width: 22px;
-    height: 22px;
-    float: right;
-    margin-right: 60px;
+
+  /**
+   * Module: Status
+   * ------------------------------------------------------
+   */
+
+  .m-status .priority-color {
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+    right: 4.5em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
   }
 
   /**
@@ -1268,9 +1233,6 @@
   }
   .caselog-count-sidebar{
     float: right;
-  }
-  .caselog-body {
-      min-height: 600px;
   }
   .caselog-input .send button{
     float: right;
@@ -1371,19 +1333,16 @@
   .toolbar {
     margin: 0 0 1.5em;
   }
-
-  /* Toolbar buttons */
-  .buttons {
+  .toolbar .buttons {
     list-style: none;
     margin: 0;
   }
-  .buttons li {
+  .toolbar .buttons li {
+    margin-right: 2px;
     display: inline-block;
     vertical-align: top;
   }
-
-  /* Toolbar content */
-  .toolbar-content-style {
+  .toolbar .toolbar-content-style {
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     color: #333;
@@ -1391,12 +1350,18 @@
     padding: 1em;
     text-align: center;
   }
-  .toolbar-content .close {
+  .toolbar .toolbar-content .close {
     float: left;
   }
-  .toolbar-content .form-general {
+  .toolbar .toolbar-content .form-general {
     margin: 2em 0;
   }
+
+  /**
+   * Modal Dialog
+   * -----------------------------------------------------
+   */
+
   .ng-modal-overlay {
     /* A dark translucent div that covers the whole screen */
     position: fixed;
@@ -1411,7 +1376,7 @@
   .ng-modal-dialog {
     /* A centered div above the overlay with a box shadow. */
     z-index: 10000;
-    position: absolute;
+    position: fixed;
 
     /* Center the dialog */
     top: 50%;
@@ -2378,9 +2343,6 @@
     margin: 0 auto;
     width: 100%;
   }
-  .msg-item {
-    width: 600px;
-  }
   .caseInSidebar  {
     width: 570px;
   }
@@ -2465,6 +2427,7 @@
     position: static;
   }
   .navigation .add-new-issue {
+    display: inline-block;
     background-color: #08c;
     background-image: none;
     border-radius: 5px;
