@@ -1920,6 +1920,7 @@
   }
   input[type="text"],
   input[type="password"],
+  input[type="search"],
   textarea,
   .custom-select {
     background-color: #fff;
@@ -1927,12 +1928,15 @@
     border-radius: 3px;
     padding: .5em;
   }
-  button {
+  button,
+  input[type="button"],
+  input[type="submit"] {
     background-color: #08c;
     border: none;
     border-radius: 5px;
     color: #fff;
     padding: 4px 10px;
+    cursor: pointer;
   }
   .picker button {
     color: #000;
@@ -1955,6 +1959,9 @@
     padding: .4356em .5em;
     width: 100%;
 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   .cust-sel {
     width: 100% !important; /* Override inline styling applied by customSelect */
