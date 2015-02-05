@@ -1240,6 +1240,9 @@
   .caselog-input .send button{
     float: right;
   }
+  .case-sidebar-info p {
+    margin: 0;
+  }
 
   /**
    * Module: Bifogade filer
