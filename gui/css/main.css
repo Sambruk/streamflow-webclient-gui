@@ -287,13 +287,13 @@
    * ------------------------------------------------------
    */
   .functions-menu {
-    transform: translateX(-200px);
+    margin-left: -200px;
 
-    -webkit-transition: transform .2s ease-in-out;
-            transition: transform .2s ease-in-out;
+    -webkit-transition: margin-left .2s ease-in-out;
+            transition: margin-left .2s ease-in-out;
   }
   .functions-menu.open {
-    transform: translateX(0);
+    margin-left: 0;
   }
 
   /**
