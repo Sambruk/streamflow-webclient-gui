@@ -1436,6 +1436,10 @@
   .dialog-submit button{
     margin-top: 1em;
   }
+  select.popup-select{
+    width: 100%;
+    cursor: pointer;
+  }
   /**
    * Regular lists (inside modules)
    * ------------------------------------------------------
