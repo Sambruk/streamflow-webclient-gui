@@ -1174,6 +1174,9 @@
   .convo-status *[class*="icon-"]:before {
     padding-right: .25em;
   }
+  .convo-status a {
+    text-decoration: none;
+  }
   .conv-case-sidebar {
     max-width: 260px;
   }
