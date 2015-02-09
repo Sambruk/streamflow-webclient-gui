@@ -2431,8 +2431,10 @@
     position: static;
     padding: 0 1em;
   }
-  .navigation a {
-    color: #fff;
+  .navigation a:hover,
+  .navigation a:focus,
+  .navigation a:active {
+    color: #333;
   }
   .navigation .functions-menu {
     transform: translateX(0);
@@ -2446,7 +2448,8 @@
     border-radius: 5px;
     font-size: 1.1429em;
     height: auto;
-    padding: 0.25em 0.5em;
+    padding: .25em .5em;
+    margin-bottom: .25em;
     text-align: left;
     width: auto;
   }
@@ -2458,22 +2461,19 @@
     padding-left: 0.5em;
     position: static;
   }
-  .add-new-issue {
-    margin-bottom: 0.25em;
-  }
-  .functions-header h2 {
+  .navigation .functions-header h2 {
     background-color: transparent;
     border-right: 0;
     color: inherit;
     float: none;
     padding: 0;
   }
-  .functions-header .open-toolbar {
+  .navigation .functions-header .open-toolbar {
     display: none;
   }
-  .sub-category {
+  .navigation .sub-category {
     color: #fff;
-    display: block!important;
+    display: block !important;
     padding: 0.75em;
     width: auto;
   }
