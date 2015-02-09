@@ -2341,6 +2341,37 @@
     width: 100%;
   }
 
+
+  /**
+   * GROWL
+   * Since we don't want to include Bootstrap.
+   * ==========================================================================
+   */
+  .growl-container > div.growl-item {
+    background: #fff;
+    padding: 1em 3em 1em 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+  }
+  .growl-container > div.growl-item .close {
+    position: absolute;
+    right: 1em;
+    font-size: 1.25em;
+    line-height: 1;
+    background: none;
+    color: #ccc;
+  }
+  .growl-container > div.growl-item .close:focus,
+  .growl-container > div.growl-item .close:hover {
+    color: #333;
+  }
+  .growl-container .growl-item.icon>.growl-message,
+  .growl-container .growl-item.icon>.growl-title {
+    margin: 0 0 0 50px;
+  }
+
+
   /**
    * ANCHOR
    * ==========================================================================
