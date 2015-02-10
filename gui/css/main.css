@@ -2058,35 +2058,27 @@
   }
   .text.saved:after,
   .text.error:after {
-    border-radius: 100%;
-    color: #fff;
     display: block;
-    padding: 5px;
     position: absolute;
-    right: 0.75em;
-    bottom: 0.45em;
-    /* TODO Fix below */
-    font-family: "StreamflowIcons";
-    font-size: 0.8571em;
-    font-style: normal;
-    font-weight: normal;
+    right: .25em;
+    top: .25em;
+    padding: .5em;
+    margin: 0 0 .25em .25em;
     line-height: 1;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "StreamflowIcons";
     speak: none;
-    vertical-align: middle;
-    -webkit-font-smoothing: antialiased;
   }
   .text.saved:after {
-    -webkit-animation: fadeOut 1s ease-in-out 3s 1 forwards;
-            animation: fadeOut 1s ease-in-out 3s 1 forwards;
-  }
-
-  @-webkit-keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    animation: fadeOut .5s ease 3s 1 forwards;
   }
   @keyframes fadeOut {
     0% { opacity: 1; }
-    100% { opacity: 0; }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
   }
   .text.saved option,
   .text.error option {
