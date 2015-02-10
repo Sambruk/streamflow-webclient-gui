@@ -1561,6 +1561,7 @@
   .m .action-btn {
     display: block;
     float: right;
+    line-height: 2;
     margin-right: 0.75em;
     text-decoration: none;
   }
@@ -2229,6 +2230,11 @@
   form .row,
   .sidebar-row {
     margin-bottom: 1em;
+  }
+  input[type="text"][disabled],
+  input[type="search"][disabled],
+  textarea[disabled] {
+    color: #999;
   }
   .row .text input,
   .row textarea {
