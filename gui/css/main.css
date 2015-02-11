@@ -2276,7 +2276,6 @@
     width: 100% !important;
   }
 
-  /* Multiple selection element */
   .chosen-container-multi ul.chosen-choices {
     background: #fff;
     border: none;
@@ -2299,7 +2298,6 @@
     top: 5px;
   }
 
-  /* Single selection element */
   .chosen-container-active.chosen-with-drop a.chosen-single,
   .chosen-container-single a.chosen-single {
     padding: .5em;
@@ -2310,11 +2308,20 @@
     max-height: 33px;
     min-height: 33px;
   }
+  .chosen-container-active.chosen-with-drop ul.chosen-choices,
   .chosen-container-active.chosen-with-drop a.chosen-single {
     border-radius: 3px 3px 0 0;
+  }
+  .chosen-container-active.chosen-with-drop a.chosen-single {
     border-top: 1px solid #08c;
     border-left: 1px solid #08c;
   }
+  .chosen-container-active.chosen-with-drop ul.chosen-choices {
+    border-top: 1px solid #08c;
+    border-left: 1px solid #08c;
+    border-right: 1px solid #08c;
+  }
+  .chosen-container-active.chosen-with-drop ul.chosen-choices + .chosen-drop,
   .chosen-container-active.chosen-with-drop a.chosen-single + .chosen-drop {
     border-left: 1px solid #08c;
     border-right: 1px solid #08c;
@@ -2326,25 +2333,36 @@
 
 
   /**
+   * Pickadate
+   * ------------------------------------------------------
+   */
+  .picker__input.picker__input--active {
+    border: 1px solid #08c;
+  }
+
+
+  /**
    * Custom Select
    * ------------------------------------------------------
    */
   .select select {
-    background-image: url("../i/custom-select.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
     border: none;
     border-radius: 3px;
     margin: 2px 0;
     padding: .4356em .5em;
     width: 100%;
-    max-height: 33px;
     min-height: 33px;
     outline: none;
     cursor: pointer;
 
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+  .select select:not([multiple]) {
+    max-height: 33px;
+    background-image: url("../i/custom-select.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
   }
   .select select:focus,
   .select select:active {

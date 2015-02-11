@@ -14,7 +14,7 @@ only screen and (                min-resolution: 2dppx) {
   /* Custom/Chosen select element */
   .chosen-container-active.chosen-with-drop a.chosen-single,
   .chosen-container-single a.chosen-single,
-  .select select {
+  .select select:not([multiple]) {
     background-image: url("../i/custom-select@2x.png");
     background-size: 50px 35px;
   }
