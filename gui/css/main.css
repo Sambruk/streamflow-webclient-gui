@@ -1375,7 +1375,7 @@
    * -----------------------------------------------------
    */
 
-  .ng-modal-overlay {
+  .modal-overlay {
     /* A dark translucent div that covers the whole screen */
     position: fixed;
     z-index: 9999;
@@ -1386,7 +1386,7 @@
     background-color: #000;
     opacity: .5;
   }
-  .ng-modal-dialog {
+  .modal-dialog {
     /* A centered div above the overlay with a box shadow. */
     z-index: 10000;
     position: fixed;
@@ -1394,40 +1394,42 @@
     /* Center the dialog */
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #e8e8e8;
     border-radius: 10px;
 
-    padding: 3em 3em 1em 3em;
-    min-height: 175px;
-    min-width: 420px;;
-    text-align: center;
+    padding: 3em 0 1em;
+    min-height: 120px;
+    min-width: 300px;
   }
-  .ng-modal-close {
+  .modal-close {
     position: absolute;
-    top: 3px;
-    right: 5px;
+    top: .25em;
+    right: .5em;
     padding: 5px;
-    cursor: pointer;
     font-size: 120%;
     display: inline-block;
-    font-weight: bold;
+    color: #08c;
+    background: none;
+
+    transition: color .2s ease;
   }
-  .dialog-outer-content{
-    width: 100%;
+  .modal-close:hover,
+  .modal-close:focus {
+    background: none;
+    color: #0af;
   }
-  .dialog-inner-content{
+  .modal-content{
     text-align: left;
+    padding: .5em 1em;
+    border-top: 1px solid #ccc;
   }
-  .dialog-inner-content h3{
+  .modal-content h3 {
     text-align: center;
+    border-bottom: 1px solid #999;
+    margin-bottom: 1em;
   }
-  .dialog-header{
-    text-align: center;
-    font-size: 1.17em;
-    margin-bottom: 0.5em;
-  }
+
   .dialog-submit{
     text-align: center;
   }
@@ -1450,6 +1452,7 @@
     width: 100%;
     cursor: pointer;
   }
+
   /**
    * Regular lists (inside modules)
    * ------------------------------------------------------
@@ -1564,7 +1567,6 @@
   .m .action-btn {
     display: block;
     float: right;
-    line-height: 2;
     margin-right: 0.75em;
     text-decoration: none;
   }
@@ -2313,6 +2315,7 @@
   }
   .chosen-container-active.chosen-with-drop ul.chosen-choices,
   .chosen-container-active.chosen-with-drop a.chosen-single {
+    padding-right: 4em;
     border-radius: 3px 3px 0 0;
   }
   .chosen-container-active.chosen-with-drop a.chosen-single,
