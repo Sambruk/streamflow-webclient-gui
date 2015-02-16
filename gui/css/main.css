@@ -1344,14 +1344,10 @@
     display: inline-block;
   }
   .toolbar .dropdown .buttons {
+    display: none;
     position: absolute;
     min-width: 120px;
     z-index: 1;
-    opacity: 0;
-    transform: scale(.9);
-
-    transition: opacity .2s ease,
-                transform .2s ease;
   }
   .toolbar .dropdown .buttons button {
     display: block;
@@ -1370,8 +1366,7 @@
     border-radius: 0 0 3px 3px;
   }
   .toolbar .show-dropdown:focus + .buttons {
-    opacity: 1;
-    transform: scale(1);
+    display: block;
   }
 
   /**
