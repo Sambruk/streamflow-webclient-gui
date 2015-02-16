@@ -623,9 +623,6 @@
     display: inline-block;
     vertical-align: middle;
   }
-  .m-h .id {
-    padding: 6px 10px 0;
-  }
   .m-h .set-due-date {
     background-color: #eaeaea;
     border-radius: 5px;
@@ -1382,10 +1379,9 @@
    * -----------------------------------------------------
    */
 
-  .modal-overlay {
-    /* A dark translucent div that covers the whole screen */
+  .modal .modal-overlay {
     position: fixed;
-    z-index: 9999;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -1393,71 +1389,57 @@
     background-color: #000;
     opacity: .5;
   }
-  .modal-dialog {
-    /* A centered div above the overlay with a box shadow. */
-    z-index: 10000;
+  .modal .modal-dialog {
+    z-index: 101;
     position: fixed;
-
-    /* Center the dialog */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #e8e8e8;
     border-radius: 10px;
-
-    padding: 3em 0 1em;
+    border-bottom: 3px solid #bbb;
     min-height: 120px;
     min-width: 300px;
   }
-  .modal-close {
-    position: absolute;
-    top: .25em;
-    right: .5em;
-    padding: 5px;
+  .modal .modal-close {
+    float: right;
+    padding: .5em;
     font-size: 120%;
     display: inline-block;
-    color: #08c;
+    color: #aaa;
     background: none;
 
     transition: color .2s ease;
   }
-  .modal-close:hover,
-  .modal-close:focus {
+  .modal .modal-header {
+    width: 100%;
+  }
+  .modal .modal-header h3 {
+    margin: 0 0 0 .5em;
+    line-height: 2;
+    float: left;
+    font-weight: bold;
+  }
+  .modal .modal-header .modal-close:hover,
+  .modal .modal-header .modal-close:focus {
     background: none;
-    color: #0af;
+    color: #777;
   }
-  .modal-content {
+  .modal .modal-content {
     text-align: left;
-    padding: .5em 1em;
-    border-top: 1px solid #ccc;
+    padding: 1em 1.25em;
   }
-  .modal-content h3 {
+  .modal .modal-content h4 {
     text-align: center;
     margin-bottom: 1em;
   }
-
-  .dialog-submit {
+  .modal .dialog-list {
+    margin-left: 0;
+  }
+  .modal .dialog-submit {
     text-align: center;
   }
-  .dialog-list li {
-    padding: 0 0.75em 0 0.75em;
-    display: block;
-  }
-  .dialog-list label {
-    font-weight: normal;
-    vertical-align: baseline;
-    margin-left: 5px;
-  }
-  .dialog-list input[type="checkbox"] {
-    float: left;
-  }
-  .dialog-submit button {
-    margin-top: 1em;
-  }
-  select.popup-select {
-    width: 100%;
-    cursor: pointer;
-  }
+
 
   /**
    * Regular lists (inside modules)
@@ -1573,7 +1555,6 @@
   .m .action-btn {
     display: block;
     float: right;
-    margin-right: 0.75em;
     text-decoration: none;
   }
   .m .action-btn *[class*="icon-"] {
