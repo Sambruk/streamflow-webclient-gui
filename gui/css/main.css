@@ -1145,8 +1145,12 @@
     font-size: .8571em;
   }
   .m-convos li {
+    word-break: break-word;
     background-color: #fff;
     position: relative;
+  }
+  .m-convos li .block-link {
+    padding-right: 2em;
   }
   .convo-status {
     position: absolute;
@@ -1333,16 +1337,8 @@
    * ------------------------------------------------------
    */
   .toolbar {
+    position: relative;
     margin: 0 0 1.5em;
-  }
-  .toolbar .buttons {
-    list-style: none;
-    margin: 0;
-  }
-  .toolbar .buttons li {
-    margin-right: 2px;
-    display: inline-block;
-    vertical-align: top;
   }
   .toolbar .toolbar-content-style {
     background-color: #fff;
@@ -1357,6 +1353,34 @@
   }
   .toolbar .toolbar-content .form-general {
     margin: 2em 0;
+  }
+  .toolbar .dropdown {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(.9);
+
+    transition: opacity .2s ease,
+                transform .2s ease;
+  }
+  .toolbar .dropdown button {
+    display: block;
+    width: 100%;
+  }
+  .toolbar .dropdown button:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .toolbar .dropdown button:first-child {
+    border-radius: 3px 3px 0 0;
+  }
+  .toolbar .dropdown button:last-child {
+    border-radius: 0 0 3px 3px;
+  }
+  .toolbar .show-dropdown:focus + .dropdown,
+  .toolbar .show-dropdown:hover + .dropdown {
+    opacity: 1;
+    transform: scale(1);
   }
 
   /**
@@ -1909,7 +1933,7 @@
   input[type="submit"] {
     background-color: #08c;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #fff;
     padding: 4px 10px;
     cursor: pointer;
@@ -2364,14 +2388,10 @@
 }
 
 @media screen and (max-width: 1160px) {
-  /* Switch to full width */
   .header-body,
   .main-body {
     margin: 0 auto;
     width: 100%;
-  }
-  .caseInSidebar  {
-    width: 570px;
   }
   .row {
     margin-right: 0 !important;
@@ -2380,28 +2400,18 @@
 }
 
 @media screen and (max-width: 1020px) {
-  .conv-case-sidebar {
-    max-width: 520px;
-  }
-  .layout-2 .content-primary{
-    float: none;
-    width: 600px;
-    margin: 0 auto;
-    padding-left: 0;
-  }
   .layout-2 .content-secondary {
-    float: none;
-    width: 600px;
-    margin: 0 auto;
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 882px) {
-  .layout-2 .content-primary{
-    width: 100%;
-  }
+  .layout-2 .content-primary,
   .layout-2 .content-secondary {
     width: 100%;
+  }
+  .layout-2 .content-primary {
+    padding: 0;
   }
   .contact {
     max-width: 630px;
