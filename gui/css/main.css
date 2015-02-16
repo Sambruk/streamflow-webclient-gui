@@ -1687,10 +1687,6 @@
    * Disabled sidebar fields
    * ------------------------------------------------------
    */
-  .disabled {
-    opacity: 0.5 !important;
-    cursor: default !important;
-  }
   .cursor-default {
     cursor: default;
     width: 100% !important;
@@ -2099,10 +2095,13 @@
   .sidebar-row {
     margin-bottom: 1em;
   }
+  .disabled,
+  .select select[disabled],
   input[type="text"][disabled],
   input[type="search"][disabled],
   textarea[disabled] {
-    color: #999;
+    opacity: .65;
+    cursor: default;
   }
   .row .text input,
   .row textarea {
