@@ -1340,23 +1340,15 @@
     position: relative;
     margin: 0 0 1.5em;
   }
-  .toolbar .toolbar-content-style {
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    color: #333;
-    width: 440px;
-    padding: 1em;
-    text-align: center;
-  }
-  .toolbar .toolbar-content .close {
-    float: left;
-  }
-  .toolbar .toolbar-content .form-general {
-    margin: 2em 0;
+  .toolbar > .buttons > button {
+    margin-bottom: 4px;
   }
   .toolbar .dropdown {
+    display: inline-block;
+  }
+  .toolbar .dropdown .buttons {
     position: absolute;
-    right: 0;
+    min-width: 120px;
     z-index: 1;
     opacity: 0;
     transform: scale(.9);
@@ -1364,21 +1356,23 @@
     transition: opacity .2s ease,
                 transform .2s ease;
   }
-  .toolbar .dropdown button {
+  .toolbar .dropdown .buttons button {
     display: block;
     width: 100%;
   }
-  .toolbar .dropdown button:not(:first-child):not(:last-child) {
+  .toolbar .dropdown .buttons button:not(:last-child) {
+    border-bottom: 1px solid #07a;
+  }
+  .toolbar .dropdown .buttons button:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
-  .toolbar .dropdown button:first-child {
+  .toolbar .dropdown .buttons button:first-child {
     border-radius: 3px 3px 0 0;
   }
-  .toolbar .dropdown button:last-child {
+  .toolbar .dropdown .buttons button:last-child {
     border-radius: 0 0 3px 3px;
   }
-  .toolbar .show-dropdown:focus + .dropdown,
-  .toolbar .show-dropdown:hover + .dropdown {
+  .toolbar .show-dropdown:focus + .buttons {
     opacity: 1;
     transform: scale(1);
   }
@@ -2358,7 +2352,6 @@
   .select select {
     border: none;
     border-radius: 3px;
-    margin: 2px 0;
     padding: .4356em .5em;
     width: 100%;
     min-height: 33px;
