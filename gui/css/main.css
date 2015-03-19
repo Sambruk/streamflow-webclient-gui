@@ -323,6 +323,10 @@
   .functions-header .open-toolbar {
     float: right;
   }
+  /* Needed to make functions menu close properly in IE*/
+  .sub-categories {
+    position: absolute;
+  }
   .sub-category {
     background-color: #141414;
     border-top: 1px solid #4c4c4c;
