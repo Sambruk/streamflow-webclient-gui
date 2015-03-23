@@ -2076,6 +2076,7 @@
     padding: 4px 12px;
     border-radius: 4px;
     background-color: #08c;
+    cursor: pointer;
   }
   .icon-white {
     color: #fff;
@@ -2088,7 +2089,7 @@
   .file-input-button input {
     position: absolute;
     transform: translate(-300px, 0) scale(4);
-    cursor: pointer;
+    visibility: hidden;
   }
 
   /**
