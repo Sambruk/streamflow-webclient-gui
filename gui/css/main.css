@@ -1254,7 +1254,6 @@
   }
   .m-attachments .delete {
     color: #08c;
-    float: right;
   }
   .m-attachments .delete:hover {
     color: #0af;
