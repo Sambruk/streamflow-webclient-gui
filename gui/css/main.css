@@ -2218,6 +2218,19 @@
     width: 100%;
   }
 
+  .angular-google-map-container { height: 400px; }
+
+  #map-search-input {
+    width: 50%;
+  }
+
+  .maps .lookup ul.search-results {
+    margin: 0.5em;
+  }
+
+  .maps .lookup ul.search-results li {
+    list-style-type: none;
+  }
 
   /**
    * GROWL
