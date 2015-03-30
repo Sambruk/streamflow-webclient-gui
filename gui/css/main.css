@@ -2339,6 +2339,11 @@
     -webkit-appearance: none;
     -moz-appearance: none;
   }
+
+  .select select::-ms-expand {
+    display: none;
+  }
+
   .select select:not([multiple]) {
     max-height: 33px;
     background-image: url("../i/custom-select.png");
