@@ -271,6 +271,10 @@
     color: #fff;
   }
 
+  .navigation .add-new-issue .icon-plus {
+    line-height: 1.7em;
+  }
+
   /**
    * Hide functions menu
    * ------------------------------------------------------
@@ -322,6 +326,8 @@
   }
   .functions-header .open-toolbar {
     float: right;
+    font-size: 2.5em;
+    line-height: 1;
   }
   /* Needed to make functions menu close properly in IE*/
   .sub-categories {
@@ -971,6 +977,14 @@
     float: right;
   }
 
+  .form-field .map-point {
+    background-image: url("../i/map-point.png");
+    background-repeat: no-repeat;
+    margin: 2px 2px 2px 5px;
+    padding: 0.5em 1em;
+    width: 100%;
+  }
+
 
   /**
    * SPINNER
@@ -1004,16 +1018,16 @@
     display: inline-block;
     margin: 0 .4em .4em 0;
   }
-  .participants .icon-close {
+  .participants .icon-cross {
     color: #fff;
     display: inline-block;
     font-size: 0.7143em;
     margin-left: 0.25em;
     text-decoration: none;
   }
-  .participants .icon-close:hover,
-  .participants .icon-close:focus,
-  .participants .icon-close:active {
+  .participants .icon-cross:hover,
+  .participants .icon-cross:focus,
+  .participants .icon-cross:active {
     color: #ff7c00;
   }
   .participants .add-participant {
@@ -1073,6 +1087,7 @@
     color: #fff;
     display: inline-block;
     font-size: 1.7143em;
+    line-height: 1.7em;
     height: 40px;
     text-align: center;
     width: 100%;
@@ -1699,65 +1714,14 @@
    * Font icons
    * ------------------------------------------------------
    */
-  *[class*="icon-"] {
-    text-decoration: none;
+  .icon-play3.south {
+    margin-left: 5px;
+    transform: rotate(90deg);
   }
-  *[class*="icon-"]:before {
-    display: inline-block;
-    font-family: 'StreamflowIcons';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    speak: none;
-    vertical-align: middle;
-    -webkit-font-smoothing: antialiased;
+  .icon-play3.west {
+    margin-left: 5px;
+    transform: rotate(180deg);
   }
-  .icon-arrow-down:before {
-    content: "\e600";
-  }
-  .icon-attach:before {
-    content: "\e601";
-  }
-  .icon-camera:before {
-    content: "\e602";
-  }
-  .icon-chat:before {
-    content: "\e603";
-  }
-  .icon-check:before {
-    content: "\e604";
-  }
-  .icon-close:before {
-    content: "\e605";
-  }
-  .icon-edit:before {
-    content: "\e606";
-  }
-  .icon-history-doc:before {
-    content: "\e607";
-  }
-  .icon-history-file:before {
-    content: "\e608";
-  }
-  .icon-info:before {
-    content: "\e609";
-  }
-  .icon-menu:before {
-    content: "\e60a";
-  }
-  .icon-plus:before {
-    content: "\e60b";
-  }
-  .icon-search:before {
-    content: "\e60c";
-  }
-  .icon-user:before {
-    content: "\e60d";
-  }
-  .icon-case-history:before {
-      margin-bottom: 10px;
-  }
-
 
   /**
    * EYE CANDY
@@ -2470,6 +2434,7 @@
   .navigation .add-new-issue,
   .navigation .add-new-issue .icon-plus {
     color: #fff;
+    vertical-align: middle;
   }
   .navigation .add-new-issue .struct {
     padding-left: 0.5em;
