@@ -37,14 +37,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-home:before {
-  content: "\e900";
-}
-
-.icon-home2:before {
-  content: "\e901";
-}
-
-.icon-home3:before {
   content: "\e902";
 }
 
@@ -54,10 +46,6 @@
 
 .icon-camera:before {
   content: "\e90f";
-}
-
-.icon-file-text:before {
-  content: "\e922";
 }
 
 .icon-profile:before {
@@ -72,7 +60,7 @@
   content: "\e925";
 }
 
-.icon-file-text2:before {
+.icon-file-text:before {
   content: "\e926";
 }
 
@@ -136,16 +124,8 @@
   content: "\e949";
 }
 
-.icon-compass2:before {
-  content: "\e94a";
-}
-
 .icon-map:before {
   content: "\e94b";
-}
-
-.icon-map2:before {
-  content: "\e94c";
 }
 
 .icon-history:before {
@@ -156,16 +136,8 @@
   content: "\e94e";
 }
 
-.icon-clock2:before {
-  content: "\e94f";
-}
-
 .icon-alarm:before {
   content: "\e950";
-}
-
-.icon-bell:before {
-  content: "\e951";
 }
 
 .icon-stopwatch:before {
@@ -176,23 +148,11 @@
   content: "\e953";
 }
 
-.icon-display:before {
-  content: "\e956";
-}
-
-.icon-mobile:before {
-  content: "\e958";
-}
-
-.icon-mobile2:before {
-  content: "\e959";
-}
-
 .icon-drawer:before {
   content: "\e95c";
 }
 
-.icon-drawer2:before {
+.icon-drawer-empty:before {
   content: "\e95d";
 }
 
@@ -210,22 +170,6 @@
 
 .icon-bubbles:before {
   content: "\e96c";
-}
-
-.icon-bubbles2:before {
-  content: "\e96d";
-}
-
-.icon-bubble2:before {
-  content: "\e96e";
-}
-
-.icon-bubbles3:before {
-  content: "\e96f";
-}
-
-.icon-bubbles4:before {
-  content: "\e970";
 }
 
 .icon-user:before {
@@ -256,28 +200,12 @@
   content: "\e978";
 }
 
-.icon-spinner:before {
-  content: "\e97a";
-}
-
 .icon-spinner2:before {
   content: "\e97b";
 }
 
-.icon-spinner3:before {
+.icon-spinner:before {
   content: "\e97c";
-}
-
-.icon-spinner6:before {
-  content: "\e97f";
-}
-
-.icon-spinner7:before {
-  content: "\e980";
-}
-
-.icon-spinner11:before {
-  content: "\e984";
 }
 
 .icon-search:before {
@@ -294,10 +222,6 @@
 
 .icon-key:before {
   content: "\e98d";
-}
-
-.icon-key2:before {
-  content: "\e98e";
 }
 
 .icon-lock:before {
@@ -320,10 +244,6 @@
   content: "\e9ac";
 }
 
-.icon-bin2:before {
-  content: "\e9ad";
-}
-
 .icon-target:before {
   content: "\e9b3";
 }
@@ -336,7 +256,7 @@
   content: "\e9cb";
 }
 
-.icon-attachment:before {
+.icon-attach:before {
   content: "\e9cd";
 }
 
@@ -396,7 +316,7 @@
   content: "\ea0e";
 }
 
-.icon-cross:before {
+.icon-cancel:before {
   content: "\ea0f";
 }
 
@@ -404,15 +324,11 @@
   content: "\ea10";
 }
 
-.icon-checkmark2:before {
-  content: "\ea11";
-}
-
-.icon-play3:before {
+.icon-direction:before {
   content: "\ea1c";
 }
 
-.icon-loop2:before {
+.icon-loop:before {
   content: "\ea2e";
 }
 
@@ -448,38 +364,6 @@
   content: "\ea38";
 }
 
-.icon-arrow-up-left2:before {
-  content: "\ea39";
-}
-
-.icon-arrow-up2:before {
-  content: "\ea3a";
-}
-
-.icon-arrow-up-right2:before {
-  content: "\ea3b";
-}
-
-.icon-arrow-right2:before {
-  content: "\ea3c";
-}
-
-.icon-arrow-down-right2:before {
-  content: "\ea3d";
-}
-
-.icon-arrow-down2:before {
-  content: "\ea3e";
-}
-
-.icon-arrow-down-left2:before {
-  content: "\ea3f";
-}
-
-.icon-arrow-left2:before {
-  content: "\ea40";
-}
-
 .icon-circle-up:before {
   content: "\ea41";
 }
@@ -508,10 +392,8 @@
   content: "\ea54";
 }
 
-.icon-radio-checked2:before {
-  content: "\ea55";
-}
-
 .icon-radio-unchecked:before {
   content: "\ea56";
 }
+
+

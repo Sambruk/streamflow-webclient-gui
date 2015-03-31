@@ -1018,16 +1018,16 @@
     display: inline-block;
     margin: 0 .4em .4em 0;
   }
-  .participants .icon-cross {
+  .participants .icon-cancel {
     color: #fff;
     display: inline-block;
     font-size: 0.7143em;
     margin-left: 0.25em;
     text-decoration: none;
   }
-  .participants .icon-cross:hover,
-  .participants .icon-cross:focus,
-  .participants .icon-cross:active {
+  .participants .icon-cancel:hover,
+  .participants .icon-cancel:focus,
+  .participants .icon-cancel:active {
     color: #ff7c00;
   }
   .participants .add-participant {
@@ -1165,13 +1165,10 @@
     background-color: #fff;
     position: relative;
   }
-  .m-convos li .block-link {
-    padding-right: 2em;
-  }
   .convo-status {
     position: absolute;
     right: .75em;
-    top: .75em;
+    bottom: .75em;
   }
   .convo-status *[class*="icon-"] {
     color: #666;
@@ -1714,13 +1711,21 @@
    * Font icons
    * ------------------------------------------------------
    */
-  .icon-play3.south {
+  .icon-direction, .icon-direction.forward {
+    margin-left: 5px;
+    transform: rotate(0deg);
+  }
+  .icon-direction.backwards {
+    margin-left: 5px;
+    transform: rotate(180deg);
+  }
+  .icon-direction.downwards {
     margin-left: 5px;
     transform: rotate(90deg);
   }
-  .icon-play3.west {
+  .icon-direction.upwards {
     margin-left: 5px;
-    transform: rotate(180deg);
+    transform: rotate(270deg);
   }
 
   /**
