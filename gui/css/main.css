@@ -34,6 +34,9 @@
   .footer {
     background-color: #222;
   }
+  .main {
+    position: relative;
+  }
   .header-body,
   .main-body {
     padding: 0 6em 1em 6em;
@@ -258,7 +261,7 @@
   .navigation {
     float: left;
     position: absolute;
-    top: auto;
+    top: 0;
     left: 0;
     z-index: 9;
   }
@@ -287,6 +290,14 @@
   }
   .functions-menu.open {
     margin-left: 0;
+  }
+
+  .functions-menu .sub-categories {
+    display: none;
+  }
+
+  .functions-menu.open .sub-categories {
+    display: block;
   }
 
   /**
@@ -2464,11 +2475,18 @@
   .navigation .functions-header .open-toolbar {
     display: none;
   }
+  .navigation .sub-categories {
+    position: relative;
+  }
   .navigation .sub-category {
     color: #fff;
     display: block !important;
     padding: 0.75em;
     width: auto;
+  }
+
+  .functions-menu .sub-categories {
+    display: block;
   }
 }
 
