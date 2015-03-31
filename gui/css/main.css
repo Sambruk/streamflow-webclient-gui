@@ -2031,11 +2031,11 @@
   }
   .text.saved:after {
     background: #0c0;
-    content: "\e604";
+    content: "\ea10";
   }
   .text.error:after {
     background: #900;
-    content: "\e605";
+    content: "\ea0f";
   }
   .file-input-button {
     position: relative;

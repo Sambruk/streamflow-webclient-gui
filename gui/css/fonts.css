@@ -11,12 +11,12 @@
  */
 
 @font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?-tvsgli');
-  src:url('../fonts/icomoon.eot?#iefix-tvsgli') format('embedded-opentype'),
-  url('../fonts/icomoon.woff?-tvsgli') format('woff'),
-  url('../fonts/icomoon.ttf?-tvsgli') format('truetype'),
-  url('../fonts/icomoon.svg?-tvsgli#icomoon') format('svg');
+  font-family: 'StreamflowIcons';
+  src:url('../fonts/StreamflowIcons.eot?-tvsgli');
+  src:url('../fonts/StreamflowIcons.eot?#iefix-tvsgli') format('embedded-opentype'),
+  url('../fonts/StreamflowIcons.woff?-tvsgli') format('woff'),
+  url('../fonts/StreamflowIcons.ttf?-tvsgli') format('truetype'),
+  url('../fonts/StreamflowIcons.svg?-tvsgli#StreamflowIcons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +26,7 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
+  font-family: 'StreamflowIcons';
   speak: none;
   display: inline-block;
   font-style: normal;
