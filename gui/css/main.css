@@ -1165,10 +1165,13 @@
     background-color: #fff;
     position: relative;
   }
+  .m-convos li .block-link {
+    padding-right: 2em;
+  }
   .convo-status {
     position: absolute;
     right: .75em;
-    bottom: .75em;
+    top: .75em;
   }
   .case-sidebar-info + .convo-status {
     top: .75em;
@@ -1186,6 +1189,9 @@
   }
   .convo-status a {
     text-decoration: none;
+  }
+  .convo-status li {
+    display: inherit;
   }
   .conv-case-sidebar {
     max-width: 260px;
