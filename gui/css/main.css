@@ -1281,6 +1281,9 @@
   .m-attachments a {
     text-decoration: none;
   }
+  .m-attachments li {
+    position: relative;
+  }
   .m-attachments li a:first-child {
     margin-right: .5em;
   }
@@ -1302,6 +1305,10 @@
     cursor: pointer;
   }
 
+  .m-attachments .icon-cancel {
+    position: absolute;
+    right: .75em;
+  }
   /**
    * Module: Checklista
    * ------------------------------------------------------
