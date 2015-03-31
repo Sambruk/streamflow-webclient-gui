@@ -1170,6 +1170,9 @@
     right: .75em;
     bottom: .75em;
   }
+  .case-sidebar-info + .convo-status {
+    top: .75em;
+  }
   .convo-status *[class*="icon-"] {
     color: #666;
     font-size: 1em;
