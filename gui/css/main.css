@@ -1376,39 +1376,30 @@
    * ------------------------------------------------------
    */
   .toolbar {
-    position: relative;
     margin: 0 0 1.5em;
   }
-  .toolbar > .buttons > button {
-    margin-bottom: 4px;
+  .toolbar .buttons {
+    list-style: none;
+    margin: 0;
   }
-  .toolbar .dropdown {
+  .toolbar .buttons li {
+    margin-right: 2px;
     display: inline-block;
+    vertical-align: top;
   }
-  .toolbar .dropdown .buttons {
-    display: none;
-    position: absolute;
-    min-width: 120px;
-    z-index: 1;
+  .toolbar .toolbar-content-style {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #333;
+    width: 440px;
+    padding: 1em;
+    text-align: center;
   }
-  .toolbar .dropdown .buttons button {
-    display: block;
-    width: 100%;
+  .toolbar .toolbar-content .close {
+    float: left;
   }
-  .toolbar .dropdown .buttons button:not(:last-child) {
-    border-bottom: 1px solid #07a;
-  }
-  .toolbar .dropdown .buttons button:not(:first-child):not(:last-child) {
-    border-radius: 0;
-  }
-  .toolbar .dropdown .buttons button:first-child {
-    border-radius: 3px 3px 0 0;
-  }
-  .toolbar .dropdown .buttons button:last-child {
-    border-radius: 0 0 3px 3px;
-  }
-  .toolbar .show-dropdown:focus + .buttons {
-    display: block;
+  .toolbar .toolbar-content .form-general {
+    margin: 2em 0;
   }
 
   /**
