@@ -1305,7 +1305,7 @@
     cursor: pointer;
   }
 
-  .content-secondary .m-attachments .icon-cancel {
+  .m-attachments .icon-cancel {
     position: absolute;
     right: .75em;
   }
