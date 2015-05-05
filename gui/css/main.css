@@ -1815,6 +1815,7 @@
     background: #ddd;
   }
   .filter input[type="text"] {
+    height: 35px;
     width: 65%;
     margin-bottom: .25em;
   }
