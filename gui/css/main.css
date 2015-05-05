@@ -1833,6 +1833,7 @@
     width: 50%;
   }
   .filter .options select {
+    font-size: 0.875em;
     float: right;
     width: 100%;
   }
