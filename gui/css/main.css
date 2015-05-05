@@ -131,6 +131,7 @@
     border: none;
     border-radius: 5px;
     padding-right: 5em;
+    height: 35px;
     width: 100%;
   }
   .main-search button[type="submit"] {
@@ -138,6 +139,7 @@
     top: 0;
     right: 0;
     border-radius: 0 5px 5px 0;
+    height: 35px;
     width: 4em;
   }
   .main-search button[type="submit"] .icon-search:before {
@@ -221,6 +223,10 @@
   .logged-in:before {
     font-size: 1.2857em;
     padding-right: 0.25em;
+  }
+  .logged-in i {
+    font-size: 1.4em;
+    margin-right: 0.3em;
   }
   .user-area {
     float: left;
