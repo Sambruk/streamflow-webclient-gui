@@ -529,6 +529,9 @@
     font-size: 1.0714em;
     color: #fff;
   }
+  .issue-banner a, .issue-banner a:active, .issue-banner a:hover {
+    color: #fff;
+  }
 
   /**
    * Due date
