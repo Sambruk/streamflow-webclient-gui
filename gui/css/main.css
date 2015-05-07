@@ -333,13 +333,19 @@
     color: #fff;
     float: left;
     font-size: 1.7143em;
-    padding: 28px 65px 29px 20px;
+    padding: 28px 65px 9px 20px;
     margin: 0;
     width: 200px;
   }
   .functions-header h2 a {
     color: inherit;
     text-decoration: none;
+  }
+  .functions-header h2 .filter {
+    background-color: inherit;
+    color: inherit;
+    font-size: 0.6em;
+    margin-bottom: 0px;
   }
   .functions-header .open-toolbar {
     float: right;
