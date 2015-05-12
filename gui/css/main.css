@@ -434,9 +434,6 @@
   #groupingHeader:first-letter {
     text-transform: uppercase;
   }
-  #priorityHeader::first-letter {
-    visibility: hidden;
-  }
   .caselistItem {
     margin-bottom: 0.3em;
   }
