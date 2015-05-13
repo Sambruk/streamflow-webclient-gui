@@ -10,3 +10,8 @@
 .navigation {
   float: none;
 }
+
+
+.filter::-ms-clear {
+  display: none;
+}
