@@ -517,6 +517,9 @@
     display: table-cell;
     vertical-align: middle;
   }
+  .issue-item .issue-description h4 span.label-list {
+    font-weight: normal;
+  }
   #issue-owner {
     min-width: 200px;
   }
