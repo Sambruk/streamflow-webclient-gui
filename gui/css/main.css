@@ -445,7 +445,6 @@
   .issues-overview {
     margin: 0 auto;
     max-width: 50em; /* 700px */
-    transform: translateY(0);
   }
 
   .issues-overview.ng-hide {
@@ -464,12 +463,38 @@
     font-size: 1.1429em;
     font-weight: bold;
   }
+  .issues-overview h3.fixed {
+    position: fixed;
+    margin-top: 0em;
+    top: 0px;
+    background: #e8e8e8;
+    opacity: 0.95;
+    padding: 5px 0;
+    width: 700px;
+    z-index: 100;
+  }
+  .issues-overview h3 .header {
+    border: none;
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+  }
   .issues-overview h3 .results {
-    float: right;
+    display: inline-block;
+    text-align: right;
+    float: none;
+    width: 29%;
     font-weight: normal;
     font-size: 0.7857em;
     color: #999;
     line-height: 2;
+  }
+  .issues-overview h3 + .empty-placeholder {
+    display: none;
+  }
+  .issues-overview h3.fixed + .empty-placeholder {
+    display: block;
+    height: 20px;
   }
   .issues-overview .show-more {
     text-align: center;
@@ -480,6 +505,7 @@
     max-width: 240px;
     padding: 10px;
   }
+
   .due-date-divider {
     background: url("../i/due-date-divider.png") repeat-x 0 49%;
     color: #999;
