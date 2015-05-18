@@ -2365,6 +2365,11 @@
     display: none;
   }
 
+  .select .chosen-container-single .chosen-single abbr {
+    top: 11px;
+    right: 60px;
+  }
+
 
   /**
    * Pickadate
