@@ -1372,12 +1372,16 @@
    * ------------------------------------------------------
    */
   .m-matched-issue .status,
-  .m-matched-issue .createdon {
+  .m-matched-issue .created-on {
     font-size: .8571em;
     margin-bottom: 0;
   }
   .m-matched-issue .m-box {
     background-color: #fff;
+  }
+  .m-matched-issue .priority{
+    font-size: .8571em;
+    margin-bottom: 0;
   }
 
 
