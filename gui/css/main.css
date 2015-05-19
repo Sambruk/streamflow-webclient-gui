@@ -463,13 +463,13 @@
     font-size: 1.1429em;
     font-weight: bold;
   }
-  .issues-overview h3.fixed {
+  .issues-overview .cases-header.fixed {
     position: fixed;
     margin-top: 0em;
     top: 0px;
     background: #e8e8e8;
     opacity: 0.95;
-    padding: 5px 0;
+    padding: 5px 0 0;
     width: 700px;
     z-index: 100;
   }
@@ -492,9 +492,9 @@
   .issues-overview h3 + .empty-placeholder {
     display: none;
   }
-  .issues-overview h3.fixed + .empty-placeholder {
+  .issues-overview .cases-header.fixed + .empty-placeholder {
     display: block;
-    height: 20px;
+    height: 65px;
   }
   .issues-overview .show-more {
     text-align: center;
