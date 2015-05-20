@@ -2373,6 +2373,9 @@
     top: 11px;
     right: 60px;
   }
+  .chosen-container-single a.chosen-single span {
+  margin-right: 22px;
+}
 
 
   /**
