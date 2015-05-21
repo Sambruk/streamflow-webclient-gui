@@ -2350,9 +2350,7 @@
   .chosen-container-single a.chosen-single {
     padding-right: 4em;
   }
-  .chosen-container-single a.chosen-single span {
-    margin-right: 0px;
-  }
+  
   .chosen-container-active.chosen-with-drop ul.chosen-choices,
   .chosen-container-active.chosen-with-drop a.chosen-single {
     padding-right: 4em;
