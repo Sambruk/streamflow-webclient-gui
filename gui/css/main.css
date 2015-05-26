@@ -129,7 +129,7 @@
   .main-search input[type="search"] {
     background: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     padding-right: 5em;
     height: 35px;
     width: 100%;
@@ -138,7 +138,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 3px 3px 0;
     height: 35px;
     width: 4em;
   }
@@ -1140,7 +1140,7 @@
   .convo-input .upload a,
   .convo-input .upload div {
     background-color: #08c;
-    border-radius: 5px 5px;
+    border-radius: 3px 3px;
     color: #fff;
     display: inline-block;
     font-size: 1.7143em;
@@ -1658,7 +1658,7 @@
   a.btn,
   input.btn {
     background-color: #08c;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #fff;
     display: inline-block;
     padding: 0.25em 0.9em;
@@ -1732,10 +1732,10 @@
     display: block;
   }
   .btn.dropdown + ul li:first-child a {
-    border-radius: 0 5px 0 0;
+    border-radius: 0 3px 0 0;
   }
   .btn.dropdown + ul li:last-child a {
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 3px 3px;
   }
 
   /**
@@ -2112,7 +2112,7 @@
     overflow: hidden;
     display: inline-block;
     padding: 4px 12px;
-    border-radius: 4px;
+    border-radius: 3px;
     background-color: #08c;
     cursor: pointer;
   }
