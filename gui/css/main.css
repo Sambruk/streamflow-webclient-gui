@@ -40,6 +40,7 @@
   .header-body,
   .main-body {
     padding: 0 6em 1em 6em;
+    position: relative;
   }
   .main-body {
       background-color: #e8e8e8;
@@ -97,15 +98,16 @@
    * ------------------------------------------------------
    */
   .client-name {
-    background-color: #141414;
-    float: left;
-    padding: 1em 1em 1.55em;
     text-align: left;
+    margin-top: 1em;
     width: 340px;
   }
   .client-name h1 {
+    color: #141414;
     font-size: 1.2857em;
+    font-weight: bold;
     margin: 0;
+    padding: 0.5em 0;
   }
 
   /**
@@ -115,8 +117,8 @@
   .main-search {
     position: relative;
     display: inline-block;
-    margin-top: 2em;
-    width: 22em;
+    margin-top: 1em;
+    width: 50em;
   }
   .main-search fieldset {
     border: none;
@@ -212,6 +214,14 @@
     margin-bottom: .5em;
   }
 
+  .main-search .filter-dropdown {
+    color: #aaa;
+    position: absolute;
+    top: 0.6em;
+    right: 5em;
+    z-index: 1000;
+  }
+
   /**
    * User area
    * ------------------------------------------------------
@@ -229,7 +239,10 @@
     margin-right: 0.3em;
   }
   .user-area {
-    float: left;
+    padding: inherit;
+    position: absolute;
+    top: 0em;
+    right: 0em;
     width: 100%;
   }
   .user-area a:first-child {
@@ -443,8 +456,8 @@
    * ==========================================================================
    */
   .issues-overview {
-    margin: 0 auto;
-    max-width: 50em; /* 700px */
+    margin: 0 0 0 auto;
+    max-width: 75em; /* 700px */
   }
 
   .issues-overview.ng-hide {
@@ -464,14 +477,14 @@
     font-weight: bold;
   }
   .issues-overview .cases-header.fixed {
-    position: fixed;
+/*    position: fixed;
     margin-top: 0em;
     top: 0px;
     background: #e8e8e8;
     opacity: 0.95;
     padding: 5px 0 0;
     width: 700px;
-    z-index: 100;
+    z-index: 100;*/
   }
   .issues-overview h3 .header {
     border: none;
@@ -582,7 +595,7 @@
     min-height: 5em;
     text-align: center;
     min-width: 12px;
-    width: 2%;
+    min-width: 0.8em;
   }
   .issue-item .due-date span {
     display: block;
@@ -625,7 +638,7 @@
    */
   .issue-item .issue-description {
     padding: 0.2em 0.8em;
-    width: 35em;
+    width: 60em;
   }
   .issue-item .meta,
   .issue-item .creator {
@@ -644,7 +657,7 @@
   .issue-actions {
     font-size: 0.8571em;
     padding: 0.2em 0.2em 0.2em 0.8em;
-    width: 13em;
+    min-width: 13em;
   }
   .issue-actions div:before {
     content: " ";
@@ -2488,6 +2501,16 @@
   .header-body .client-name {
     width: 100%;
   }
+
+  .client-name {
+    padding-top: 2.5em;
+    margin-top: 0em;
+  }
+
+  .user-area {
+    margin-top: 0em;
+    padding-top: 2px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -2497,6 +2520,9 @@
   }
   .header-body {
     margin-bottom: 1em;
+  }
+  .client-name {
+    padding-top: 3em;
   }
   .issue-banner {
     padding: .55em 1em;
