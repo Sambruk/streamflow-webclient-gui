@@ -396,4 +396,19 @@
   content: "\ea56";
 }
 
+.icon-filter:before {
+  content: "\ea5b";
+}
+
+.icon-pie-chart:before {
+  content: "\e99a";
+}
+
+.icon-stats-dots:before {
+  content: "\e99b";
+}
+
+.icon-meter:before {
+  content: "\e9a6";
+}
 

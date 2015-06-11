@@ -42,6 +42,10 @@
     padding: 0 6em 1em 6em;
     position: relative;
   }
+  .header-body {
+    display: flex;
+    flex-flow: row wrap;
+  }
   .main-body {
       background-color: #e8e8e8;
   }
@@ -116,9 +120,8 @@
    */
   .main-search {
     position: relative;
-    display: inline-block;
     margin-top: 1em;
-    width: 50em;
+    flex-grow: 5;
   }
   .main-search fieldset {
     border: none;
@@ -167,12 +170,14 @@
     text-align: left;
     transform: translateY(.25em);
   }
-  .main-search .search-terms.ng-hide {
+  .main-search .search-terms.ng-hide, .main-search .search-filter.ng-hide {
     opacity: 0;
     transform: translateY(-.5em);
   }
   .main-search .search-terms.ng-hide-remove,
-  .main-search .search-terms.ng-hide-add {
+  .main-search .search-terms.ng-hide-add,
+  .main-search .search-filter.ng-hide-remove,
+  .main-search .search-filter.ng-hide-add {
     transition: opacity ease .2s,
                 transform ease .2s;
   }
@@ -217,8 +222,24 @@
   .main-search .filter-dropdown {
     color: #aaa;
     position: absolute;
-    top: 0.6em;
-    right: 5em;
+    top: 0.7em;
+    right: 5.5em;
+    z-index: 1000;
+    font-size: 0.85em;
+  }
+
+  .main-search .filter-dropdown:hover {
+    color: #666;
+  }
+
+  .main-search .search-filter {
+    background-color: #ddd;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    padding: 12px 8px;
+    position: absolute;
+    right: 4em;
+    text-align: left;
+    width: 410px;
     z-index: 1000;
   }
 
@@ -239,14 +260,8 @@
     margin-right: 0.3em;
   }
   .user-area {
-    padding: inherit;
-    position: absolute;
-    top: 0em;
-    right: 0em;
-    width: 100%;
-  }
-  .user-area a:first-child {
-    float: right;
+    padding: 0.8em 0 0 1em;
+    flex-grow: 1;
   }
   .user-area a {
     color: #08c;
@@ -2470,6 +2485,10 @@
     margin: 0 auto;
     width: 100%;
   }
+  .main-search {
+    flex: 1 100%;
+    order: 3;
+  }
   .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -2479,6 +2498,9 @@
 @media screen and (max-width: 1020px) {
   .layout-2 .content-secondary {
     width: 40%;
+  }
+  .user-area {
+    padding: 0.8em 0 0;
   }
 }
 
@@ -2493,26 +2515,10 @@
   .contact {
     max-width: 630px;
   }
-  .main-search {
-    width: 100%;
-    margin-top: 1em;
-    text-align: center;
-  }
-  .header-body .client-name {
-    width: 100%;
-  }
-
-  .client-name {
-    padding-top: 2.5em;
-    margin-top: 0em;
-  }
-
   .user-area {
-    margin-top: 0em;
-    padding-top: 2px;
+    flex-shrink: 10;
   }
 }
-
 @media screen and (max-width: 640px) {
   .header-body,
   .main-body {
@@ -2521,8 +2527,13 @@
   .header-body {
     margin-bottom: 1em;
   }
-  .client-name {
-    padding-top: 3em;
+  .main-search {
+    margin-top: 0;
+  }
+  .user-area {
+    flex: 1 100%;
+    padding: 0;
+    text-align: left;
   }
   .issue-banner {
     padding: .55em 1em;
