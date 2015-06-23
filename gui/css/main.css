@@ -103,8 +103,8 @@
    */
   .client-name {
     text-align: left;
-    margin-top: 1em;
-    width: 340px;
+    margin-top : 1em;
+    flex-grow: 1;
   }
   .client-name h1 {
     color: #141414;
@@ -228,6 +228,10 @@
     font-size: 0.85em;
   }
 
+  .main-search .filter-dropdown.set {
+    color: #00831f;
+  }
+
   .main-search .filter-dropdown:hover {
     color: #666;
   }
@@ -235,7 +239,7 @@
   .main-search .search-filter {
     background-color: #ddd;
     box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
-    padding: 12px 8px;
+    padding: 12px 8px 0;
     position: absolute;
     right: 4em;
     text-align: left;
@@ -243,10 +247,33 @@
     z-index: 1000;
   }
 
+  .main-search .search-filter > * {
+    margin-bottom: 0.8em;
+  }
+
+  .main-search .search-filter .title-divider span {
+    background-color: #ddd;
+  }
+
+  .main-search .search-filter .submit-container {
+    margin-top: 2em;
+  }
+
+  .main-search .search-filter .select.group select, .main-search .search-filter .select.sort select {
+    width: 65%!important;
+  }
+
+  .main-search .search-filter .select.group .group-container, .main-search .search-filter .select.sort .sort-container {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    margin-left: 1em;
+  }
+
   /**
-   * User area
-   * ------------------------------------------------------
-   */
+    * User area
+    * ------------------------------------------------------
+    */
   .logged-in {
     display: block;
     padding: 6px 0;
@@ -541,6 +568,16 @@
     margin: 0 0 0.2em;
   }
   .due-date-divider span {
+    background-color: #eaeaea;
+    padding-right: 5px;
+  }
+  .title-divider {
+    background: url("../i/due-date-divider.png") repeat-x 0 49%;
+    color: #999;
+    font-size: 0.7857em;
+    margin: 0 0 0.2em;
+  }
+  .title-divider span {
     background-color: #eaeaea;
     padding-right: 5px;
   }
@@ -2547,6 +2584,14 @@
   .filter .options {
     float: right;
     width: auto;
+  }
+
+  .main-search .search-filter {
+    width: 330px;
+  }
+
+  .main-search .search-filter .date-container input:nth-of-type(2) {
+    margin-top: 0.5em;
   }
 
   /* Always visible functions menu */
