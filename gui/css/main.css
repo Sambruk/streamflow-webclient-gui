@@ -275,7 +275,7 @@
     * ------------------------------------------------------
     */
   .logged-in {
-    display: block;
+    display: inline-block;
     padding: 6px 0;
   }
   .logged-in:before {
@@ -288,18 +288,41 @@
   }
   .user-area {
     padding: 0.8em 0 0 1em;
+    position: relative;
     flex-grow: 1;
   }
   .user-area a {
     color: #08c;
   }
 
-   /**
-    * Profile edit
-    * TODO replace IDs with classes
-    * TODO create representation in prototype
-    * -----------------------------------------------------
-    */
+  .user-area .user-actions {
+    background-color: #ddd;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    padding: 12px 8px 0;
+    position: absolute;
+    right: 0em;
+    text-align: left;
+    width: 130px;
+    z-index: 1000;
+  }
+
+  .user-area .user-actions.ng-hide-remove,
+  .user-area .user-actions.ng-hide-add {
+    transition: opacity ease .2s,
+    transform ease .2s;
+  }
+
+  .user-area .user-actions ul {
+    list-style: none;
+    margin-left: 1em;
+  }
+
+  /**
+   * Profile edit
+   * TODO replace IDs with classes
+   * TODO create representation in prototype
+   * -----------------------------------------------------
+   */
   #profile-content {
     margin: auto;
     float: none !important;
@@ -2592,6 +2615,10 @@
 
   .main-search .search-filter .date-container input:nth-of-type(2) {
     margin-top: 0.5em;
+  }
+
+  .user-area .user-actions {
+    left: 0em;
   }
 
   /* Always visible functions menu */
