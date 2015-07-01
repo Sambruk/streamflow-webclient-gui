@@ -255,6 +255,10 @@
     background-color: #ddd;
   }
 
+  .main-search .search-filter .date-container input {
+    width: 150px;
+  }
+
   .main-search .search-filter .submit-container {
     margin-top: 2em;
   }
