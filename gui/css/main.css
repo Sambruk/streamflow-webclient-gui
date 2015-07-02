@@ -263,8 +263,20 @@
     margin-top: 2em;
   }
 
+  .main-search .search-filter .select.group > div, .main-search .search-filter .select.sort > div {
+    position: relative;
+    width: 65%;
+    display: inline-block;
+  }
   .main-search .search-filter .select.group select, .main-search .search-filter .select.sort select {
-    width: 65%!important;
+  }
+
+  .main-search .search-filter .select.group a, .main-search .search-filter .select.sort a {
+    position: absolute;
+    top: 1.2em;
+    right: 6.5em;
+    font-size: 0.65em;
+    color: #888;
   }
 
   .main-search .search-filter .select.group .group-container, .main-search .search-filter .select.sort .sort-container {
