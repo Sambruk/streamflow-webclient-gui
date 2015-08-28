@@ -334,6 +334,15 @@
   }
 
   /**
+   * About Streamflow
+   * -----------------------------------------------------
+   */
+  #about-holder {
+     margin: auto;
+     max-width: 600px;
+  }
+
+  /**
    * Profile edit
    * TODO replace IDs with classes
    * TODO create representation in prototype
