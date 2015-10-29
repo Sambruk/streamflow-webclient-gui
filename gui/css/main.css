@@ -732,6 +732,15 @@
     padding: 26px 0;
   }
 
+  .issue-unread  {
+      line-height: 16px;
+      float:right;
+      background-image: url(../i/unread.png);
+      width: 16px;
+      height:16px;
+      background-size: 16px 16px;
+  }
+
   /**
    * Issue details
    * ------------------------------------------------------
