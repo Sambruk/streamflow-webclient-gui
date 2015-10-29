@@ -735,7 +735,8 @@
   .issue-unread  {
       line-height: 16px;
       float:right;
-      background-image: url(../i/unread.png);
+      /*Catharina 93, could not load png from url for some reason*/
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAABAQEBAQEBFRUVERERDQ0NCQkJDQ0NERERERERERERDQ0NDQ0NDQ0NERERERERDQ0NDQ0NDQ0NDQ0NERERERER+UVuoAAAAFXRSTlMAECAwQFBgb3B/gJCfoLDP0N/g7/DU7LR7AAAA9klEQVR4AYXT3Y7qMAxF4e2k5Bz6Uxfq9f6vOpqqE5UQwbr+LhxFW1Kad7rtc5KkwoeKlPhY0sLHFgXwyOqUH8AugNgHvXXbA+AAOfinpv9ErkAFZr20QBEVaAQ31cxh1BVoOU+t5y16BbbBfvs7DzZrgFIAd0kagUhqgTLAbDYDZDWgfoo7QFEPaOJsUh9o5WhVF5xPOR7QB3ZXDois0XrAPEwDDLJwewfmDJJKkTTg1gJzJtWmQ1yBOZsubbhdgTmRdCnHr6jAHIpeKuBWgcOqphW8AniamuwJFzDoreEEATCq0wgQX4fzdXrfxyulJegWS5J+AJ2OLpZ+g1Q6AAAAAElFTkSuQmCC);
       width: 16px;
       height:16px;
       background-size: 16px 16px;
