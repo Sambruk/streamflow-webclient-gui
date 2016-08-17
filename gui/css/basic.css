@@ -336,5 +336,12 @@
     bottom: 3px;
   }
 
-/* END @media all */
+  /**
+   Tools
+  */
+  .clear {
+    clear: both;
+  }
+
+  /* END @media all */
 }

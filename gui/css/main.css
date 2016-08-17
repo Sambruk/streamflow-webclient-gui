@@ -1308,7 +1308,37 @@
     width: 100%;
   }
 
-
+  /**
+   * Sidebar layout
+   * ------------------------------------------------------
+   */
+  .left-sidebar {
+    width: 30%;
+  }
+  .right-sidebar{
+    width: 55%;
+  }
+  .sidebar-top-button {
+    text-align: center;
+    width: 100%;
+  }
+  .sidebar-group-divider {
+    margin-left:-8px;
+    margin-right:-8px;
+    margin-bottom: 12px;
+    width: 105%;
+    background-color: #e8e8e8;
+    height: 10px;
+  }
+  .text-small {
+    font-size: .83em;
+  }
+  .form-name {
+    width: 75%;
+  }
+  .form-icons {
+    float: left;
+  }
 
   /**
    * MODULES
@@ -1333,6 +1363,15 @@
     position: absolute;
     top: 2em;
     right: 4.5em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .m-status .priority-color-collapsed {
+    display: inline-block;
+    position: absolute;
+    right: 0.5em;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -1730,9 +1769,7 @@
    * Module
    * ------------------------------------------------------
    */
-  .m {
-    margin: 0 0 2em;
-  }
+  .m {}
   .m-h {
     margin-bottom: 5px;
     overflow: hidden;
