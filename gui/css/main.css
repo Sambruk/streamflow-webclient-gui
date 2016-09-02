@@ -2604,6 +2604,10 @@
     top: 5px;
   }
 
+  .ui-select-container.select2-container .ui-select-highlight {
+    text-decoration: underline;
+  }
+
   /**
    * ANCHOR
    * ==========================================================================
