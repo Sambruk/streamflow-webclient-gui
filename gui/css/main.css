@@ -2622,8 +2622,14 @@
   }
 
   /*Fixing bug with multiple select, see https://github.com/angular-ui/ui-select/issues/533*/
-  .ui-select-multiple input.ui-select-search:not(.ng-touched) {
+  .ui-select-multiple.empty-select li.select2-search-field:not(.ng-touched),
+  .ui-select-multiple.empty-select input.ui-select-search:not(.ng-touched){
     width: 100% !important;
+  }
+
+  .select2-choices .select2-search-field, .form-group .ui-select-container .select2-choices .select2-search-field input{
+    max-width: 100%;
+    margin: auto;
   }
 
   /**
