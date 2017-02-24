@@ -688,7 +688,7 @@
    * ------------------------------------------------------
    */
   .issue-item .due-date {
-    background-color: #afafaf;
+    background-color: #666666;
     border-radius: 5px 0 0 5px;
     color: #fff;
     line-height: 1.1;
@@ -762,6 +762,11 @@
 
   .issue-closed {
     color: grey;
+  }
+
+  .issue-closed-color-dim {
+    opacity: 0.3;
+    color: #ffffff;
   }
 
 
@@ -858,7 +863,7 @@
   }
 
   .issue-body .due-date {
-    background-color: #afafaf;
+    background-color: #666666;
     border-radius: 5px 0 0 5px;
     color: #fff;
     line-height: 1.1;
@@ -2515,7 +2520,7 @@
   .chosen-container-single a.chosen-single {
     padding-right: 4em;
   }
-  
+
   .chosen-container-active.chosen-with-drop ul.chosen-choices,
   .chosen-container-active.chosen-with-drop a.chosen-single {
     padding-right: 4em;
