@@ -743,6 +743,64 @@
   }
 
   /**
+   * Issue data icons
+   */
+
+  .issue-has-attachments {
+    background: url("../i/attachements.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  .issue-has-contacts {
+    background: url("../i/contacts.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  .issue-has-conversation {
+    background: url("../i/conversation.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  .issue-has-unread-conversation {
+    background: url("../i/conversation-unread.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  .issue-has-submitted-forms {
+    background: url("../i/form.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  .issue-has-unread-forms {
+    background: url("../i/form-unread.png") no-repeat 50% 50%;
+    line-height: 16px;
+    float:right;
+    width: 16px;
+    height:16px;
+    background-size: 16px 16px;
+  }
+
+  /**
    * Issue details
    * ------------------------------------------------------
    */
