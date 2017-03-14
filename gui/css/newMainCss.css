@@ -1,0 +1,171 @@
+@media screen, projection {
+    /*Based style*/
+    html {
+        background-color: #f7f9fa;
+    }
+
+    .body {
+        background-color: #f7f9fa;
+    }
+
+    .main-body {
+        background-color: #f7f9fa;
+    }
+
+    /*Header New Stylesheets*/
+    .header{
+        border-top: none;
+        background-color: #343d5c;
+    }
+    .header-body{
+        padding: 24px 52px 24px 35px;
+    }
+    .header-body .logo{
+        background-image: url("../i/icon_logo.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 193px;
+        height: 52px;
+    }
+    .client-name{
+        margin-top: 0;
+    }
+
+    /*Search Field*/
+    .main-search{
+        margin-top: 0;
+    }
+    .main-search form{
+        height: 100%;
+    }
+    .main-search form fieldset{
+        height: 100%;
+    }
+    .main-search input[type=search]{
+        height: 100%;
+        background-color: #262b40;
+        padding: 23px 99px 23px 25px;
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: #9395a0;
+    }
+    .icon-search:before{
+        font-size: 22px;
+    }
+    .main-search input[type=search]::-webkit-input-placeholder{     /*placeholder styles*/
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: #9395a0;
+    }
+    .main-search input[type=search]::-moz-placeholder{
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: #9395a0;
+    }
+    .main-search input[type=search]:-moz-placeholder{
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: #9395a0;
+    }
+    .main-search input[type=search]:-ms-input-placeholder{
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: #9395a0;
+    }
+    .main-search button[type="submit"]{
+        background-color: #03d7a2;
+        width: 58px;
+        height: 100%;
+    }
+    .main-search button[type="submit"]:hover{
+        background-color: #fff;
+    }
+    .main-search button[type="submit"]:hover::before{
+        color: #03d7a2;
+    }
+    
+    /*Filter in Form*/
+    .main-search .icon-filter{
+        background-image: url(../i/icon_filter.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 14px;
+        width: 18px;
+        top: 23px;
+        right: 75px;
+        transition: background .2s;
+    }
+    .main-search .icon-filter:hover{
+        background-image: url(../i/icon_filter_hover.png);
+    }
+    .main-search .icon-filter:before{
+        display: none;
+    }
+
+    /*User Area*/
+    .user-area a{
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .logged-in i{
+        margin-right: 0;
+        margin-left: 10px;
+        font-size: 18px;
+        background-image: url("../i/icon_profile.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .user-area .user-actions{
+        background-color: #03d7a2;
+        width: 231px;
+    }
+
+    /*Issue Banner*/
+    .issue-banner{
+        min-height: 41px;
+        background-color: #03d7a2;
+    }
+    .issue-banner h2{
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 41px;
+        text-align: center;
+    }
+
+    /*Search Filter*/
+    .select-wrapp{
+        width: 50%;
+        float: left;
+    }
+    .main-search .search-filter{
+        background-color: #fff;
+        padding: 17px 33px 29px 33px;
+        width: 690px;
+        right: 4.1em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 4px 21px rgba(0,0,0,.2);
+        overflow: hidden;
+    }
+    .title-divider {
+        background: none;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .main-search .search-filter .title-divider span{
+        background: none;
+    }
+}
