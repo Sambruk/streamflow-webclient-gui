@@ -1,15 +1,15 @@
 @media screen, projection {
     /*Based style*/
     html {
-        background-color: #f7f9fa;
+        background-color: #f8f9fb;
     }
 
     .body {
-        background-color: #f7f9fa;
+        background-color: #f8f9fb;
     }
 
     .main-body {
-        background-color: #f7f9fa;
+        background-color: #f8f9fb;
     }
 
     /*Header New Stylesheets*/
@@ -470,7 +470,7 @@
         -webkit-border-radius: 5px;
         border-radius: 5px;
         background:#04d7a6;
-        box-shadow:0 1px 1px #fff inset;
+        box-shadow:0px 1px 1px #fff inset;
     }
 
     .select2-results::-webkit-scrollbar-thumb:hover{
@@ -537,7 +537,7 @@
         -webkit-border-radius: 5px;
         border-radius: 5px;
         background:#04d7a6;
-        box-shadow:0 1px 1px #fff inset;
+        box-shadow:0px 1px 1px #fff inset;
     }
 
     .chosen-container .chosen-results::-webkit-scrollbar-thumb:hover{
@@ -551,19 +551,133 @@
         height: 0;
     }
 
+    /*MENU*/
 
+    .functions-header{
+        background-color: #fff;
+    }
+    .functions-menu{
+        margin-left: -236px;
+        width: 333px;
+    }
+    .functions-menu.open .sub-categories{
+        width: 333px;
+    }
+    .functions-menu .functions-header .open-toolbar{
+        position: absolute;
+        padding-top: 0;
+        background-color: #fff;
+        right: 20px;
+        top: 15px;
+    }
+    .functions-menu .functions-header .open-toolbar .open-toolbar__item{
+        position: absolute;
+        left: 12px;
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #04daa5;
+        transition: all .2s;
+    }
 
+    .functions-menu .functions-header .open-toolbar .open-toolbar__item:first-of-type{
+        top: 18px;
+    }
 
+    .functions-menu .functions-header .open-toolbar .open-toolbar__item:nth-of-type(2){
+        top: 26px;
+    }
 
+    .functions-menu .functions-header .open-toolbar .open-toolbar__item:nth-of-type(3){
+        bottom: 17px;
+    }
 
+    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:first-of-type{
+        top: 19px;
+    }
 
+    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:nth-of-type(2){
+        top: 26px;
+    }
 
+    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:nth-of-type(3){
+        bottom: 18px;
+    }
 
+    .functions-header h2{
+        background-color: #fff;
+        color: #282a32;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
 
+    .functions-header h2 a:hover{
+        color: #282a32;
+    }
 
+    .functions-header h2 .container{
+        background-color: #fff;
+        width: 87%;
+    }
 
+    .functions-header h2 .filter{
+        border: 1px solid #eaeaea;
+        border-radius: 3px;
+        margin-top: 18px;
+    }
+    .sub-category{
+        width: 100%;
+        background-color: #fff;
+    }
 
+    .sub-category h3{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: #282a32;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
 
+    .sub-category a{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #282a32;
+        text-transform: none;
+        height: 34px;
+        line-height: 34px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding-left: 16px;
+        padding-right: 14px;
+    }
 
+    .sub-category a span{
+        display: inline-block;
+        float: right;
+        width: 40px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 15px;
+        background-color: #03d7a2;
+        margin-top: 4px;
+        color: #fff;
+    }
+
+    .sub-category a:hover{
+        background-color: #f4f6f7;
+        color: #282a32;
+    }
+    .sub-category a:hover span{
+        color: #fff;
+        background-color: #03d7a2;
+    }
 
 }
