@@ -20,6 +20,8 @@
 
     .header-body {
         padding: 24px 52px 24px 35px;
+        display: block;
+        width: 100%;
     }
 
     .header-body .logo {
@@ -32,17 +34,25 @@
 
     .client-name {
         margin-top: 0;
+        display: block;
+        float: left;
+        margin-right: 5%;
+        width: 193px
     }
 
     /*Search Field*/
     .main-search {
-        margin-top: 0;
+        display: block;
+        margin: 0 auto;
+        width: 45%;
     }
 
     .main-search form {
         height: 100%;
     }
-
+    .main-search form, .main-search form fieldset{
+        position: relative;
+    }
     .main-search form fieldset {
         height: 100%;
     }
@@ -119,6 +129,15 @@
     }
 
     /*User Area*/
+
+    .user-area{
+        position: absolute;
+        margin-top: 0;
+        display: block;
+        right: 25px;
+        top: 25px;
+        width: 255px;
+    }
     .user-area a {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -127,6 +146,7 @@
         color: #fff;
         text-transform: uppercase;
         text-decoration: none;
+        display: block;
     }
 
     .logged-in i {
@@ -147,6 +167,7 @@
     .issue-banner {
         min-height: 41px;
         background-color: #03d7a2;
+        margin-bottom: 0px;
     }
 
     .issue-banner h2 {
@@ -557,22 +578,37 @@
         background-color: #fff;
     }
     .functions-menu{
-        margin-left: -236px;
+        margin-left: -333px;
         width: 333px;
+        position: absolute;
+        top: 80px;
+        z-index: 20;
     }
     .functions-menu.open .sub-categories{
         width: 333px;
     }
-    .functions-menu .functions-header .open-toolbar{
-        position: absolute;
-        padding-top: 0;
-        background-color: #fff;
-        right: 20px;
-        top: 15px;
+    .navigation .add-new-issue{
+        display: block !important;
+        margin-bottom: 0;
     }
-    .functions-menu .functions-header .open-toolbar .open-toolbar__item{
+    .navigation .open-toolbar,
+    .navigation .add-new-issue{
+        position: relative;
+        z-index: 50;
+        display: block;
+        padding-top: 0;
+        background-color: transparent;
+        width: 56px;
+        height: 56px;
+        margin: 15px 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        transition: all .2s;
+    }
+    .navigation .open-toolbar .open-toolbar__item{
         position: absolute;
-        left: 12px;
+        left: 15px;
         display: block;
         width: 25px;
         height: 3px;
@@ -580,29 +616,55 @@
         transition: all .2s;
     }
 
-    .functions-menu .functions-header .open-toolbar .open-toolbar__item:first-of-type{
-        top: 18px;
-    }
-
-    .functions-menu .functions-header .open-toolbar .open-toolbar__item:nth-of-type(2){
-        top: 26px;
-    }
-
-    .functions-menu .functions-header .open-toolbar .open-toolbar__item:nth-of-type(3){
-        bottom: 17px;
-    }
-
-    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:first-of-type{
+    .navigation .open-toolbar .open-toolbar__item:first-of-type{
         top: 19px;
     }
 
-    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:nth-of-type(2){
-        top: 26px;
+    .navigation .open-toolbar .open-toolbar__item:nth-of-type(2){
+        top: 27px;
     }
 
-    .main .navigation .functions-menu .functions-header .open-toolbar:hover .open-toolbar__item:nth-of-type(3){
-        bottom: 18px;
+    .navigation .open-toolbar .open-toolbar__item:nth-of-type(3){
+        top: 35px;
     }
+
+    .navigation .open-toolbar:hover .open-toolbar__item:first-of-type{
+        top: 21px;
+    }
+
+    .navigation .open-toolbar:hover .open-toolbar__item:nth-of-type(2){
+        top: 27px;
+    }
+
+    .navigation .open-toolbar:hover .open-toolbar__item:nth-of-type(3){
+        top: 33px;
+    }
+
+    .navigation .add-new-issue .add-new-issue__item{
+        position: absolute;
+        left: 15px;
+        top: 27px;
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #45c8dc;
+    }
+
+    .navigation .add-new-issue .add-new-issue__item:nth-of-type(2){
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .navigation .open-toolbar:hover, .navigation .add-new-issue:hover{
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 3px 0 0 #eaeaea;
+        -moz-box-shadow: 0px 3px 0 0 #eaeaea;
+        box-shadow: 0px 3px 0 0 #eaeaea;
+    }
+
 
     .functions-header h2{
         background-color: #fff;
@@ -614,6 +676,12 @@
         letter-spacing: 3px;
         width: 100%;
         margin-bottom: 5px;
+        padding-left: 23px;
+        padding-right: 0;
+    }
+
+    .functions-header h2 a{
+        margin-left: 74px;
     }
 
     .functions-header h2 a:hover{
@@ -623,16 +691,17 @@
     .functions-header h2 .container{
         background-color: #fff;
         width: 87%;
+        margin-top: 25px;
     }
 
     .functions-header h2 .filter{
         border: 1px solid #eaeaea;
         border-radius: 3px;
-        margin-top: 18px;
     }
     .sub-category{
         width: 100%;
         background-color: #fff;
+        border: none;
     }
 
     .sub-category h3{
@@ -680,4 +749,164 @@
         background-color: #03d7a2;
     }
 
+    /*body title*/
+
+    .issues-overview{
+        margin: 0;
+        max-width: none;
+    }
+
+    .issues-overview h3 span{
+        background-color: transparent;
+    }
+    .issues-overview h3 .header{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 7px auto 0;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 33px;
+    }
+
+    .issues-overview h3 .results{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 7px;
+    }
+
+    .due-date-divider{
+        margin: 14px auto;
+    }
+
+    .due-date-divider span {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 140px;
+        background-color: #f8f9fb;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 18px;
+        text-align: center;
+        color: #a1a3a8;
+    }
+
+    /*search result*/
+
+    .issue-item .issue-description{
+        width: 57em;
+    }
+
+    .issue-actions{
+        min-width: 16em;
+    }
+
+    .issue-item .due-date{
+        background-color: transparent;
+    }
+
+    .issue-item .creator, .issue-item .meta{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: #282a32;
+    }
+
+    .issue-item .meta{
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .issue-actions .updated{
+        background-color: #03d7a2;
+        padding: 6px 27px;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .issue-actions span{
+        text-align: center;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .issue-item.overdue .due-date{
+        background-color: #e44e4a;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .issue-item .due-date span{
+        font-size: 21px;
+    }
+
+    .issue-item:hover{
+        background-color: transparent;
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .client-name{
+        display: block;
+        margin: 5px auto 15px;
+        float: none;
+    }
+    .main-search{
+        width: 90%;
+    }
+    .user-area{
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+
+
+
+
