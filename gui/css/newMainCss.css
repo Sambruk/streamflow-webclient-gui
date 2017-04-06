@@ -1536,7 +1536,10 @@
     }
 
     .select .select2-container .select2-choice .select2-arrow b {
-        background: url("../i/icon_arrow.png") no-repeat 10% 50%;
+        background-image: url("../i/icon_arrow.png") !important;
+        background-position: 10% 50% !important;
+        background-repeat: no-repeat !important;
+        background-size: 10px !important;
     }
 
     .select .select2-container .select2-choice .select2-arrow {
