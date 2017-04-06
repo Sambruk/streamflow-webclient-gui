@@ -1218,7 +1218,7 @@
     }
 
     .note-posted-by {
-        background: transparent;
+        background: none !important;
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 11px;
@@ -1282,8 +1282,9 @@
     }
 
     .chosen-container-active.chosen-with-drop a.chosen-single, .chosen-container-single a.chosen-single {
-        background-image: url("../i/icon_arrow.png");
-        background-position: 98% 50%;
+        background-image: url("../i/icon_arrow.png") !important;
+        background-position: 95% 50%;
+        background-size: 10px !important;
     }
 
     .select .chosen-container .chosen-results li.highlighted {

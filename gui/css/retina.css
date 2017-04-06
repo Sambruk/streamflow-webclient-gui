@@ -11,28 +11,28 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-  /* Custom/Chosen select element */
-  .chosen-container-active.chosen-with-drop a.chosen-single,
-  .chosen-container-single a.chosen-single,
-  .select select:not([multiple]) {
-    background-image: url("../i/custom-select@2x.png");
-    background-size: 50px 35px;
-  }
+  /*!* Custom/Chosen select element *!*/
+  /*.chosen-container-active.chosen-with-drop a.chosen-single,*/
+  /*.chosen-container-single a.chosen-single,*/
+  /*.select select:not([multiple]) {*/
+    /*background-image: url("../i/custom-select@2x.png");*/
+    /*background-size: 50px 35px;*/
+  /*}*/
 
-  /* Custom file upload element */
-  .customfile-button {
-    background-image: url("../i/icon-camera@2x.png");
-    background-size: 24px;
-  }
+  /*!* Custom file upload element *!*/
+  /*.customfile-button {*/
+    /*background-image: url("../i/icon-camera@2x.png");*/
+    /*background-size: 24px;*/
+  /*}*/
 
   /* Notes listing */
-  .input-note input[type="text"] {
-    background-image: url("../i/arrow-blue-left@2x.png");
-    background-size: 8px 12px;
-  }
-  .note-posted-by {
-    background-image: url("../i/arrow-grey-right@2x.png");
-    background-size: 8px 15px;
-  }
+  /*.input-note input[type="text"] {*/
+    /*background-image: url("../i/arrow-blue-left@2x.png");*/
+    /*background-size: 8px 12px;*/
+  /*}*/
+  /*.note-posted-by {*/
+    /*background-image: url("../i/arrow-grey-right@2x.png");*/
+    /*background-size: 8px 15px;*/
+  /*}*/
 
 }
