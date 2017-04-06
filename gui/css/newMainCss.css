@@ -1583,8 +1583,13 @@
         height: inherit;
     }
 
+    .m-c .convo-li{
+        min-height: 80px;
+    }
+
     .convo-status [class*=icon-], .m .action-btn {
         border: none;
+        margin-right: 5px;
     }
 
     .btn.inactive, input.btn.inactive {
