@@ -1129,6 +1129,17 @@
     .m-c ul li a{
         display: inline-block;
     }
+
+    .m-c ul:first-child li{
+        position: relative;
+    }
+
+    .m-c ul:first-child li .action-btn{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
     .section-item.sel, .section-item.sel a {
         color: #03d7a2;
     }
@@ -1186,7 +1197,9 @@
         padding: 0 15px 0 0;
         margin-bottom: 5px;
         border: none;
-
+        overflow: visible;
+        position: relative;
+        clear: both;
     }
 
     .m-c .zebra-list a, .convo-input .zebra-list a, .zebra-list a{
@@ -1197,6 +1210,12 @@
         margin-left: 5px;
         float: left;
         border: none;
+    }
+
+    .m-c .zebra-list li .delete{
+        position: absolute;
+        top: 6px;
+        right: 5px;
     }
 
     .zebra-list .icon-attach{
@@ -1666,6 +1685,7 @@
 
     .caselog-filter-length .caselog-filter{
         float: left;
+        cursor: pointer;
     }
 
     .m-status .priority-color-collapsed{
