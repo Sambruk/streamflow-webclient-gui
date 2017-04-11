@@ -292,7 +292,7 @@
         font-size: 15px;
         font-weight: 600;
         line-height: 41px;
-        text-align: center;
+        text-align: left;
     }
 
     /*Search Filter*/
@@ -857,6 +857,8 @@
         width: 100%;
         background-color: #fff;
         border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .sub-category h3 {
@@ -866,6 +868,15 @@
         color: #282a32;
         letter-spacing: 1px;
         text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .sub-category ul{
+        margin-top: 1px;
+    }
+
+    .sub-category li{
+        margin-bottom: 1px;
     }
 
     .sub-category a {
@@ -907,6 +918,11 @@
 
     /*body title*/
 
+    .cases-header{
+        position: relative;
+    }
+
+
 
     .issues-overview {
         margin: 0;
@@ -929,10 +945,11 @@
     }
 
     .issues-overview h3 .results {
+        position: absolute;
+        top: 5px;
+        right: 5px;
         display: block;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto 7px;
+        /*width: 100%;*/
     }
 
     .due-date-divider {
@@ -944,13 +961,13 @@
         padding: 0;
         display: block;
         width: 140px;
-        background-color: #f8f9fb;
+        background-color: transparent;
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
         font-weight: normal;
         line-height: 18px;
         text-align: center;
-        color: #a1a3a8;
+        color: transparent;
     }
 
     /*search result*/
@@ -976,6 +993,15 @@
         background-color: #fff;
     }
 
+    .issue-item h4{
+        font-size: 15px;
+        overflow: hidden;
+    }
+
+    .issue-item .issue-description h4 span.label-list{
+        display: ;
+    }
+
     .issue-item .issue-description {
         width: 69em;
         min-height: 40px;
@@ -992,7 +1018,7 @@
 
     .issue-item .creator, .issue-item .meta {
         font-family: Roboto, Helvetica, Arial, sans-serif;
-        font-weight: bold;
+        font-weight: 400;
         font-size: 15px;
         color: #282a32;
     }
@@ -1097,6 +1123,7 @@
     }
 
     .participants .add-participant {
+        padding: 0;
         background-color: transparent !important;
         float: none;
 
@@ -1106,8 +1133,10 @@
         color: #03d7a2;
         text-transform: uppercase;
         background-color: transparent;
-        margin: 0;
+        margin-top: 10px;
+        margin-left: 0;
         float: none;
+        padding: 0;
 
     }
 
@@ -1122,6 +1151,7 @@
         color: #282a32;
         text-transform: uppercase;
         margin-top: 5px;
+        padding-left: 0;
     }
 
     .m h3{
@@ -1562,7 +1592,7 @@
 
     .left, .right {
         font-family: Roboto, Helvetica, Arial, sans-serif;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 18px;
         color: #282a32;
     }
@@ -1573,6 +1603,10 @@
         font-size: 13px;
         line-height: 18px;
         text-transform: uppercase;
+    }
+
+    .collapsedCaseData .left-sidebar{
+        text-transform: capitalize;
     }
 
     .right-sidebar {
