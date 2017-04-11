@@ -999,7 +999,7 @@
     }
 
     .issue-item .issue-description h4 span.label-list{
-        display: ;
+        display: block;
     }
 
     .issue-item .issue-description {
