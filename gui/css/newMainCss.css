@@ -1630,6 +1630,14 @@
         margin-left:  5px;
     }
 
+    .contact-input .custom-col-size-small{
+        width: 15%;
+    }
+
+    .contact-input .custom-col-size-medium{
+        width: 35%;
+    }
+
     .contact-no-name{
         font-weight: 600;
         font-family: Roboto, Helvetica, Arial, sans-serif;
