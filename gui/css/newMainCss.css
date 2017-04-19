@@ -1804,8 +1804,8 @@
     .caselog-filter-length .caselog-filter {
         float: left;
         cursor: pointer;
-        margin-right: 10%;
-        min-width: 137px;
+        margin-right: 9%;
+        min-width: 120px;
     }
 
     .m-status .priority-color-collapsed {
@@ -2143,6 +2143,10 @@
         width: 90%;
         margin: 0 auto;
         padding-left: 50px;
+    }
+
+    .caselog-filter-length .caselog-filter {
+        margin-right: 2%;
     }
 }
 
