@@ -2120,6 +2120,16 @@
         display: inline-block;
     }
 
+    .m-c .case-note {
+        padding: 10px 10px;
+        font-size: 13px;
+        float: right;
+    }
+
+    .m-c .case-note-edit {
+        color: #03d7a2;
+    }
+
 }
 
 @media screen and (max-width: 1500px) {
