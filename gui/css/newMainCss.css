@@ -1178,6 +1178,21 @@
 
     }
 
+    .participants .add-participant__item-cancel {
+        font-weight: initial;
+        font-size: initial;
+        color: #fff;
+        line-height: normal;
+        border-radius: 4px;
+        padding: .25em .9em;
+    }
+
+    .participants .add-participant__item-cancel:hover {
+        background-color: transparent;
+        box-shadow: none;
+        color: #03d7a2;
+    }
+
     .participants .icon-cancel:active, .participants .icon-cancel:focus, .participants .icon-cancel:hover {
         color: #fff;
     }
