@@ -963,8 +963,6 @@
 
     /*search result*/
     .icon-wrapp {
-        float: right;
-        clear: both;
         margin-top: 15px;
     }
 
@@ -994,8 +992,58 @@
     }
 
     .issue-item .issue-description {
+        overflow: hidden;
         width: 69em;
         min-height: 40px;
+    }
+
+    .issue-item .issue-description .issue-description__left-part {
+        float: left;
+        width: 60%;
+    }
+
+    .issue-description-left-part__item {
+        text-align: left;
+        clear: both;
+        float: left;
+    }
+
+    .issue-description__headline {
+    }
+
+    .issue-description__label-list {
+    }
+
+    .issue-description__creator {
+    }
+
+    .issue-item .issue-description .issue-description__right-part {
+        float: right;
+        width: 40%;
+    }
+
+    .issue-description-right-part__item {
+        text-align: right;
+        clear: both;
+        float: right;
+    }
+
+    .issue-description__meta {
+    }
+
+    .issue-description__type {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #a1a3a8;
+    }
+
+    .issue-description__assigned {
+    }
+
+    .issue-description__icon-wrapp {
+        clear: both;
+        margin-top: 5px;
     }
 
     .issue-actions div {
@@ -1061,12 +1109,11 @@
     }
 
     .issue-list .ng-isolate-scope {
-        width: 61%;
+        width: 71%;
         margin: 60px auto;
     }
 
     .issue-item .meta {
-        float: right;
         margin-left: 25px;
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 200;
@@ -1074,12 +1121,11 @@
         color: #a1a3a8;
     }
 
-    .issue-description .ng-scope {
-        float: right;
-    }
-
     .issue-description .assigned {
-        float: none;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #a1a3a8;
         display: inline-block;
     }
 
@@ -2162,7 +2208,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .client-name {
         display: block;
         margin: 5px auto 15px;
@@ -2191,6 +2237,7 @@
 
     .issue-item {
         margin: 0 0 3px 0;
+        min-width: 700px;
     }
 
     .ng-isolate-scope {
@@ -2199,6 +2246,7 @@
 
     .issue-list .ng-isolate-scope {
         width: 100%;
+        overflow-x: auto;
     }
 
     .main-body {
@@ -2219,6 +2267,12 @@
         width: 90%;
         margin: 10px auto;
         padding: 0;
+    }
+
+    .issue-item .issue-description .issue-description__right-part,
+    .issue-item .issue-description .issue-description__left-part {
+        float: none;
+        width: 100%;
     }
 
     .content-primary .single-issue:first-child {
