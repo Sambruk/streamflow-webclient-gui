@@ -1876,11 +1876,14 @@
         min-width: 130px;
     }
 
+    .m-status .priority-text {
+        margin-right: 25px;
+    }
+
     .m-status .priority-color-collapsed {
         width: 13px;
         height: 13px;
         top: 5px;
-        right: 13%;
         position: absolute;
     }
 
