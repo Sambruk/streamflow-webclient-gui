@@ -412,6 +412,7 @@
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
+        padding-right: 48px;
         height: 32px;
         background-color: #f4f6f7;
         cursor: pointer;
@@ -689,7 +690,7 @@
 
     .icon-cancel__select {
         position: absolute;
-        top: 57%;
+        top: 35px;
         right: 9%;
     }
 
@@ -720,6 +721,11 @@
 
     .chosen-container-single .chosen-search input[type=text] {
         border-radius: 4px;
+        background-color: #fff;
+    }
+
+    .chosen-container-single .chosen-search {
+        background-color: #fff;
     }
 
     .chosen-container .chosen-results::-webkit-scrollbar {
@@ -1289,7 +1295,9 @@
 
     .m-c:first-child ul:first-child li {
         position: relative;
+        min-height: 100px;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .m-c ul:first-child li .action-btn {
@@ -1305,7 +1313,7 @@
     .convo-status .icon-history {
         margin: 0 15px 0 0 !important;
         padding: 0 !important;
-        width: 23px;
+        width: 26px;
         height: 32px;
     }
 
@@ -1385,6 +1393,13 @@
         -webkit-box-shadow: 0 2px 1px 0 #eaeaea;
         -moz-box-shadow: 0 2px 1px 0 #eaeaea;
         box-shadow: 0 2px 1px 0 #eaeaea;
+    }
+
+    .issue-body div.text {
+        overflow: hidden;
+        text-overflow: clip;
+        width: 100%;
+        word-break: break-all;
     }
 
     .zebra-list {
@@ -1472,6 +1487,11 @@
         overflow: hidden;
     }
 
+    .note-body p:last-child {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
     .form-sections {
         border-bottom: 1px solid #eaeaea;
     }
@@ -1487,7 +1507,8 @@
     textarea {
         min-width: 250px;
         max-width: 100%;
-        min-height: 50px;
+        min-height: 100px;
+        overflow-x: hidden;
     }
 
     .caselog-filter {
@@ -1644,7 +1665,8 @@
         margin-left: -30px;
         margin-right: 0;
         margin-bottom: 12px;
-        width: 114%;
+        width: 110%;
+        width: calc(100% + 60px);
         background-color: #eaeaea;
         height: 1px;
     }
@@ -1661,7 +1683,7 @@
     .m-c li,
     .convo-li {
         /*overflow-y: auto;*/
-        max-height: 132px;
+        /*max-height: 132px;*/
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
@@ -1794,6 +1816,7 @@
 
     .right-sidebar ul .icon-attach {
         font-weight: 600;
+        margin-right: 5px;
     }
 
     .right-sidebar ul a {
@@ -1844,7 +1867,7 @@
     }
 
     .select2-drop {
-        height: 270px;
+        height: 260px;
         overflow: hidden;
     }
 
@@ -2032,6 +2055,13 @@
 
     .note-meta .m-attachments .icon-attach {
         color: #03d7a2;
+    }
+
+    .m-attachments li a:first-child {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 50px;
     }
 
     .convo-status {
@@ -2287,6 +2317,7 @@
 
     .m-convos li .block-link {
         display: inline-block;
+        word-break: break-all;
     }
 
     .m-convos li .block-link:hover {
