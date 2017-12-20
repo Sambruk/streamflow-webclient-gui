@@ -1057,6 +1057,10 @@
         width: 60%;
     }
 
+    .issue-description--unread {
+        font-weight: 700;
+    }
+
     .issue-description-left-part__item {
         text-align: left;
         clear: both;
@@ -1117,7 +1121,6 @@
 
     .issue-item .creator, .issue-item .meta {
         font-family: Roboto, Helvetica, Arial, sans-serif;
-        font-weight: 400;
         font-size: 15px;
         color: #282a32;
     }
