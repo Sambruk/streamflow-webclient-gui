@@ -1875,7 +1875,11 @@
     }
 
     .m .select2-results {
-        max-height: 100%;
+        max-height: 270px;
+    }
+
+    .select2-search + .select2-results {
+        max-height: 240px;
     }
 
     .select2-results li {
