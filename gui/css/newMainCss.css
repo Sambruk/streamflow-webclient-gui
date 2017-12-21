@@ -1270,6 +1270,10 @@
         padding-left: 0;
     }
 
+    .m-c h2 {
+        display: block;
+    }
+
     .m h3 {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: normal;
@@ -1512,6 +1516,7 @@
         max-width: 100%;
         min-height: 100px;
         overflow-x: hidden;
+        resize: vertical;
     }
 
     .caselog-filter {
