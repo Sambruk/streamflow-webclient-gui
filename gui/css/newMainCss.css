@@ -1916,7 +1916,7 @@
     }
 
     .select2-results li {
-        max-height: inherit;
+        /*max-height: inherit;*/
     }
 
     .select .select2-drop-active .select2-results li,
