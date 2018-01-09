@@ -805,6 +805,15 @@
         background-size: 16px 16px;
     }
 
+    .issue-secret {
+        background: url("../i/lock.png") no-repeat 50% 50%;
+        line-height: 16px;
+        float:right;
+        width: 16px;
+        height:16px;
+        background-size: 16px 16px;
+    }
+
     /**
      * Issue details
      * ------------------------------------------------------

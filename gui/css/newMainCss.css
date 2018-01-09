@@ -1028,7 +1028,8 @@
     .issue-has-contacts,
     .issue-has-unread-forms,
     .issue-has-contacts,
-    .issue-has-unread-conversation {
+    .issue-has-unread-conversation,
+    .issue-secret {
         margin-left: 5px;
     }
 
