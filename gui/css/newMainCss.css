@@ -1048,9 +1048,14 @@
     }
 
     .issue-item .issue-description {
-        overflow: hidden;
         width: 69em;
         min-height: 40px;
+    }
+
+    .issue-item .issue-description:after {
+        content: '';
+        clear: both;
+        display: block;
     }
 
     .issue-item .issue-description .issue-description__left-part {
