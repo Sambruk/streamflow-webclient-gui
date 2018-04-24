@@ -835,6 +835,10 @@
         color: grey;
     }
 
+    .issue-closed h4{
+        text-decoration: line-through
+    }
+
     .issue-closed-color-dim {
         opacity: 0.3;
         color: #ffffff;
