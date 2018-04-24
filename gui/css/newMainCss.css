@@ -402,7 +402,7 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 12px;
         font-weight: 600;
-        color: #a1a3a8;
+        color: #707275;
         text-transform: uppercase;
         margin-top: 17px;
         display: block;
@@ -590,7 +590,7 @@
         font-size: 15px;
         font-weight: 600;
         line-height: 57px;
-        color: #a1a3a8;
+        color: #707275;
         text-transform: uppercase;
         float: right;
         width: 46%;
@@ -1099,7 +1099,7 @@
         font-family: Roboto,Helvetica,Arial,sans-serif;
         font-weight: 200;
         font-size: 14px;
-        color: #a1a3a8;
+        color: #707275;
     }
 
     .issue-description__creator {
@@ -1123,7 +1123,7 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 200;
         font-size: 14px;
-        color: #a1a3a8;
+        color: #707275;
     }
 
     .issue-description__assigned {
@@ -1205,14 +1205,14 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 200;
         font-size: 14px;
-        color: #a1a3a8;
+        color: #707275;
     }
 
     .issue-description .assigned {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 200;
         font-size: 14px;
-        color: #a1a3a8;
+        color: #707275;
         display: inline-block;
     }
 
@@ -1325,7 +1325,7 @@
     }
 
     .m-c ul li a span.grey{
-        color: #a1a3a8;
+        color: #707275;
     }
 
     .m-c ul li a {
@@ -1481,7 +1481,7 @@
     }
 
     .m-c .zebra-list li .icon-cancel, .convo-input .zebra-list li .icon-cancel, .zebra-list li .icon-cancel {
-        color: #a1a3a8;
+        color: #707275;
         font-size: 10px;
     }
 
@@ -1499,7 +1499,7 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 11px;
-        color: #a1a3a8;
+        color: #707275;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
@@ -1508,7 +1508,7 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: normal;
         font-size: 11px;
-        color: #a1a3a8;
+        color: #707275;
         letter-spacing: normal;
     }
 
@@ -1789,7 +1789,7 @@
         font-weight: 200;
         font-size: 14px;
         line-height: 32px;
-        color: #a1a3a8;
+        color: #707275;
     }
 
     .m .convo-li {
@@ -1815,7 +1815,7 @@
         font-weight: bold;
         font-size: 15px;
         line-height: 32px;
-        color: #a1a3a8;
+        color: #707275;
         background-color: #fff;
         text-transform: uppercase;
         text-decoration: none;
@@ -1827,7 +1827,7 @@
 
     .m-c .collapsedBasic:hover {
         color: #fff;
-        background-color: #a1a3a8;
+        background-color: #707275;
     }
 
     .convo-status {
@@ -1862,7 +1862,7 @@
     }
 
     .left-sidebar {
-        color: #a1a3a8;
+        color: #707275;
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 13px;
         line-height: 18px;
