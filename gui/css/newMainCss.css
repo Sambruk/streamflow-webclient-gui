@@ -925,13 +925,13 @@
         background-color: #fff;
         border: none;
         padding-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 1px;
     }
 
     .sub-category h3 {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 15px;
         color: #282a32;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -952,8 +952,8 @@
         font-size: 15px;
         color: #282a32;
         text-transform: none;
-        height: 34px;
-        line-height: 34px;
+        height: 30px;
+        line-height: 30px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
