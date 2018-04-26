@@ -177,14 +177,14 @@
         padding: 23px 99px 23px 25px;
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
-        color: #9395a0;
+        color: #fff;
     }
 
     .main-search input[type=search].select2-input {
         border: 1px solid #aaa;
         padding: 4px 20px 4px 5px;
         font-family: Roboto, Helvetica, Arial, sans-serif;
-        color: #9395a0;
+        color: #fff;
     }
 
     .icon-search:before {
@@ -194,25 +194,25 @@
     .main-search input[type=search]::-webkit-input-placeholder { /*placeholder styles*/
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
-        color: #9395a0;
+        color: #fff;
     }
 
     .main-search input[type=search]::-moz-placeholder {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
-        color: #9395a0;
+        color: #fff;
     }
 
     .main-search input[type=search]:-moz-placeholder {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
-        color: #9395a0;
+        color: #fff;
     }
 
     .main-search input[type=search]:-ms-input-placeholder {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-size: 15px;
-        color: #9395a0;
+        color: #fff;
     }
 
     .main-search button[type="submit"] {
