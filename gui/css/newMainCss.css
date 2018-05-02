@@ -2022,6 +2022,13 @@
         text-decoration: underline;
     }
 
+    .error-ng-invalid-input {
+        color: red;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
     .form-name {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 600;
