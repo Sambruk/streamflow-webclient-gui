@@ -1721,7 +1721,8 @@
 
     .toolbar .buttons li {
         margin-right: 2%;
-        width: 23%;
+        margin-bottom: 10px;
+        width: 31%;
     }
 
     .toolbar .buttons li:last-child {
