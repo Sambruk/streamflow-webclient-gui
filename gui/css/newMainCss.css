@@ -1739,6 +1739,21 @@
         height: 2px;
     }
 
+    .sidebar-content-narrowed {
+        margin-top: -35px;
+        width: calc(100% - 35px);
+    }
+
+    .sidebar-header {
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+
+    .sidebar-content-collapsed-narrowed {
+        margin-top: -35px;
+        width: calc(100% - 35px);
+    }
+
     .ng-isolate-scope {
         width: 100%;
     }
