@@ -1234,7 +1234,7 @@
 
     .layout-2 .content-secondary {
         width: 35%;
-        border: 1px solid #eaeaea;
+        border: 2px solid #e0e0e0;
         margin-top: 86px;
         background-color: #f2f4f5;
         padding: 12px 30px;
@@ -1735,8 +1735,8 @@
         margin-bottom: 12px;
         width: 110%;
         width: calc(100% + 60px);
-        background-color: #eaeaea;
-        height: 1px;
+        background-color: #e0e0e0;
+        height: 2px;
     }
 
     .ng-isolate-scope {
