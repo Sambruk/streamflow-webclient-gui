@@ -1096,7 +1096,7 @@
 
     .issue-description__label-list {
         margin-left: 25px;
-        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: 200;
         font-size: 14px;
         color: #707275;
@@ -1242,6 +1242,7 @@
         padding-left: 0px;
         padding-top: 0px;
     }
+
     .layout-2 .content-primary.header h2 {
         float: left;
     }
@@ -1346,7 +1347,7 @@
         text-transform: uppercase;
     }
 
-    .m-c ul a li h3.grey{
+    .m-c ul a li h3.grey {
         color: #707275;
     }
 
@@ -1673,7 +1674,6 @@
         text-align: left;
     }
 
-
     .toolbar button.form-btn {
         font-family: Roboto, Helvetica, Arial, sans-serif;
         font-weight: bold;
@@ -1769,7 +1769,7 @@
 
     .sidebar-content {
         width: 35% !important;
-        float:left;
+        float: left;
     }
 
     .sidebar-header {
@@ -2081,7 +2081,7 @@
         text-decoration: none;
     }
 
-    .form-content .text p br{
+    .form-content .text p br {
         line-height: 20px;
     }
 
