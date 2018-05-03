@@ -2464,6 +2464,17 @@
         color: #03d7a2;
     }
 
+    .m-priority {
+        padding-left: 5px;
+        padding-right: 5px;
+        background: #fafafa;
+    }
+
+    .m-log {
+        text-align: right;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -2476,7 +2487,7 @@
 @media screen and (max-width: 1360px) {
     .layout-2 .content-secondary {
         display: block;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         float: none;
     }
