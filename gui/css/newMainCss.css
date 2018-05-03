@@ -1753,9 +1753,7 @@
     }
 
     .sidebar-group-divider {
-        margin-left: -30px;
-        margin-right: 0;
-        margin-bottom: 12px;
+        margin: 12px 0 12px -30px;
         width: 110%;
         width: calc(100% + 60px);
         background-color: #e0e0e0;
