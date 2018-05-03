@@ -1231,6 +1231,10 @@
         padding: 23px 0 23px 48px;
     }
 
+    .layout-2 .content-primary-full {
+        width: 100%;
+    }
+
     .layout-2 .content-primary.header {
         width: 100%;
         margin: 0px;
@@ -2551,6 +2555,10 @@
 
     .layout-2 .content-primary {
         width: 75%;
+    }
+
+    .layout-2 .content-primary-full {
+        width: 90%;
     }
 
     .layout-2 .content-primary.header {
