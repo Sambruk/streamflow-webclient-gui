@@ -1234,7 +1234,7 @@
     .layout-2 .content-primary.header {
         width: 100%;
         margin: 0px;
-        padding-bottom: 12px;
+        padding-bottom: 0px;
         border: none;
         background: inherit;
         border-top: none;
@@ -1250,7 +1250,7 @@
     .layout-2 .content-secondary {
         width: 100%;
         border: 2px solid #e0e0e0;
-        margin-top: 5px;
+        margin-top:-2px;
         background-color: #f2f4f5;
         padding: 12px 30px;
         float: none;
@@ -1261,6 +1261,8 @@
         border: none;
         float: none;
         background: inherit;
+        padding-bottom: 0px;
+        margin-top: 13px;
     }
 
     .participants span {
@@ -2509,7 +2511,7 @@
         float: none;
         display: block;
         width: 90%;
-        padding-bottom: 12px;
+        padding-bottom: 4px;
         background: inherit;
     }
 
