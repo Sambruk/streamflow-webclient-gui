@@ -2465,9 +2465,11 @@
     }
 
     .m-priority {
-        padding-left: 5px;
-        padding-right: 5px;
-        background: #fafafa;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        padding: 12px 30px;
     }
 
     .m-log {
@@ -2486,6 +2488,13 @@
 
 @media screen and (max-width: 1360px) {
     .layout-2 .content-secondary {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .m-priority {
         display: block;
         width: 90%;
         margin: 0 auto;
