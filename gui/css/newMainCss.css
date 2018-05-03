@@ -1228,16 +1228,38 @@
     .layout-2 .content-primary {
         width: 65%;
         border-top: 1px solid #eaeaea;
-        margin-top: 45px;
         padding: 23px 0 23px 48px;
     }
 
+    .layout-2 .content-primary.header {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 12px;
+        border: none;
+        background: inherit;
+        border-top: none;
+        border-bottom: 1px solid #eaeaea;;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .layout-2 .content-primary.header h2 {
+        float: left;
+    }
+
     .layout-2 .content-secondary {
-        width: 35%;
+        width: 100%;
         border: 2px solid #e0e0e0;
         margin-top: 5px;
         background-color: #f2f4f5;
         padding: 12px 30px;
+        float: none;
+    }
+
+    .layout-2 .content-secondary.header {
+        width: 100%;
+        border: none;
+        float: none;
+        background: inherit;
     }
 
     .participants span {
@@ -1743,6 +1765,11 @@
     .sidebar-content-narrowed {
         margin-top: -35px;
         width: calc(100% - 35px);
+    }
+
+    .sidebar-content {
+        width: 35% !important;
+        float:left;
     }
 
     .sidebar-header {
@@ -2449,7 +2476,14 @@
 @media screen and (max-width: 1360px) {
     .layout-2 .content-secondary {
         display: block;
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .layout-2 .content-secondary.header {
+        display: block;
+        width: 100%;
         margin: 0 auto;
         float: none;
     }
@@ -2460,6 +2494,14 @@
         width: 90%;
         margin: 0 auto;
         padding-left: 0;
+    }
+
+    .layout-2 .content-primary.header {
+        float: none;
+        display: block;
+        width: 90%;
+        padding-bottom: 12px;
+        background: inherit;
     }
 
     .caselog-filter-length .caselog-filter {
@@ -2474,6 +2516,11 @@
         float: none;
     }
 
+    .sidebar-content {
+        width: 100%;
+        float: none;
+    }
+
     .due-date-divider {
         background: none;
     }
@@ -2484,6 +2531,12 @@
 
     .layout-2 .content-primary {
         width: 75%;
+    }
+
+    .layout-2 .content-primary.header {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
     }
 
     .user-area {
@@ -2534,6 +2587,10 @@
     }
 
     .layout-2 .content-primary {
+        width: 90%;
+    }
+
+    .layout-2 .header {
         width: 90%;
     }
 
@@ -2631,9 +2688,18 @@
         min-width: 100%;
     }
 
+    .layout-2 .content-secondary.header {
+        width: 100%;
+        min-width: 100%;
+    }
+
     .layout-2 .content-primary {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .layout-2 .content-primary.header {
+        width: 75%;
     }
 
     .caselog-count-sidebar, .caselog-input .send button {
