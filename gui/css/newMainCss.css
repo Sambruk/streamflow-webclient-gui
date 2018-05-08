@@ -315,6 +315,13 @@
         font-weight: 600;
         line-height: 41px;
         text-align: left;
+        display: inline-block;
+    }
+
+    .issue-banner .action-btn {
+        text-align: left;
+        line-height: 41px;
+        float: right;
     }
 
     .select2-container {
