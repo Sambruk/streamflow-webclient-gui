@@ -316,6 +316,7 @@
         line-height: 41px;
         text-align: left;
         display: inline-block;
+        min-height: 32px;
     }
 
     .issue-banner .action-btn {
