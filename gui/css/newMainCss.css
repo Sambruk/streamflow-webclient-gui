@@ -2534,9 +2534,8 @@
     }
 
     .layout-2 .content-primary {
-        float: none;
         display: block;
-        width: 90%;
+        width: 65%;
         margin: 0 auto;
         padding-left: 0;
     }
