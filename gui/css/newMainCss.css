@@ -2503,6 +2503,9 @@
         padding-right: 10px;
     }
 
+    .preformat-text {
+        white-space: pre-wrap
+    }
 }
 
 @media screen and (max-width: 1500px) {
