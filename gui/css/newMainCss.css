@@ -724,6 +724,16 @@
         color: #939498;
     }
 
+    .icon-cancel__sidebar-select {
+        position: absolute;
+        top: 28px;
+        right: 9%;
+    }
+
+    .icon-cancel__sidebar-select i {
+        color: #939498;
+    }
+
     .select .chosen-container-single .chosen-single abbr {
         display: none;
     }
