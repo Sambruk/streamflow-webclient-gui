@@ -1804,6 +1804,16 @@
         width: calc(100% - 35px);
     }
 
+    .sidebar-link {
+        font-weight: 700;
+        font-size: 13px;
+        color: #282a32;
+        margin-left: 10px;
+        margin-top: 5px;
+        float:right;
+        display: block;
+    }
+
     .ng-isolate-scope {
         width: 100%;
     }
@@ -2512,6 +2522,7 @@
         text-align: right;
         padding-right: 10px;
     }
+
 
     .preformat-text {
         white-space: pre-line;
