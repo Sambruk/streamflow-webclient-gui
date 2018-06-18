@@ -1942,6 +1942,13 @@
     .m .action-btn [class*=icon-] {
         color: #03d7a2;
     }
+    .m .action-btn__disabled [class*=icon-] {
+        color: #707275;
+    }
+
+    .m .action-btn__disabled:hover [class*=icon-] {
+        color: #707275;
+    }
 
     .left, .right {
         font-family: Roboto, Helvetica, Arial, sans-serif;
